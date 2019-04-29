@@ -8,8 +8,8 @@ class App extends Component {
         <header>
           <h1>Joakim Hedman</h1>
           <nav>
-            <a className="linkedin" href="https://www.linkedin.com/in/joakim-hedman/"><span>LinkedIn</span></a>
-            <a className="twitter" href="https://twitter.com/zahhibb"><span>Twitter</span></a>
+            <a className="linkedin" href="https://www.linkedin.com/in/joakim-hedman/" target="_blank"><span>LinkedIn</span></a>
+            <a className="twitter" href="https://twitter.com/zahhibb" target="_blank"><span>Twitter</span></a>
           </nav>
         </header>
         <div className="content">
