@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -9,8 +8,8 @@ class App extends Component {
         <header>
           <h1>Joakim Hedman</h1>
           <nav>
-            <a className="linkedin" href="https://www.linkedin.com/in/joakim-hedman/"></a>
-            <a className="twitter" href="https://twitter.com/zahhibb"></a>
+            <a className="linkedin" href="https://www.linkedin.com/in/joakim-hedman/"><span>LinkedIn</span></a>
+            <a className="twitter" href="https://twitter.com/zahhibb"><span>Twitter</span></a>
           </nav>
         </header>
         <div className="content">
