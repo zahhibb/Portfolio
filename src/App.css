@@ -13,17 +13,43 @@
 header {
   padding: 2em;
   text-align: center;
+  background: rgb(25, 46, 70);
+  border-bottom: 1px solid rgb(48, 101, 145);
 }
 
 header h1 {
   font-size: 3em;
 }
 
-nav > a {
-  margin: 2em 2em;
+header h3 {
+  display: inline-block;
+  margin: 1em;  
 }
 
-nav a > span {
+.stealth-text {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.job-titles a {
+  color: rgb(194, 215, 240);
+  text-decoration: none;
+}
+
+.job-titles a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.job-titles span:before, header span:after {
+  content: " ";
+}
+
+.social-links > a {
+  margin: 1em 2em;
+}
+
+.social-links a > span {
   visibility: hidden;
 }
 
@@ -53,6 +79,28 @@ nav a > span {
   background-image: url(resources/Twitter_Logo_WhiteOnImage.png);
 }
 
-.content {
+.content-element {
   
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 440px){
+  .job-titles h3 {
+    margin: 1em 0.5em;
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 355px){
+  .job-titles h3 {
+    margin: 1em 0.5em;
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 330px){
+  .job-titles h3 {
+    margin: 1em 0.5em;
+    font-size: 0.8em;
+  }
 }
