@@ -31,17 +31,17 @@ header h3 {
   cursor: pointer;
 }
 
-.job-titles a {
+.job-title a {
   color: rgb(194, 215, 240);
   text-decoration: none;
 }
 
-.job-titles a:hover {
+.job-title a:hover {
   color: white;
   text-decoration: underline;
 }
 
-.job-titles span:before, header span:after {
+.job-title span:before, header span:after {
   content: " ";
 }
 
@@ -79,27 +79,47 @@ header h3 {
   background-image: url(resources/Twitter_Logo_WhiteOnImage.png);
 }
 
-.content-element {
+.highlights {
+  background: rgb(156, 109, 71);
+  padding: 1em;
+  text-align: center;
+}
+
+.highlights-content {
+  display: flex;
+  justify-content: center;
+}
+
+/* .highlights-content div {
   
 }
 
+.highlights-content img {
+
+}
+
+.highlights-content p {
+  display: inline-block;
+  vertical-align: middle;
+} */
+
 /* MEDIA QUERIES */
 @media only screen and (max-width: 440px){
-  .job-titles h3 {
+  .job-title h3 {
     margin: 1em 0.5em;
     font-size: 1em;
   }
 }
 
 @media only screen and (max-width: 355px){
-  .job-titles h3 {
+  .job-title h3 {
     margin: 1em 0.5em;
     font-size: 0.9em;
   }
 }
 
 @media only screen and (max-width: 330px){
-  .job-titles h3 {
+  .job-title h3 {
     margin: 1em 0.5em;
     font-size: 0.8em;
   }
