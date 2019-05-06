@@ -2,12 +2,16 @@
   margin: 0;
   padding: 0;
   border: none;
+  color: white;
+}
+
+html {
+  background: rgb(19, 35, 53);
 }
 
 .main {
   min-height: 100vh;
   background: rgb(19, 35, 53);
-  color: white;
 }
 
 header {
@@ -27,8 +31,22 @@ header h3 {
 }
 
 .stealth-text {
+  position: absolute;
   display: inline-block;
-  cursor: pointer;
+  cursor: default;
+  font-size: 1.2em;
+  color: rgb(140, 183, 233);
+  pointer-events: none;
+}
+
+.linkedin-text {
+  top: 23%;
+  right: 49%;
+}
+
+.twitter-text {
+  top: 23%;
+  left: 51%;
 }
 
 .job-title a {
@@ -79,29 +97,46 @@ header h3 {
   background-image: url(resources/Twitter_Logo_WhiteOnImage.png);
 }
 
-.highlights {
-  background: rgb(156, 109, 71);
-  padding: 1em;
+.content {
   text-align: center;
 }
 
-.highlights-content {
-  display: flex;
-  justify-content: center;
+.content-button {
+  padding: 1em;
+  margin: 1em;
+  font-size: 1em;
+  display: inline-block;  
+  background: #192E46;
+  border: 1px solid rgb(48, 101, 145);
+  cursor: pointer;
+  transition: background-color 0.4s;
 }
 
-/* .highlights-content div {
-  
-}
-
-.highlights-content img {
-
-}
-
-.highlights-content p {
+.content ul {
   display: inline-block;
-  vertical-align: middle;
-} */
+  width: 50%;
+}
+
+.content li {
+  list-style: none;
+  padding: 0.8em;
+  margin: 1em;
+  background: rgb(136, 95, 34);
+  border: 1px solid;
+  border-radius: 6px;
+}
+
+.content li:nth-child(2){
+  background: rgb(39, 120, 202);
+}
+
+.content li:nth-child(3){
+  background: rgb(101, 134, 58);
+}
+
+.content-button:hover {
+  background: rgb(42, 73, 109);
+}
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 440px){

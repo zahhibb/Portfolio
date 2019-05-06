@@ -2,67 +2,42 @@ import React, { Component } from 'react';
 import './App.css';
 import posed from 'react-pose';
 
-function Highlights(){
-  return (
-    <div className="highlights">
-      <div className="highlights-content">
-        <div>
-          <img src="" width="32" height="32" />
-          <p>Proactive</p>
-        </div>
-        <div>
-          <img src="" width="32" height="32" />
-          <p></p>
-        </div>
-        <div>
-          <img src="" width="32" height="32" />
-          <p></p>
-        </div>
-        <div>
-          <img src="" width="32" height="32" />
-          <p></p>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-const StealthText = posed.span({
-  visible: { opacity: 0.5 },
-  hidden: { opacity: 0 }  
+const Parent = posed.ul({
+  open: {
+    /* x: '0%', */
+    delayChildren: 200,
+    staggerChildren: 50
+  },
+  closed: { /* x: '-100%',  */delay: 300 }
+});
+const Child = posed.li({
+  open: { y: 0, opacity: 1 },
+  closed: { y: 20, opacity: 0 }
 });
 
+const items = ['Joakim Hedman', 'Joakim Wahman', 'Joakim Kanon'];
+const listItems = items.map((item, key) => <Child key={key}>{item}</Child>);
+
 class App extends Component {
-  state = { isVisible: false };
+  state = { isOpen: false };
 
-  mouseEnter(){
-    console.log("set true");
-    this.setState({isVisible: true});
-  }
-
-  mouseLeave(){
-    console.log("set false");
-    this.setState({isVisible: false});
+  showList(){
+    this.setState({ isOpen: !this.state.isOpen });
   }
 
   render() {
-    const { isVisible } = this.state;
+    const { isOpen } = this.state;
+    const buttonText = isOpen ? 'Shrink' : 'Expand';
 
-    return (
+    return (      
       <div className="main">
-        <header>
-          <h1>Joakim Hedman</h1>
-          <div className="job-title">
-            <h3>Web Developer and <a href="https://thefarm.se/en/" target="_blank" rel="noopener noreferrer">The Farm</a></h3>
-          </div>
-          <div className="social-links">
-            <a className="linkedin" href="https://www.linkedin.com/in/joakim-hedman/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span></a>
-            <a className="twitter" href="https://twitter.com/zahhibb" target="_blank" rel="noopener noreferrer" onMouseEnter={this.mouseEnter}><span>Twitter</span></a>
-            <StealthText className="stealth-text" pose={isVisible ? 'visible' : 'hidden'} >StealthText</StealthText>
-          </div>
-        </header>
         <div className="content">
-          <Highlights />
+          <button className="content-button" onClick={() => {this.showList()}}>Press me ({buttonText})</button>
+          <div>
+            <Parent pose={isOpen ? 'open' : 'closed'}>
+              {listItems}
+            </Parent>            
+          </div>
         </div>
       </div>
     );
