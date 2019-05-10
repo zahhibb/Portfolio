@@ -138,7 +138,6 @@ header h3 {
   background: rgb(42, 73, 109);
 }
 
-/* MEDIA QUERIES */
 @media only screen and (max-width: 440px){
   .job-title h3 {
     margin: 1em 0.5em;
@@ -158,4 +157,66 @@ header h3 {
     margin: 1em 0.5em;
     font-size: 0.8em;
   }
+}
+
+/* OTHER */
+.other-content {
+  position: relative;
+  text-align: center;
+}
+
+.other-content ul {
+  margin: 1rem auto;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.other-content li {
+  opacity: 0;
+  list-style: none;
+  width: 36px;
+  height: 36px;
+  background: rgb(96, 163, 180);
+  margin: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.other-content li:hover {
+  background: #fff;
+}
+
+.taken {
+  background: rgb(180, 99, 96);
+}
+
+.selection-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #192E46;
+  padding: 1rem;
+  text-align: left;
+  min-width: 12rem;
+}
+
+.selection-info h3 {
+  padding-bottom: 1rem;
+}
+
+.selection-info div {
+  display: block;
+  margin-bottom: 0.5rem;  
+}
+
+.selection-info div span:nth-child(1):after {
+  content: " ";
+}
+
+.selection-info div span:nth-child(2) {
+  text-transform: capitalize;
+}
+
+.highlight {
+  background: #fff !important;
 }

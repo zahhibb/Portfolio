@@ -3,12 +3,8 @@ import './App.css';
 import posed from 'react-pose';
 
 const Parent = posed.ul({
-  open: {
-    /* x: '0%', */
-    delayChildren: 200,
-    staggerChildren: 50
-  },
-  closed: { /* x: '-100%',  */delay: 300 }
+  open: { delayChildren: 200, staggerChildren: 50 },
+  closed: { delay: 300 }
 });
 const Child = posed.li({
   open: { y: 0, opacity: 1 },
@@ -33,7 +29,7 @@ class App extends Component {
       <div className="main">
         <div className="content">
           <button className="content-button" onClick={() => {this.showList()}}>Press me ({buttonText})</button>
-          <div>
+          <div>            
             <Parent pose={isOpen ? 'open' : 'closed'}>
               {listItems}
             </Parent>            

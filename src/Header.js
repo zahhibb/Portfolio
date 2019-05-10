@@ -16,6 +16,8 @@ class Header extends Component {
     state = { 
         linkedinIsVisible: false,
         twitterIsVisible: false,
+        linkedin: false,
+        twitter: false
      };    
     
      linkedinMouseOverHandler(){
@@ -26,7 +28,7 @@ class Header extends Component {
         this.setState({linkedinIsVisible:false});
     }
 
-    twitterMouseOverHandler(val){
+    twitterMouseOverHandler(){
         this.setState({twitterIsVisible:true});
     }
 
@@ -44,7 +46,7 @@ class Header extends Component {
           <div className="social-links">
             <a className="linkedin" href="https://www.linkedin.com/in/joakim-hedman/" target="_blank" rel="noopener noreferrer" onMouseOver={() => {this.linkedinMouseOverHandler()}} onMouseOut={() => {this.linkedinMouseOutHandler()}}><span>LinkedIn</span></a>
             <LinkedinStealthText className="stealth-text linkedin-text" pose={this.state.linkedinIsVisible ? 'visible' : 'hidden'}>/in/joakim-hedman</LinkedinStealthText>
-            <a className="twitter" href="https://twitter.com/zahhibb" target="_blank" rel="noopener noreferrer" onMouseOver={() => {this.twitterMouseOverHandler('twitter')}} onMouseOut={() => {this.twitterMouseOutHandler()}}><span>Twitter</span></a>
+            <a className="twitter" href="https://twitter.com/zahhibb" target="_blank" rel="noopener noreferrer" onMouseOver={() => {this.twitterMouseOverHandler()}} onMouseOut={() => {this.twitterMouseOutHandler()}}><span>Twitter</span></a>
             <TwitterStealthText className="stealth-text twitter-text" pose={this.state.twitterIsVisible ? 'visible' : 'hidden'}>@zahhibb</TwitterStealthText>
           </div>
         </header>
