@@ -40,12 +40,12 @@ header h3 {
 }
 
 .linkedin-text {
-  top: 23%;
-  right: 49%;
+  top: 75%;
+  right: 50%;
 }
 
 .twitter-text {
-  top: 23%;
+  top: 75%;
   left: 51%;
 }
 
@@ -61,6 +61,10 @@ header h3 {
 
 .job-title span:before, header span:after {
   content: " ";
+}
+
+.social-links {
+  position: relative;
 }
 
 .social-links > a {
@@ -219,4 +223,16 @@ header h3 {
 
 .highlight {
   background: #fff !important;
+}
+
+.seat-select-button {
+  padding: 1rem;
+  margin-top: 0.5rem;
+  background: #132335;
+  border: 1px solid #306591;
+}
+
+.seat-select-button:hover {
+  border: 1px solid #fff;
+  cursor: pointer;
 }

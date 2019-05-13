@@ -8,7 +8,7 @@ export const bookingSlots = [
     {
         available: false,
         id: "001",
-        name: "grace hopper",
+        name: "", // grace hopper
         seat: "b1"
     },
     {
@@ -20,13 +20,13 @@ export const bookingSlots = [
     {
         available: false,
         id: "003",
-        name: "bill gates",
+        name: "", // bill gates
         seat: "a2"
     },
     {
         available: false,
         id: "004",
-        name: "steve jobs",
+        name: "", // steve jobs
         seat: "b2"
     }
     ,
