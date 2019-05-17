@@ -1,40 +1,40 @@
 export const bookingSlots = [
     {
-        available: true,
+        available: false,
         id: "000",
-        name: "john carmack",
-        seat: "a1"
-    },
-    {
-        available: false,
-        id: "001",
-        name: "", // grace hopper
-        seat: "b1"
+        seat: "a1",
+        name: "john carmack"
     },
     {
         available: true,
+        id: "001",
+        seat: "b1",
+        name: "" // grace hopper
+    },
+    {
+        available: false,
         id: "002",
-        name: "mark cerny",
-        seat: "c1"
+        seat: "c1",
+        name: "mark cerny"
     },
     {
-        available: false,
+        available: true,
         id: "003",
-        name: "", // bill gates
-        seat: "a2"
+        seat: "a2",
+        name: "" // bill gates
     },
     {
-        available: false,
+        available: true,
         id: "004",
-        name: "", // steve jobs
-        seat: "b2"
+        seat: "b2",
+        name: "" // steve jobs
     }
     ,
     {
-        available: true,
+        available: false,
         id: "005",
-        name: "ada lovelace",
-        seat: "c3"
+        seat: "c2",
+        name: "ada lovelace"
     }
   ];
 
