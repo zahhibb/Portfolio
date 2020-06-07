@@ -24,7 +24,7 @@ class Footer extends Component {
             </li>
             <li>
               <a
-                href="https://twitter.com/zahhibb?lang=en"
+                href="https://twitter.com/zahhibb"
                 target="_blank"
                 rel="noopener noreferrer"
               >

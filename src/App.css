@@ -126,7 +126,6 @@ nav li a:hover {
   padding-top: 2rem;
   display: flex;
   flex-direction: column;
-  /* height: calc(100% - 189px); */
 }
 
 /* ABOUT SECTION */
@@ -155,14 +154,66 @@ nav li a:hover {
   margin: 0.5rem;
   background: #333;
   display: flex;
+  transition: 0.3s ease-in-out;
 }
+
 .project-item a {
+  position: relative;
   flex: 1;
   transition: 0.3s ease-in-out;
 }
-.project-item a:hover {
-  background: #666;
+
+.skkf {
+  background: center / contain no-repeat #093511 url("./resources/skkf.png");
+  background-size: 70%;
 }
+
+.leos {
+  background: center / cover no-repeat #0075c0 url("./resources/leos.jpg");
+  background-size: 90%;
+}
+
+.hellyhansen {
+  background: center / cover no-repeat #da2127
+    url("./resources/hellyhansen.jpg");
+  background-size: 60%;
+}
+
+.battlerite {
+  background: center / cover no-repeat #333 url("./resources/battlerite.jpg");
+  background-position-y: 35%;
+}
+
+.project-item-info {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgb(0, 0, 0, 0.9);
+  padding: 0.5rem;
+  box-sizing: border-box;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  opacity: 0;
+}
+
+.project-item:hover .project-item-info {
+  opacity: 1;
+}
+
+.project-item-info p {
+  color: white;
+}
+
+.project-item-info p:first-child {
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
 @media only screen and (max-width: 700px) {
   .projects-section {
     justify-content: center;
