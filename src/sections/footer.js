@@ -7,31 +7,6 @@ class Footer extends Component {
     return (
       <footer>
         <div className="footer-container">
-          <div>
-            <i className="far fa-copyright"></i>
-            <p>2020 Joakim Hedman - All Rights Reserved</p>
-          </div>
-          <span>|</span>
-          <ul>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/joakim-hedman/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                LinkedIn
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://twitter.com/zahhibb"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Twitter
-              </a>
-            </li>
-          </ul>
         </div>
       </footer>
     );

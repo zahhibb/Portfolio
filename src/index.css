@@ -1,7 +1,33 @@
+@font-face {
+  font-family: Alegreya-regular;
+  src: url('resources/Fonts/Alegreya/Alegreya-Regular.ttf');
+}
+@font-face {
+  font-family: Alegreya-medium;
+  src: url('resources/Fonts/Alegreya/Alegreya-Medium.ttf');
+}
+
+@font-face {
+  font-family: Alegreya-sans-regular;
+  src: url('resources/Fonts/Alegreya_Sans/AlegreyaSans-Regular.ttf');
+}
+@font-face {
+  font-family: Alegreya-sans-medium;
+  src: url('resources/Fonts/Alegreya_Sans/AlegreyaSans-Medium.ttf');
+}
+@font-face {
+  font-family: Alegreya-sans-thin;
+  src: url('resources/Fonts/Alegreya_Sans/AlegreyaSans-Thin.ttf');
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Alegreya-sans-regular, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.7;
+  font-weight: 400;
+  color: rgba(203,227,255,.75);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
