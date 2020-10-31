@@ -5,30 +5,41 @@ import "../App.css";
 class Navigation extends Component {
   render() {
     return (
-      <nav>
+      <nav className="desktop-navigation">
         <div className="nav-owner">
           <Link to={"/"}>Joakim Hedman</Link>
         </div>
         <ul>
           <li>
-            <Link className="nav-active" to={"/"}>HOME</Link>
+            <Link className="nav-active" to={"/#home"}>HOME</Link>
           </li>
           <li>
-            <Link to={"/"}>PROJECTS</Link>
+            {/* <Link to={"/"}>PROJECTS</Link> */}
+            <a href="/#projects">PROJECTS</a>
           </li>
           <li>
-            <Link to={"/"}>CV</Link>
+            {/* <Link to={"/"}>CV</Link> */}
+            <a href="/#cv">CV</a>
           </li>
           <li>
-            <Link to={"/"}>ABOUT</Link>
+            {/* <Link to={"/"}>ABOUT</Link> */}
+            <a href="/#about">ABOUT</a>
           </li>
           <li>
-            <Link to={"/"}>CONTACT</Link>
+            {/* <Link to={"/"}>CONTACT</Link> */}
+            <a href="/#contact">CONTACT</a>
           </li>
         </ul>
         <div className="nav-socials">
-          <span>a</span>
-          <span>b</span>
+          <span className="linkedin">
+            {/* <Link to={"https://www.linkedin.com/in/joakim-hedman/"}></Link> */}
+            <a href="https://www.linkedin.com/in/joakim-hedman/" target="_blank" rel="noopener noreferrer"></a>
+          </span>
+        </div>
+        <div className="mobile-navigation-button">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </nav>
     );

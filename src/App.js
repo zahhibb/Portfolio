@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import "./App.css";
-import Nav from "./sections/navigation";
 import Intro from "./sections/intro";
 import Projects from "./sections/projects";
 import About from "./sections/about";
 import CV from "./sections/cv";
+import Contact from "./sections/contact";
 import Footer from "./sections/footer";
+import MobileNav from "./sections/mobile_navigation";
 
 class App extends Component {
   render() {
@@ -13,7 +14,6 @@ class App extends Component {
     return (
       <div className="main">
         <div className="content">
-          <Nav />
           <div className="container">
             <Intro />
             <Projects />
@@ -21,10 +21,11 @@ class App extends Component {
               <CV />
               <About />
             </div>
-            <Footer />
+            <Contact />
           </div>
-          <Footer />
+          <Footer />          
         </div>
+        <MobileNav />
       </div>
     );
   }

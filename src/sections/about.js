@@ -4,7 +4,7 @@ import "../App.css";
 class AboutSection extends Component {
   render() {
     return (
-      <section className="about">
+      <section className="about" id="about">
         <div className="about-container">
           <div>
             <h2>About me</h2>
