@@ -18,14 +18,14 @@ class App extends Component {
             <Intro />
             <Projects />
             <div className="personal-section">
-              <CV />
+              {/* <CV /> */}
               <About />
             </div>
-            <Contact />
+            {/* <Contact /> */}
           </div>
           <Footer />          
         </div>
-        <MobileNav />
+        {/* <MobileNav /> */}
       </div>
     );
   }

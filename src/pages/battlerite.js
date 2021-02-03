@@ -6,7 +6,7 @@ class Battlerite extends Component {
         return (
             <div className="page">
                 <div className="page-container">
-                    <div className="banner"></div>
+                    <div className="page-banner"></div>
                     <div className="page-content"></div>
                 </div>
             </div>

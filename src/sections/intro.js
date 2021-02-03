@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import "../App.css";
 
 class Intro extends Component {
@@ -22,10 +21,9 @@ class Intro extends Component {
             <p><i>I am currently looking for new exciting job opportunities!</i></p>
             <div className="social-links">
               <div className="linkedin">
-                <Link to={"https://www.linkedin.com/in/joakim-hedman/"}></Link>
+                <a href="https://www.linkedin.com/in/joakim-hedman/" target="_blank" rel="noopener noreferrer"></a>
               </div>
               <div className="mail">
-                {/* <Link to={"#"}></Link> */}
                 <a href="mailto:jocke_hedman@hotmail.com"></a>
               </div>
             </div>

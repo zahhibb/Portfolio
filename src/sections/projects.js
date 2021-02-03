@@ -131,7 +131,7 @@ class ProjectsSection extends Component {
               <div className="games-list">
                 <ProjectItem
                   title={"Battlerite"}
-                  description={"Started out the first 3 months as a intern prototyping and developing game modes for the team-arena-brawler Battlerite, where 2 of game modes where released to the public with positive acclaim. After my internship I got employed during the summer to work further on prototyping game modes and improving their new-player experience, and a lot more."}
+                  description={"Started out the first 3 months as a intern prototyping and developing game modes for the team-arena-brawler Battlerite, where 2 of game modes where released to the public to positive acclaim. After my internship I got employed during the summer to work further on prototyping game modes and improving their new-player experience, and more."}
                   descriptionList={[
                     {
                       subject: "Genre",
@@ -158,9 +158,9 @@ class ProjectsSection extends Component {
                   imgClass={"battlerite"}
 
                 />
-                <ProjectItem
+                {/* <ProjectItem
                   title={"Outvaders Must Die"}
-                  description={'A small game made by myself and 3 of my friends during the Nordic Game Jam 2016. The theme of the GameJam were "Leak" we decided on the fun, but absurd idea of the player being Outer Space and trying to stop humankind from escaping/expanding/"Outvading" Earth.'}
+                  description={'A small game made by myself and 3 of my friends during the Nordic Game Jam 2016. The theme of the GameJam were "Leak" so we decided on the fun, but absurd idea of the player being Outer Space and trying to stop humankind from escaping/expanding/"Outvading" Earth.'}
                   descriptionList={[
                     {
                       subject: "Genre",
@@ -185,7 +185,7 @@ class ProjectsSection extends Component {
                   ]}
                   url={"/outvadersmustdie"}
                   imgClass={"outvaders"}
-                />
+                /> */}
               </div>
             </div>
           </div>

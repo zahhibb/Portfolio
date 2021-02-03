@@ -30,6 +30,7 @@ strong {
 }
 
 .mobile-nav-cover {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -64,10 +65,83 @@ strong {
   color: #fff;
 }
 
-.mobile-navigation-button {}
+.mobile-navigation-button {
+  width: 45px;
+  height: 30px;
+  position: relative;
+  right: 45px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.mobile-navigation-button span {
+  display: block;
+  position: absolute;
+  height: 6px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.mobile-navigation-button span:nth-child(1) {
+  top: 0px;
+}
+
+.mobile-navigation-button span:nth-child(2), .mobile-navigation-button span:nth-child(3) {
+  top: 14px;
+}
+
+.mobile-navigation-button span:nth-child(4) {
+  top: 28px;
+}
+
+.mobile-navigation-button.open span:nth-child(1) {
+  top: 14px;
+  width: 0%;
+  left: 50%;
+}
+
+.mobile-navigation-button.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.mobile-navigation-button.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.mobile-navigation-button.open span:nth-child(4) {
+  top: 14px;
+  width: 0%;
+  left: 50%;
+}
 
 @media only screen and (min-width:768px) {
   .mobile-navigation {
+    display: none;
+  }
+  .mobile-navigation-button {
     display: none;
   }
 }
@@ -83,6 +157,7 @@ strong {
   z-index: 1;
   align-items: center;
   justify-items: center;
+  justify-content: space-between;
   padding: 0.5rem 2rem;
 }
 
@@ -105,6 +180,7 @@ strong {
     z-index: 1;
     align-items: center;
     justify-items: center;
+    justify-content: unset;
     padding: 0;
   }
   .desktop-navigation .nav-owner {
@@ -196,7 +272,7 @@ strong {
 
 .intro {
   background: #1e1e1e;
-  border: 1px solid #30367b;
+  border-bottom: 1px solid #30367b;
 }
 
 .intro-container {
@@ -453,7 +529,7 @@ strong {
 }
 
 .battlerite {
-  background: url("resources/images/battlerite.jpg");
+  background: url("resources/images/Battlerite-Header.jpg");
   background-repeat: no-repeat;
   background-position: 50% 30%;
   background-size: cover;
@@ -583,8 +659,11 @@ hr {
   }
 }
 
+/* PERSONAL SECTION */
+
 .personal-section {
-  width: 90%;
+  /* width: 90%; */
+  background: #ebebeb;
   margin: 0 auto;
 }
 
@@ -638,46 +717,61 @@ hr {
 }
 
 .about {
+  width: 90%;
+  margin: 0 auto;
   padding: 3rem 0 4rem;
 }
 
 .about-container {
-  width: 71%;
   border-radius: 8px;
   display: flex;
+  flex-direction: column;
 }
 
 .about-container>div {
-  flex: 3;
+  flex: 2;
   text-align: left;
 }
 
 .about-container div:nth-child(2) {
-  background: #abc;
-  flex: 2;
+  flex: 3;
 }
 
 .about-container p {
   font-size: 1.4rem;
 }
 
+.personal-photo {
+  display: inline-block;
+  height: 320px;
+  width: 100%;
+  background: url('./resources/images/Hedman-photo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 @media only screen and (min-width: 520px) {
-  .personal-section {
+  .about {
     width: 80%;
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .personal-section {
-    width: 80%;
-  }
-}
+@media only screen and (min-width: 768px) {}
 
 @media only screen and (min-width: 1024px) {
-  .personal-section {
+  .about {
     width: 71%;
   }
+  .about-container {
+    flex-direction: row;
+  }
+  .personal-photo {
+    margin: 0 2rem 0 0;
+  }
 }
+
+/* CONTACT*/
 
 .contact {
   padding: 3rem 0 4rem;
@@ -690,13 +784,17 @@ hr {
   text-align: center
 }
 
+/* FOOTER */
+
 footer {
   width: 100%;
   background: #1e1e1e;
   padding: 2rem 0;
 }
 
-.footer-container {}
+.footer-container {
+  text-align: center;
+}
 
 /* PAGES */
 
@@ -706,3 +804,12 @@ footer {
 }
 
 .page-container {}
+
+.page-banner {
+  width: 100vw;
+  height: 100vh;
+  background: url("resources/images/Battlerite-Header.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+  background-size: cover;
+}

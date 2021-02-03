@@ -10,13 +10,13 @@ class ContactSection extends Component {
                     <p>For any inquiries please reach out to me on any of the channels below:</p>
                     <div>
                         <div>
-                            <Link to={"#"}></Link>
+                            <a href=""></a>
                         </div>
                         <div>
-                            <Link to={"#"}></Link>
+                            <a href=""></a>
                         </div>
                         <div>
-                            <Link to={"#"}></Link>
+                            <a href=""></a>
                         </div>
                     </div>
                 </div>

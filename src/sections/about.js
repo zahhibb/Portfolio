@@ -7,10 +7,12 @@ class AboutSection extends Component {
       <section className="about" id="about">
         <div className="about-container">
           <div>
-            <h2>About me</h2>
+            <a href="https://www.linkedin.com/in/joakim-hedman/" className="personal-photo" target="_blank" rel="noopener noreferrer"></a>
+          </div>
+          <div>
+            <h2>Heya there. I'm Jocke</h2>
             <p>This is a paragraph about me and what I like to do, please enjoy!</p>
           </div>
-          <div></div>
         </div>
       </section>
     );
