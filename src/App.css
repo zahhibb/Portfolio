@@ -360,6 +360,13 @@ strong {
   background-size: 40% 40%;
 }
 
+.social-links .twitter a {
+  background: url('resources/images/2021\ Twitter\ logo\ -\ white.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 45% 40%;
+}
+
 .social-links .mail a {
   background: url('resources/images/mail-logo.png');
   background-repeat: no-repeat;
@@ -393,6 +400,8 @@ strong {
   }
 }
 
+/* PROJECTS */
+
 .projects {
   padding: 3rem 0 4rem;
   background: linear-gradient(171deg, #181a35, #30367b, #181a35);
@@ -422,6 +431,7 @@ strong {
 }
 
 .projects-list h3 {
+  font-size: 1.6rem;
   transition: color 0.3s;
   display: inline-block;
   line-height: 20px;
@@ -448,10 +458,6 @@ strong {
   color: #7ac4fd;
 }
 
-.projects-websites {}
-
-.projects-games {}
-
 .websites-list {
   display: flex;
   flex-direction: column;
@@ -462,49 +468,63 @@ strong {
   flex-direction: column;
 }
 
+.games-list>div {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
 .project-item-container {
-  background: rgba(34, 34, 34, 0.7);
-  padding: 1rem;
-  margin: 1rem 0;
-}
-
-.project-item-container h3 {
-  border: none;
-  padding: 0;
-}
-
-.project-item-container h3 a {
-  color: #fff;
-}
-
-.project-item-container h3 a:hover {
-  text-decoration: none;
+  height: 370px;
+  border: 1px solid #414d96;
 }
 
 .project-item {
-  display: block;
-  margin-bottom: 1rem;
+  position: relative;
   width: 100%;
+  height: 100%;
 }
 
 .project-item a {
   display: block;
-  text-align: center;
-  padding: 5rem 0;
-  text-decoration: none;
-  color: #fff;
-  border: 1px solid #414d96;
-  border-radius: 16px;
-  transition: border 0.1s, box-shadow 0.2s;
-}
-
-.project-item a span {
-  display: none;
+  height: 100%;
+  -moz-transition: background 0.3s;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
 }
 
 .project-item a:hover {
-  border: 1px solid #5e6dbd;
-  border-radius: 16px;
+  background: rgba(65, 77, 150, .5);
+}
+
+.item-title {
+  color: #fff;
+  font-size: 1.75rem;
+  position: absolute;
+  bottom: 2.7rem;
+  left: 0;
+  padding: 0 0 0 1rem !important;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+.item-desc {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  padding: 0 0 1rem 1rem !important;
+  letter-spacing: 0.75px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+hr {
+  display: block;
+  border: 1px solid #4951a5;
+  margin: 2rem 0;
 }
 
 .skkf {
@@ -535,127 +555,51 @@ strong {
   background-size: cover;
 }
 
-.outvaders {
+/* .outvaders {
   background: #b4a27c;
   background-repeat: no-repeat;
   background-position: 50% 30%;
   background-size: cover;
-}
-
-.item-title {}
-
-.item-description {
-  margin-bottom: 1rem;
-}
-
-.description-list-subject {
-  color: #ddd;
-}
-
-.description-list-subject:after {
-  content: ": ";
-}
-
-.description-list-content {
-  display: inline-block;
-}
-
-.description-list-content>span:not(:last-child):after {
-  content: ",";
-  margin-right: 0.5rem;
-}
-
-.project-item-button {
-  display: inline-block;
-}
-
-.project-item-button a {
-  display: block;
-  color: #fff;
-  background: #30367b;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  margin-top: 2rem;
-  border: 1px solid #4951a5;
-}
-
-.project-item-button a:hover {
-  border: 1px solid #646cc4;
-}
-
-hr {
-  display: block;
-  border: 1px solid #4951a5;
-  margin: 2rem 0;
-}
+} */
 
 @media only screen and (min-width: 425px) {
-  .websites-list {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .games-list {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  .project-item-container {
+    width: 100%;
   }
 }
 
-@media only screen and (min-width: 520px) {
-  .project-item a {
-    height: 80px;
-  }
-}
+@media only screen and (min-width: 520px) {}
 
 @media only screen and (min-width: 768px) {
-  hr {
-    display: none;
-  }
   .projects-container {
     width: 80%;
-  }
-  .projects-list {
-    flex-direction: row;
-  }
-  .websites-list {
-    justify-content: unset;
-  }
-  .games-list {
-    justify-content: unset;
-  }
-  .project-item-container {
-    margin: 0.5rem 1rem 0.5rem 0;
-  }
-  .project-item {
-    display: inline-block;
-    margin: 0.5rem 1rem 0.5rem 0;
-    max-width: none;
-    max-height: none;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .projects-container {
-    width: 70%;
-  }
   .project-item-container {
-    width: 100%;
-    max-width: 400px;
-    margin: 0.5rem 1rem 0.5rem 0;
+    max-width: 60%;
   }
-  .project-item {
-    margin: 0;
+  .websites-list {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
-  .project-item a {
-    max-width: 400px;
-    height: 80px;
+  .games-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .games-list div:nth-child(2n+1) {
+    flex: 2;
+  }
+  .games-list div:nth-child(2n+2) {
+    flex: 1;
+    margin: 0 0 0 2rem;
   }
 }
 
 @media only screen and (min-width: 1500px) {
   .projects-container {
-    width: 60%;
+    width: 70%;
   }
 }
 
@@ -729,12 +673,13 @@ hr {
 }
 
 .about-container>div {
-  flex: 2;
-  text-align: left;
+  flex: 3;
+  text-align: right;
 }
 
 .about-container div:nth-child(2) {
-  flex: 3;
+  flex: 5;
+  text-align: left;
 }
 
 .about-container p {
@@ -742,9 +687,9 @@ hr {
 }
 
 .personal-photo {
-  display: inline-block;
-  height: 320px;
-  width: 100%;
+  margin: 0 auto 2rem auto;
+  display: flex;
+  height: 260px;
   background: url('./resources/images/Hedman-photo.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -757,7 +702,12 @@ hr {
   }
 }
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+  .personal-photo {
+    width: 320px;
+    height: 320px;
+  }
+}
 
 @media only screen and (min-width: 1024px) {
   .about {
@@ -767,7 +717,7 @@ hr {
     flex-direction: row;
   }
   .personal-photo {
-    margin: 0 2rem 0 0;
+    margin: 0 3rem 0 auto;
   }
 }
 

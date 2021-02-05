@@ -23,6 +23,9 @@ class Intro extends Component {
               <div className="linkedin">
                 <a href="https://www.linkedin.com/in/joakim-hedman/" target="_blank" rel="noopener noreferrer"></a>
               </div>
+              <div className="twitter">
+                <a href="https://twitter.com/Zahhibb" target="_blank" rel="noopener noreferrer"></a>
+              </div>
               <div className="mail">
                 <a href="mailto:jocke_hedman@hotmail.com"></a>
               </div>
