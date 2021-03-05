@@ -21,12 +21,10 @@ strong {
   color: #fff;
 }
 
-.content {}
-
 /* MOBILE NAVIGATION */
 
 .mobile-navigation {
-  display: block;
+  position: absolute;
 }
 
 .mobile-nav-cover {
@@ -38,7 +36,8 @@ strong {
   height: 100%;
   padding: 0;
   margin: 0;
-  background: #222;
+  background: rgba(34, 34, 34, 0.95);
+  z-index: 2;
 }
 
 .mobile-navigation .nav-owner {
@@ -46,7 +45,9 @@ strong {
 }
 
 .mobile-navigation ul {
-  padding: 5rem 0;
+  height: 100%;
+  margin: 65% 0;
+  list-style: none;
 }
 
 .mobile-navigation ul li {
@@ -59,6 +60,7 @@ strong {
   padding: 1rem 0;
   display: block;
   font-size: 1.5rem;
+  letter-spacing: 2px;
 }
 
 .mobile-navigation a:active, .mobile-navigation a:focus {
@@ -154,7 +156,7 @@ strong {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 3;
   align-items: center;
   justify-items: center;
   justify-content: space-between;
@@ -166,7 +168,7 @@ strong {
   text-decoration: none;
 }
 
-.desktop-navigation ul {
+.desktop-navigation>ul {
   display: none;
 }
 
@@ -227,7 +229,6 @@ strong {
     display: block;
     transition: color 0.3s;
     min-width: 50px;
-    text-decoration: line-through;
   }
   .desktop-navigation ul li a:hover {
     color: #fff;
@@ -263,12 +264,13 @@ strong {
     height: 20px;
     width: 20px;
     padding: .5rem;
+    line-height: 0;
+    font-size: 0;
+    color: transparent;
   }
 }
 
 /* INTRO */
-
-.container {}
 
 .intro {
   background: #1e1e1e;
@@ -351,6 +353,9 @@ strong {
   height: 30px;
   width: 30px;
   padding: 1rem;
+  line-height: 0;
+  font-size: 0;
+  color: transparent;
 }
 
 .social-links .linkedin a {
@@ -375,7 +380,6 @@ strong {
 }
 
 @media only screen and (min-width:768px) {
-  .intro {}
   .intro-container {
     width: 70%;
     max-width: 660px;
@@ -463,6 +467,11 @@ strong {
   flex-direction: column;
 }
 
+.websites-list>div {
+  flex: 1;
+  margin-bottom: 2rem;
+}
+
 .games-list {
   display: flex;
   flex-direction: column;
@@ -470,7 +479,7 @@ strong {
 
 .games-list>div {
   flex: 1;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .project-item-container {
@@ -515,6 +524,7 @@ strong {
   left: 0;
   padding: 0 0 1rem 1rem !important;
   letter-spacing: 0.75px;
+  color: #fff;
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
@@ -534,11 +544,11 @@ hr {
   background-size: 70%;
 }
 
-.hellyhansen {
+.projects-container .hellyhansen {
   background: #da2127 url("resources/images/hellyhansen.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 70%;
 }
 
 .leos {
@@ -554,13 +564,6 @@ hr {
   background-position: 50% 30%;
   background-size: cover;
 }
-
-/* .outvaders {
-  background: #b4a27c;
-  background-repeat: no-repeat;
-  background-position: 50% 30%;
-  background-size: cover;
-} */
 
 @media only screen and (min-width: 425px) {
   .project-item-container {
@@ -584,16 +587,34 @@ hr {
     flex-direction: row;
     flex-wrap: wrap;
   }
+  .websites-list>div {
+    margin-bottom: 0;
+  }
   .games-list {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .games-list div:nth-child(2n+1) {
-    flex: 2;
+  .games-list>div {
+    margin-bottom: 0;
   }
-  .games-list div:nth-child(2n+2) {
-    flex: 1;
-    margin: 0 0 0 2rem;
+  .games-list div:nth-child(2n+1), .websites-list div:nth-child(2n+1) {
+    flex: 70% 1;
+  }
+  .games-list div:nth-child(2n+2), .websites-list div:nth-child(2n+2) {
+    flex: 30% 1;
+    margin-left: 2rem;
+  }
+  .websites-list div:nth-child(3n), .games-list div:nth-child(3n) {
+    flex: 30% 1;
+  }
+  .websites-list div:nth-child(4n), .games-list div:nth-child(4n) {
+    flex: 70% 1;
+  }
+  .websites-list div:nth-child(n+3), .games-list div:nth-child(n+3) {
+    margin-top: 2rem;
+  }
+  .websites-list div:last-child {
+    margin-bottom: 2rem;
   }
 }
 
@@ -601,12 +622,23 @@ hr {
   .projects-container {
     width: 70%;
   }
+  .skkf {
+    background-size: 40%;
+  }
+  .projects-container .hellyhansen {
+    background-size: 50%;
+  }
+  .leos {
+    background-size: 50%;
+  }
+  .battlerite {
+    background-size: cover;
+  }
 }
 
 /* PERSONAL SECTION */
 
 .personal-section {
-  /* width: 90%; */
   background: #ebebeb;
   margin: 0 auto;
 }
@@ -626,38 +658,6 @@ hr {
 
 .personal-section p {
   color: #333;
-}
-
-.cv {
-  text-align: left;
-  padding: 3rem 0 4rem;
-}
-
-.cv h3 {
-  font-size: 2rem;
-}
-
-.cv h4, .cv p {
-  line-height: 1.5rem;
-}
-
-.cv-columns {
-  display: flex;
-  flex-direction: column;
-}
-
-.cv-single-column {
-  flex: 1;
-}
-
-.cv-block {
-  margin-bottom: 1rem;
-}
-
-@media only screen and (min-width: 520px) {
-  .cv-columns {
-    flex-direction: row;
-  }
 }
 
 .about {
@@ -694,6 +694,9 @@ hr {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  line-height: 0;
+  font-size: 0;
+  color: transparent;
 }
 
 @media only screen and (min-width: 520px) {
@@ -721,19 +724,6 @@ hr {
   }
 }
 
-/* CONTACT*/
-
-.contact {
-  padding: 3rem 0 4rem;
-  background: linear-gradient(171deg, #181a35, #30367b, #181a35);
-}
-
-.contact-container {
-  width: 71%;
-  margin: 0 auto;
-  text-align: center
-}
-
 /* FOOTER */
 
 footer {
@@ -749,17 +739,53 @@ footer {
 /* PAGES */
 
 .page {
-  background: linear-gradient(171deg, #181a35, #30367b, #181a35);
+  /* background: linear-gradient(171deg, #181a35, #30367b, #181a35); */
+  background: rgb(241, 235, 235);
   min-height: 100vh;
 }
 
 .page-container {}
 
 .page-banner {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  background: url("resources/images/Battlerite-Header.jpg");
+}
+
+.scroll-arrow-bar {
+  cursor: pointer;
+  position: absolute;
+  bottom: 2px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+@keyframes scroll-arrow-anim {
+  0% {
+    bottom: -6px;
+  }
+  50% {
+    bottom: 0px;
+  }
+  100% {
+    bottom: -6px;
+  }
+}
+
+.scroll-arrow {
+  fill: rgba(203, 227, 255, .75);
+  margin: 0 auto;
+  display: block;
+  height: 48px;
+  width: 48px;
+  position: relative;
+  animation: scroll-arrow-anim 1s infinite;
+}
+
+.page-banner.hellyhansen {
+  background: #da2127 url("resources/images/hellyhansen.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 30%;
-  background-size: cover;
+  background-position: center;
+  background-size: 30%;
 }
