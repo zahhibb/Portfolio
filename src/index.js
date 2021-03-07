@@ -6,22 +6,24 @@ import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import "./index.css";
 
 import App from "./App";
-import Navigation from "./sections/navigation";
+import Navigation from "./components/Navigation/navigation";
 import SKKF from "./pages/skkf";
 import HH from "./pages/hellyhansen";
 import Leos from "./pages/leoslekland";
 import Battlerite from "./pages/battlerite";
+import Credits from "./pages/credits";
 
 const root = document.getElementById("root");
 const routing = (
   <Router>
-    <Navigation></Navigation>
+    <Navigation />
     <Switch>
       <Route exact path="/" component={App}></Route>
       <Route exact path="/skkf" component={SKKF}></Route>
       <Route exact path="/hellyhansen" component={HH}></Route>
       <Route exact path="/leoslekland" component={Leos}></Route>
       <Route exact path="/battlerite" component={Battlerite}></Route>
+      <Route exact path="/credits" component={Credits}></Route>
     </Switch>
   </Router>
 );

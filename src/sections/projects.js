@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
 
-import { projectRef } from "./navigation.js";
+import { projectRef } from "../components/Navigation/navigation.js";
 
 function ProjectItem({ title, description, url, imgClass }) {
   return (
@@ -58,13 +58,6 @@ class ProjectsSection extends Component {
                   url={"/battlerite"}
                   imgClass={"battlerite"}
                 />
-                {/* <ProjectItem
-                  title={"Battlerite"}
-                  description={"Started out the first 3 months as a intern prototyping and developing game modes for the team-arena-brawler Battlerite, where 2 of game modes where released to the public to positive acclaim. After my internship I got employed during the summer to work further on prototyping game modes and improving their new-player experience, and more."}
-                  url={"/battlerite"}
-                  imgClass={"battlerite"}
-
-                /> */}
               </div>
             </div>
           </div>

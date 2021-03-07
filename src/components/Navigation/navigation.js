@@ -1,8 +1,8 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Burger from "../components/burger";
+import Burger from "../Burger/burger";
 import MobileNav from "./mobile_navigation";
-import "../App.css";
+// import "../App.css";
 
 const scrollTo = (ele) => {
   ele.scrollIntoView({

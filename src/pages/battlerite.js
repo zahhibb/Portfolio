@@ -1,24 +1,22 @@
-import React, { Component } from "react";
-import "../App.css";
+import React from "react";
 import ScrollArrow from "../components/scroll-arrow.js";
+import "../App.css";
 
-class Battlerite extends Component {
-    render() {
-        return (
-            <div className="page">
-                <div className="page-container">
-                    <div className="page-banner battlerite">
-                        <ScrollArrow link={"#battlerite"} />
-                    </div>
-                    <div className="page-content">
-                        <div>
-                            <h2>Hello Battlerite</h2>
-                        </div>
+const Battlerite = () => {
+    return (
+        <div className="page">
+            <div className="page-container">
+                <div className="page-banner battlerite">
+                    <ScrollArrow />
+                </div>
+                <div className="page-content" id="content">
+                    <div>
+                        <h2>Hello Battlerite</h2>
                     </div>
                 </div>
             </div>
-        );
-    }
+        </div>
+    );
 }
 
 export default Battlerite;

@@ -17,6 +17,18 @@ h3 {
   color: #ddd;
 }
 
+a, a:link, a:active {
+  color: #7ac4fd;
+}
+
+a:visited {
+  color: #fbb17c;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 strong {
   color: #fff;
 }
@@ -28,7 +40,7 @@ strong {
 }
 
 .mobile-nav-cover {
-  display: none;
+  /* display: none; */
   position: fixed;
   top: 0;
   left: 0;
@@ -36,7 +48,7 @@ strong {
   height: 100%;
   padding: 0;
   margin: 0;
-  background: rgba(34, 34, 34, 0.95);
+  background: rgba(34, 34, 34, 0.97);
   z-index: 2;
 }
 
@@ -46,7 +58,6 @@ strong {
 
 .mobile-navigation ul {
   height: 100%;
-  margin: 65% 0;
   list-style: none;
 }
 
@@ -67,83 +78,11 @@ strong {
   color: #fff;
 }
 
-.mobile-navigation-button {
-  width: 45px;
-  height: 30px;
-  position: relative;
-  right: 45px;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-}
-
-.mobile-navigation-button span {
-  display: block;
-  position: absolute;
-  height: 6px;
-  width: 100%;
-  background: #ffffff;
-  border-radius: 9px;
-  opacity: 1;
-  left: 0;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
-}
-
-.mobile-navigation-button span:nth-child(1) {
-  top: 0px;
-}
-
-.mobile-navigation-button span:nth-child(2), .mobile-navigation-button span:nth-child(3) {
-  top: 14px;
-}
-
-.mobile-navigation-button span:nth-child(4) {
-  top: 28px;
-}
-
-.mobile-navigation-button.open span:nth-child(1) {
-  top: 14px;
-  width: 0%;
-  left: 50%;
-}
-
-.mobile-navigation-button.open span:nth-child(2) {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.mobile-navigation-button.open span:nth-child(3) {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
-.mobile-navigation-button.open span:nth-child(4) {
-  top: 14px;
-  width: 0%;
-  left: 50%;
-}
-
 @media only screen and (min-width:768px) {
   .mobile-navigation {
     display: none;
   }
-  .mobile-navigation-button {
+  button {
     display: none;
   }
 }
@@ -170,6 +109,14 @@ strong {
 
 .desktop-navigation>ul {
   display: none;
+}
+
+.nav-socials .linkedin a {
+  display: none;
+  padding: .5rem;
+  line-height: 0;
+  font-size: 0;
+  color: transparent;
 }
 
 @media only screen and (min-width: 768px) {
@@ -255,18 +202,13 @@ strong {
     border: 1px solid #5f67be;
   }
   .nav-socials .linkedin a {
-    display: inline-block;
+    display: block;
     background: url('resources/images/linkedin-logo.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 40% 40%;
-    display: block;
     height: 20px;
     width: 20px;
-    padding: .5rem;
-    line-height: 0;
-    font-size: 0;
-    color: transparent;
   }
 }
 
@@ -636,37 +578,17 @@ hr {
   }
 }
 
-/* PERSONAL SECTION */
+/* ABOUT */
 
-.personal-section {
+.about {
+  padding: 3rem 0 4rem;
   background: #ebebeb;
   margin: 0 auto;
 }
 
-.personal-section h2 {
-  color: #000;
-  padding: 1rem 0;
-}
-
-.personal-section h3 {
-  color: #333;
-}
-
-.personal-section h4 {
-  color: #000;
-}
-
-.personal-section p {
-  color: #333;
-}
-
-.about {
-  width: 90%;
-  margin: 0 auto;
-  padding: 3rem 0 4rem;
-}
-
 .about-container {
+  margin: 0 auto;
+  width: 90%;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -682,8 +604,22 @@ hr {
   text-align: left;
 }
 
+.about-container h2 {
+  color: #000;
+  padding: 1rem 0;
+}
+
+.about-container h3 {
+  color: #333;
+}
+
+.about-container h4 {
+  color: #000;
+}
+
 .about-container p {
   font-size: 1.4rem;
+  color: #333;
 }
 
 .personal-photo {
@@ -700,7 +636,7 @@ hr {
 }
 
 @media only screen and (min-width: 520px) {
-  .about {
+  .about-container {
     width: 80%;
   }
 }
@@ -713,10 +649,8 @@ hr {
 }
 
 @media only screen and (min-width: 1024px) {
-  .about {
-    width: 71%;
-  }
   .about-container {
+    width: 71%;
     flex-direction: row;
   }
   .personal-photo {
@@ -734,6 +668,37 @@ footer {
 
 .footer-container {
   text-align: center;
+}
+
+.footer-container p {
+  display: inline-block;
+}
+
+.footer-container p:first-child {
+  padding-right: 0.5rem;
+}
+
+.footer-container p:last-child {
+  padding-left: 0.5rem;
+}
+
+/* CREDITS */
+
+.credits-page {
+  background: #1e1e1e;
+  height: 100vh;
+  position: relative;
+}
+
+.credits-page-container {
+  position: relative;
+  top: 20%;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.credits-page-container div {
+  padding: 1rem 0;
 }
 
 /* PAGES */

@@ -1,10 +1,9 @@
 import React from 'react';
 import "../App.css";
 
-const ScrollArrow = (props) => {
+const ScrollArrow = () => {
     return (
-
-        <a className="scroll-arrow-bar" href={props.link}>
+        <a className="scroll-arrow-bar" href="#content">
             <svg className="scroll-arrow" x="0px" y="0px" viewBox="0 0 490.688 490.688" >
                 <path d="M472.328,120.529L245.213,347.665L18.098,120.529c-4.237-4.093-10.99-3.975-15.083,0.262
 	c-3.992,4.134-3.992,10.687,0,14.82l234.667,234.667c4.165,4.164,10.917,4.164,15.083,0l234.667-234.667

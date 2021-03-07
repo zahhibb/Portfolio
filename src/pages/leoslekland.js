@@ -1,17 +1,23 @@
-import React, { Component } from "react";
+import React from "react";
+import ScrollArrow from "../components/scroll-arrow.js";
 import "../App.css";
 
-class Leos extends Component {
-    render() {
-        return (
-            <div className="page">
-                <div className="page-container">
-                    <div className="page-banner leos"></div>
-                    <div className="page-content"></div>
+const Leos = () => {
+    return (
+        <div className="page">
+            <div className="page-container">
+                <div className="page-banner leos">
+                    <ScrollArrow />
+                </div>
+                <div className="page-content" id="content">
+                    <div>
+                        <h2>Hello Leos Lekland</h2>
+                    </div>
                 </div>
             </div>
-        );
-    }
+        </div>
+    );
 }
+
 
 export default Leos;
