@@ -505,19 +505,26 @@ footer {
 
 .credits-page {
   background: #1e1e1e;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   position: relative;
 }
 
 .credits-page-container {
   position: relative;
-  top: 20%;
+  top: 2rem;
   width: 50%;
   margin: 0 auto;
 }
 
 .credits-page-container div {
   padding: 1rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .credits-page-container {
+    position: relative;
+  }
 }
 
 /* PAGES */

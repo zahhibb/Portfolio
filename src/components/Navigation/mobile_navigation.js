@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink as Link } from "react-router-hash-link";
 import { StyledMobileNav } from '../';
 
 const MobileNavigation = ({ open }) => {
@@ -7,13 +8,13 @@ const MobileNavigation = ({ open }) => {
             <div className="mobile-nav-cover">
                 <ul>
                     <li>
-                        <a href="/#home">HOME</a>
+                        <Link to={"/#home"}>HOME</Link>
                     </li>
                     <li>
-                        <a href="/#projects">PROJECTS</a>
+                        <Link to={"/#projects"}>PROJECTS</Link>
                     </li>
                     <li>
-                        <a href="/#about">ABOUT</a>
+                        <Link to={"/#about"}>ABOUT</Link>
                     </li>
                 </ul>
             </div>

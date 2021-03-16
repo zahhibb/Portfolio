@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import Burger from "../Burger/burger";
 import MobileNav from "./mobile_navigation";
 import { StyledDesktopNav } from '../';
@@ -17,19 +17,13 @@ const Navigation = () => {
         </div>
         <ul>
           <li>
-            <a href="/#home">HOME</a>
+            <Link to={"/#home"}>HOME</Link>
           </li>
           <li>
-            {/* <a href="/#projects">PROJECTS</a> */}
-            <Link
-              to={{
-                pathname: "/",
-                hash: "#projects"
-              }}
-            >PROJECTS</Link>
+            <Link to={"/#projects"}>PROJECTS</Link>
           </li>
           <li>
-            <a href="/#about">ABOUT</a>
+            <Link to={"/#about"}>ABOUT</Link>
           </li>
         </ul>
         <div className="nav-socials">
