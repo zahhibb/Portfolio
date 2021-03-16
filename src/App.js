@@ -1,26 +1,19 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.css";
-import Intro from "./sections/intro";
-import Projects from "./sections/projects";
-import About from "./sections/about";
+import Navigation from "./components/Navigation/navigation";
+import Index from "./pages/index.js";
 import Footer from "./sections/footer";
 
-class App extends Component {
-  render() {
-
-    return (
-      <div className="main">
-        <div className="content">
-          <div className="container">
-            <Intro />
-            <Projects />
-            <About />
-          </div>
-          <Footer />
-        </div>
+const App = () => {
+  return (
+    <div className="main">
+      <Navigation />
+      <div className="content">
+        <Index />
+        <Footer />
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default App;

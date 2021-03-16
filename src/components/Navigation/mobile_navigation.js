@@ -1,10 +1,10 @@
 import React from "react";
-// import "../App.css";
+import { StyledMobileNav } from '../';
 
 const MobileNavigation = ({ open }) => {
     return (
-        <nav className="mobile-navigation">
-            <div className="mobile-nav-cover" open={open}>
+        <StyledMobileNav open={open}>
+            <div className="mobile-nav-cover">
                 <ul>
                     <li>
                         <a href="/#home">HOME</a>
@@ -17,7 +17,7 @@ const MobileNavigation = ({ open }) => {
                     </li>
                 </ul>
             </div>
-        </nav>
+        </StyledMobileNav>
     );
 }
 

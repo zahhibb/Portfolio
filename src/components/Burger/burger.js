@@ -1,6 +1,5 @@
 import React from 'react';
-import { StyledBurger } from './burger.styled';
-// import "../App.css";
+import { StyledBurger } from '../';
 
 const Burger = ({ open, setOpen }) => {
     return (

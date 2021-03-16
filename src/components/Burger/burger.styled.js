@@ -19,12 +19,11 @@ export const StyledBurger = styled.button`
         outline: none;
     }
 
-    @media only screen and (min-width:768px) {
-        
+    @media only screen and (min-width:${({ theme }) => theme.tablet}) {
+        display: none;
     }
 
-  
-  span {
+span {
     display: block;
     position: absolute;
     height: 5px;
@@ -47,8 +46,8 @@ export const StyledBurger = styled.button`
         opacity: ${({ open }) => open ? '0' : '1'};
     }
     
-    :nth-child(2), :nth-child(3) {
-        top: 12px;        
+    :nth-child(2), : nth-child(3) {
+        top: 12px;
     }
     :nth-child(2) {
         transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
@@ -62,5 +61,5 @@ export const StyledBurger = styled.button`
         top: 24px;
         opacity: ${({ open }) => open ? '0' : '1'};
     }
-  }
+}
 `

@@ -33,185 +33,6 @@ strong {
   color: #fff;
 }
 
-/* MOBILE NAVIGATION */
-
-.mobile-navigation {
-  position: absolute;
-}
-
-.mobile-nav-cover {
-  /* display: none; */
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  background: rgba(34, 34, 34, 0.97);
-  z-index: 2;
-}
-
-.mobile-navigation .nav-owner {
-  display: none;
-}
-
-.mobile-navigation ul {
-  height: 100%;
-  list-style: none;
-}
-
-.mobile-navigation ul li {
-  margin: 1rem 0;
-}
-
-.mobile-navigation a {
-  color: rgba(203, 227, 255, .75);
-  text-decoration: none;
-  padding: 1rem 0;
-  display: block;
-  font-size: 1.5rem;
-  letter-spacing: 2px;
-}
-
-.mobile-navigation a:active, .mobile-navigation a:focus {
-  color: #fff;
-}
-
-@media only screen and (min-width:768px) {
-  .mobile-navigation {
-    display: none;
-  }
-  button {
-    display: none;
-  }
-}
-
-/* DESKTOP NAVIGATION */
-
-.desktop-navigation {
-  display: flex;
-  background: rgba(0, 0, 0, .85);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 3;
-  align-items: center;
-  justify-items: center;
-  justify-content: space-between;
-  padding: 0.5rem 2rem;
-}
-
-.desktop-navigation .nav-owner a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.desktop-navigation>ul {
-  display: none;
-}
-
-.nav-socials .linkedin a {
-  display: none;
-  padding: .5rem;
-  line-height: 0;
-  font-size: 0;
-  color: transparent;
-}
-
-@media only screen and (min-width: 768px) {
-  .desktop-navigation {
-    display: flex;
-    background: rgba(0, 0, 0, .85);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-    align-items: center;
-    justify-items: center;
-    justify-content: unset;
-    padding: 0;
-  }
-  .desktop-navigation .nav-owner {
-    flex: 1;
-    text-align: left;
-  }
-  .desktop-navigation .nav-owner a {
-    display: inline-block;
-    color: #fff;
-    margin-left: 2rem;
-    text-decoration: none;
-    transition: color 0.3s;
-    min-width: 135px;
-  }
-  .desktop-navigation .nav-owner a:hover {
-    color: #ddd;
-  }
-  .desktop-navigation .nav-owner a::after {
-    content: '';
-    width: 0px;
-    height: 1px;
-    display: block;
-    background: #ddd;
-    transition: 300ms;
-  }
-  .desktop-navigation .nav-owner a:hover::after {
-    width: 100%;
-  }
-  .desktop-navigation ul {
-    flex: 4;
-    display: inline-block;
-  }
-  .desktop-navigation ul li {
-    display: inline-block;
-  }
-  .desktop-navigation ul li a {
-    font-size: 0.9rem;
-    font-weight: 600;
-    letter-spacing: 2px;
-    color: rgba(203, 227, 255, .75);
-    text-decoration: none;
-    margin: 0 1rem;
-    padding: 1rem 0 0.5rem 0;
-    display: block;
-    transition: color 0.3s;
-    min-width: 50px;
-  }
-  .desktop-navigation ul li a:hover {
-    color: #fff;
-  }
-  .nav-active {
-    color: #fff;
-    border-bottom: 2px solid #fff;
-    text-decoration: none;
-  }
-  .nav-socials {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-  }
-  .nav-socials .linkedin {
-    display: inline-block;
-    margin: 0 1rem 0 0;
-    background: linear-gradient(171deg, #181a35, #30367b, #181a35);
-    border-radius: 100%;
-    border: 1px solid #30367b;
-    transition: border 0.3s;
-  }
-  .nav-socials .linkedin:hover {
-    border: 1px solid #5f67be;
-  }
-  .nav-socials .linkedin a {
-    display: block;
-    background: url('resources/images/linkedin-logo.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 40% 40%;
-    height: 20px;
-    width: 20px;
-  }
-}
-
 /* INTRO */
 
 .intro {
@@ -513,8 +334,6 @@ hr {
   }
 }
 
-@media only screen and (min-width: 520px) {}
-
 @media only screen and (min-width: 768px) {
   .projects-container {
     width: 80%;
@@ -560,7 +379,7 @@ hr {
   }
 }
 
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1440px) {
   .projects-container {
     width: 70%;
   }
@@ -635,7 +454,7 @@ hr {
   color: transparent;
 }
 
-@media only screen and (min-width: 520px) {
+@media only screen and (min-width: 425px) {
   .about-container {
     width: 80%;
   }
@@ -704,7 +523,6 @@ footer {
 /* PAGES */
 
 .page {
-  /* background: linear-gradient(171deg, #181a35, #30367b, #181a35); */
   background: rgb(241, 235, 235);
   min-height: 100vh;
 }
@@ -714,38 +532,6 @@ footer {
 .page-banner {
   width: 100%;
   height: 100vh;
-}
-
-.scroll-arrow-bar {
-  cursor: pointer;
-  position: absolute;
-  bottom: 2px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 30px;
-}
-
-@keyframes scroll-arrow-anim {
-  0% {
-    bottom: -6px;
-  }
-  50% {
-    bottom: 0px;
-  }
-  100% {
-    bottom: -6px;
-  }
-}
-
-.scroll-arrow {
-  fill: rgba(203, 227, 255, .75);
-  margin: 0 auto;
-  display: block;
-  height: 48px;
-  width: 48px;
-  position: relative;
-  animation: scroll-arrow-anim 1s infinite;
 }
 
 .page-banner.hellyhansen {
