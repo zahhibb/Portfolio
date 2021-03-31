@@ -15,6 +15,7 @@ function ProjectItem({ title, description, url, imgClass }) {
 
 const index = () => {
 
+    // Highlight navigation scroll
     const introRef = React.useRef(null)
     const projectsRef = React.useRef(null)
     const aboutRef = React.useRef(null)
@@ -55,13 +56,13 @@ const index = () => {
                         <div>
                             <h3 className="title-frontend">Frontend Developer</h3>
                             <span>|</span>
-                            <h3 className="title-game">Game Developer</h3>
+                            <h3 className="title-game">Technical Designer</h3>
                         </div>
                     </div>
                     <div className="intro-description">
                         <p>Hello!</p>
-                        <p className="paragraph">My name is Joakim and I am a <strong>frontend web developer</strong> and <strong>junior technical game designer</strong>.</p>
-                        <p className="paragraph">Below you will find my portfolio and my various skills in both web- and game development.</p>
+                        <p className="paragraph">My name is Joakim and I am a <strong>frontend web developer</strong> and <strong>technical game designer</strong>.</p>
+                        <p className="paragraph">Below you will find some of the more relevant professional projects I have worked on, as well as some additional information about myself and what makes me tick.</p>
                         <p><i><u>I am currently looking for new exciting job opportunities!</u></i></p>
                         <div className="social-links">
                             <div className="linkedin">
@@ -79,7 +80,7 @@ const index = () => {
             </section>
             <section className="projects" id="projects" ref={projectsRef}>
                 <div className="projects-container">
-                    <h2>Projects</h2>
+                    <h2>Professional Projects</h2>
                     <div className="projects-list">
                         <div className="projects-websites">
                             <h3>Websites</h3>
@@ -110,12 +111,14 @@ const index = () => {
                             <div className="games-list">
                                 <ProjectItem
                                     title={"Battlerite"}
-                                    description={"Internship & Game modes"}
+                                    description={"Prototyping & Game modes"}
                                     url={"/battlerite"}
                                     imgClass={"battlerite"}
                                 />
                             </div>
                         </div>
+                        <hr />
+                        <h3 className="other-projects"><Link to={"/other-projects"}>Other projects &#8594;</Link></h3>
                     </div>
                 </div>
             </section>

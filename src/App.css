@@ -18,11 +18,11 @@ h3 {
 }
 
 a, a:link, a:active {
-  color: #7ac4fd;
+  color: #1f8ce0;
 }
 
 a:visited {
-  color: #fbb17c;
+  color: #e9711b;
 }
 
 a:hover {
@@ -73,7 +73,7 @@ strong {
   color: #7ac4fd;
 }
 
-.intro-heading h1:hover, .intro-heading h3:hover {
+.intro-heading h1:hover, .intro-heading h3:hover, .intro-heading span:hover {
   cursor: default;
 }
 
@@ -159,6 +159,8 @@ strong {
   .intro-heading span {
     display: inline;
     padding: 0 0.5rem;
+    position: relative;
+    top: 2px;
   }
   .intro-description {
     padding-top: 4rem;
@@ -328,6 +330,31 @@ hr {
   background-size: cover;
 }
 
+.other-projects {
+  padding: 0 !important;
+}
+
+.other-projects a:link, .other-projects a:visited, .other-projects a:active {
+  font-family: Calibri light;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+.other-projects a::after {
+  content: '';
+  width: 0px;
+  height: 2px;
+  display: block;
+  background: white;
+  transition: 300ms;
+  margin-top: 6px;
+}
+
+.other-projects a:hover::after {
+  width: 100%;
+}
+
 @media only screen and (min-width: 425px) {
   .project-item-container {
     width: 100%;
@@ -429,7 +456,7 @@ hr {
 }
 
 .about-container h3 {
-  color: #333;
+  color: #000;
 }
 
 .about-container h4 {
@@ -512,7 +539,7 @@ footer {
 
 .credits-page-container {
   position: relative;
-  top: 2rem;
+  top: 4rem;
   width: 50%;
   margin: 0 auto;
 }
@@ -521,20 +548,15 @@ footer {
   padding: 1rem 0;
 }
 
-@media only screen and (min-width: 768px) {
-  .credits-page-container {
-    position: relative;
-  }
-}
-
 /* PAGES */
 
 .page {
-  background: rgb(241, 235, 235);
   min-height: 100vh;
 }
 
-.page-container {}
+.page-container {
+  background: rgb(241, 235, 235);
+}
 
 .page-banner {
   width: 100%;
@@ -546,4 +568,119 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30%;
+}
+
+.page-content {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.page-intro {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.page-intro h2:first-child {
+  margin-bottom: 2rem;
+}
+
+.page-container h1, .page-container h2, .page-container h3, .page-container h4, .page-container p, .page-container span {
+  color: #333;
+}
+
+.page-container h1, .page-container h2, .page-container h3, .page-container h4 {
+  font-family: Calibri light;
+  line-height: 2.4rem;
+}
+
+.page-main {
+  text-align: left;
+}
+
+@media only screen and (min-width: 425px) {}
+
+@media only screen and (min-width: 768px) {
+  .page-content {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {}
+
+.other {
+  height: 100vh;
+  background: linear-gradient(171deg, #181a35, #30367b, #181a35);
+  padding: 6rem 0;
+}
+
+.other h2, .other h3, .other h4, .other p, .other span {
+  color: #ddd;
+}
+
+.other-project-item-container {
+  height: 370px;
+  border: 1px solid #414d96;
+}
+
+.other-project-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* .other-project-item a {
+  display: block;
+  height: 100%;
+  -moz-transition: background 0.3s;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+} */
+
+/* .project-item a:hover {
+  background: rgba(65, 77, 150, .5);
+} */
+
+/* .item-title {
+  color: #fff;
+  font-size: 1.75rem;
+  position: absolute;
+  bottom: 2.7rem;
+  left: 0;
+  padding: 0 0 0 1rem !important;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
+} */
+
+.item-activity {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  padding: 0 0 1rem 1rem !important;
+  letter-spacing: 0.75px;
+  color: #fff;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+.outvaders {}
+
+.canvas {}
+
+.hofding {}
+
+.thief {}
+
+.transmission {}
+
+.konga {}
+
+@media only screen and (min-width: 1024px) {
+  .other-project-item-container {
+    max-width: 60%;
+  }
 }

@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import "../App.css";
+import Navigation from "../components/Navigation/navigation";
 
 class Credits extends Component {
     render() {
         return (
             <div className="credits-page">
+                <Navigation />
                 <div className="credits-page-container">
                     <h1><u>Credits</u></h1>
                     <div><strong>Arrow icon</strong> made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
