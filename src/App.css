@@ -19,6 +19,12 @@ body {
 
 .content h1 {
   font-size: 2rem;
+  transition: text-shadow 250ms ease;
+}
+
+.content h1:hover {
+  text-shadow: rgb(255, 5, 5) -2px 2px 2px;
+  cursor: default;
 }
 
 .content h2 {
@@ -83,7 +89,7 @@ body {
   }
   .content span {
     display: none;
-  }  
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -100,5 +106,5 @@ body {
   .social-button {
     width: 80px;
     height: 60px;
-  }  
+  }
 }
