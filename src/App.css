@@ -13,12 +13,22 @@ body {
   padding-top: 8rem;
 }
 
+.content h2, .content span {
+  display: inline-block;
+}
+
 .content h1 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .content h2 {
-  font-size: ;
+  font-weight: 300;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.content span {
+  padding: 0 8px;
 }
 
 .socials {
@@ -26,29 +36,69 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  width: 300px;
+  width: 200px;
 }
 
 .social-button {
-  width: 80px;
-  height: 80px;
-  border-radius: 100%;
+  width: 60px;
+  height: 60px;
   border: 2px solid white;
 }
 
 .social-button a {
   display: block;
   height: 100%;
+  line-height: 0;
+  font-size: 0;
+  color: transparent;
+  transition: outline-offset 250ms ease;
+  outline: 2px solid white;
 }
 
-.twitter {
-  background: #00ACEE url("./resources/Twitter_Logo_WhiteOnImage.png") no-repeat;
-  background-position: center;
-  background-size: cover;
+.social-button a:focus {
+  outline: 2px solid white;
+  outline-offset: 6px;
+}
+
+.social-button a:hover {
+  outline: 2px solid white;
+  outline-offset: -6px;
 }
 
 .linkedin {
   background: #0b66c2 url("./resources/In-WhiteFixed-48.png") no-repeat;
   background-position: center;
-  background-size: 70%;
+  background-size: 50%;
+}
+
+.twitter {
+  background: #00ACEE url("./resources/Twitter_Logo_WhiteOnImage.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+@media only screen and (max-width: 425px) {
+  .content h2 {
+    display: block;
+  }
+  .content span {
+    display: none;
+  }  
+}
+
+@media only screen and (min-width: 768px) {
+  .content h1 {
+    font-size: 3rem;
+  }
+  .content h2 {
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+  .socials {
+    width: 300px;
+  }
+  .social-button {
+    width: 80px;
+    height: 60px;
+  }  
 }
