@@ -581,6 +581,11 @@ footer {
   margin-bottom: 2rem;
 }
 
+.page-intro h2 {
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
 .page-intro h2:first-child {
   margin-bottom: 2rem;
 }
@@ -598,15 +603,66 @@ footer {
   text-align: left;
 }
 
+.page-main p {
+  padding-bottom: 1rem;
+  font-weight: 300;
+}
+
+.main-intro {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-intro div {
+  flex: 1;
+}
+
+.info {
+  background: rgb(214, 187, 156);
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+}
+
+.info p {
+  font-weight: 400;
+}
+
+.info-i {
+  border: 1px solid black;
+  border-radius: 100%;
+  padding: 0 0.52rem;
+  margin-right: 0.5rem;
+  background: yellow;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  cursor: default;
+  user-select: none;
+}
+
 @media only screen and (min-width: 425px) {}
 
 @media only screen and (min-width: 768px) {
+  .page-intro h2 {
+    font-weight: 400;
+    font-size: 1.5em;
+  }
   .page-content {
     width: 60%;
   }
 }
 
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+  .main-intro {
+    flex-direction: row;
+  }
+  .main-intro div:first-child {
+    margin-right: 3rem;
+  }
+  .info {
+    width: 700px;
+  }
+}
 
 .other {
   height: 100vh;

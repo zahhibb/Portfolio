@@ -28,7 +28,7 @@ span {
     position: absolute;
     height: 5px;
     width: 100%;
-    background: #ffffff;
+    background: ${({ theme }) => theme.lightText};
     border-radius: 9px;
     opacity: 1;
     left: 0;
