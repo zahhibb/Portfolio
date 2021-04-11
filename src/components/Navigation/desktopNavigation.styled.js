@@ -80,8 +80,8 @@ export const StyledDesktopNav = styled.nav`
         letter-spacing: 2px;
         color: ${({ theme }) => theme.navText};
         text-decoration: none;
-        margin: 0 1rem;
-        padding: 1rem 0 0.5rem 0;
+        margin: 1rem 1rem 0;
+        padding-bottom: 0.5rem;
         display: block;
         transition: color 0.3s;
         min-width: 50px;

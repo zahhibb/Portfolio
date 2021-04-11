@@ -40,7 +40,9 @@ const Battlerite = () => {
                             <p>A distinct configuration that varies gameplay and affects how other game mechanics behave. A game with several modes will present different settings in each one, changing how a particular element of the game is played.
                             </p>
                         </div>
-                        <h3>Creating a Game Mode</h3>
+                        <div className="main-content">
+                            <h3>Creating a Game Mode</h3>
+                        </div>
                     </div>
                 </div>
             </div>

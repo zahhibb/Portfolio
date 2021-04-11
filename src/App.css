@@ -590,7 +590,7 @@ footer {
   margin-bottom: 2rem;
 }
 
-.page-container h1, .page-container h2, .page-container h3, .page-container h4, .page-container p, .page-container span {
+.page-container h1, .page-container h2, .page-container h4, .page-container p, .page-container span {
   color: #333;
 }
 
@@ -606,6 +606,13 @@ footer {
 .page-main p {
   padding-bottom: 1rem;
   font-weight: 300;
+  font-size: 1.1em;
+}
+
+.page-main h3 {
+  margin: 2rem 0;
+  font-size: 1.3em;
+  color: #000;
 }
 
 .main-intro {
@@ -626,6 +633,7 @@ footer {
 
 .info p {
   font-weight: 400;
+  font-size: 1em;
 }
 
 .info-i {
@@ -638,6 +646,38 @@ footer {
   font-weight: bold;
   cursor: default;
   user-select: none;
+}
+
+.gameDevResource .page-container {
+  height: 100vh;
+}
+
+.gameDevResource .page-content {
+  padding-top: 3rem;
+}
+
+.gameDevResource h1, .gameDevResource h2, .gameDevResource h3 {
+  color: #000;
+}
+
+.gameDevResource span, .gameDevResource p {
+  color: #333;
+}
+
+.gameDevResource .content-header p {
+  margin-top: 1rem;
+}
+
+.gameDevResource .content-wrapper {
+  margin: 3rem auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+.gameDevResource .content-item {
+  border: 1px solid black;
 }
 
 @media only screen and (min-width: 425px) {}

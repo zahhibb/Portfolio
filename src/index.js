@@ -14,6 +14,7 @@ import Leos from "./pages/leoslekland";
 import Battlerite from "./pages/battlerite";
 import OtherProjects from "./pages/other-projects";
 import Credits from "./pages/credits";
+import GameDevResources from "./pages/gamedevresources";
 
 const root = document.getElementById("root");
 const routing = (
@@ -27,6 +28,7 @@ const routing = (
         <Route exact path="/battlerite" component={Battlerite}></Route>
         <Route exact path="/other-projects" component={OtherProjects}></Route>
         <Route exact path="/credits" component={Credits}></Route>
+        <Route exact path="/gamedevresources" component={GameDevResources}></Route>
       </Switch>
     </ThemeProvider>
   </Router>
