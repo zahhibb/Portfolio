@@ -10,7 +10,7 @@ body {
 
 .content {
   color: #fff;
-  padding-top: 8rem;
+  padding-top: 5rem;
 }
 
 .content h2, .content span {
@@ -83,16 +83,123 @@ body {
   background-size: contain;
 }
 
+.battlerite {
+  background: url("./resources/Battlerite-Header.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.skkf {
+  background: #064018 url("./resources/skkf.png") no-repeat;
+  background-position: center;
+  background-size: 70%;
+}
+
+.hh {
+  background: #da2127 url("./resources/hellyhansen.jpg") no-repeat;
+  background-position: center;
+  background-size: 90%;
+}
+
+.leos {
+  background: #abc url("./resources/leos.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.suzuki {
+  background: #fff url("./resources/1280px-Suzuki_logo_2.svg.png") no-repeat;
+  background-position: center;
+  background-size: 80%;
+}
+
+.projects {
+  margin: 8rem auto;
+  /* width: 60%; */
+}
+
+.projects-container {
+  padding-top: 2rem;
+}
+
+.projects-container>div {
+  margin: 0 auto;
+}
+
+.projects-container div h4 {
+  margin-bottom: 1rem;
+}
+
+.project-item {
+  display: inline-block;
+  border: 2px solid white;
+  width: 180px;
+  height: 180px;
+  position: relative;
+  overflow: hidden;
+  transition: outline-offset 250ms ease;
+  outline: 2px solid white;
+  outline-offset: -2px;
+  margin: 0.6rem 0;
+}
+
+.project-item:focus {
+  outline: 2px solid white;
+  outline-offset: 4px;
+}
+
+.project-item:link, .project-item:visited, .project-item:active {
+  text-decoration: none;
+  color: white;
+}
+
+.project-item-desc {
+  position: absolute;
+  top: -50px;
+  width: 100%;
+  background: #000;
+  padding: 5px 0;
+  transition: top 250ms ease-in-out;
+}
+
+.project-item:hover .project-item-desc, .project-item:focus .project-item-desc {
+  top: 0px;
+}
+
+.project-item span:first-child {
+  font-size: 1.3em;
+  padding-right: 5px;
+}
+
+.project-item span:last-child {
+  padding: 0;
+}
+
+@media only screen and (min-width: 320px) {
+  .projects {
+    width: 80%;
+  }
+  .project-item {
+    margin: 0.3rem;
+  }
+  .project-item-desc span {
+    display: inline;
+  }
+}
+
 @media only screen and (max-width: 425px) {
   .content h2 {
     display: block;
   }
-  .content span {
+  .content > span {
     display: none;
   }
 }
 
 @media only screen and (min-width: 768px) {
+  .content {
+    padding-top: 8rem;
+  }
   .content h1 {
     font-size: 3rem;
   }
@@ -106,5 +213,11 @@ body {
   .social-button {
     width: 80px;
     height: 60px;
+  }
+  .projects {
+    width: 60%;
+  }
+  .project-item {
+    margin: 0.6rem;
   }
 }

@@ -1,6 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
 
+function ProjectItem({ title, paragraph, imgClass, url }) {
+  return (
+    <a href={url} className={"project-item " + imgClass}>
+      < div className="project-item-desc">
+        <span>{title}</span>
+        <span>{paragraph}</span>
+      </div>
+    </a>
+  );
+}
+
 function SocialButton({ link, imgClass, anchorContent }) {
   return (
     <div className={"social-button " + imgClass}>
@@ -19,6 +30,18 @@ class App extends Component {
           <div className="socials">
             <SocialButton link={"https://www.linkedin.com/in/joakim-hedman/"} imgClass={"linkedin"} anchorContent={"LinkedIn"} />
             <SocialButton link={"https://twitter.com/Zahhibb"} imgClass={"twitter"} anchorContent={"Twitter"} />
+          </div>
+          <div className="projects">
+            <h3>Projects I have worked on, and clients I have worked with:</h3>
+            <div className="projects-container">
+              <div>
+                <ProjectItem title={"Battlerite"} paragraph={"(Game)"} imgClass={"battlerite"} url={"https://arena.battlerite.com/"} />
+                <ProjectItem title={"Helly Hansen"} paragraph={""} imgClass={"hh"} url={"https://www.hellyhansen.com/"} />
+                <ProjectItem title={"Suzuki"} paragraph={""} imgClass={"suzuki"} url={"http://www.suzuki.se/"} />
+                <ProjectItem title={"Leos Lekland"} paragraph={""} imgClass={"leos"} url={"https://www.leoslekland.se/"} />
+                <ProjectItem title={"SKKF"} paragraph={""} imgClass={"skkf"} url={"https://skkf.se/"} />
+              </div>
+            </div>
           </div>
         </div>
       </div>
