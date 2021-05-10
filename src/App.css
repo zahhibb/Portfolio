@@ -648,8 +648,8 @@ footer {
   user-select: none;
 }
 
-.gameDevResource .page-container {
-  height: 100vh;
+.gameDevResource, .gameDevResource .page-container {
+  background: #1e1e1e;
 }
 
 .gameDevResource .page-content {
@@ -657,11 +657,25 @@ footer {
 }
 
 .gameDevResource h1, .gameDevResource h2, .gameDevResource h3 {
-  color: #000;
+  color: #fff;
+}
+
+.gameDevResource h1 {
+  font-size: 1.6em;
+}
+
+.gameDevResource h2 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.gameDevResource h3 {
+  font-size: 1em;
 }
 
 .gameDevResource span, .gameDevResource p {
-  color: #333;
+  color: #ddd;
+  font-size: 0.9em;
 }
 
 .gameDevResource .content-header p {
@@ -671,24 +685,100 @@ footer {
 .gameDevResource .content-wrapper {
   margin: 3rem auto 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   column-gap: 2rem;
   row-gap: 2rem;
 }
 
-.gameDevResource .content-item {
-  border: 1px solid black;
+.resource-item {
+  padding: 0.5rem 1rem;
+  border: 2px solid #555;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  transition: border 250ms ease-in-out;
+  position: relative;
 }
 
-@media only screen and (min-width: 425px) {}
+.resource-item:hover {
+  border: 2px solid white;
+}
+
+.resource-item p:nth-child(3) {
+  border-bottom: 1px solid white;
+  padding-bottom: 0.3rem;
+}
+
+.resource-item p:nth-child(4) {
+  padding-top: 0.5rem;
+}
+
+.resource-item-cat {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom-right-radius: 100%;
+}
+
+.button-categories {
+  display: flex;
+  margin: 0 auto;
+}
+
+.button-categories button {
+  font-size: 0.8em;
+  flex: 1;
+  padding: 0.3rem;
+  margin: 2rem .3rem 0;
+  border: 2px solid black;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: border 0.2s ease-in-out;
+}
+
+.button-categories button:hover {
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.All {
+  background: #fff;
+}
+
+.Design {
+  background: #fffd70;
+}
+
+.Social {
+  background: #ff7070;
+}
+
+.UX {
+  background: #70bfff;
+}
+
+@media only screen and (min-width: 425px) {
+  .resource-item {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+}
 
 @media only screen and (min-width: 768px) {
   .page-intro h2 {
     font-weight: 400;
     font-size: 1.5em;
   }
-  .page-content {
-    width: 60%;
+  .gameDevResource .content-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .resource-item {
+    width: auto;
+  }
+  .button-categories {
+    width: 500px;
   }
 }
 
@@ -701,6 +791,18 @@ footer {
   }
   .info {
     width: 700px;
+  }
+  .gameDevResource .content-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .gameDevResource .page-content {
+    width: 70%;
+  }
+  .gameDevResource .content-wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 

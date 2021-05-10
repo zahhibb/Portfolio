@@ -1,53 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react';
+import Items from "../components/GameDevResources/ResourceItems";
+import Button from "../components/GameDevResources/Button";
+import Menu from "../components/GameDevResources/Menu";
+
+const allCategories = ['All', ...new Set(Items.map(item => item.category))]
 
 const GameDevResources = () => {
+    const [menuItem, setMenuItem] = useState(Items);
+    const [buttons, setButtons] = useState(allCategories);
+
+    const filter = (button) => {
+        if (button === 'All') {
+            setMenuItem(Items);
+            return;
+        }
+        const filteredData = Items.filter(item => item.category === button);
+        setMenuItem(filteredData)
+    }
+
     return (
         <div className="page gameDevResource">
             <div className="page-container">
                 <div className="page-content">
                     <div className="content-header">
-                        <h2>Game Dev. Resources</h2>
-                        <p>Here you'll find some lingo and terminology used in game development, as well some game design principles.</p>
+                        <h1>Game Dev. Resources</h1>
+                        <h2>[ Terminology, principles, and jargon used in game development and user experience ]</h2>
                     </div>
-                    <div className="content-wrapper">
-                        <div className="content-item">
-                            <h3>3C's of game design</h3>
-                            <p><b>Character, Controls, Camera</b></p>
-                            <p></p>
-                        </div>
-                        <div className="content-item">
-                            <h3>Skill floor</h3>
-                            <p></p>
-                        </div>
-                        <div className="content-item">
-                            <h3>Skill ceiling</h3>
-                            <p></p>
-                        </div>
-                        <div className="content-item">
-                            <h3>Skill gap</h3>
-                            <p></p>
-                        </div>
-                        <div className="content-item">
-                            <h3>Sunk cost fallacy</h3>
-                            <p></p>
-                        </div>
-                        <div className="content-item">
-                            <h3>Feature creep</h3>
-                            <p></p>
-                        </div>
-                        <div className="content-item">
-                            <h3>Ludonarrative Dissonance</h3>
-                            <p></p>
-                        </div>
-                        <div className="content-item">
-                            <h3>Bullshot</h3>
-                            <p></p>
-                        </div>
-                        <div className="content-item">
-                            <h3>The Bechdel test</h3>
-                            <p></p>
-                        </div>
-                    </div>
+                    <Button button={buttons} filter={filter} />
+                    <Menu menuItem={menuItem} />
                 </div>
             </div>
         </div>
