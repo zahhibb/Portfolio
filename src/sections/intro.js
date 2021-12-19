@@ -8,16 +8,13 @@ const Intro = () => {
         <div className="intro-heading">
           <h1>Joakim Hedman</h1>
           <div>
-            <h3 className="title-frontend">Frontend Developer</h3>
-            <span>|</span>
-            <h3 className="title-game">Technical Designer</h3>
+            <h3 className="title-game">Game & UX Designer</h3>
           </div>
         </div>
         <div className="intro-description">
-          <p>Hello!</p>
-          <p className="paragraph">My name is Joakim and I am a <strong>frontend web developer</strong> and <strong>technical game designer</strong>.</p>
-          <p className="paragraph">Below you will find my portfolio and my various skills in both web- and game development.</p>
-          <p><i><u>I am currently looking for new exciting job opportunities!</u></i></p>
+          <p>Hi there!</p>
+          <p className="paragraph">My name is Joakim and I am a <strong>Game and UX designer</strong>.</p>
+          <p className="paragraph">Below you will find some of my highlighted projects, both in Game- and Web development, professional and personal.</p>
           <div className="social-links">
             <div className="linkedin">
               <a href="https://www.linkedin.com/in/joakim-hedman/" target="_blank" rel="noopener noreferrer" title="LinkedIn">LinkedIn</a>
