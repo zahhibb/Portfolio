@@ -16,20 +16,20 @@ const Navigation = () => {
           <Link to={"/"}>Joakim Hedman</Link>
         </div>
         <ul>
-          <li>
+          {/* <li>
             <Link to={"/#home"}>HOME</Link>
+          </li> */}
+          <li>
+            <Link to={"/#home"}>PORTFOLIO</Link>
           </li>
           <li>
-            <Link to={"/#projects"}>PROJECTS</Link>
-          </li>
-          <li>
-            <Link to={"/#about"}>ABOUT</Link>
+            <Link to={"/about"}>ABOUT</Link>
           </li>
         </ul>
         <div className="nav-socials">
-          <span className="linkedin">
+          {/* <span className="linkedin">
             <a href="https://www.linkedin.com/in/joakim-hedman/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          </span>
+          </span> */}
         </div>
         <Burger open={open} setOpen={setOpen} />
       </StyledDesktopNav>

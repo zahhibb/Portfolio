@@ -1,7 +1,23 @@
 import React, { useEffect } from "react";
 import Navigation from "../components/Navigation/navigation";
+import Footer from "../sections/footer";
 import ScrollArrow from "../components/ScrollArrow/scroll_arrow.js";
+import { Link } from "react-router-dom";
 import "../App.css";
+
+import { projectQuickLinks } from "./index";
+
+function StatusItem({ title, content }) {
+    let contentList = content.map((item, key) =>
+        <h3 key={key}>{item}</h3>
+    );
+    return (
+        <div className='status-item'>
+            <h3>{title}</h3>
+            {contentList}
+        </div>
+    );
+}
 
 const Battlerite = () => {
 
@@ -17,35 +33,82 @@ const Battlerite = () => {
                     <ScrollArrow />
                 </div>
                 <div className="page-content" id="content">
-                    <div className="page-intro">
-                        <h2><a href="https://arena.battlerite.com/" rel="noopener noreferrer">Battlerite</a> is a action-packed <i>'Team Arena Brawler'</i> focused on competitive PvP combat where you fight side by side with teammates against an opposing team. I began my short but rich journey at <a href="https://www.stunlock.com/" rel="noopener noreferrer">Stunlock Studios</a>, the team behind its success, in January of 2017 and ended in August the same year.</h2>
+                    <section className="page-intro">
+                        <div className="page-intro-wrapper">
+                            <div className='status-panel'>
+                                <StatusItem title={"Team Size"} content={["4 interns"]} />
+                                <StatusItem title={"Role"} content={["Gameplay Programmer", "Technical Designer"]} />
+                                <StatusItem title={"Duration"} content={["8 months"]} />
+                            </div>
+                            <div className='definitions'>
+                                <div>
+                                    <h2>Summary</h2>
+                                    <p>
+                                        Battlerite (Arena) is an Fantasy Top-down Team Arena Brawler with focus on fast-paced action without any random elements. Two teams of 2 or 3 players fight against each other using their specialized champions with varied abilities.
+                                    </p>
+                                    <br />
+                                    <p>Three game modes was developed for the game in 8 months during my internship (in addition with some contract work over the summer).</p>
+                                </div>
+                                <div>
+                                    <h2>My contributions</h2>
+                                    <p>
+                                        I joined the studio with my specialization being in programming. The majority of my time was spent <b>prototyping and developing new game modes</b>,
+                                        but I also had the pleasure to work on multiple things like <b>Encounter design</b> for the updated tutorial and campaign mode, as well some minor <b>Level-</b>, and <b>Character design</b>.
+                                    </p>
+                                    <br />
+                                    <p>
+                                        Additionally I got to work on <b>UI wireframing and mockups</b> for the then upcoming UI overhaul (which you can read more about on Stunlock's at the time UI/UX designer Katey Parr's <a target="_blank" href="http://kateyparr.com/project/battlerite-menu">breakdown</a>).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section className="page-media">
+                        <div className="page-media-wrapper">
+                            <div className="video-wrapper">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/KU6Ra-P746k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div className="image-grid">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </section>
+                    <section className="bakko-egg-brawl">
+                        <div className="content">
+                            <h2>Bakko's Egg Brawl</h2>
+                            <p>asd</p>
+                        </div>
+                        <div className="image"></div>
+                    </section>
+                    <section className="rocket-balloon">
+                        <div className="image"></div>
+                        <div className="content">
+                            <h2>Rocket Balloon</h2>
+                            <p>asd</p>
+                        </div>
+                    </section>
+                    <section className="battlegrounds">
+                        <div className="content">
+                            <h2>Battlegrounds</h2>
+                            <p>asd</p>
+                        </div>
+                        <div className="image"></div>
+                    </section>
+                </div>
 
-                        <h2>Here I am going to cover my experience working at my first ever game development studio as a Technical Designer and talk about some of the work I did, such as system, gameplay, character, and level design, as well a LOT of iteration on prototyping game mode ideas.</h2>
-                    </div>
-                    <div className="page-main">
-                        <div className="main-intro">
-                            <div>
-                                <p>My time at the studio began through an internship at the end of my 2nd year of a game development vocational school, my focus primarily being on programming.</p>
-                                <p>Together with 3 others from my school, 2 designers and 1 programmer (including me), were taken in as a sort of think-tank or R&D department to prototype and work out new interesting gameplay modes and functionalities to be included in <i>Battlerite</i>.</p>
-                            </div>
-                            <div>
-                                <p>While at the beginning all of us interns had to spend time to learn the studios own proprietary tools and workflows, but we later got our feet wet with prototyping small basic ideas that further down turned into fully established game modes.</p>
-                                <p><b><i>I'm going to be fairly non-technical during this report.</i></b></p>
-                            </div>
-                        </div>
-                        <div className="info">
-                            <span>
-                                <span className="info-i">i</span><b><i>Game Mode</i></b>
-                            </span>
-                            <p>A distinct configuration that varies gameplay and affects how other game mechanics behave. A game with several modes will present different settings in each one, changing how a particular element of the game is played.
-                            </p>
-                        </div>
-                        <div className="main-content">
-                            <h3>Creating a Game Mode</h3>
-                        </div>
+                <div className="quick-links">
+                    <div className="quick-link-container">
+                        <Link to={projectQuickLinks[1].link}></Link>
+                        <span className="quick-link-text">Next Project</span>
+                        <span className="quick-link-title">{projectQuickLinks[1].name}</span>
+                        <span className="quick-link-image"></span>
                     </div>
                 </div>
             </div>
+            <Footer />
         </div >
     );
 }

@@ -15,6 +15,7 @@ const Intro = () => {
           <p>Hi there!</p>
           <p className="paragraph">My name is Joakim and I am a <strong>Game and UX designer</strong>.</p>
           <p className="paragraph">Below you will find some of my highlighted projects, both in Game- and Web development, professional and personal.</p>
+          <p>Even further down you'll also find all my other projects, both from Game- and Web development</p>
           <div className="social-links">
             <div className="linkedin">
               <a href="https://www.linkedin.com/in/joakim-hedman/" target="_blank" rel="noopener noreferrer" title="LinkedIn">LinkedIn</a>

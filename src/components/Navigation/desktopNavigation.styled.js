@@ -69,10 +69,18 @@ export const StyledDesktopNav = styled.nav`
     }
     ul {
         flex: 4;
-        display: inline-block;
+        display: flex;
+        list-style: none;
     }
     ul li {
+        flex: 1;
         display: inline-block;
+    }
+    ul li:first-child{
+        text-align: right;
+    }
+    ul li:last-child {
+        text-align: left;
     }
     ul li a {
         font-size: 0.9rem;
@@ -80,8 +88,7 @@ export const StyledDesktopNav = styled.nav`
         letter-spacing: 2px;
         color: ${({ theme }) => theme.navText};
         text-decoration: none;
-        margin: 1rem 1rem 0;
-        padding-bottom: 0.5rem;
+        margin: 1rem 1rem 0.5rem;
         display: block;
         transition: color 0.3s;
         min-width: 50px;
