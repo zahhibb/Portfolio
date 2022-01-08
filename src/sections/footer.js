@@ -7,7 +7,10 @@ class Footer extends Component {
     return (
       <footer>
         <div className="footer-container">
-          <p>&#169; Copyright 2021 Joakim Hedman</p>
+          <div className="copyright">
+            <span>&#169; {(new Date().getFullYear())}</span>
+            <span>Joakim Hedman</span>
+          </div>
           <span>|</span>
           <p><Link to={"/credits"}>Credits</Link></p>
         </div>

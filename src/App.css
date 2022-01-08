@@ -105,7 +105,7 @@ strong {
 
 .social-links div {
   display: inline-block;
-  margin: 0 1rem 0 0;
+  margin: 1rem;
   background: linear-gradient(171deg, #181a35, #30367b, #181a35);
   border-radius: 100%;
   border: 1px solid #30367b;
@@ -178,6 +178,9 @@ strong {
     padding-top: 4rem;
     text-align: left;
     font-size: 1.25rem;
+  }
+  .social-links div {
+    margin-right: 1rem;
   }
 }
 
@@ -294,17 +297,16 @@ strong {
 
 .other-projects-list {
   display: flex;
-  flex-direction: row;
-}
-
-.other-projects-list div:not(:first-child) {
-  margin-left: 2rem;
+  flex-direction: column;
 }
 
 .other-project-item-container {
-  flex: 25%;
-  max-width: 25%;
   height: 180px;
+  margin-bottom: 1rem;
+}
+
+.other-project-item-container .tag {
+  font-size: 1rem;
 }
 
 .other-project-item {
@@ -351,14 +353,14 @@ hr {
   background-size: 70%;
 }
 
-.battlerite {
+.page-container.battlerite .page-banner, .projects-container .battlerite {
   background: url("resources/images/Battlerite-Header.jpg");
   background-repeat: no-repeat;
   background-position: 50% 30%;
   background-size: cover;
 }
 
-.akined {
+.page-container.akined .page-banner {
   background: #1d1223 url("resources/images/Akined_poster.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -391,11 +393,41 @@ hr {
   .project-item-container {
     width: 100%;
   }
+  .other-projects-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .other-projects-list div:not(:nth-child(2n+1)) {
+    margin-left: 1rem;
+  }
+  
+  .other-project-item-container {
+    flex: 50%;
+    max-width: 47%;
+    height: 180px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .projects-container {
     width: 80%;
+  }
+  .other-projects-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  
+  .other-projects-list div:not(:first-child) {
+    margin-left: 1rem;
+  }
+  
+  .other-project-item-container {
+    flex: 25%;
+    max-width: 25%;
+    height: 180px;
   }
 }
 
@@ -403,43 +435,23 @@ hr {
   .project-item-container {
     max-width: 60%;
   }
-  .websites-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .websites-list>div {
-    margin-bottom: 0;
-  }
   .games-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
   .games-list>div {
-    margin-bottom: 0;
+    margin-bottom: 2rem;
   }
-  .games-list div:nth-child(2n+1), .websites-list div:nth-child(2n+1) {
+  .games-list div:nth-child(2n+1) {
     flex: 70% 1;
   }
-  .games-list div:nth-child(2n+2), .websites-list div:nth-child(2n+2) {
+  .games-list div:nth-child(2n+2) {
     flex: 30% 1;
     margin-left: 2rem;
   }
-  .websites-list div:nth-child(3n), .games-list div:nth-child(3n) {
-    flex: 30% 1;
-  }
-  .websites-list div:nth-child(4n), .games-list div:nth-child(4n) {
-    flex: 70% 1;
-  }
-  .websites-list div:nth-child(n+3), .games-list div:nth-child(n+3) {
-    margin-top: 2rem;
-  }
-  .websites-list div:last-child {
-    margin-bottom: 2rem;
-  }
-  .other-project-item-container{
-
+  .other-projects-list div:not(:first-child) {
+    margin-left: 2rem;
   }
 }
 
@@ -456,7 +468,7 @@ hr {
   .leos {
     background-size: 50%;
   }
-  .battlerite {
+  .page-container.battlerite .page-banner {
     background-size: cover;
   }
 }
@@ -476,6 +488,10 @@ hr {
   margin: 0 auto;
 }
 
+.about-heading {
+  margin-bottom: 4rem;
+}
+
 .about-heading h1 {
   font-family: Alegreya-regular;
   color: #fff;
@@ -493,10 +509,6 @@ hr {
   display: inline-block;
   font-weight: 400;
   transition: color 0.3s;
-}
-
-.about-heading .title-frontend:hover {
-  color: #fbb17c;
 }
 
 .about-heading .title-game:hover {
@@ -519,11 +531,7 @@ hr {
 
 .about-me {
   flex: 1;
-  margin: 4rem 0;
-}
-
-.about-me h1 {
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
 }
 
 .who-am-i, .as-a-developer {
@@ -534,14 +542,6 @@ hr {
   font-size: 1.5rem;
   color: #fff;
   font-weight: 200;
-}
-
-.who-am-i {
-
-}
-
-.as-a-developer {
-  
 }
 
 .resume {
@@ -595,15 +595,21 @@ footer {
   text-align: center;
 }
 
-.footer-container p {
+.footer-container .copyright {
   display: inline-block;
-}
-
-.footer-container p:first-child {
   padding-right: 0.5rem;
 }
 
-.footer-container p:last-child {
+.footer-container .copyright span:last-child {
+  padding-left: 0.5rem;
+}
+
+.footer-container span {
+  display: inline-block;
+}
+
+.footer-container p {
+  display: inline-block;
   padding-left: 0.5rem;
 }
 
@@ -611,16 +617,16 @@ footer {
 
 .credits-page {
   background: #1e1e1e;
+  display: block;
   height: 100%;
   min-height: 100vh;
   position: relative;
 }
 
 .credits-page-container {
-  position: relative;
-  top: 4rem;
   width: 50%;
   margin: 0 auto;
+  padding-top: 4rem;
 }
 
 .credits-page-container div {
@@ -637,7 +643,7 @@ footer {
   background: #1e1e1e;
 }
 
-.page-container h1, .page-container h2, .page-container h3, .page-container h4 {
+.page-container h2, .page-container h3, .page-container h4 {
   font-family: Calibri light;
   line-height: 2.4rem;
 }
@@ -719,6 +725,51 @@ footer {
    font-weight: 300;
 }
 
+.page-container.battlerite .files div:last-child div {
+  
+}
+
+.files {
+  width: 75%;
+  margin: 0 auto 4rem;
+  text-align: center;
+  display: flex;
+  align-items: end;
+}
+
+.files h3 {
+  color: #fff;
+}
+
+.files div {
+  flex: 1 75%;
+  max-width: 75%;
+}
+
+.files div div {}
+
+.files a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 1rem 0;
+  text-decoration: none;
+  border: 2px solid #333;
+  border-radius: 12px;
+  background: #222;
+  transition: color 0.3s, background 0.3s, border-color 0.3s;
+  -webkit-transition: color 0.3s, background 0.3s, border-color 0.3s;
+}
+
+.files a:hover {
+  color: #fff;
+  background: #000;
+  border: 2px solid #1e1e1e;
+  border-radius: 12px;
+  transition: color 0.3s, background 0.3s;
+  -webkit-transition: color 0.3s, background 0.3s;
+}
+
 .definitions {
   text-align: center;
   display: flex;
@@ -761,6 +812,10 @@ footer {
   margin-bottom: 4rem;
 }
 
+.video-wrapper:last-child {
+  margin: 2rem 0 0 0;
+}
+
 .video-wrapper iframe {
   position: absolute;
   top: 0;
@@ -778,10 +833,25 @@ footer {
   gap: 2rem;
 }
 
-.image-grid div {
-  background: #888;
+.image-grid img {
+  /* background: #888; */
   flex: 40% 1;
   max-width: 50%;
+  /* background-position: center !important;
+  background-size: cover !important; */
+}
+
+.page-container.battlerite .image-grid div:first-child {
+  background: url("./resources/images/battlerite_01.jpeg");
+}
+.page-container.battlerite .image-grid div:nth-child(2) {
+  background: url("./resources/images/battlerite_02.jpg");
+}
+.page-container.battlerite .image-grid div:nth-child(3) {
+  background: url("./resources/images/battlerite_03.jpg");
+}
+.page-container.battlerite .image-grid div:last-child {
+  background: url("./resources/images/battlerite_05.jpg");
 }
 
 .info {
@@ -812,8 +882,10 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #1e1e1e;
   padding: 1rem 0;
+  background: #222;
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
 }
 
 .quick-link-container {
@@ -915,16 +987,24 @@ footer {
 }
 
 .bakko-egg-brawl, .rocket-balloon, .battlegrounds {
-  width: 70%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  margin-top: 8rem;
+  padding: 4rem 0;
 }
 
-.bakko-egg-brawl .content, .rocket-balloon .content, .battlegrounds .content {
-  flex: 1;
+.rocket-balloon {
+  background: #111;
+}
+
+.content-section-wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.content-section-wrapper .content {
   text-align: left;
+}
+
+.content-section-wrapper .content h2 {
+  margin-bottom: 1rem;
 }
 
 .bakko-egg-brawl .content, .battlegrounds .content {
@@ -936,26 +1016,41 @@ footer {
 }
 
 .bakko-egg-brawl p, .rocket-balloon p, .battlegrounds p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
-.bakko-egg-brawl .image, .rocket-balloon .image, .battlegrounds .image {
-  flex: 1;
+.bakko-egg-brawl .content-image.-first {
+  background: #333 url();
+}
+
+.rocket-balloon .content-image.-first {
+  background: #333 url();
+}
+
+.battlegrounds .content-image.-first {
+  background: #333 url();
+}
+
+.bakko-egg-brawl .content-image.-second {
+  background: #333 url();
+  float: left;
+  margin: 1rem 1rem 1rem 0;
+}
+
+.bakko-egg-brawl .content-image.-first {
+  margin: 0 0 1rem 1rem;
+}
+
+.bakko-egg-brawl .content-image, .rocket-balloon .content-image, .battlegrounds .content-image {
   min-height: 280px;
+  max-height: 320px;
+  height: 100%;
+  min-width: 420px;
+  max-width: 560px;
+  width: 100%;
+  float: right;
 }
 
-
-.bakko-egg-brawl .image {
-  background: #333 url();
-}
-
-.rocket-balloon .image {
-  background: #333 url();
-}
-
-.battlegrounds .image {
-  background: #333 url();
-}
 
 .gameDevResource .page-container {
   height: 100vh;

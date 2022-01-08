@@ -49,10 +49,11 @@ function ProjectItem({ title, description, url, imgClass, tag }) {
     );
 }
 
-function OtherProjectItem({ title, url, imgClass }) {
+function OtherProjectItem({ title, url, imgClass, tag }) {
     return (
         <div className="other-project-item-container">
             <div className={"other-project-item " + imgClass}>
+                <span className='tag'>{tag}</span>
                 <Link to={url}></Link>
                 <p className="other-item-title">{title}</p>
             </div>
@@ -108,7 +109,7 @@ const index = () => {
                     <div className="intro-description">
                         <p>Hi there!</p>
                         <p className="paragraph">I'm Joakim, a <strong>Game and UX designer</strong> with about 3 years of experience developing games inside Unity.</p>
-                        <p className='paragraph'>My expertise and favorite topics are game/level design and UX with focus on UI.</p>
+                        <p className='paragraph'>While my expertise lies in UX and UI Design, some of my other favorite topics are Game- and Level design.</p>
                         <p className="paragraph">Below you will find some of my highlighted projects in Game development; including professional, formal, and personal.</p>
                         <div className="social-links">
                             <div className="linkedin">
@@ -127,7 +128,6 @@ const index = () => {
                     </div>
                 </div>
             </section>
-            {/* <section className="projects" id="projects" ref={projectsRef}> */}
             <section className="projects" id="projects">
                 <div className="projects-container">
                     <h2>Highlighted projects</h2>
@@ -143,25 +143,32 @@ const index = () => {
                                 />
                                 <ProjectItem
                                     title={"Akined"}
-                                    description={"FutureGames - Game Project 1"}
+                                    description={"School Game Project"}
                                     url={"/akined"}
                                     imgClass={"akined"}
                                     tag={"Game"}
                                 />
                                 <ProjectItem
                                     title={"FPS UI"}
-                                    description={"FutureGames - School assignment"}
+                                    description={"School assignment"}
                                     url={"/pioneer"}
                                     imgClass={"pioneer"}
                                     tag={"UX/UI"}
                                 />
                                 <ProjectItem
+                                    title={'Battlefield "6"'}
+                                    description={"Personal project"}
+                                    url={"/battlefield6"}
+                                    imgClass={"battlefield6"}
+                                    tag={"UI"}
+                                />
+                                {/* <ProjectItem
                                     title={"Canvas Climber"}
-                                    description={"Folkuniversitetet - School assignment"}
+                                    description={"School assignment"}
                                     url={"/canvasclimber"}
                                     imgClass={"canvasclimber"}
                                     tag={"Game"}
-                                />
+                                /> */}
                             </div>
                         </div>
                         <hr />
@@ -172,28 +179,31 @@ const index = () => {
                                     title={"Outvaders Must Die"}
                                     url={"/outvadersmustdie"}
                                     imgClass={"outvaders"}
+                                    tag={"GAME"}
                                 />
                                 <OtherProjectItem
                                     title={"SKKF"}
                                     url={"/skkf"}
                                     imgClass={"skkf"}
+                                    tag={"WEBSITE"}
                                 />
-                                <OtherProjectItem
+                                {/* <OtherProjectItem
                                     title={"Helly Hansen"}
                                     url={"/hellyhansen"}
                                     imgClass={"hellyhansen"}
-                                />
+                                    tag={"WEBSITE"}
+                                /> */}
                                 <OtherProjectItem
                                     title={"Leo's Lekland"}
                                     url={"/leoslekland"}
                                     imgClass={"leos"}
+                                    tag={"WEBSITE"}
                                 />
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            {/* <section className="about" id="about" ref={aboutRef}> */}
         </div>
     )
 }

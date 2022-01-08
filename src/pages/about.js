@@ -13,6 +13,14 @@ const About = () => {
                         <h3 className='title-game'>Game & UX Designer</h3>
                     </div>
                 </div>
+                <div className='files'>
+                    <div>
+                        <h3>Resume</h3>
+                        <div>
+                            <a href='#' download></a>
+                        </div>
+                    </div>
+                </div>
                 <div className='about-content'>
                     <div className='about-me'>
                         <h2>About me</h2>

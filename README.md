@@ -1,6 +1,7 @@
 #Portfolio site to showcase whatever I feel needs to be shown, and mainly made to learn more about Netlify, ReactJS and other modules.
 
 ###ToDo
+##- GDD & Play buttons/links
 ##- Transitions & fade-in (https://github.com/framer/motion - https://dev.to/joserfelix/getting-started-with-react-animations-308a)
 ##- Image zoom (https://www.youtube.com/watch?v=WESQFCM9KgU)
 ##- Game/Website/Design tag for projects

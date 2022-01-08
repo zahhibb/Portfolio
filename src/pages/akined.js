@@ -1,6 +1,7 @@
 import React from 'react'
 import Navigation from "../components/Navigation/navigation";
 import ScrollArrow from "../components/ScrollArrow/scroll_arrow.js";
+import Footer from "../sections/footer";
 import { Link } from "react-router-dom";
 import "../App.css";
 
@@ -22,33 +23,67 @@ const Akined = () => {
     return (
         <div className="page">
             <Navigation />
-            <div className="page-container">
-                <div className="page-banner akined">
+            <div className="page-container akined">
+                <div className="page-banner">
                     <ScrollArrow />
                 </div>
                 <div className="page-content" id="content">
-                    <div className="page-intro">
-                        <div className='status-panel'>
-                            <StatusItem title={"Team Size"} content={["4"]} />
-                            <StatusItem title={"Role"} content={["Programmer", "Game Designer"]} />
-                            <StatusItem title={"Duration"} content={["4 weeks"]} />
+                    <section className="page-intro">
+                        <div className="page-intro-wrapper">
+                            <div className='status-panel'>
+                                <StatusItem title={"Team Size"} content={["4"]} />
+                                <StatusItem title={"Role"} content={["Programmer", "Game Designer"]} />
+                                <StatusItem title={"Duration"} content={["4 weeks"]} />
+                            </div>
+                            <div className="files">
+                                <div>
+                                    <h3>Play the game</h3>
+                                    <div>
+                                        <a href="https://zahhibb.itch.io/akined" target="_blank"></a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3>GDD</h3>
+                                    <div>
+                                        <a href="#" download></a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3>Post-mortem</h3>
+                                    <div>
+                                        <a href="#" download></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='definitions'>
+                                <div>
+                                    <h2>Summary</h2>
+                                    <p>
+                                        asd
+                                    </p>
+                                </div>
+                                <div>
+                                    <h2>My contributions</h2>
+                                    <p>
+                                        asd
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div className='definitions'>
-                        <div>
-                            <h2>Summary</h2>
-                            <p>
-                                asd
-                            </p>
-                            <br />
+                    </section>
+                    <section className="page-media">
+                        <div className="page-media-wrapper">
+                            <div className="video-wrapper">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/mgAJ-adILGY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div className="image-grid">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
                         </div>
-                        <div>
-                            <h2>My contributions</h2>
-                            <p>
-                                asd
-                            </p>
-                        </div>
-                    </div>
+                    </section>
                 </div>
                 <div className="quick-links">
                     <div className="quick-link-container prev">
@@ -65,7 +100,8 @@ const Akined = () => {
                     </div>
                 </div>
             </div>
-        </div >
+            <Footer />
+        </div>
     )
 }
 

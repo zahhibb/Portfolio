@@ -88,10 +88,16 @@ export const StyledDesktopNav = styled.nav`
         letter-spacing: 2px;
         color: ${({ theme }) => theme.navText};
         text-decoration: none;
-        margin: 1rem 1rem 0.5rem;
-        display: block;
+        padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+        display: inline-block;
         transition: color 0.3s;
         min-width: 50px;
+    }
+    ul li:first-child a {
+        // margin-right: 1rem;
+    }
+    ul li:last-child a {
+        // margin-left: 1rem;
     }
     ul li a:hover {
         color: ${({ theme }) => theme.lightText};
@@ -105,26 +111,6 @@ export const StyledDesktopNav = styled.nav`
         flex: 1;
         display: flex;
         justify-content: flex-end;
-    }
-    .nav-socials .linkedin {
-        display: inline-block;
-        margin: 0 1rem 0 0;
-        background: linear-gradient(171deg, ${({ theme }) => theme.secondaryBlue}, ${({ theme }) => theme.primaryBlue}, ${({ theme }) => theme.secondaryBlue});
-        border-radius: 100%;
-        border: 1px solid #30367b;
-        transition: border 0.3s;
-    }
-    .nav-socials .linkedin:hover {
-        border: 1px solid #5f67be;
-    }
-    .nav-socials .linkedin a {
-        display: block;
-        background: url(${linkedinImg});
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 40% 40%;
-        height: 20px;
-        width: 20px;
     }
 }
 `
