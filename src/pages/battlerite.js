@@ -91,10 +91,6 @@ const Battlerite = () => {
                                 <img  src={BattleriteImage02} alt="Battlerite image 1" />
                                 <img  src={BattleriteImage03} alt="Battlerite image 1" />
                                 <img  src={BattleriteImage04} alt="Battlerite image 1" />
-                                {/* <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div> */}
                             </div>
                         </div>
                     </section>
@@ -107,6 +103,13 @@ const Battlerite = () => {
                                     The first significant project I worked on at Stunlock Studios was <b>Bakko’s Egg Brawl</b>, or just simply <i>Dodgeball</i> as we called it internally. The base prototype came from one of the game designer interns that were prototyping a way to quick-reflect incoming projectiles instead of using using the already established reflect mechanic which last much longer, and he had changed one ability to throw insta-kill spherical projectiles, so we called it <i>dodgeball</i>.
                                 </p>
                                 <br />
+                                <p>My personal work on this project consisted of:</p>
+                                <ul>
+                                    <li>Designing and implementing dropping & pick-up mechanics to change weapon slot for current champion</li>
+                                    <li>Spawning system for randomized eggs at specific locations</li>
+                                    <li>Game balancing & spell effects modification</li>
+                                </ul>
+                                <br/>
                                 <p>
                                     At the same time I was working on a pick-up system (I was trying to implement some kind of RPG weapon equipment system), while our other programmer intern was working on modifying the ricochet mechanic to be able to have projectiles bouncing all over the place until it hit a viable target.
                                 </p>

@@ -15,6 +15,10 @@ export var projectQuickLinks = [
         link: "/pioneer"
     },
     {
+        name: 'Battlefield "6"',
+        link: "/battlefield6"
+    },
+    {
         name: "Canvas Climber",
         link: "/canvasclimber"
     },
