@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navigation from "../components/Navigation/navigation";
-import ScrollArrow from "../components/ScrollArrow/scroll_arrow.js";
 import Footer from "../sections/footer";
 import { Link } from "react-router-dom";
 import "../App.css";
 
+import PostMortemPDF from "../resources/documents/Post_Mortem_-_Game_Project_1_Akined_JoakimHedman.pdf";
 import { projectQuickLinks } from "./index";
 
 function StatusItem({ title, content }) {
@@ -20,12 +20,18 @@ function StatusItem({ title, content }) {
 }
 
 const Akined = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <div className="page">
             <Navigation />
             <div className="page-container akined">
                 <div className="page-banner">
-                    <ScrollArrow />
+                    <div className='banner-overlay'></div>
+                    <h1>Akined</h1>
                 </div>
                 <div className="page-content" id="content">
                     <section className="page-intro">
@@ -34,25 +40,17 @@ const Akined = () => {
                                 <StatusItem title={"Team Size"} content={["4"]} />
                                 <StatusItem title={"Role"} content={["Programmer", "Game Designer"]} />
                                 <StatusItem title={"Duration"} content={["4 weeks"]} />
+                                <StatusItem title={"Engine"} content={["Unity"]} />
                             </div>
                             <div className="files">
                                 <div>
-                                    <h3>Play the game</h3>
-                                    <div>
-                                        <a href="https://zahhibb.itch.io/akined" target="_blank"></a>
-                                    </div>
+                                    <a href="https://zahhibb.itch.io/akined" target="_blank" rel="noopener noreferrer">Play the game</a>
                                 </div>
                                 <div>
-                                    <h3>GDD</h3>
-                                    <div>
-                                        <a href="#" download></a>
-                                    </div>
+                                    <a href="http://www.google.se">Read the GDD</a>
                                 </div>
                                 <div>
-                                    <h3>Post-mortem</h3>
-                                    <div>
-                                        <a href="#" download></a>
-                                    </div>
+                                    <a href={PostMortemPDF} target="_blank" rel="noopener noreferrer">Read the Post-Mortem</a>
                                 </div>
                             </div>
                             <div className='definitions'>
@@ -68,19 +66,6 @@ const Akined = () => {
                                         asd
                                     </p>
                                 </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section className="page-media">
-                        <div className="page-media-wrapper">
-                            <div className="video-wrapper">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/mgAJ-adILGY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                            <div className="image-grid">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
                             </div>
                         </div>
                     </section>

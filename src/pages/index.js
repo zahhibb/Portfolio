@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from "react-router-dom";
 
 export var projectQuickLinks = [
@@ -44,22 +44,27 @@ function ProjectItem({ title, description, url, imgClass, tag }) {
     return (
         <div className="project-item-container">
             <div className={"project-item " + imgClass}>
+                <Link to={url}>
+                    <span className="overlay"></span>
+                    <p className="item-title">{title}</p>
+                    <span className="item-desc">{description}</span>
+                </Link>
                 <span className='tag'>{tag}</span>
-                <Link to={url}></Link>
-                <p className="item-title">{title}</p>
-                <span className="item-desc">{description}</span>
             </div>
         </div>
     );
 }
 
-function OtherProjectItem({ title, url, imgClass, tag }) {
+function OtherProjectItem({ title, description, url, imgClass, tag }) {
     return (
         <div className="other-project-item-container">
             <div className={"other-project-item " + imgClass}>
+                <Link to={url}>
+                    <span className='overlay'></span>
+                    <p className="other-item-title">{title}</p>
+                    <span className='other-item-desc'>{description}</span>
+                </Link>
                 <span className='tag'>{tag}</span>
-                <Link to={url}></Link>
-                <p className="other-item-title">{title}</p>
             </div>
         </div>
     );
@@ -67,41 +72,12 @@ function OtherProjectItem({ title, url, imgClass, tag }) {
 
 const index = () => {
 
-    // Highlight navigation scroll
-    // const introRef = React.UseRef(null)
-    // const projectsRef = React.UseRef(null)
-    // const aboutRef = React.UseRef(null)
-
-    // React.useEffect(() => {
-    //     let observer;
-    //     if (introRef.current && projectsRef.current && aboutRef.current) {
-    //         const options = {
-    //             threshold: 0.5,
-    //         }
-    //         observer = new IntersectionObserver((entries, observer) => {
-    //             entries.forEach(entry => {
-    //                 const navElement = document.querySelector(
-    //                     `a[href="/#${entry.target.id}"]`,
-    //                 )
-    //                 if (entry.isIntersecting) {
-    //                     if (!navElement.classList.contains('active')) {
-    //                         navElement.classList.add('active')
-    //                     }
-    //                 } else if (navElement.classList.contains('active')) {
-    //                     navElement.classList.remove('active')
-    //                 }
-    //             })
-    //         }, options)
-    //         observer.observe(introRef.current)
-    //         observer.observe(projectsRef.current)
-    //         observer.observe(aboutRef.current)
-    //     }
-    //     return () => observer.disconnect()
-    // }, [introRef, projectsRef, aboutRef])
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
-        <div className="container">
-            {/* <section className="intro" id="home" ref={introRef}> */}
+        <div>
             <section className="intro" id="home">
                 <div className="intro-container">
                     <div className="intro-heading">
@@ -112,9 +88,9 @@ const index = () => {
                     </div>
                     <div className="intro-description">
                         <p>Hi there!</p>
-                        <p className="paragraph">I'm Joakim, a <strong>Game and UX designer</strong> with about 3 years of experience developing games inside Unity.</p>
-                        <p className='paragraph'>While my expertise lies in UX and UI Design, some of my other favorite topics are Game- and Level design.</p>
-                        <p className="paragraph">Below you will find some of my highlighted projects in Game development; including professional, formal, and personal.</p>
+                        <p>I'm Joakim, a <strong>Game and UX designer</strong> with about 3 years of experience developing games inside Unity.</p>
+                        {/* <p className='paragraph'>While my expertise lies in UX and UI Design, some of my other favorite topics are Game- and Level design.</p> */}
+                        <p>Below you will find some of my highlighted projects in Game development; including professional, formal, and personal.</p>
                         <div className="social-links">
                             <div className="linkedin">
                                 <a href="https://www.linkedin.com/in/joakim-hedman/" target="_blank" rel="noopener noreferrer" title='LinkedIn link'>LinkedIn</a>
@@ -132,7 +108,7 @@ const index = () => {
                     </div>
                 </div>
             </section>
-            <section className="projects" id="projects">
+            <section className="projects">
                 <div className="projects-container">
                     <h2>Highlighted projects</h2>
                     <div className="projects-list">
@@ -143,36 +119,29 @@ const index = () => {
                                     description={"Prototyping & Game modes"}
                                     url={"/battlerite"}
                                     imgClass={"battlerite"}
-                                    tag={"Game"}
+                                    tag={"Programming & Game design"}
                                 />
                                 <ProjectItem
                                     title={"Akined"}
-                                    description={"School Game Project"}
+                                    description={"School game project"}
                                     url={"/akined"}
                                     imgClass={"akined"}
-                                    tag={"Game"}
+                                    tag={"Programming & Game design"}
                                 />
                                 <ProjectItem
-                                    title={"FPS UI"}
+                                    title={"Pioneer - FPS UI"}
                                     description={"School assignment"}
                                     url={"/pioneer"}
                                     imgClass={"pioneer"}
-                                    tag={"UX/UI"}
+                                    tag={"UX/UI design"}
                                 />
                                 <ProjectItem
-                                    title={'Battlefield "6"'}
+                                    title={'Battlefield "6" UI concept'}
                                     description={"Personal project"}
                                     url={"/battlefield6"}
                                     imgClass={"battlefield6"}
-                                    tag={"UI"}
+                                    tag={"UI design"}
                                 />
-                                {/* <ProjectItem
-                                    title={"Canvas Climber"}
-                                    description={"School assignment"}
-                                    url={"/canvasclimber"}
-                                    imgClass={"canvasclimber"}
-                                    tag={"Game"}
-                                /> */}
                             </div>
                         </div>
                         <hr />
@@ -180,28 +149,25 @@ const index = () => {
                             <h2>Other projects</h2>
                             <div className='other-projects-list'>
                                 <OtherProjectItem
+                                    title={"Elden Ring UI concept"}
+                                    description={"Personal project"}
+                                    url={"/eldenring"}
+                                    imgClass={"eldenring"}
+                                    tag={"UX/UI"}
+                                />
+                                <OtherProjectItem
                                     title={"Outvaders Must Die"}
+                                    description={"Nordic Game Jam 2016"}
                                     url={"/outvadersmustdie"}
                                     imgClass={"outvaders"}
-                                    tag={"GAME"}
+                                    tag={"Scripting & Game design"}
                                 />
                                 <OtherProjectItem
-                                    title={"SKKF"}
-                                    url={"/skkf"}
-                                    imgClass={"skkf"}
-                                    tag={"WEBSITE"}
-                                />
-                                {/* <OtherProjectItem
-                                    title={"Helly Hansen"}
-                                    url={"/hellyhansen"}
-                                    imgClass={"hellyhansen"}
-                                    tag={"WEBSITE"}
-                                /> */}
-                                <OtherProjectItem
-                                    title={"Leo's Lekland"}
-                                    url={"/leoslekland"}
-                                    imgClass={"leos"}
-                                    tag={"WEBSITE"}
+                                    title={"Canvas Climber"}
+                                    description={"School game project"}
+                                    url={"/canvasclimber"}
+                                    imgClass={"canvasclimber"}
+                                    tag={"Scripting & UI pixel art"}
                                 />
                             </div>
                         </div>

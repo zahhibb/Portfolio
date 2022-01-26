@@ -13,14 +13,14 @@ const Navigation = () => {
     <div className="nav-container">
       <StyledDesktopNav>
         <div className="nav-owner">
-          <Link to={"/"}>Joakim Hedman</Link>
+          <Link to={"/#home"}>Joakim Hedman</Link>
         </div>
         <ul>
           <li>
             <Link to={"/#home"}>PORTFOLIO</Link>
           </li>
           <li>
-            <Link to={"/about"}>ABOUT</Link>
+            <Link to={"/about#about"}>ABOUT</Link>
           </li>
         </ul>
         <div className="nav-socials"></div>

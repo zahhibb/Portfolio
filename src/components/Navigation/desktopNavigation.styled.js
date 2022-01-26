@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import linkedinImg from '../../resources/images/linkedin-logo.png';
 
 export const StyledDesktopNav = styled.nav`
     display: flex;
@@ -20,14 +19,6 @@ export const StyledDesktopNav = styled.nav`
 
     >ul {
         display: none;
-    }
-
-    .nav-socials .linkedin a {
-        display: none;
-        padding: .5rem;
-        line-height: 0;
-        font-size: 0;
-        color: transparent;
     }
   
 @media only screen and (min-width: ${({ theme }) => theme.tablet}) {

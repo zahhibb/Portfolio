@@ -26,13 +26,13 @@ const routing = (
       <Switch>
         <Route exact path="/" component={App}></Route>
         <Route exact path="/about" component={About}></Route>
-        <Route exact path="/skkf" component={SKKF}></Route>
-        <Route exact path="/hellyhansen" component={HH}></Route>
-        <Route exact path="/leoslekland" component={Leos}></Route>
         <Route exact path="/battlerite" component={Battlerite}></Route>
         <Route exact path="/akined" component={Akined}></Route>
         <Route exact path="/pioneer" component={Pioneer}></Route>
         <Route exact path="/battlefield6" component={Battlefield6}></Route>
+        <Route exact path="/skkf" component={SKKF}></Route>
+        <Route exact path="/hellyhansen" component={HH}></Route>
+        <Route exact path="/leoslekland" component={Leos}></Route>
         <Route exact path="/credits" component={Credits}></Route>
         <Route exact path="/gamedevresources" component={GameDevResources}></Route>
       </Switch>

@@ -8,22 +8,12 @@ html {
   text-align: center;
 }
 
-h1 {
-  font-size: 2rem;
+h1, h2, h3, h4, strong {
   color: #fff;
 }
 
 h2 {
   font-family: Alegreya-regular;
-  color: #fff;
-}
-
-h3 {
-  color: #fff;
-}
-
-h4 {
-  color: #fff;
 }
 
 a, a:link, a:active, a:visited {
@@ -32,10 +22,6 @@ a, a:link, a:active, a:visited {
 
 a:hover {
   text-decoration: none;
-}
-
-strong {
-  color: #fff;
 }
 
 /* INTRO */
@@ -69,20 +55,12 @@ strong {
   transition: color 0.3s;
 }
 
-.intro-heading .title-frontend:hover {
-  color: #fbb17c;
-}
-
 .intro-heading .title-game:hover {
   color: #7ac4fd;
 }
 
 .intro-heading h1:hover, .intro-heading h3:hover, .intro-heading span:hover {
   cursor: default;
-}
-
-.intro-heading span {
-  display: none;
 }
 
 .intro-description {
@@ -93,7 +71,7 @@ strong {
   color: #ddd;
 }
 
-.paragraph {
+.intro-description p {
   padding-bottom: 0.75rem;
 }
 
@@ -235,59 +213,83 @@ strong {
   border: 1px solid #414d96;
 }
 
-.project-item {
+.project-item, .other-project-item {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.project-item a {
+.project-item a, .other-project-item a {
   display: block;
   height: 100%;
-  -moz-transition: background 0.3s;
-  -webkit-transition: background 0.3s;
-  transition: background 0.3s;
+  -moz-transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  position: relative;
+  opacity: 0;
 }
 
-.project-item a:hover {
-  background: rgba(65, 77, 150, .5);
+.project-item a:hover, .other-project-item a:hover {
+  opacity: 1;
 }
 
-.item-title {
+.project-item .overlay, .other-project-item .overlay {
+  display: block;
+  height: 100%;
+  background: #000;
+  opacity: 0.7;
+}
+
+.project-item .item-title, .other-project-item .other-item-title {
   color: #fff;
   font-size: 1.75rem;
   position: absolute;
-  bottom: 2.7rem;
+  top: 9rem;
   left: 0;
-  padding: 0 0 0 1rem !important;
+  width: 100%;
+  margin: 0;
+  display: block;
+  text-align: center;
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
   pointer-events: none;
 }
 
-.item-desc {
+.other-project-item .other-item-title {
+  font-size: 1.6rem;
+  top: 4rem;
+}
+
+.project-item .item-desc, .other-project-item .other-item-desc {
   position: absolute;
-  bottom: 0;
+  top: 12rem;
   left: 0;
-  padding: 0 0 1rem 1rem !important;
   letter-spacing: 0.75px;
   color: #fff;
+  width: 100%;
+  margin: 0;
+  display: block;
+  text-align: center;
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
   pointer-events: none;
 }
 
-.tag {
+.other-project-item .other-item-desc {
+  top: 6.5rem;
+}
+
+.project-item .tag, .other-project-item .tag {
   position: absolute;
   top: 0;
-  right: 0;
-  padding: 0.5rem 0.7rem 0 0;
-  text-transform: uppercase;
-  font-weight: bold;
+  left: 0;
+  padding: 0.5rem 0 0 0.7rem;
+  font-weight: 600;
   letter-spacing: 0.75px;
   color: #fff;
+  text-shadow: 0 0 10px #000;
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
@@ -304,45 +306,108 @@ strong {
   margin-bottom: 1rem;
 }
 
-.other-project-item-container .tag {
-  font-size: 1rem;
-}
-
-.other-project-item {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-
-.other-project-item a {
-  display: block;
-  height: 100%;
-  -moz-transition: background 0.3s;
-  -webkit-transition: background 0.3s;
-  transition: background 0.3s;
-}
-
-.other-project-item a:hover {
-  background: rgba(65, 77, 150, .5);
-}
-
-.other-item-title {
-  position: absolute;
-  bottom: 0%;
-  left: 0;
-  padding: 0 0 .5rem 1rem !important;
-  letter-spacing: 0.75px;
-  color: #fff;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-  pointer-events: none;
-}
-
 hr {
   display: block;
   border: 1px solid #4951a5;
   margin: 2rem 0;
+}
+
+.page-container.battlerite .page-banner .banner-overlay {
+  background: url("resources/images/Battlerite-Header.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+  background-size: cover;
+}
+
+.projects-container .battlerite {
+  background: url("resources/images/Battlerite-Header.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+  background-size: cover;
+}
+
+.page-container.akined .page-banner .banner-overlay {
+  background: #1d1223 url("resources/images/Akined_poster.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25%;
+}
+
+.projects-container .akined {
+  background: #1d1223 url("resources/images/akined.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  background-size: 90%;
+}
+
+.page-container.pioneer .page-banner .banner-overlay {
+  /* background: url("resources/images/"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.projects-container .pioneer {
+  /* background: url("resources/images/"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-container.battlefield6 .page-banner .banner-overlay {
+  background: url("resources/images/portfolio_bf6_item.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.projects-container .battlefield6 {
+  background: url("resources/images/portfolio_bf6_item.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-container.eldenring .page-banner .banner-overlay {
+  background: url("resources/images/portfolio_eldenring_item.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.projects-container .eldenring {
+  background: url("resources/images/portfolio_eldenring_item.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-container.outvaders .page-banner .banner-overlay {
+  background: url("resources/images/outvaders.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.projects-container .outvaders {
+  background: url("resources/images/outvaders.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-container.canvasclimber .page-banner .banner-overlay {
+  background: url("resources/images/canvasclimber.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.projects-container .canvasclimber {
+  background: url("resources/images/canvasclimber.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .skkf {
@@ -352,25 +417,11 @@ hr {
   background-size: 70%;
 }
 
-.page-container.battlerite .page-banner, .projects-container .battlerite {
-  background: url("resources/images/Battlerite-Header.jpg");
+.page-banner.hellyhansen {
+  background: #da2127 url("resources/images/hellyhansen.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 30%;
-  background-size: cover;
-}
-
-.page-container.akined .page-banner {
-  background: #1d1223 url("resources/images/Akined_poster.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 25%;
-}
-
-.projects-container .akined {
-  background: #1d1223 url("resources/images/Akined_poster.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 90%;
-  background-size: 70%;
+  background-position: center;
+  background-size: 30%;
 }
 
 .projects-container .hellyhansen {
@@ -386,7 +437,6 @@ hr {
   background-position: center;
   background-size: 80%;
 }
-
 
 @media only screen and (min-width: 425px) {
   .project-item-container {
@@ -491,7 +541,7 @@ hr {
 .about-container {
   width: 70%;
   max-width: 660px;
-  padding: 6rem 0 1rem;
+  padding: 6rem 0;
   margin: 0 auto;
 }
 
@@ -519,6 +569,23 @@ hr {
   cursor: default;
 }
 
+.about-image-wrapper {
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+.about-image-wrapper > div:first-of-type {
+  flex: 1;
+}
+
+.about-image-wrapper img {
+  flex: 1;
+  border-radius: 100%;
+  max-width: 300px;
+  max-height: 300px;
+  border: 1px solid #30367b;
+}
+
 .about-content {
   display: flex;
   flex-direction: column;
@@ -544,6 +611,10 @@ hr {
   font-weight: 200;
 }
 
+.as-a-developer {
+  margin-top: 3rem;
+}
+
 .resume {
   flex: 1;
   display: flex;
@@ -564,7 +635,7 @@ hr {
 
 @media only screen and (min-width: 425px) {
   .about-container {
-    width: 80%;
+    max-width: 40%;
   }
 }
 
@@ -593,22 +664,62 @@ footer {
 
 .footer-container {
   text-align: center;
+  display: flex;
 }
 
-.footer-container .copyright {
+.footer-interests {
+  flex: 1;
+}
+
+.footer-interests p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-interests img {
+  max-width: 320px;
+  height: 150px;
+  margin: 0.3rem;
+  border: 1px solid #222;
+  border-radius: 12px;
+  -moz-transition: border 0.3s;
+  -webkit-transition: border 0.3s;
+  transition: border 0.3s;
+}
+
+.footer-interests img:hover {
+  border: 1px solid #444;
+}
+
+.footer-details {
+  flex: 1;
+}
+
+.footer-details > div:first-child {
+  position: relative;
+  top: 5rem;
+}
+
+.footer-details > div:last-child {
+  position: relative;
+  top: 6rem;
+  margin-top: 2rem;
+}
+
+.footer-details .copyright {
   display: inline-block;
   padding-right: 0.5rem;
 }
 
-.footer-container .copyright span:last-child {
+.footer-details .copyright span:last-child {
   padding-left: 0.5rem;
 }
 
-.footer-container span {
+.footer-details span {
   display: inline-block;
 }
 
-.footer-container p {
+.footer-details p {
   display: inline-block;
   padding-left: 0.5rem;
 }
@@ -649,15 +760,30 @@ footer {
 }
 
 .page-banner {
+  position: relative;
   width: 100%;
-  height: 100vh;
+  height: 50vh;
 }
 
-.page-banner.hellyhansen {
-  background: #da2127 url("resources/images/hellyhansen.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 30%;
+.page-banner .banner-overlay {
+  width: 100%;
+  height: 100%;
+  filter: opacity(60%) blur(2px);
+}
+
+.page-container .page-banner  h1 {
+  font-size: 5rem;
+  text-shadow: 0px 0px 20px #000;
+  width: 100%;
+  position: absolute;
+  bottom: 9rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
 }
 
 .page-content {
@@ -669,7 +795,7 @@ footer {
 }
 
 .page-intro {
-  border-bottom: 1px solid #30367b;
+  /* border-bottom: 1px solid #444; */
 }
 
 .page-intro-wrapper {
@@ -683,10 +809,6 @@ footer {
 .page-intro-wrapper h2 {
   font-weight: 600;
   font-size: 1.3em;
-}
-
-.page-intro-wrapper h2:first-child {
-  margin-bottom: 2rem;
 }
 
 .page-intro-wrapper b {
@@ -725,49 +847,38 @@ footer {
    font-weight: 300;
 }
 
-.page-container.battlerite .files div:last-child div {
-  
-}
-
 .files {
-  width: 75%;
-  margin: 0 auto 4rem;
+  display: block;
+  padding: 1rem 0;
   text-align: center;
-  display: flex;
-  align-items: end;
-}
-
-.files h3 {
-  color: #fff;
+  margin-bottom: 3rem;
 }
 
 .files div {
-  flex: 1 75%;
-  max-width: 75%;
+  display: inline-block;
+  margin: 0 4rem 0 4rem;
+  background: linear-gradient(171deg, #181a35, #30367b, #181a35);
+  border-radius: 12px;
+  border: 1px solid #30367b;
+  transition: border 0.3s, color 0.3s;
 }
 
-.files div div {}
-
-.files a {
-  display: block;
-  height: 100%;
-  width: 100%;
-  padding: 1rem 0;
+.files div a {
   text-decoration: none;
-  border: 2px solid #333;
-  border-radius: 12px;
-  background: #222;
-  transition: color 0.3s, background 0.3s, border-color 0.3s;
-  -webkit-transition: color 0.3s, background 0.3s, border-color 0.3s;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  transition: border 0.3s, color 0.3s;
 }
 
-.files a:hover {
+.files div:hover {
   color: #fff;
-  background: #000;
-  border: 2px solid #1e1e1e;
   border-radius: 12px;
-  transition: color 0.3s, background 0.3s;
-  -webkit-transition: color 0.3s, background 0.3s;
+  border: 1px solid #5f67be;
+}
+
+.files div:hover a {
+  color: #fff;
 }
 
 .definitions {
@@ -786,17 +897,18 @@ footer {
   font-size: 1.5em;
   font-weight: 200;
   padding-bottom: 1rem;
-  color: #fff !important;
+  color: #fff;
 }
 
 .definitions p {
-  color: #fff !important;
+  color: #fff;
   font-weight: 200;
 }
 
 .page-media {
   padding: 4rem 0;
   background: linear-gradient(171deg, #181a35, #30367b, #181a35);
+  border-top: 1px solid #30367b;
   border-bottom: 1px solid #30367b;
 }
 
@@ -807,9 +919,9 @@ footer {
 
 .video-wrapper {
   position: relative;
-  padding-bottom: 56.25%;
   height: 0;
-  margin-bottom: 4rem;
+  padding-bottom: 56.25%;
+  margin-bottom: 2rem;
 }
 
 .video-wrapper:last-child {
@@ -834,7 +946,8 @@ footer {
 
 .image-grid img {
   flex: calc(50% - 1rem);
-  max-width: calc(50% - 1rem);
+  max-width: calc(50% - 1.14rem);
+  border: 1px solid #414d96;
 }
 
 .page-container.battlerite .image-grid div:first-child {
@@ -983,12 +1096,34 @@ footer {
   border-color: #fff !important;
 }
 
-.bakko-egg-brawl, .rocket-balloon, .battlegrounds {
+.page-section {
   padding: 4rem 0;
 }
 
-.rocket-balloon {
-  background: #111;
+.page-section:nth-child(odd){
+  background: #1e1e1e;
+}
+.page-section:nth-child(even){
+  background: #333;
+}
+
+.bakko-egg-brawl ul li {
+  margin-left: 1.5rem;
+}
+
+.bakko-egg-brawl .content-image.-first {
+  background: #222 url();
+}
+
+.bakko-egg-brawl .content-image.-second {
+  background: #222 url();
+  float: left;
+  margin: 1rem 1rem 1rem 0;
+}
+
+.bakko-egg-brawl .content-image.-first {
+  margin-left: 2rem;
+  margin-bottom: 2rem;
 }
 
 .content-section-wrapper {
@@ -1004,40 +1139,20 @@ footer {
   margin-bottom: 1rem;
 }
 
-.bakko-egg-brawl .content, .battlegrounds .content {
-  margin-right: 2rem;
-}
-
 .rocket-balloon .content {
   margin-left: 2rem;
 }
 
-.bakko-egg-brawl p, .rocket-balloon p, .battlegrounds p {
-  font-size: 1.3rem;
-}
-
-.bakko-egg-brawl .content-image.-first {
-  background: #333 url();
-}
-
 .rocket-balloon .content-image.-first {
-  background: #333 url();
+  background: #222 url();
 }
 
 .battlegrounds .content-image.-first {
-  background: #333 url();
+  background: #222 url();
 }
 
-.bakko-egg-brawl .content-image.-second {
-  background: #333 url();
-  float: left;
-  margin: 1rem 1rem 1rem 0;
-}
-
-.bakko-egg-brawl .content-image.-first {
-  /* margin: 0 0 1rem 1rem; */
-  margin-left: 2rem;
-  margin-bottom: 2rem;
+.bakko-egg-brawl p, .rocket-balloon p, .battlegrounds p {
+  font-size: 1.3rem;
 }
 
 .bakko-egg-brawl .content-image, .rocket-balloon .content-image, .battlegrounds .content-image {
