@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import linkedinImg from '../../resources/images/linkedin-logo.png';
 
 export const StyledDesktopNav = styled.nav`
     display: flex;
@@ -20,14 +19,6 @@ export const StyledDesktopNav = styled.nav`
 
     >ul {
         display: none;
-    }
-
-    .nav-socials .linkedin a {
-        display: none;
-        padding: .5rem;
-        line-height: 0;
-        font-size: 0;
-        color: transparent;
     }
   
 @media only screen and (min-width: ${({ theme }) => theme.tablet}) {
@@ -69,10 +60,18 @@ export const StyledDesktopNav = styled.nav`
     }
     ul {
         flex: 4;
-        display: inline-block;
+        display: flex;
+        list-style: none;
     }
     ul li {
+        flex: 1;
         display: inline-block;
+    }
+    ul li:first-child{
+        text-align: right;
+    }
+    ul li:last-child {
+        text-align: left;
     }
     ul li a {
         font-size: 0.9rem;
@@ -80,11 +79,16 @@ export const StyledDesktopNav = styled.nav`
         letter-spacing: 2px;
         color: ${({ theme }) => theme.navText};
         text-decoration: none;
-        margin: 1rem 1rem 0;
-        padding-bottom: 0.5rem;
-        display: block;
+        padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+        display: inline-block;
         transition: color 0.3s;
         min-width: 50px;
+    }
+    ul li:first-child a {
+        // margin-right: 1rem;
+    }
+    ul li:last-child a {
+        // margin-left: 1rem;
     }
     ul li a:hover {
         color: ${({ theme }) => theme.lightText};
@@ -98,26 +102,6 @@ export const StyledDesktopNav = styled.nav`
         flex: 1;
         display: flex;
         justify-content: flex-end;
-    }
-    .nav-socials .linkedin {
-        display: inline-block;
-        margin: 0 1rem 0 0;
-        background: linear-gradient(171deg, ${({ theme }) => theme.secondaryBlue}, ${({ theme }) => theme.primaryBlue}, ${({ theme }) => theme.secondaryBlue});
-        border-radius: 100%;
-        border: 1px solid #30367b;
-        transition: border 0.3s;
-    }
-    .nav-socials .linkedin:hover {
-        border: 1px solid #5f67be;
-    }
-    .nav-socials .linkedin a {
-        display: block;
-        background: url(${linkedinImg});
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 40% 40%;
-        height: 20px;
-        width: 20px;
     }
 }
 `

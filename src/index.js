@@ -8,11 +8,14 @@ import { theme } from './theme';
 import "./index.css";
 
 import App from "./App";
+import About from "./pages/about";
 import SKKF from "./pages/skkf";
 import HH from "./pages/hellyhansen";
 import Leos from "./pages/leoslekland";
 import Battlerite from "./pages/battlerite";
-import OtherProjects from "./pages/other-projects";
+import Akined from "./pages/akined";
+import Pioneer from "./pages/pioneer";
+import Battlefield6 from "./pages/battlefield6";
 import Credits from "./pages/credits";
 import GameDevResources from "./pages/gamedevresources";
 
@@ -22,11 +25,14 @@ const routing = (
     <ThemeProvider theme={theme}>
       <Switch>
         <Route exact path="/" component={App}></Route>
+        <Route exact path="/about" component={About}></Route>
+        <Route exact path="/battlerite" component={Battlerite}></Route>
+        <Route exact path="/akined" component={Akined}></Route>
+        <Route exact path="/pioneer" component={Pioneer}></Route>
+        <Route exact path="/battlefield6" component={Battlefield6}></Route>
         <Route exact path="/skkf" component={SKKF}></Route>
         <Route exact path="/hellyhansen" component={HH}></Route>
         <Route exact path="/leoslekland" component={Leos}></Route>
-        <Route exact path="/battlerite" component={Battlerite}></Route>
-        <Route exact path="/other-projects" component={OtherProjects}></Route>
         <Route exact path="/credits" component={Credits}></Route>
         <Route exact path="/gamedevresources" component={GameDevResources}></Route>
       </Switch>

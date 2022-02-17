@@ -8,29 +8,27 @@ html {
   text-align: center;
 }
 
-h2 {
-  font-family: Alegreya-regular;
+h1,
+h2,
+h3,
+h4,
+strong {
   color: #fff;
 }
 
-h3 {
-  color: #ddd;
+h2 {
+  font-family: Alegreya-regular;
 }
 
-a, a:link, a:active {
-  color: #1f8ce0;
-}
-
+a,
+a:link,
+a:active,
 a:visited {
   color: #e9711b;
 }
 
 a:hover {
   text-decoration: none;
-}
-
-strong {
-  color: #fff;
 }
 
 /* INTRO */
@@ -46,10 +44,10 @@ strong {
   margin: 0 auto;
 }
 
-.intro-heading h1 {
+.intro-heading h1,
+.about-heading h1 {
   font-family: Alegreya-regular;
   color: #fff;
-  text-shadow: 0 0 30px #7276b6;
   font-size: 2.5rem;
 }
 
@@ -65,20 +63,14 @@ strong {
   transition: color 0.3s;
 }
 
-.intro-heading .title-frontend:hover {
-  color: #fbb17c;
-}
-
 .intro-heading .title-game:hover {
   color: #7ac4fd;
 }
 
-.intro-heading h1:hover, .intro-heading h3:hover, .intro-heading span:hover {
+.intro-heading h1:hover,
+.intro-heading h3:hover,
+.intro-heading span:hover {
   cursor: default;
-}
-
-.intro-heading span {
-  display: none;
 }
 
 .intro-description {
@@ -89,7 +81,7 @@ strong {
   color: #ddd;
 }
 
-.paragraph {
+.intro-description p {
   padding-bottom: 0.75rem;
 }
 
@@ -100,7 +92,7 @@ strong {
 
 .social-links div {
   display: inline-block;
-  margin: 0 1rem 0 0;
+  margin: 1rem;
   background: linear-gradient(171deg, #181a35, #30367b, #181a35);
   border-radius: 100%;
   border: 1px solid #30367b;
@@ -122,27 +114,34 @@ strong {
 }
 
 .social-links .linkedin a {
-  background: url('resources/images/linkedin-logo.png');
+  background: url("resources/images/linkedin-logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40% 40%;
+}
+
+.social-links .artstation a {
+  background: url("resources/images/artstation.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 40% 40%;
 }
 
 .social-links .twitter a {
-  background: url('resources/images/2021\ Twitter\ logo\ -\ white.png');
+  background: url("resources/images/2021\ Twitter\ logo\ -\ white.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 45% 40%;
 }
 
 .social-links .mail a {
-  background: url('resources/images/mail-logo.png');
+  background: url("resources/images/mail-logo.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 40% 40%;
 }
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width: 768px) {
   .intro-container {
     width: 70%;
     max-width: 660px;
@@ -167,6 +166,9 @@ strong {
     text-align: left;
     font-size: 1.25rem;
   }
+  .social-links div {
+    margin-right: 1rem;
+  }
 }
 
 /* PROJECTS */
@@ -174,7 +176,7 @@ strong {
 .projects {
   padding: 3rem 0 4rem;
   background: linear-gradient(171deg, #181a35, #30367b, #181a35);
-  border-bottom: 1px solid #5e6dbd;
+  border-bottom: 1px solid #30367b;
 }
 
 .projects-container {
@@ -195,7 +197,7 @@ strong {
   flex-direction: column;
 }
 
-.projects-list>div {
+.projects-list > div {
   flex: 1;
 }
 
@@ -207,42 +209,11 @@ strong {
   padding-left: 0.5rem;
 }
 
-.projects-list h3:hover {
-  cursor: default;
-}
-
-.projects-websites h3 {
-  border-left: 3px solid #fbb17c;
-}
-
-.projects-games h3 {
-  border-left: 3px solid #7ac4fd;
-}
-
-.projects-websites h3:hover {
-  color: #fbb17c;
-}
-
-.projects-games h3:hover {
-  color: #7ac4fd;
-}
-
-.websites-list {
-  display: flex;
-  flex-direction: column;
-}
-
-.websites-list>div {
-  flex: 1;
-  margin-bottom: 2rem;
-}
-
 .games-list {
-  display: flex;
   flex-direction: column;
 }
 
-.games-list>div {
+.games-list > div {
   flex: 1;
   margin-bottom: 2rem;
 }
@@ -252,48 +223,104 @@ strong {
   border: 1px solid #414d96;
 }
 
-.project-item {
+.project-item,
+.other-project-item {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.project-item a {
+.project-item a,
+.other-project-item a {
   display: block;
   height: 100%;
-  -moz-transition: background 0.3s;
-  -webkit-transition: background 0.3s;
-  transition: background 0.3s;
+  -moz-transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  position: relative;
+  opacity: 0;
 }
 
-.project-item a:hover {
-  background: rgba(65, 77, 150, .5);
+.project-item a:hover,
+.other-project-item a:hover {
+  opacity: 1;
 }
 
-.item-title {
+.project-item .overlay,
+.other-project-item .overlay {
+  display: block;
+  height: 100%;
+  background: #000;
+  opacity: 0.7;
+}
+
+.project-item .item-title,
+.other-project-item .other-item-title {
   color: #fff;
   font-size: 1.75rem;
   position: absolute;
-  bottom: 2.7rem;
+  top: 9rem;
   left: 0;
-  padding: 0 0 0 1rem !important;
+  width: 100%;
+  margin: 0;
+  display: block;
+  text-align: center;
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
   pointer-events: none;
 }
 
-.item-desc {
+.other-project-item .other-item-title {
+  font-size: 1.6rem;
+  top: 4rem;
+}
+
+.project-item .item-desc,
+.other-project-item .other-item-desc {
   position: absolute;
-  bottom: 0%;
+  top: 12rem;
   left: 0;
-  padding: 0 0 1rem 1rem !important;
   letter-spacing: 0.75px;
   color: #fff;
+  width: 100%;
+  margin: 0;
+  display: block;
+  text-align: center;
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
   pointer-events: none;
+}
+
+.other-project-item .other-item-desc {
+  top: 6.5rem;
+}
+
+.project-item .tag,
+.other-project-item .tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.5rem 0 0 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+  color: #fff;
+  text-shadow: 0 0 10px #000;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+.other-projects-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.other-project-item-container {
+  height: 180px;
+  margin-bottom: 1rem;
 }
 
 hr {
@@ -302,11 +329,116 @@ hr {
   margin: 2rem 0;
 }
 
+.page-container.battlerite .page-banner .banner-overlay {
+  background: url("resources/images/Battlerite-Header.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+  background-size: cover;
+}
+
+.projects-container .battlerite {
+  background: url("resources/images/Battlerite-Header.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+  background-size: cover;
+}
+
+.page-container.akined .page-banner .banner-overlay {
+  background: #1d1223 url("resources/images/Akined_poster.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25%;
+}
+
+.projects-container .akined {
+  background: #1d1223 url("resources/images/akined.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  background-size: 90%;
+}
+
+.page-container.pioneer .page-banner .banner-overlay {
+  /* background: url("resources/images/"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.projects-container .pioneer {
+  /* background: url("resources/images/"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-container.battlefield6 .page-banner .banner-overlay {
+  background: url("resources/images/portfolio_bf6_item.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.projects-container .battlefield6 {
+  background: url("resources/images/portfolio_bf6_item.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-container.eldenring .page-banner .banner-overlay {
+  background: url("resources/images/portfolio_eldenring_item.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.projects-container .eldenring {
+  background: url("resources/images/portfolio_eldenring_item.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-container.outvaders .page-banner .banner-overlay {
+  background: url("resources/images/outvaders.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.projects-container .outvaders {
+  background: url("resources/images/outvaders.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-container.canvasclimber .page-banner .banner-overlay {
+  background: url("resources/images/canvasclimber.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.projects-container .canvasclimber {
+  background: url("resources/images/canvasclimber.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .skkf {
   background: #12411a url("resources/images/skkf.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70%;
+}
+
+.page-banner.hellyhansen {
+  background: #da2127 url("resources/images/hellyhansen.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30%;
 }
 
 .projects-container .hellyhansen {
@@ -323,41 +455,24 @@ hr {
   background-size: 80%;
 }
 
-.battlerite {
-  background: url("resources/images/Battlerite-Header.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 30%;
-  background-size: cover;
-}
-
-.other-projects {
-  padding: 0 !important;
-}
-
-.other-projects a:link, .other-projects a:visited, .other-projects a:active {
-  font-family: Calibri light;
-  display: inline-block;
-  color: white;
-  text-decoration: none;
-}
-
-.other-projects a::after {
-  content: '';
-  width: 0px;
-  height: 2px;
-  display: block;
-  background: white;
-  transition: 300ms;
-  margin-top: 6px;
-}
-
-.other-projects a:hover::after {
-  width: 100%;
-}
-
 @media only screen and (min-width: 425px) {
   .project-item-container {
     width: 100%;
+  }
+  .other-projects-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .other-projects-list div:not(:nth-child(2n + 1)) {
+    margin-left: 1rem;
+  }
+
+  .other-project-item-container {
+    flex: 50%;
+    max-width: 47%;
+    height: 180px;
   }
 }
 
@@ -365,44 +480,52 @@ hr {
   .projects-container {
     width: 80%;
   }
+  .other-projects-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .other-projects-list div:not(:first-child) {
+    margin-left: 1rem;
+  }
+
+  .other-project-item-container {
+    flex: 25%;
+    max-width: 25%;
+    height: 180px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
   .project-item-container {
     max-width: 60%;
   }
-  .websites-list {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .websites-list>div {
-    margin-bottom: 0;
-  }
   .games-list {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .games-list>div {
-    margin-bottom: 0;
+  .games-list > div {
+    margin-bottom: 2rem;
   }
-  .games-list div:nth-child(2n+1), .websites-list div:nth-child(2n+1) {
+  .games-list div:nth-child(2n + 1) {
     flex: 70% 1;
   }
-  .games-list div:nth-child(2n+2), .websites-list div:nth-child(2n+2) {
+  .games-list div:nth-child(2n + 2) {
     flex: 30% 1;
     margin-left: 2rem;
   }
-  .websites-list div:nth-child(3n), .games-list div:nth-child(3n) {
-    flex: 30% 1;
+  .games-list div:nth-child(3) {
+    flex: 48%;
+    max-width: 50%;
   }
-  .websites-list div:nth-child(4n), .games-list div:nth-child(4n) {
-    flex: 70% 1;
+  .games-list div:nth-child(4) {
+    flex: 48%;
+    max-width: 50%;
   }
-  .websites-list div:nth-child(n+3), .games-list div:nth-child(n+3) {
-    margin-top: 2rem;
-  }
-  .websites-list div:last-child {
-    margin-bottom: 2rem;
+  .other-projects-list div:not(:first-child) {
+    margin-left: 2rem;
   }
 }
 
@@ -419,7 +542,7 @@ hr {
   .leos {
     background-size: 50%;
   }
-  .battlerite {
+  .page-container.battlerite .page-banner {
     background-size: cover;
   }
 }
@@ -427,71 +550,117 @@ hr {
 /* ABOUT */
 
 .about {
-  padding: 3rem 0 4rem;
-  background: #ebebeb;
-  margin: 0 auto;
+  background: #1e1e1e;
+  display: block;
+  width: 100%;
 }
 
 .about-container {
+  width: 70%;
+  max-width: 660px;
+  padding: 6rem 0;
   margin: 0 auto;
-  width: 90%;
-  border-radius: 8px;
+}
+
+.about-heading {
+  margin-bottom: 4rem;
+}
+
+.about-heading div {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+}
+
+.about-heading div h3 {
+  display: inline-block;
+  font-weight: 400;
+  transition: color 0.3s;
+}
+
+.about-heading .title-game:hover {
+  color: #7ac4fd;
+}
+
+.about-heading h1:hover,
+.about-heading h3:hover {
+  cursor: default;
+}
+
+.about-image-wrapper {
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+.about-image-wrapper > div:first-of-type {
+  flex: 1;
+}
+
+.about-image-wrapper img {
+  flex: 1;
+  border-radius: 100%;
+  max-width: 300px;
+  max-height: 300px;
+  border: 1px solid #30367b;
+}
+
+.about-content {
   display: flex;
   flex-direction: column;
 }
 
-.about-container>div {
-  flex: 3;
-  text-align: right;
+.about-content h2 {
+  color: rgba(203, 227, 255, 0.9);
+  margin-bottom: 1rem;
 }
 
-.about-container div:nth-child(2) {
-  flex: 5;
-  text-align: left;
+.about-me {
+  flex: 1;
+  margin-bottom: 4rem;
 }
 
-.about-container h2 {
-  color: #000;
-  padding: 1rem 0;
+.who-am-i,
+.as-a-developer {
+  margin-bottom: 1rem;
 }
 
-.about-container h3 {
-  color: #000;
+.who-am-i p,
+.as-a-developer p {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 200;
 }
 
-.about-container h4 {
-  color: #000;
+.as-a-developer {
+  margin-top: 3rem;
 }
 
-.about-container p {
-  font-size: 1.4rem;
-  color: #333;
-}
-
-.personal-photo {
-  margin: 0 auto 2rem auto;
+.resume {
+  flex: 1;
   display: flex;
-  height: 260px;
-  background: url('./resources/images/Hedman-photo.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  line-height: 0;
-  font-size: 0;
-  color: transparent;
+  flex-direction: row;
+}
+
+.experiences h3,
+.education h3 {
+  color: rgba(203, 227, 255, 0.9);
+}
+
+.experiences {
+  flex: 1;
+}
+
+.education {
+  flex: 1;
 }
 
 @media only screen and (min-width: 425px) {
   .about-container {
-    width: 80%;
+    max-width: 40%;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .personal-photo {
-    width: 320px;
-    height: 320px;
-  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -499,8 +668,9 @@ hr {
     width: 71%;
     flex-direction: row;
   }
-  .personal-photo {
-    margin: 0 3rem 0 auto;
+
+  .about-heading h1 {
+    font-size: 4rem;
   }
 }
 
@@ -508,23 +678,69 @@ hr {
 
 footer {
   width: 100%;
-  background: #1e1e1e;
+  background: #111;
   padding: 2rem 0;
 }
 
 .footer-container {
   text-align: center;
+  display: flex;
 }
 
-.footer-container p {
+.footer-interests {
+  flex: 1;
+}
+
+.footer-interests p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-interests img {
+  max-width: 320px;
+  height: 150px;
+  margin: 0.3rem;
+  border: 1px solid #222;
+  border-radius: 12px;
+  -moz-transition: border 0.3s;
+  -webkit-transition: border 0.3s;
+  transition: border 0.3s;
+}
+
+.footer-interests img:hover {
+  border: 1px solid #444;
+}
+
+.footer-details {
+  flex: 1;
+}
+
+.footer-details > div:first-child {
+  position: relative;
+  top: 5rem;
+}
+
+.footer-details > div:last-child {
+  position: relative;
+  top: 6rem;
+  margin-top: 2rem;
+}
+
+.footer-details .copyright {
   display: inline-block;
-}
-
-.footer-container p:first-child {
   padding-right: 0.5rem;
 }
 
-.footer-container p:last-child {
+.footer-details .copyright span:last-child {
+  padding-left: 0.5rem;
+}
+
+.footer-details span {
+  display: inline-block;
+}
+
+.footer-details p {
+  display: inline-block;
   padding-left: 0.5rem;
 }
 
@@ -532,16 +748,16 @@ footer {
 
 .credits-page {
   background: #1e1e1e;
+  display: block;
   height: 100%;
   min-height: 100vh;
   position: relative;
 }
 
 .credits-page-container {
-  position: relative;
-  top: 4rem;
   width: 50%;
   margin: 0 auto;
+  padding-top: 4rem;
 }
 
 .credits-page-container div {
@@ -555,73 +771,218 @@ footer {
 }
 
 .page-container {
-  background: rgb(241, 235, 235);
+  background: #1e1e1e;
 }
 
-.page-banner {
-  width: 100%;
-  height: 100vh;
-}
-
-.page-banner.hellyhansen {
-  background: #da2127 url("resources/images/hellyhansen.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 30%;
-}
-
-.page-content {
-  width: 80%;
-  margin: 0 auto;
-  padding: 3rem 0;
-}
-
-.page-intro {
-  text-align: left;
-  margin-bottom: 2rem;
-}
-
-.page-intro h2 {
-  font-weight: 600;
-  font-size: 1.3em;
-}
-
-.page-intro h2:first-child {
-  margin-bottom: 2rem;
-}
-
-.page-container h1, .page-container h2, .page-container h4, .page-container p, .page-container span {
-  color: #333;
-}
-
-.page-container h1, .page-container h2, .page-container h3, .page-container h4 {
+.page-container h2,
+.page-container h3,
+.page-container h4 {
   font-family: Calibri light;
   line-height: 2.4rem;
 }
 
-.page-main {
+.page-banner {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+}
+
+.page-banner .banner-overlay {
+  width: 100%;
+  height: 100%;
+  filter: opacity(60%) blur(2px);
+}
+
+.page-container .page-banner h1 {
+  font-size: 5rem;
+  text-shadow: 0px 0px 20px #000;
+  width: 100%;
+  position: absolute;
+  bottom: 9rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+.page-content {
+  margin: 0 auto;
+}
+
+.page-content {
+  border-top: 1px solid #333;
+}
+
+.page-intro {
+  /* border-bottom: 1px solid #444; */
+}
+
+.page-intro-wrapper {
+  width: 70%;
+  margin: 4rem auto;
   text-align: left;
-}
-
-.page-main p {
-  padding-bottom: 1rem;
-  font-weight: 300;
-  font-size: 1.1em;
-}
-
-.page-main h3 {
-  margin: 2rem 0;
-  font-size: 1.3em;
-  color: #000;
-}
-
-.main-intro {
   display: flex;
   flex-direction: column;
 }
 
-.main-intro div {
+.page-intro-wrapper h2 {
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+.page-intro-wrapper b {
+  color: #fff;
+}
+
+.page-intro-wrapper p {
+  color: #fff;
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+.status-panel {
   flex: 1;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4rem;
+}
+
+.status-item {
+  flex: 1;
+  text-align: center;
+}
+
+.status-item h3 {
+  line-height: 1.3;
+}
+
+.status-item h3:first-child {
+  color: rgba(203, 227, 255, 0.9);
+  margin-bottom: 0.5rem;
+}
+
+.status-item h3:not(:first-child) {
+  color: #fff;
+  font-weight: 300;
+}
+
+.files {
+  display: block;
+  padding: 1rem 0;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.files div {
+  display: inline-block;
+  margin: 0 4rem 0 4rem;
+  background: linear-gradient(171deg, #181a35, #30367b, #181a35);
+  border-radius: 12px;
+  border: 1px solid #30367b;
+  transition: border 0.3s, color 0.3s;
+}
+
+.files div a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  transition: border 0.3s, color 0.3s;
+}
+
+.files div:hover {
+  color: #fff;
+  border-radius: 12px;
+  border: 1px solid #5f67be;
+}
+
+.files div:hover a {
+  color: #fff;
+}
+
+.definitions {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.definitions div {
+  width: 45%;
+  padding: 0 1rem;
+}
+
+.definitions h2 {
+  font-size: 1.5em;
+  font-weight: 200;
+  padding-bottom: 1rem;
+  color: #fff;
+}
+
+.definitions p {
+  color: #fff;
+  font-weight: 200;
+}
+
+.page-media {
+  padding: 4rem 0;
+  background: linear-gradient(171deg, #181a35, #30367b, #181a35);
+  border-top: 1px solid #30367b;
+  border-bottom: 1px solid #30367b;
+}
+
+.page-media-wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.video-wrapper {
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%;
+  margin-bottom: 2rem;
+}
+
+.video-wrapper:last-child {
+  margin: 2rem 0 0 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.image-grid {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.image-grid img {
+  flex: calc(50% - 1rem);
+  max-width: calc(50% - 1.14rem);
+  border: 1px solid #414d96;
+}
+
+.page-container.battlerite .image-grid div:first-child {
+  background: url("./resources/images/battlerite_01.jpeg");
+}
+.page-container.battlerite .image-grid div:nth-child(2) {
+  background: url("./resources/images/battlerite_02.jpg");
+}
+.page-container.battlerite .image-grid div:nth-child(3) {
+  background: url("./resources/images/battlerite_03.jpg");
+}
+.page-container.battlerite .image-grid div:last-child {
+  background: url("./resources/images/battlerite_05.jpg");
 }
 
 .info {
@@ -642,21 +1003,210 @@ footer {
   padding: 0 0.52rem;
   margin-right: 0.5rem;
   background: yellow;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-weight: bold;
   cursor: default;
   user-select: none;
 }
 
-.gameDevResource, .gameDevResource .page-container {
+.quick-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  background: #222;
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+}
+
+.quick-link-container {
+  margin-left: 0;
+  display: inline-block;
+  position: relative;
+  top: 0;
+  height: 80px;
+  width: 220px;
+  text-align: center;
+}
+
+.quick-link-container a {
+  display: block;
+  height: 100%;
+}
+
+.quick-link-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #888 !important;
+  font-size: 1rem;
+  text-align: right;
+  text-transform: uppercase;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  opacity: 1;
+}
+
+.prev .quick-link-text {
+  position: absolute;
+  left: 0;
+  text-align: left !important;
+}
+
+.quick-link-title {
+  position: absolute;
+  top: 25%;
+  right: 30px;
+  display: inline-block;
+  color: rgba(203, 227, 255, 0.9) !important;
+  text-decoration: none;
+  font-size: 2rem;
+  text-transform: capitalize !important;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  transition: top 0.3s, color 0.3s;
+  -webkit-transition: top 0.3s, color 0.3s;
+}
+
+.prev .quick-link-title {
+  position: absolute;
+  left: 30px;
+  right: 0 !important;
+  text-align: left;
+}
+
+.quick-link-image {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  border-bottom: 2px solid #888;
+  border-right: 2px solid #888;
+  transform: rotateZ(315deg);
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  transition: top 0.3s, border-color 0.3s;
+  -webkit-transition: top 0.3s, border-color 0.3s;
+}
+
+.prev .quick-link-image {
+  position: absolute;
+  left: 0;
+  transform: rotateZ(137deg);
+}
+
+.quick-link-container:hover .quick-link-text {
+  opacity: 0;
+}
+
+.quick-link-container:hover .quick-link-title {
+  top: 6px;
+  color: #fff !important;
+}
+
+.quick-link-container:hover .quick-link-image {
+  top: 26px;
+  border-color: #fff !important;
+}
+
+.page-section {
+  padding: 4rem 0;
+}
+
+.page-section:nth-child(odd) {
   background: #1e1e1e;
+}
+.page-section:nth-child(even) {
+  background: #333;
+}
+
+.bakko-egg-brawl ul li {
+  margin-left: 1.5rem;
+}
+
+.bakko-egg-brawl .content-image.-first {
+  background: #222 url();
+}
+
+.bakko-egg-brawl .content-image.-second {
+  background: #222 url();
+  float: left;
+  margin: 1rem 1rem 1rem 0;
+}
+
+.bakko-egg-brawl .content-image.-first {
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.content-section-wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.content-section-wrapper .content {
+  text-align: left;
+}
+
+.content-section-wrapper .content h2 {
+  margin-bottom: 1rem;
+}
+
+.rocket-balloon .content {
+  margin-left: 2rem;
+}
+
+.rocket-balloon .content-image.-first {
+  background: #222 url();
+}
+
+.battlegrounds .content-image.-first {
+  background: #222 url();
+}
+
+.bakko-egg-brawl p,
+.rocket-balloon p,
+.battlegrounds p {
+  font-size: 1.3rem;
+}
+
+.bakko-egg-brawl .content-image,
+.rocket-balloon .content-image,
+.battlegrounds .content-image {
+  min-height: 280px;
+  max-height: 320px;
+  height: 100%;
+  min-width: 420px;
+  max-width: 560px;
+  width: 100%;
+  float: right;
+}
+
+.gameDevResource,
+.gameDevResource .page-container {
+  background: #1e1e1e;
+}
+
+.gameDevResource .page-container {
+  height: 100vh;
 }
 
 .gameDevResource .page-content {
   padding-top: 3rem;
 }
 
-.gameDevResource h1, .gameDevResource h2, .gameDevResource h3 {
+.gameDevResource h1,
+.gameDevResource h2,
+.gameDevResource h3 {
   color: #fff;
 }
 
@@ -673,7 +1223,8 @@ footer {
   font-size: 1em;
 }
 
-.gameDevResource span, .gameDevResource p {
+.gameDevResource span,
+.gameDevResource p {
   color: #ddd;
   font-size: 0.9em;
 }
@@ -731,7 +1282,7 @@ footer {
   font-size: 0.8em;
   flex: 1;
   padding: 0.3rem;
-  margin: 2rem .3rem 0;
+  margin: 2rem 0.3rem 0;
   border: 2px solid black;
   border-radius: 4px;
   font-weight: bold;
@@ -771,6 +1322,7 @@ footer {
     font-weight: 400;
     font-size: 1.5em;
   }
+
   .gameDevResource .content-wrapper {
     grid-template-columns: 1fr 1fr;
   }
@@ -780,15 +1332,12 @@ footer {
   .button-categories {
     width: 500px;
   }
+  .page-content {
+    /* width: 70%; */
+  }
 }
 
 @media only screen and (min-width: 1024px) {
-  .main-intro {
-    flex-direction: row;
-  }
-  .main-intro div:first-child {
-    margin-right: 3rem;
-  }
   .info {
     width: 700px;
   }
@@ -812,45 +1361,13 @@ footer {
   padding: 6rem 0;
 }
 
-.other h2, .other h3, .other h4, .other p, .other span {
+.other h2,
+.other h3,
+.other h4,
+.other p,
+.other span {
   color: #ddd;
 }
-
-.other-project-item-container {
-  height: 370px;
-  border: 1px solid #414d96;
-}
-
-.other-project-item {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-/* .other-project-item a {
-  display: block;
-  height: 100%;
-  -moz-transition: background 0.3s;
-  -webkit-transition: background 0.3s;
-  transition: background 0.3s;
-} */
-
-/* .project-item a:hover {
-  background: rgba(65, 77, 150, .5);
-} */
-
-/* .item-title {
-  color: #fff;
-  font-size: 1.75rem;
-  position: absolute;
-  bottom: 2.7rem;
-  left: 0;
-  padding: 0 0 0 1rem !important;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-  pointer-events: none;
-} */
 
 .item-activity {
   position: absolute;
@@ -865,20 +1382,20 @@ footer {
   pointer-events: none;
 }
 
-.outvaders {}
+.outvaders {
+}
 
-.canvas {}
+.canvas {
+}
 
-.hofding {}
+.hofding {
+}
 
-.thief {}
+.thief {
+}
 
-.transmission {}
+.transmission {
+}
 
-.konga {}
-
-@media only screen and (min-width: 1024px) {
-  .other-project-item-container {
-    max-width: 60%;
-  }
+.konga {
 }

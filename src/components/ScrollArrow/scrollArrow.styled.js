@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledScrollArrow = styled.a`
     cursor: pointer;
     position: absolute;
-    bottom: 2px;
+    bottom: 0;
     width: 100%;
     display: flex;
     justify-content: center;
