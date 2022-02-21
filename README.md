@@ -2,9 +2,8 @@
 
 ###ToDo
 ##- GDD & Play buttons/links
-##- Transitions & fade-in (https://github.com/framer/motion - https://dev.to/joserfelix/getting-started-with-react-animations-308a)
-##- Image zoom (https://www.youtube.com/watch?v=WESQFCM9KgU)
-##- Game/Website/Design tag for projects
+##- Transitions & fade-in (https://github.com/framer/motion / https://dev.to/joserfelix/getting-started-with-react-animations-308a)
+##- Image zoom (https://www.youtube.com/watch?v=WESQFCM9KgU / https://www.npmjs.com/package/react-image-lightbox)
 ##- Smooth scrolling on from header-section
 ##- Layout changes:
     ###- Content addition/subtractions

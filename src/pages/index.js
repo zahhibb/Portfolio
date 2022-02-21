@@ -11,12 +11,16 @@ export var projectQuickLinks = [
         link: "/akined"
     },
     {
-        name: "FPS UI",
+        name: '"Pioneer" - FPS UI',
         link: "/pioneer"
     },
     {
-        name: 'Battlefield "6"',
+        name: 'Battlefield "6" UI',
         link: "/battlefield6"
+    },
+    {
+        name: 'Elden Ring UI',
+        link: "/eldenring"
     },
     {
         name: "Canvas Climber",
@@ -25,18 +29,6 @@ export var projectQuickLinks = [
     {
         name: "Outvaders Must Die",
         link: "/outvaders"
-    },
-    {
-        name: "SKKF",
-        link: "/skkf"
-    },
-    {
-        name: "Helly Hansen",
-        link: "/hellyhansen"
-    },
-    {
-        name: "Leo's Lekland",
-        link: "/leoslekland"
     },
 ]
 
@@ -89,7 +81,7 @@ const index = () => {
                     <div className="intro-description">
                         <p>Hi there!</p>
                         <p>I'm Joakim, a <strong>Game and UX designer</strong> with about 3 years of experience developing games inside Unity.</p>
-                        {/* <p className='paragraph'>While my expertise lies in UX and UI Design, some of my other favorite topics are Game- and Level design.</p> */}
+                        <p>I am currently studying Game & UX design at <a href='https://futuregames.se/' target="_blank" rel="noopener noreferrer">FutureGames</a> in Skellefteå, Sweden, and will be open for <b>internships from Jan-Jun 2023!</b> <i style={{ fontSize: "16px" }}>hint hint</i> ;)</p>
                         <p>Below you will find some of my highlighted projects in Game development; including professional, formal, and personal.</p>
                         <div className="social-links">
                             <div className="linkedin">
@@ -116,7 +108,7 @@ const index = () => {
                             <div className="games-list">
                                 <ProjectItem
                                     title={"Battlerite"}
-                                    description={"Prototyping & Game modes"}
+                                    description={"Professional/internship projects"}
                                     url={"/battlerite"}
                                     imgClass={"battlerite"}
                                     tag={"Programming & Game design"}
@@ -129,14 +121,14 @@ const index = () => {
                                     tag={"Programming & Game design"}
                                 />
                                 <ProjectItem
-                                    title={"Pioneer - FPS UI"}
+                                    title={'"Pioneer" - FPS UI'}
                                     description={"School assignment"}
                                     url={"/pioneer"}
                                     imgClass={"pioneer"}
                                     tag={"UX/UI design"}
                                 />
                                 <ProjectItem
-                                    title={'Battlefield "6" UI concept'}
+                                    title={'"Battlefield 6" UI concept'}
                                     description={"Personal project"}
                                     url={"/battlefield6"}
                                     imgClass={"battlefield6"}
@@ -155,7 +147,7 @@ const index = () => {
                                     imgClass={"eldenring"}
                                     tag={"UX/UI"}
                                 />
-                                <OtherProjectItem
+                                {/* <OtherProjectItem
                                     title={"Outvaders Must Die"}
                                     description={"Nordic Game Jam 2016"}
                                     url={"/outvadersmustdie"}
@@ -168,7 +160,7 @@ const index = () => {
                                     url={"/canvasclimber"}
                                     imgClass={"canvasclimber"}
                                     tag={"Scripting & UI pixel art"}
-                                />
+                                /> */}
                             </div>
                         </div>
                     </div>

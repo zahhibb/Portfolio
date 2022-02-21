@@ -4,7 +4,8 @@ import Footer from "../sections/footer";
 import { Link } from "react-router-dom";
 import "../App.css";
 
-import PostMortemPDF from "../resources/documents/Post_Mortem_-_Game_Project_1_Akined_JoakimHedman.pdf";
+import GDD from "../resources/documents/AKINED - GDD.pdf";
+import PostMortem from "../resources/documents/Post_Mortem_-_Game_Project_1_Akined_JoakimHedman.pdf";
 import { projectQuickLinks } from "./index";
 
 function StatusItem({ title, content }) {
@@ -47,10 +48,10 @@ const Akined = () => {
                                     <a href="https://zahhibb.itch.io/akined" target="_blank" rel="noopener noreferrer">Play the game</a>
                                 </div>
                                 <div>
-                                    <a href="http://www.google.se">Read the GDD</a>
+                                    <a href={GDD} target="_blank" rel="noopener noreferrer">Read the GDD</a>
                                 </div>
                                 <div>
-                                    <a href={PostMortemPDF} target="_blank" rel="noopener noreferrer">Read the Post-Mortem</a>
+                                    <a href={PostMortem} target="_blank" rel="noopener noreferrer">Read the Post-Mortem</a>
                                 </div>
                             </div>
                             <div className='definitions'>

@@ -17,7 +17,7 @@ h2 {
 }
 
 a, a:link, a:active, a:visited {
-  color: #e9711b;
+  color: #fff;
 }
 
 a:hover {
@@ -283,17 +283,17 @@ a:hover {
 
 .project-item .tag, .other-project-item .tag {
   position: absolute;
-  top: 0;
-  left: 0;
-  padding: 0.5rem 0 0 0.7rem;
+  top: 0.5rem;
+  left: 0.5rem;
   font-weight: 600;
   letter-spacing: 0.75px;
   color: #fff;
-  text-shadow: 0 0 10px #000;
+  text-shadow: 0 0 20px #000, 0 0 5px #000;
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
   pointer-events: none;
+  padding: 0 0.5rem;
 }
 
 .other-projects-list {
@@ -327,10 +327,10 @@ hr {
 }
 
 .page-container.akined .page-banner .banner-overlay {
-  background: #1d1223 url("resources/images/Akined_poster.jpg");
+  background: #1d1223 url("resources/images/Akined2.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 25%;
+  background-size: cover;
 }
 
 .projects-container .akined {
@@ -341,14 +341,14 @@ hr {
 }
 
 .page-container.pioneer .page-banner .banner-overlay {
-  /* background: url("resources/images/"); */
+  background: url("resources/images/portfolio_pioneer_item.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .projects-container .pioneer {
-  /* background: url("resources/images/"); */
+  background: url("resources/images/portfolio_pioneer_item.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -598,7 +598,6 @@ hr {
 
 .about-me {
   flex: 1;
-  margin-bottom: 4rem;
 }
 
 .who-am-i, .as-a-developer {
@@ -621,9 +620,17 @@ hr {
   flex-direction: row;
 }
 
-.experiences h3, .education h3 {
-  color: rgba(203,227,255,.9);
+.resume div {
+  flex: 1;
 }
+
+.resume h3 {
+  color: #ff8a37;
+}
+
+/* .experiences h3, .education h3 {
+  color: #ff8a37;
+} */
 
 .experiences {
   flex: 1;
@@ -659,16 +666,22 @@ hr {
 footer {
   width: 100%;
   background: #111;
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 
 .footer-container {
   text-align: center;
   display: flex;
+  flex-direction: column;
+}
+
+.footer-interests p, .footer-details p {
+  color: #ff8a37;
 }
 
 .footer-interests {
   flex: 1;
+  margin-bottom: 3rem;
 }
 
 .footer-interests p {
@@ -676,10 +689,18 @@ footer {
   margin-bottom: 1rem;
 }
 
+.footer-interests a {
+  display: inline-block;
+}
+
+.footer-interests a:not(:last-child) {
+  margin-right: 1.8rem;
+}
+
 .footer-interests img {
   max-width: 320px;
+  min-width: 270px;
   height: 150px;
-  margin: 0.3rem;
   border: 1px solid #222;
   border-radius: 12px;
   -moz-transition: border 0.3s;
@@ -693,35 +714,33 @@ footer {
 
 .footer-details {
   flex: 1;
-}
-
-.footer-details > div:first-child {
-  position: relative;
-  top: 5rem;
-}
-
-.footer-details > div:last-child {
-  position: relative;
-  top: 6rem;
-  margin-top: 2rem;
-}
-
-.footer-details .copyright {
-  display: inline-block;
-  padding-right: 0.5rem;
-}
-
-.footer-details .copyright span:last-child {
-  padding-left: 0.5rem;
-}
-
-.footer-details span {
-  display: inline-block;
+  margin-bottom: 3rem;
 }
 
 .footer-details p {
   display: inline-block;
-  padding-left: 0.5rem;
+}
+
+.footer-details > p {
+  font-size: 1.5rem;
+}
+
+.footer-details a:not(:first-child) {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.copyright {
+  display: inline-block;
+  padding-right: 0.5rem;
+}
+
+.copyright span {
+  display: inline-block;
+}
+
+.copyright span:not(:first-child), .copyright a {
+  margin-left: 0.5rem;
 }
 
 /* CREDITS */
@@ -838,7 +857,7 @@ footer {
 }
 
 .status-item h3:first-child {
-  color: rgba(203,227,255,.9);
+  color: #ff8a37;
   margin-bottom: 0.5rem;
 }
 
@@ -864,6 +883,7 @@ footer {
 }
 
 .files div a {
+  color: #ddd;
   text-decoration: none;
   display: inline-block;
   padding: 0.5rem 2rem;
@@ -921,11 +941,7 @@ footer {
   position: relative;
   height: 0;
   padding-bottom: 56.25%;
-  margin-bottom: 2rem;
-}
-
-.video-wrapper:last-child {
-  margin: 2rem 0 0 0;
+  margin: 2rem 0;
 }
 
 .video-wrapper iframe {
@@ -948,6 +964,10 @@ footer {
   flex: calc(50% - 1rem);
   max-width: calc(50% - 1.14rem);
   border: 1px solid #414d96;
+}
+
+.page-container.battlerite .image-grid {
+  margin-top: 2rem;
 }
 
 .page-container.battlerite .image-grid div:first-child {
@@ -1003,7 +1023,8 @@ footer {
   position: relative;
   top: 0;
   height: 80px;
-  width: 220px;
+  max-width: 280px;
+  width: 100%;
   text-align: center;
 }
 
@@ -1107,23 +1128,38 @@ footer {
   background: #333;
 }
 
+.general ul li {
+  margin-left: 1.5rem;
+}
+
+.general i {
+  font-size: 1rem;
+}
+
 .bakko-egg-brawl ul li {
   margin-left: 1.5rem;
 }
 
-.bakko-egg-brawl .content-image.-first {
-  background: #222 url();
-}
-
-.bakko-egg-brawl .content-image.-second {
-  background: #222 url();
-  float: left;
-  margin: 1rem 1rem 1rem 0;
-}
-
-.bakko-egg-brawl .content-image.-first {
-  margin-left: 2rem;
+.bakko-egg-brawl .content-image.header {
+  background: #222 url("./resources/images/battlerite-egg-brawl.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 45%;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 320px;
   margin-bottom: 2rem;
+}
+
+.bakko-egg-brawl .content-image.first {
+  float: right;
+  min-height: 360px;
+  margin: 0rem 0rem 1rem 1rem;
+}
+
+.bakko-egg-brawl .content-image.second {
+  float: left;
+  min-height: 360px;
+  margin: 1rem 1rem 1rem 0;
 }
 
 .content-section-wrapper {
@@ -1162,7 +1198,6 @@ footer {
   min-width: 420px;
   max-width: 560px;
   width: 100%;
-  float: right;
 }
 
 .gameDevResource .page-container {

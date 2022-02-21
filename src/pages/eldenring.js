@@ -21,7 +21,7 @@ function StatusItem({ title, content }) {
     );
 }
 
-const Battlefield6 = () => {
+const Eldenring = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -30,17 +30,17 @@ const Battlefield6 = () => {
     return (
         <div className="page">
             <Navigation />
-            <div className="page-container battlefield6">
+            <div className="page-container eldenring">
                 <div className="page-banner">
                     <div className="banner-overlay"></div>
-                    <h1>Battlefield "6" UI concept</h1>
+                    <h1>Elden Ring UI concept</h1>
                 </div>
                 <div className="page-content" id="content">
                     <section className="page-intro">
                         <div className="page-intro-wrapper">
                             <div className='status-panel'>
                                 <StatusItem title={"Team Size"} content={["Personal"]} />
-                                <StatusItem title={"Duration"} content={["24 hours (across 2 weeks)"]} />
+                                <StatusItem title={"Duration"} content={["4 days (across 3 weeks)"]} />
                                 <StatusItem title={"Tools"} content={["Adobe [XD, Photoshop, Illustrator]"]} />
                             </div>
                             <div className="files">
@@ -97,4 +97,4 @@ const Battlefield6 = () => {
     )
 }
 
-export default Battlefield6
+export default Eldenring

@@ -49,7 +49,7 @@ const About = () => {
                         <div className='who-am-i'>
                             <h3><u>Who am I?</u></h3>
                             <p>
-                                Well, I consider myself an honest, happy, and proactive guy with great interest in games and game development. For a bit more down-to-earth introduction would be to say that I simply love trying out news things in life, be it from trying out new foods, to travelling, to further even taking on all manner of jobs I can get my hands on.
+                                Well, I consider myself an honest, jolly, and proactive guy with enormous curiosity in games and game development. For a bit more down-to-earth introduction is that I simply love trying out news things in life, be it from trying out new foods, experiencing different cultures, to taking on all manner of jobs I can get my hands on!
                             </p>
                             <br />
                             <p>The interest of making games came from quite an early age where I first began by editing values in game files to modify stats of units inside <a href='https://en.wikipedia.org/wiki/Heroes_of_Might_and_Magic_III' target="_blank" rel="noopener noreferrer">Heroes of Might and Magic 3</a>, <i>one of my most favourite games of all time</i>.</p>
@@ -66,7 +66,25 @@ const About = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='resume'>
+
+                    {/* <div className='resume'>
+                        <div>
+                            <h3>Skills</h3>
+                            <h4>Game design</h4>
+                            <h4>UX/UI design</h4>
+                            <h4>Level design</h4>
+                            <h4>Wireframing</h4>
+                        </div>
+                        <div>
+                            <h3>Software</h3>
+                            <h4>Unity</h4>
+                            <h4>Unreal Engine 4</h4>
+                            <h4>Figma</h4>
+                            <h4>Photoshop</h4>
+                        </div>
+                    </div> */}
+
+                    {/* <div className='resume'>
                         <div className='experiences'>
                             <h3>Experiences</h3>
                             <div>
@@ -81,7 +99,7 @@ const About = () => {
                                 <p>asd</p>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <Footer />

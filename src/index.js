@@ -9,13 +9,13 @@ import "./index.css";
 
 import App from "./App";
 import About from "./pages/about";
-import SKKF from "./pages/skkf";
-import HH from "./pages/hellyhansen";
-import Leos from "./pages/leoslekland";
 import Battlerite from "./pages/battlerite";
 import Akined from "./pages/akined";
 import Pioneer from "./pages/pioneer";
 import Battlefield6 from "./pages/battlefield6";
+import EldenRing from "./pages/eldenring";
+// import CanvasClimber from "./pages/canvasclimber";
+// import Outvaders from "./pages/outvaders";
 import Credits from "./pages/credits";
 import GameDevResources from "./pages/gamedevresources";
 
@@ -30,9 +30,9 @@ const routing = (
         <Route exact path="/akined" component={Akined}></Route>
         <Route exact path="/pioneer" component={Pioneer}></Route>
         <Route exact path="/battlefield6" component={Battlefield6}></Route>
-        <Route exact path="/skkf" component={SKKF}></Route>
-        <Route exact path="/hellyhansen" component={HH}></Route>
-        <Route exact path="/leoslekland" component={Leos}></Route>
+        <Route exact path="/eldenring" component={EldenRing}></Route>
+        {/* <Route exact path="/canvasclimber" component={CanvasClimber}></Route>
+        <Route exact path="/outvaders" component={Outvaders}></Route> */}
         <Route exact path="/credits" component={Credits}></Route>
         <Route exact path="/gamedevresources" component={GameDevResources}></Route>
       </Switch>

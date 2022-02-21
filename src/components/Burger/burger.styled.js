@@ -26,10 +26,10 @@ export const StyledBurger = styled.button`
 span {
     display: block;
     position: absolute;
-    height: 5px;
+    height: 4px;
     width: 100%;
     background: ${({ theme }) => theme.lightText};
-    border-radius: 9px;
+    border-radius: 6px;
     opacity: 1;
     left: 0;
     -webkit-transform: rotate(0deg);
