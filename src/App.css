@@ -8,7 +8,11 @@ html {
   text-align: center;
 }
 
-h1, h2, h3, h4, strong {
+h1,
+h2,
+h3,
+h4,
+strong {
   color: #fff;
 }
 
@@ -37,7 +41,8 @@ a:hover {
   margin: 0 auto;
 }
 
-.intro-heading h1, .about-heading h1 {
+.intro-heading h1,
+.about-heading h1 {
   font-family: Alegreya-regular;
   color: #fff;
   font-size: 2.5rem;
@@ -59,7 +64,9 @@ a:hover {
   color: #7ac4fd;
 }
 
-.intro-heading h1:hover, .intro-heading h3:hover, .intro-heading span:hover {
+.intro-heading h1:hover,
+.intro-heading h3:hover,
+.intro-heading span:hover {
   cursor: default;
 }
 
@@ -104,34 +111,34 @@ a:hover {
 }
 
 .social-links .linkedin a {
-  background: url('resources/images/linkedin-logo.png');
+  background: url("resources/images/linkedin-logo.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 40% 40%;
 }
 
 .social-links .artstation a {
-  background: url('resources/images/artstation.png');
+  background: url("resources/images/artstation.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 40% 40%;
 }
 
 .social-links .twitter a {
-  background: url('resources/images/2021\ Twitter\ logo\ -\ white.png');
+  background: url("resources/images/2021\ Twitter\ logo\ -\ white.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 45% 40%;
 }
 
 .social-links .mail a {
-  background: url('resources/images/mail-logo.png');
+  background: url("resources/images/mail-logo.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 40% 40%;
 }
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width: 768px) {
   .intro-container {
     width: 70%;
     max-width: 660px;
@@ -187,7 +194,7 @@ a:hover {
   flex-direction: column;
 }
 
-.projects-list>div {
+.projects-list > div {
   flex: 1;
 }
 
@@ -203,7 +210,7 @@ a:hover {
   flex-direction: column;
 }
 
-.games-list>div {
+.games-list > div {
   flex: 1;
   margin-bottom: 2rem;
 }
@@ -213,13 +220,15 @@ a:hover {
   border: 1px solid #414d96;
 }
 
-.project-item, .other-project-item {
+.project-item,
+.other-project-item {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.project-item a, .other-project-item a {
+.project-item a,
+.other-project-item a {
   display: block;
   height: 100%;
   -moz-transition: opacity 0.3s;
@@ -229,18 +238,21 @@ a:hover {
   opacity: 0;
 }
 
-.project-item a:hover, .other-project-item a:hover {
+.project-item a:hover,
+.other-project-item a:hover {
   opacity: 1;
 }
 
-.project-item .overlay, .other-project-item .overlay {
+.project-item .overlay,
+.other-project-item .overlay {
   display: block;
   height: 100%;
   background: #000;
   opacity: 0.7;
 }
 
-.project-item .item-title, .other-project-item .other-item-title {
+.project-item .item-title,
+.other-project-item .other-item-title {
   color: #fff;
   font-size: 1.75rem;
   position: absolute;
@@ -261,7 +273,8 @@ a:hover {
   top: 4rem;
 }
 
-.project-item .item-desc, .other-project-item .other-item-desc {
+.project-item .item-desc,
+.other-project-item .other-item-desc {
   position: absolute;
   top: 12rem;
   left: 0;
@@ -281,7 +294,8 @@ a:hover {
   top: 6.5rem;
 }
 
-.project-item .tag, .other-project-item .tag {
+.project-item .tag,
+.other-project-item .tag {
   position: absolute;
   top: 0.5rem;
   left: 0.5rem;
@@ -447,11 +461,11 @@ hr {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  
-  .other-projects-list div:not(:nth-child(2n+1)) {
+
+  .other-projects-list div:not(:nth-child(2n + 1)) {
     margin-left: 1rem;
   }
-  
+
   .other-project-item-container {
     flex: 50%;
     max-width: 47%;
@@ -468,11 +482,11 @@ hr {
     flex-direction: row;
     flex-wrap: nowrap;
   }
-  
+
   .other-projects-list div:not(:first-child) {
     margin-left: 1rem;
   }
-  
+
   .other-project-item-container {
     flex: 25%;
     max-width: 25%;
@@ -489,13 +503,13 @@ hr {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .games-list>div {
+  .games-list > div {
     margin-bottom: 2rem;
   }
-  .games-list div:nth-child(2n+1) {
+  .games-list div:nth-child(2n + 1) {
     flex: 70% 1;
   }
-  .games-list div:nth-child(2n+2) {
+  .games-list div:nth-child(2n + 2) {
     flex: 30% 1;
     margin-left: 2rem;
   }
@@ -565,7 +579,8 @@ hr {
   color: #7ac4fd;
 }
 
-.about-heading h1:hover, .about-heading h3:hover {
+.about-heading h1:hover,
+.about-heading h3:hover {
   cursor: default;
 }
 
@@ -592,7 +607,7 @@ hr {
 }
 
 .about-content h2 {
-  color: rgba(203,227,255,.9);
+  color: rgba(203, 227, 255, 0.9);
   margin-bottom: 1rem;
 }
 
@@ -600,11 +615,13 @@ hr {
   flex: 1;
 }
 
-.who-am-i, .as-a-developer {
+.who-am-i,
+.as-a-developer {
   margin-bottom: 1rem;
 }
 
-.who-am-i p, .as-a-developer p {
+.who-am-i p,
+.as-a-developer p {
   font-size: 1.5rem;
   color: #fff;
   font-weight: 200;
@@ -622,6 +639,11 @@ hr {
 
 .resume div {
   flex: 1;
+}
+
+.experiences h3,
+.education h3 {
+  color: rgba(203, 227, 255, 0.9);
 }
 
 .resume h3 {
@@ -647,7 +669,6 @@ hr {
 }
 
 @media only screen and (min-width: 768px) {
-
 }
 
 @media only screen and (min-width: 1024px) {
@@ -773,7 +794,9 @@ footer {
   background: #1e1e1e;
 }
 
-.page-container h2, .page-container h3, .page-container h4 {
+.page-container h2,
+.page-container h3,
+.page-container h4 {
   font-family: Calibri light;
   line-height: 2.4rem;
 }
@@ -790,7 +813,7 @@ footer {
   filter: opacity(60%) blur(2px);
 }
 
-.page-container .page-banner  h1 {
+.page-container .page-banner h1 {
   font-size: 5rem;
   text-shadow: 0px 0px 20px #000;
   width: 100%;
@@ -847,7 +870,7 @@ footer {
   margin-bottom: 4rem;
 }
 
-.status-item{
+.status-item {
   flex: 1;
   text-align: center;
 }
@@ -862,8 +885,8 @@ footer {
 }
 
 .status-item h3:not(:first-child) {
-   color: #fff;
-   font-weight: 300;
+  color: #fff;
+  font-weight: 300;
 }
 
 .files {
@@ -1001,7 +1024,7 @@ footer {
   padding: 0 0.52rem;
   margin-right: 0.5rem;
   background: yellow;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-weight: bold;
   cursor: default;
   user-select: none;
@@ -1061,7 +1084,7 @@ footer {
   top: 25%;
   right: 30px;
   display: inline-block;
-  color: rgba(203,227,255,.9) !important;
+  color: rgba(203, 227, 255, 0.9) !important;
   text-decoration: none;
   font-size: 2rem;
   text-transform: capitalize !important;
@@ -1097,7 +1120,7 @@ footer {
   -webkit-transition: top 0.3s, border-color 0.3s;
 }
 
-.prev .quick-link-image  {
+.prev .quick-link-image {
   position: absolute;
   left: 0;
   transform: rotateZ(137deg);
@@ -1121,10 +1144,10 @@ footer {
   padding: 4rem 0;
 }
 
-.page-section:nth-child(odd){
+.page-section:nth-child(odd) {
   background: #1e1e1e;
 }
-.page-section:nth-child(even){
+.page-section:nth-child(even) {
   background: #333;
 }
 
@@ -1187,17 +1210,26 @@ footer {
   background: #222 url();
 }
 
-.bakko-egg-brawl p, .rocket-balloon p, .battlegrounds p {
+.bakko-egg-brawl p,
+.rocket-balloon p,
+.battlegrounds p {
   font-size: 1.3rem;
 }
 
-.bakko-egg-brawl .content-image, .rocket-balloon .content-image, .battlegrounds .content-image {
+.bakko-egg-brawl .content-image,
+.rocket-balloon .content-image,
+.battlegrounds .content-image {
   min-height: 280px;
   max-height: 320px;
   height: 100%;
   min-width: 420px;
   max-width: 560px;
   width: 100%;
+}
+
+.gameDevResource,
+.gameDevResource .page-container {
+  background: #1e1e1e;
 }
 
 .gameDevResource .page-container {
@@ -1208,12 +1240,29 @@ footer {
   padding-top: 3rem;
 }
 
-.gameDevResource h1, .gameDevResource h2, .gameDevResource h3 {
-  color: #000;
+.gameDevResource h1,
+.gameDevResource h2,
+.gameDevResource h3 {
+  color: #fff;
 }
 
-.gameDevResource span, .gameDevResource p {
-  color: #333;
+.gameDevResource h1 {
+  font-size: 1.6em;
+}
+
+.gameDevResource h2 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.gameDevResource h3 {
+  font-size: 1em;
+}
+
+.gameDevResource span,
+.gameDevResource p {
+  color: #ddd;
+  font-size: 0.9em;
 }
 
 .gameDevResource .content-header p {
@@ -1223,21 +1272,101 @@ footer {
 .gameDevResource .content-wrapper {
   margin: 3rem auto 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   column-gap: 2rem;
   row-gap: 2rem;
 }
 
-.gameDevResource .content-item {
-  border: 1px solid black;
+.resource-item {
+  padding: 0.5rem 1rem;
+  border: 2px solid #555;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  transition: border 250ms ease-in-out;
+  position: relative;
 }
 
-@media only screen and (min-width: 425px) {}
+.resource-item:hover {
+  border: 2px solid white;
+}
+
+.resource-item p:nth-child(3) {
+  border-bottom: 1px solid white;
+  padding-bottom: 0.3rem;
+}
+
+.resource-item p:nth-child(4) {
+  padding-top: 0.5rem;
+}
+
+.resource-item-cat {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom-right-radius: 100%;
+}
+
+.button-categories {
+  display: flex;
+  margin: 0 auto;
+}
+
+.button-categories button {
+  font-size: 0.8em;
+  flex: 1;
+  padding: 0.3rem;
+  margin: 2rem 0.3rem 0;
+  border: 2px solid black;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: border 0.2s ease-in-out;
+}
+
+.button-categories button:hover {
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.All {
+  background: #fff;
+}
+
+.Design {
+  background: #fffd70;
+}
+
+.Social {
+  background: #ff7070;
+}
+
+.UX {
+  background: #70bfff;
+}
+
+@media only screen and (min-width: 425px) {
+  .resource-item {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+}
 
 @media only screen and (min-width: 768px) {
   .page-intro h2 {
     font-weight: 400;
     font-size: 1.5em;
+  }
+
+  .gameDevResource .content-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .resource-item {
+    width: auto;
+  }
+  .button-categories {
+    width: 500px;
   }
   .page-content {
     /* width: 70%; */
@@ -1248,6 +1377,18 @@ footer {
   .info {
     width: 700px;
   }
+  .gameDevResource .content-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .gameDevResource .page-content {
+    width: 70%;
+  }
+  .gameDevResource .content-wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .other {
@@ -1256,7 +1397,11 @@ footer {
   padding: 6rem 0;
 }
 
-.other h2, .other h3, .other h4, .other p, .other span {
+.other h2,
+.other h3,
+.other h4,
+.other p,
+.other span {
   color: #ddd;
 }
 
@@ -1273,14 +1418,20 @@ footer {
   pointer-events: none;
 }
 
-.outvaders {}
+.outvaders {
+}
 
-.canvas {}
+.canvas {
+}
 
-.hofding {}
+.hofding {
+}
 
-.thief {}
+.thief {
+}
 
-.transmission {}
+.transmission {
+}
 
-.konga {}
+.konga {
+}
