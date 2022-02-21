@@ -227,6 +227,15 @@ a:hover {
   height: 100%;
 }
 
+.project-item-container:focus-within {
+  outline: 1px solid #fff;
+}
+
+.project-item-container:focus-within .project-item a, 
+.other-project-item-container:focus-within .other-project-item a {
+  opacity: 1;
+}
+
 .project-item a,
 .other-project-item a {
   display: block;

@@ -6,6 +6,14 @@ import GameImg1 from "../resources/images/eldenring.png";
 import GameImg2 from "../resources/images/dyinglight2.jpg";
 import GameImg3 from "../resources/images/valheim.png";
 
+function InterestGameItem({ title, url, image }) {
+  return (
+    <a href={url} target="_blank" rel="noopener noreferrer" title={title}>
+      <img src={image} alt="Anno 1800 cover art" />
+    </a>
+  );
+}
+
 class Footer extends Component {
   render() {
     return (
@@ -14,9 +22,9 @@ class Footer extends Component {
           <div className="footer-interests">
             <p>The games I am currently playing:</p>
             <div>
-              <a href="https://www.ubisoft.com/en-gb/game/anno/1800" target="_blank" rel="noopener noreferrer"><img src={GameImg1} alt="Anno 1800 cover art" /></a>
-              <a href="https://store.steampowered.com/app/1426450/Age_of_Darkness_Final_Stand/" target="_blank" rel="noopener noreferrer"><img src={GameImg2} alt="Age of Darkness cover art" /></a>
-              <a href="https://store.steampowered.com/app/690830/Foundation/" target="_blank" rel="noopener noreferrer"><img src={GameImg3} alt="Foundation cover art" /></a>
+              <InterestGameItem title={"Elden Ring"} image={GameImg1} url={"https://en.bandainamcoent.eu/elden-ring/elden-ring"} imageAlt={"Elden Ring cover art"} />
+              <InterestGameItem title={"Dying Light 2"} image={GameImg2} url={"https://dl2.dyinglightgame.com/"} imageAlt={"Dying Light 2 cover art"} />
+              <InterestGameItem title={"Valheim"} image={GameImg3} url={"https://www.valheimgame.com/"} imageAlt={"Valheim cover art"} />
             </div>
           </div>
           <div className="footer-details">
