@@ -21,15 +21,7 @@ export var projectQuickLinks = [
     {
         name: 'Elden Ring UI',
         link: "/eldenring"
-    },
-    {
-        name: "Canvas Climber",
-        link: "/canvasclimber"
-    },
-    {
-        name: "Outvaders Must Die",
-        link: "/outvaders"
-    },
+    }
 ]
 
 function ProjectItem({ title, description, url, imgClass, tag }) {
@@ -81,7 +73,7 @@ const index = () => {
                     <div className="intro-description">
                         <p>Hi there!</p>
                         <p>I'm Joakim, a <strong>Game and UX designer</strong> with about 3 years of experience developing games inside Unity.</p>
-                        <p>I am currently studying Game & UX design at <a href='https://futuregames.se/' target="_blank" rel="noopener noreferrer">FutureGames</a> in Skellefteå, Sweden, and will be open for <b>internships from Jan-Jun 2023!</b> <i style={{ fontSize: "16px" }}>hint hint</i> ;)</p>
+                        <p>I am currently studying Game & UX design at <a href='https://futuregames.se/' target="_blank" rel="noopener noreferrer">FutureGames</a> in Skellefteå, Sweden, and will be available for <b>internships from Jan-Jun 2023!</b> <i style={{ fontSize: "16px" }}>hint hint ;)</i></p>
                         <p>Below you will find some of my highlighted projects in Game development; including professional, formal, and personal.</p>
                         <div className="social-links">
                             <div className="linkedin">

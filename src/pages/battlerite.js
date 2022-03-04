@@ -48,7 +48,7 @@ const Battlerite = () => {
                                 <StatusItem title={"Team Size"} content={["4 interns"]} />
                                 <StatusItem title={"Role"} content={["Gameplay Programmer", "Technical Designer"]} />
                                 <StatusItem title={"Duration"} content={["8 months"]} />
-                                <StatusItem title={"Engine"} content={["Unity & proprietary engine"]} />
+                                <StatusItem title={"Engine & Tools"} content={["Unity & proprietary engine"]} />
                             </div>
                             <div className="files">
                                 <div>
@@ -87,8 +87,8 @@ const Battlerite = () => {
                             <div className="image-grid">
                                 <img src={BattleriteImage01} alt="Battlerite match pre-engagement" />
                                 <img src={BattleriteImage02} alt="Battlerite 1 versus 1 battle" />
-                                <img src={BattleriteImage03} alt="Battlerite 2 versus 1 battle" />
-                                <img src={BattleriteImage04} alt="Battlerite match winning screen" />
+                                {/* <img src={BattleriteImage03} alt="Battlerite 2 versus 1 battle" />
+                                <img src={BattleriteImage04} alt="Battlerite match winning screen" /> */}
                             </div>
                         </div>
                     </section>
@@ -122,8 +122,6 @@ const Battlerite = () => {
                                     Taking into account what I learned from my breakdown I went for the Payload system. I felt it could be extended further into other modes, and that I needed to work fast and iterative on this to find what is actually fun to do outside of Battlerite's tight and calculated combat.
                                 </p>
                                 <br />
-                                <p>more about first game mode down below...</p>
-                                <br />
                                 <h2>Re-design of UI</h2>
                                 <p>hallå där</p>
                                 <br />
@@ -142,7 +140,7 @@ const Battlerite = () => {
                                 <p>
                                     The first significant project I worked on at Stunlock Studios was <b>Bakko's Egg Brawl</b>, or just simply <i>Dodgeball</i> as we called it internally.
                                 </p>
-                                <p>The base prototype came from one of the game designer interns that were prototyping a way to quick-reflect incoming projectiles instead of using using the already established reflect mechanic which last much longer, and he had changed one ability to throw insta-kill spherical projectiles, so we called it <i>dodgeball</i>.</p>
+                                {/* <p>The base prototype came from one of the game designer interns that were prototyping a way to quick-reflect incoming projectiles instead of using using the already established reflect mechanic which last much longer, and he had changed one ability to throw insta-kill spherical projectiles, so we called it <i>dodgeball</i>.</p> */}
                                 <br />
                                 <p><b>My personal work on this project consisted of:</b></p>
                                 <ul>
@@ -153,13 +151,16 @@ const Battlerite = () => {
                                 <br />
                                 <img className="content-image second" src={BattleriteEggBrawlImage02} alt="Battlerite Bakko's Egg Brawl dodgeball prototype" />
                                 <br />
-                                <p>
-                                    Our mentor, a senior Technical Artist at the studio, took notice of what we were doing and pitched the dodgeball mode to the rest of the studio which got greenlit for the upcoming easter event, and suggested that we would combine the different systems that we were working on.
-                                </p>
+                                <p></p>
                                 <br />
                                 <p>
-                                    At that moment the Champion we used for our dodgeball mode was <i>Lucie</i>, a petite alchemist girl, which we used because she had both a dodge and throwing mechanic, and animations for both, but was changed into <i>Bakko</i>, a burly shield-wielding warrior instead because he had the more appropriate reflect mechanic and a throwing animation as well.
+                                    Our mentor, a senior Technical Artist at the studio, took notice of what we were doing and pitched the prototype that we were working on to the rest of the studio, which got greenlit for the upcoming easter event.
                                 </p>
+                                <p>asd</p>
+                                <br />
+                                {/* <p>
+                                    At that moment the Champion we used for our dodgeball mode was <i>Lucie</i>, a petite alchemist girl, which we used because she had both a dodge and throwing mechanic, and animations for both, but was changed into <i>Bakko</i>, a burly shield-wielding warrior instead because he had the more appropriate reflect mechanic and a throwing animation as well.
+                                </p> */}
                                 <br />
                                 <p style={{ clear: "left" }}>Read more about it on the official <a href="https://blog.stunlock.com/dev-blog-010/" target="_blank" title="Battlerite blog website link" rel="noopener noreferrer">Battlerite DevBlog</a>.</p>
                                 <div className="image-grid">
