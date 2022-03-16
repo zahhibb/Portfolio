@@ -46,40 +46,42 @@ const About = () => {
                 </div>
                 <div className='about-content'>
                     <div className='about-me'>
-                        <div className='what-i-do'>
-                            <h3><u>What I do?</u></h3>
+                        <div className='what-can-i-do'>
+                            <h3><u>What can I do?</u></h3>
                             <div className='list-container'>
                                 <ul>
                                     <li>System design</li>
-                                    <li>Scripting</li>
-                                    <li>Rapid prototyping</li>
                                     <li>Level design</li>
+                                    <li>Scripting (C#, UE4 Blueprints)</li>
+                                    <li>Ideation & brainstorming</li>
                                 </ul>
                                 <ul>
                                     <li>UX-research & testing</li>
                                     <li>Wireframing</li>
-                                    <li>Ideation & brainstorming</li>
+                                    <li>Rapid prototyping</li>
                                 </ul>
                             </div>
                         </div>
                         <div className='who-am-i'>
                             <h3><u>Who am I?</u></h3>
                             <p>
-                                Well, I consider myself an honest, jolly, and proactive guy with enormous curiosity in games and game development. For a bit more down-to-earth introduction is that I simply love trying out news things in life, be it from trying out new foods, experiencing different cultures, to taking on all manner of jobs I can get my hands on!
+                                I see myself as an honest, jolly, and proactive guy with enormous curiosity in games and game development. A few of my passions is to help people out and sharing my knownledge with them. In general I simply love trying out new things in life, be it from devouring new kinds of food, experiencing different cultures, to taking on all manner of jobs that I can get my hands on!
                             </p>
                             <br />
-                            <p>My interest in modifying and making games began in the 90s where I got curious and began editing values in game files to modify stats of units inside <a href='https://en.wikipedia.org/wiki/Heroes_of_Might_and_Magic_III' target="_blank" rel="noopener noreferrer">Heroes of Might and Magic 3</a>, <i>one of my most favourite games of all time</i>.</p>
-                            <p>Further down the line I began messing around with map-editors in <a href='https://en.wikipedia.org/wiki/Warcraft_III:_The_Frozen_Throne' target="_blank" rel="noopener noreferrer">Warcraft 3</a> and <a href='https://en.wikipedia.org/wiki/Crysis' target="_blank" rel="noopener noreferrer">Crysis</a>, where I at the time grew a small community of users and creators.</p>
+                            <p>My interest in making and modifying games began in the late 90s where I got curious and began editing values in game files to modify stats of units inside <a href='https://en.wikipedia.org/wiki/Heroes_of_Might_and_Magic_III' target="_blank" rel="noopener noreferrer">Heroes of Might and Magic 3</a>, <i>one of my favourite games of all time</i>.</p>
+                            <p>Further down the line I began messing around with map-editors in <a href='https://en.wikipedia.org/wiki/Warcraft_III:_The_Frozen_Throne' target="_blank" rel="noopener noreferrer">Warcraft 3</a> and <a href='https://en.wikipedia.org/wiki/Crysis' target="_blank" rel="noopener noreferrer">Crysis</a>, where I at the time interacted with and grew a small community of users and creators.</p>
                         </div>
                         <div className='as-a-developer'>
-                            <h3><u>As a developer...</u></h3>
+                            <h3><u>As a developer</u></h3>
                             <p>
-                                ...I try my hardest to have laser focus on the task at hand and enjoy delving down into the nitty-gritty details. I put a lot of emphasis on defining ideas and my approach is to break them down into bite-sized, easily malleable systems and mechanics, and further using what I learned to plan out a thorough plan of action.
+                                I try my hardest to have laser focus on the task at hand and enjoy delving down into the nitty-gritty details. I put a lot of emphasis on defining ideas and my approach is to break them down into bite-sized, easily malleable systems and mechanics, and further using what I learned to plan out a thorough plan of action.
                             </p>
                             <br />
                             <p>
                                 I consider my strengths to be my technical knowledge combined with my lateral design-thinking with focus on player agency. My workflows are inherently practical where I ideate, design, and prototype using tangible tools and methods such as card-sorting, paper-prototyping, and various other techniques that I've learned from my extensive experience with making games at <i>GameJams.</i>
                             </p>
+                            <h2>Process</h2>
+                            <p>asd</p>
                         </div>
                     </div>
 

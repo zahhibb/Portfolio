@@ -8,10 +8,24 @@ import BattleriteImage01 from "../resources/images/battlerite_01.jpeg";
 import BattleriteImage02 from "../resources/images/battlerite_02.jpg";
 import BattleriteImage03 from "../resources/images/battlerite_03.jpg";
 import BattleriteImage04 from "../resources/images/battlerite_05.jpg";
+
+import BattleriteGeneralImage01 from "../resources/images/payload_sketch.jpg";
+import BattleriteGeneralImage02 from "../resources/images/healthorb.png";
+import BattleriteGeneralImage03 from "../resources/images/energyorb.png";
+import BattleriteGeneralImage04 from "../resources/images/RuneOfBone.png";
+// import BattleriteGeneralImage05 from "../resources/images/";
+// import BattleriteGeneralImage06 from "../resources/images/";
+
+// import BattleriteTutorialimage from "../resources/images/";
+
 import BattleriteEggBrawlImage01 from "../resources/images/easter_arena.png";
 import BattleriteEggBrawlImage02 from "../resources/images/Battlerite_Dodgeball.png";
 import BattleriteEggBrawlImage03 from "../resources/images/bakko_egg_brawl_01.jpg";
 import BattleriteEggBrawlImage04 from "../resources/images/bakkoeggbrawl.png";
+
+// import BattleriteRocketBalloonImage01 from "../resources/images/";
+// import BattleriteRocketBalloonImage02 from "../resources/images/";
+// import BattleriteRocketBalloonImage03 from "../resources/images/";
 
 import { projectQuickLinks } from "./index";
 
@@ -75,7 +89,7 @@ const Battlerite = () => {
                                     </p>
                                     <br />
                                     <p>
-                                        Additionally I got to work on <b>UI wireframing and mockups</b> for the then upcoming UI overhaul (which you can read more about on Stunlock's at the time UI/UX designer Katey Parr's <a href="http://kateyparr.com/project/battlerite-menu" target="_blank" rel="noopener noreferrer" title='Katey Parr website article link'>breakdown</a>).
+                                        Additionally I got to help out on <b>UI wireframing and mockups</b> for the then upcoming UI overhaul (which you can read more about on Stunlock's at the time UI/UX designer Katey Parr's <a href="http://kateyparr.com/project/battlerite-menu" target="_blank" rel="noopener noreferrer" title='Katey Parr website article link'>breakdown</a>).
                                     </p>
                                 </div>
                             </div>
@@ -95,38 +109,92 @@ const Battlerite = () => {
                     <section className="page-section general">
                         <div className="content-section-wrapper">
                             <div className="content">
-                                <h2>Creating a game mode</h2>
+                                <h2>Concept</h2>
                                 <p>
-                                    The work began by disassembling already defined game modes that other games tend to use, to see if it could fit well into Battlerite's combat-filled and tumultuous gameplay, and possibly find out if something unique could be discovered.
+                                    The premise of the internship was to work together with the studio to ideate, prototype, and iterate on discovering valuable data on what genre of game modes would work well with their tools, using mostly previously made assets.</p>
+                                <br />
+                                <h2>Process</h2>
+                                <p>
+                                    The work began by disassembling already defined game modes that other games tend to use, to see if it could fit well into Battlerite's combat-filled and tumultuous gameplay.
+                                    Additionally we had to take into account to primarily use assets and systems that the game had already defined such as health/energy orbs, maps, destructible objects, etc.
                                 </p>
                                 <br />
+                                <div className="orb-references">
+                                    <div>
+                                        <img className="orb-reference-image" src={BattleriteGeneralImage02} alt="Battlerite health orb" />
+                                        <h4>Health orb</h4>
+                                        <span>Pick-up that restores health</span>
+                                    </div>
+                                    <div>
+                                        <img className="orb-reference-image" src={BattleriteGeneralImage04} alt="Battlerite bone orb" />
+                                        <h4>Bone orb</h4>
+                                        <span>Destructible orb that grants large amount of energy</span>
+                                    </div>
+                                    <div>
+                                        <img className="orb-reference-image" src={BattleriteGeneralImage03} alt="Battlerite energy orb" />
+                                        <h4>Energy orb</h4>
+                                        <span>Pick-up that grants energy</span>
+                                    </div>
+                                </div>
+                                {/* <div className="entity-references">
+                                    <img className="entity-reference-image" />
+                                    <h4>Turok</h4>
+                                    <span>Small unit with a basic ranged attack</span>
+                                </div> */}
+                                <br />
                                 <p>
-                                    My thought process on breaking down Battlerite's system and mechanics into relative parts were:
+                                    My thought process on breaking down Battlerite's assets, systems and mechanics was first to set up a definition/idea list as to make it more readable and digestible, but also to define both the pros and cons of each respective design:
                                 </p>
                                 <ul>
                                     <li>
-                                        Mirrored maps - Possibility for CTF (Capture the flag) or Payload (Tug-of-war) modes.
+                                        <p><b>Maps/Arenas</b></p>
+                                        <img className="content-image first" src={BattleriteGeneralImage01} alt="Battlerite payload sketch" />
+                                        <ul>
+                                            <li>
+                                                <u>Pros:</u> They are mirrored, so possibility for CTF (Capture the flag) or Payload (Tug-of-war) modes.
+                                            </li>
+                                            <li>
+                                                <u>Cons:</u> Payload could work well, but with CTF there are some issues. Due to the reason that some champions have far better mobility than others, then we have to consider either having a set of specific champions to choose from for this mode, or suppressing/disabling some abilities when carrying the “flag”.
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li>
-                                        Health orbs - Almost endless possibilities for different kinds of power-ups (damage boosts, ability improvement, “XP”-orbs for level-up system, etc.)
+                                        <p><b>Health/energy orbs</b></p>
+                                        <ul>
+                                            <li>
+                                                <u>Pros:</u> Almost endless possibilities for different kinds of power-ups (damage boosts, ability improvement, “XP”-orbs for level-up system, etc).
+                                            </li>
+                                            <li>
+                                                <u>Cons:</u> Most likely the only thing that could be inherited would be the pick-up mechanic, but as for the systems of applying buffs/experience and such to the Champions would have to be entirely custom.
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li>
-                                        Energy* orbs - Also usable for power-ups, but may be more appropriate to use the big orb for modes to push/kick, protect, or destroy it. Could also expand on the mechanics of the spawning platform (of the big orb) to use it as a King-of-the-hill game mode.
+                                        <p><b>Bone/middle orb</b></p>
+                                        <ul>
+                                            <li>
+                                                <u>Pros:</u> Would be appropriate to use for modes to push, kick, protect, or destroy it. Could also be expanded by using the mechanics and visuals of the spawning location of the Bone orb to use it as a King-of-the-hill game mode.
+                                            </li>
+                                            <li>
+                                                <u>Cons:</u> Battlerite’s physics systems weren’t made to handle non-player objects moving around the levels, so there’s a few things that could go wrong, like floating-point inaccuracies and physical objects not being in sync across all the clients.
+                                            </li>
+                                        </ul>
                                     </li>
+                                    <br />
+                                    <p>
+                                        Taking into account what I learned from my breakdown, I decided to begin working on the Payload system. I felt it could be extended further into other modes, it was a good starting point for learning the studio's tools and workflow, and that I needed to work fast and iteratively on this to find what is actually fun to do outside of Battlerite's tight and calculated combat.
+                                    </p>
+                                    <br />
+                                    <p>
+                                        Later on, parts of my payload system would end up being the base for one of the released game modes; Rocket Balloon, which I'll go into a bit more detail down below.
+                                    </p>
                                 </ul>
-                                <p><i>
-                                    *Energy builds up through successful blows in combat, by destroying the big center orb that spawns, or picking up yellow orbs that drop from fallen teammates.
-                                </i></p>
-                                <br />
-                                <p>
-                                    Taking into account what I learned from my breakdown I went for the Payload system. I felt it could be extended further into other modes, and that I needed to work fast and iterative on this to find what is actually fun to do outside of Battlerite's tight and calculated combat.
-                                </p>
-                                <br />
-                                <h2>Re-design of UI</h2>
-                                <p>hallå där</p>
-                                <br />
-                                <h2>Tutorial & Encounters</h2>
-                                <p>hallå där</p>
+                                <br/>
+                                <h2>Odeum UI brainstorm</h2>
+                                <p>asd</p>
+                                <br/>
+                                <h2>Tutorial encounter design</h2>
+                                <p>asd</p>
                             </div>
                         </div>
                     </section>
@@ -140,7 +208,6 @@ const Battlerite = () => {
                                 <p>
                                     The first significant project I worked on at Stunlock Studios was <b>Bakko's Egg Brawl</b>, or just simply <i>Dodgeball</i> as we called it internally.
                                 </p>
-                                {/* <p>The base prototype came from one of the game designer interns that were prototyping a way to quick-reflect incoming projectiles instead of using using the already established reflect mechanic which last much longer, and he had changed one ability to throw insta-kill spherical projectiles, so we called it <i>dodgeball</i>.</p> */}
                                 <br />
                                 <p><b>My personal work on this project consisted of:</b></p>
                                 <ul>
@@ -151,25 +218,20 @@ const Battlerite = () => {
                                 <br />
                                 <img className="content-image second" src={BattleriteEggBrawlImage02} alt="Battlerite Bakko's Egg Brawl dodgeball prototype" />
                                 <br />
-                                <p></p>
-                                <br />
                                 <p>
                                     Our mentor, a senior Technical Artist at the studio, took notice of what we were doing and pitched the prototype that we were working on to the rest of the studio, which got greenlit for the upcoming easter event.
                                 </p>
-                                <p>asd</p>
                                 <br />
-                                {/* <p>
-                                    At that moment the Champion we used for our dodgeball mode was <i>Lucie</i>, a petite alchemist girl, which we used because she had both a dodge and throwing mechanic, and animations for both, but was changed into <i>Bakko</i>, a burly shield-wielding warrior instead because he had the more appropriate reflect mechanic and a throwing animation as well.
-                                </p> */}
+                                <p>[Image to the left] Screenshot of prototype gameplay, where the playable character were different and the projectiles were still just pink spheres.</p>
                                 <br />
                                 <p style={{ clear: "left" }}>Read more about it on the official <a href="https://blog.stunlock.com/dev-blog-010/" target="_blank" title="Battlerite blog website link" rel="noopener noreferrer">Battlerite DevBlog</a>.</p>
                                 <div className="image-grid">
                                     <img src={BattleriteEggBrawlImage03} alt="Battlerite Bakko's Egg Brawl reflecting egg" />
                                     <img src={BattleriteEggBrawlImage04} alt="Battlerite Bakko's Egg Brawl 4 player standoff" />
                                 </div>
-                                <div className="video-wrapper">
+                                {/* <div className="video-wrapper">
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/lPjtXo3sNlI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </section>
@@ -177,6 +239,8 @@ const Battlerite = () => {
                         <div className="content-section-wrapper">
                             <div className="image"></div>
                             <div className="content">
+                                <div className="content-image header"></div>
+                                <img className="content-image first" src={BattleriteEggBrawlImage01} alt="Battlerite Rocket Balloon" />
                                 <h2>Rocket Balloon</h2>
                                 <p>asd</p>
                             </div>

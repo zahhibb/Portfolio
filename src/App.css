@@ -434,28 +434,28 @@ hr {
 }
 
 .skkf {
-  background: #12411a url("resources/images/skkf.png");
+  /* background: #12411a url("resources/images/skkf.png"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70%;
 }
 
 .page-banner.hellyhansen {
-  background: #da2127 url("resources/images/hellyhansen.jpg");
+  /* background: #da2127 url("resources/images/hellyhansen.jpg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30%;
 }
 
 .projects-container .hellyhansen {
-  background: #da2127 url("resources/images/hellyhansen.jpg");
+  /* background: #da2127 url("resources/images/hellyhansen.jpg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70%;
 }
 
 .leos {
-  background: #0175c0 url("resources/images/leos.jpg");
+  /* background: #0175c0 url("resources/images/leos.jpg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: 80%;
@@ -624,19 +624,19 @@ hr {
   flex: 1;
 }
 
-.what-i-do,
+.what-can-i-do,
 .who-am-i,
 .as-a-developer {
   margin-bottom: 3rem;
 }
 
-.what-i-do h3,
+.what-can-i-do h3,
 .who-am-i h3,
 .as-a-developer h3 {
   margin-bottom: 1rem;
 }
 
-.what-i-do p,
+.what-can-i-do p,
 .who-am-i p,
 .as-a-developer p {
   font-size: 1.5rem;
@@ -644,16 +644,12 @@ hr {
   font-weight: 200;
 }
 
-.what-i-do .list-container {
+.what-can-i-do .list-container {
   display: flex;
   margin-left: 6rem;
 }
 
-.what-i-do ul:first-child {
-  /* padding-left: 5rem; */
-}
-
-.what-i-do ul {
+.what-can-i-do ul {
   flex: 1;
   list-style-position: inside;
   text-align: left;
@@ -1179,12 +1175,29 @@ footer {
   background: #333;
 }
 
+.general .content-image.first {
+  float: right;
+  min-height: 360px;
+  margin: 0rem 0rem 1rem 1rem;
+}
+
 .general ul li {
   margin-left: 1.5rem;
 }
 
-.general i {
-  font-size: 1rem;
+.orb-references {
+  display: flex;
+  width: 75%;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.orb-references div {
+  flex: 1;
+}
+
+.orb-references span {
+  color: #ffff00;
 }
 
 .bakko-egg-brawl ul li {
@@ -1226,12 +1239,20 @@ footer {
   margin-bottom: 1rem;
 }
 
-.rocket-balloon .content {
-  margin-left: 2rem;
+.rocket-balloon .content-image.header {
+  background: #222 url("./resources/images/rocketballoon.png");
+  background-repeat: no-repeat;
+  background-position: 50% 70%;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 320px;
+  margin-bottom: 2rem;
 }
 
-.rocket-balloon .content-image.-first {
-  background: #222 url();
+.rocket-balloon .content-image.first {
+  float: left;
+  min-height: 360px;
+  margin: 0rem 1rem 1rem 0rem;
 }
 
 .battlegrounds .content-image.-first {
@@ -1244,6 +1265,7 @@ footer {
   font-size: 1.3rem;
 }
 
+.general .content-image,
 .bakko-egg-brawl .content-image,
 .rocket-balloon .content-image,
 .battlegrounds .content-image {
