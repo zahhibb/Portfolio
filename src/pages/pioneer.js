@@ -45,10 +45,10 @@ const Pioneer = () => {
                             </div>
                             <div className="files">
                                 <div>
-                                    <a href="#" target="_blank" rel="noopener noreferrer" title=''>Watch video</a>
+                                    <a href="www.google.se" target="_blank" rel="noopener noreferrer" title=''>Watch video</a>
                                 </div>
                                 <div>
-                                    <a href="#" target="_blank" rel="noopener noreferrer" title=''>Try out prototype</a>
+                                    <a href="www.google.se" target="_blank" rel="noopener noreferrer" title=''>Try out prototype</a>
                                 </div>
                             </div>
                             <div className='definitions'>

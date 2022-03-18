@@ -6,8 +6,8 @@ import "../App.css";
 
 import BattleriteImage01 from "../resources/images/battlerite_01.jpeg";
 import BattleriteImage02 from "../resources/images/battlerite_02.jpg";
-import BattleriteImage03 from "../resources/images/battlerite_03.jpg";
-import BattleriteImage04 from "../resources/images/battlerite_05.jpg";
+// import BattleriteImage03 from "../resources/images/battlerite_03.jpg";
+// import BattleriteImage04 from "../resources/images/battlerite_05.jpg";
 
 import BattleriteGeneralImage01 from "../resources/images/payload_sketch.jpg";
 import BattleriteGeneralImage02 from "../resources/images/healthorb.png";
