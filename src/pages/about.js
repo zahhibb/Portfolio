@@ -50,7 +50,9 @@ const About = () => {
                             <h3><u>What can I do?</u></h3>
                             <div className='list-container'>
                                 <ul>
-                                    <li>System design</li>
+                                    <li>
+                                        <span>System design</span>
+                                    </li>
                                     <li>Level design</li>
                                     <li>Scripting (C#, UE4 Blueprints)</li>
                                     <li>Ideation & brainstorming</li>
@@ -82,40 +84,6 @@ const About = () => {
                             </p>
                         </div>
                     </div>
-
-                    {/* <div className='resume'>
-                        <div>
-                            <h3>Skills</h3>
-                            <h4>Game design</h4>
-                            <h4>UX/UI design</h4>
-                            <h4>Level design</h4>
-                            <h4>Wireframing</h4>
-                        </div>
-                        <div>
-                            <h3>Software</h3>
-                            <h4>Unity</h4>
-                            <h4>Unreal Engine 4</h4>
-                            <h4>Figma</h4>
-                            <h4>Photoshop</h4>
-                        </div>
-                    </div> */}
-
-                    {/* <div className='resume'>
-                        <div className='experiences'>
-                            <h3>Experiences</h3>
-                            <div>
-                                <h4>System Developer</h4>
-                                <p>asd</p>
-                            </div>
-                        </div>
-                        <div className='education'>
-                            <h3>Education</h3>
-                            <div>
-                                <h4>Game & UX Design</h4>
-                                <p>asd</p>
-                            </div>
-                        </div>
-                    </div> */}
                 </div>
             </div>
             <Footer />

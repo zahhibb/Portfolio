@@ -360,7 +360,7 @@ hr {
   background: #1d1223 url("resources/images/akined.png");
   background-repeat: no-repeat;
   background-position: 50% 0%;
-  background-size: 90%;
+  background-size: cover;
 }
 
 .page-container.pioneer .page-banner .banner-overlay {
@@ -595,6 +595,7 @@ hr {
 
 .about-image-wrapper {
   display: flex;
+  flex-direction: column-reverse;
   margin-bottom: 4rem;
 }
 
@@ -604,10 +605,15 @@ hr {
 
 .about-image-wrapper img {
   flex: 1;
-  border-radius: 100%;
-  max-width: 300px;
-  max-height: 300px;
+  margin: 0 auto;
   border: 1px solid #30367b;
+  border-radius: 100%;
+  width: 100%;
+  min-width: 200px;
+  max-width: 300px;
+  height: 100%;
+  min-height: 200px;
+  max-height: 300px;
 }
 
 .about-content {
@@ -639,14 +645,13 @@ hr {
 .what-can-i-do p,
 .who-am-i p,
 .as-a-developer p {
-  font-size: 1.5rem;
   color: #fff;
   font-weight: 200;
 }
 
 .what-can-i-do .list-container {
   display: flex;
-  margin-left: 6rem;
+  flex-direction: column;
 }
 
 .what-can-i-do ul {
@@ -655,44 +660,35 @@ hr {
   text-align: left;
 }
 
-.resume {
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-}
-
-.resume div {
-  flex: 1;
-}
-
-.experiences h3,
-.education h3 {
-  color: rgba(203, 227, 255, 0.9);
-}
-
-.resume h3 {
-  color: #ff8a37;
-}
-
-/* .experiences h3, .education h3 {
-  color: #ff8a37;
-} */
-
-.experiences {
-  flex: 1;
-}
-
-.education {
-  flex: 1;
+.who-am-i p {
+  font-size: 1.2rem;
 }
 
 @media only screen and (min-width: 425px) {
-  /* .about-container {
-    max-width: 40%;
-  } */
+  
 }
 
 @media only screen and (min-width: 768px) {
+  .about-image-wrapper {
+    flex-direction: row;
+  }
+
+  .about-image-wrapper .files {
+    margin-bottom: 3rem;
+  }
+
+  .what-can-i-do .list-container {
+    margin-left: 6rem;
+  }
+
+  .what-can-i-do .list-container {
+    flex-direction: row;
+  }
+
+  .who-am-i p,
+  .as-a-developer p {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -715,6 +711,8 @@ footer {
 }
 
 .footer-container {
+  width: 90%;
+  margin: 0 auto;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -739,7 +737,7 @@ footer {
 }
 
 .footer-interests a:not(:last-child) {
-  margin-right: 1.8rem;
+  margin-bottom: 1rem;
 }
 
 .footer-interests img {
@@ -786,6 +784,23 @@ footer {
 
 .copyright span:not(:first-child), .copyright a {
   margin-left: 0.5rem;
+}
+
+@media only screen and (min-width: 425px) {
+  
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-container {
+    width: 100%;
+  }
+  .footer-interests a:not(:last-child) {
+    margin-right: 1.8rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  
 }
 
 /* CREDITS */
@@ -838,7 +853,7 @@ footer {
 }
 
 .page-container .page-banner h1 {
-  font-size: 5rem;
+  font-size: 3rem;
   text-shadow: 0px 0px 20px #000;
   width: 100%;
   position: absolute;
@@ -860,13 +875,9 @@ footer {
   border-top: 1px solid #333;
 }
 
-.page-intro {
-  /* border-bottom: 1px solid #444; */
-}
-
 .page-intro-wrapper {
-  width: 70%;
-  margin: 4rem auto;
+  width: 90%;
+  margin: 3rem auto;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -891,16 +902,21 @@ footer {
   flex: 1;
   display: flex;
   flex-direction: row;
-  margin-bottom: 4rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 
 .status-item {
-  flex: 1;
+  flex: 1 50%;
+  max-width: 50%;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .status-item h3 {
+  font-size: 1.2rem;
   line-height: 1.3;
+  margin-bottom: 1rem;
 }
 
 .status-item h3:first-child {
@@ -921,8 +937,8 @@ footer {
 }
 
 .files div {
-  display: inline-block;
-  margin: 0 4rem 0 4rem;
+  display: block;
+  margin-bottom: 1rem;
   background: linear-gradient(171deg, #181a35, #30367b, #181a35);
   border-radius: 12px;
   border: 1px solid #30367b;
@@ -951,13 +967,12 @@ footer {
 .definitions {
   text-align: center;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .definitions div {
-  width: 45%;
-  padding: 0 1rem;
+  width: 100%;
+  margin-bottom: 3rem;
 }
 
 .definitions h2 {
@@ -973,7 +988,7 @@ footer {
 }
 
 .page-media {
-  padding: 4rem 0;
+  padding: 2rem 0;
   background: linear-gradient(171deg, #181a35, #30367b, #181a35);
   border-top: 1px solid #30367b;
   border-bottom: 1px solid #30367b;
@@ -1011,10 +1026,6 @@ footer {
   flex: calc(50% - 1rem);
   max-width: calc(50% - 1.14rem);
   border: 1px solid #414d96;
-}
-
-.page-container.battlerite .image-grid {
-  margin-top: 2rem;
 }
 
 .page-container.battlerite .image-grid div:first-child {
@@ -1175,15 +1186,67 @@ footer {
   background: #333;
 }
 
+@media only screen and (min-width: 425px) {
+  .page-banner h1 {
+    font-size: 5rem;
+  }
+  
+  .status-item h3 {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .status-panel {
+    margin-bottom: 4rem;
+  }
+
+  .status-item {
+    flex: 1;
+  }
+
+  .status-item h3 {
+    font-size: 1.17em;
+  }
+
+  .files div {
+    margin: 1rem 4rem 1rem 4rem;
+    display: inline-block;
+  }
+
+  .files {
+    margin-bottom: 3rem;
+  }
+
+  .definitions {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .definitions div {
+    width: 45%;
+    padding: 0 1rem;
+  }
+
+  .page-media {
+    padding: 4rem 0;
+  }
+}
+
+/* Battlerite game modes */
+
 .image-container {
   display: inline-flex;
   flex-direction: column;
   text-align: center;
-  float: right;
 }
 
 .right {
-  margin: 1rem 0rem 1rem 2rem;
+  margin: 1rem 0;
+  width: 100%;
+  align-items: center;
 }
 
 .image-container span {
@@ -1203,7 +1266,6 @@ footer {
 
 .orb-references {
   display: flex;
-  width: 75%;
   text-align: center;
   margin: 2rem auto;
 }
@@ -1232,11 +1294,7 @@ footer {
 
 .content-image.small {
   float: none;
-  min-height: auto !important;
-  max-height: none !important;
   height: 100%;
-  min-width: auto !important;
-  max-width: 240px !important;
   width: 100%;
 }
 
@@ -1253,7 +1311,7 @@ footer {
 }
 
 .content-section-wrapper {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -1295,13 +1353,56 @@ footer {
 .bakko-egg-brawl .content-image,
 .rocket-balloon .content-image,
 .battlegrounds .content-image {
-  min-height: 280px;
-  max-height: 320px;
   height: 100%;
-  min-width: 420px;
-  max-width: 560px;
   width: 100%;
 }
+
+@media only screen and (min-width: 425px) {
+  .content-image.small {
+    float: none;
+    min-height: auto !important;
+    max-height: none !important;
+    height: 100%;
+    min-width: auto !important;
+    max-width: 240px !important;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .orb-references {
+    display: flex;
+    width: 75%;
+    text-align: center;
+    margin: 2rem auto;
+  }
+
+  .battlerite .image-container {
+    margin: 1rem 0rem 1rem 2rem;
+    float: right;
+
+  }
+
+  .right {
+    margin: 1rem 0rem 1rem 2rem;
+    width: auto;
+    align-items: initial;
+  }
+
+  .general .content-image,
+  .bakko-egg-brawl .content-image,
+  .rocket-balloon .content-image,
+  .battlegrounds .content-image {
+    min-height: 280px;
+    max-height: 320px;
+    height: 100%;
+    min-width: 420px;
+    max-width: 560px;
+    width: 100%;
+  }
+}
+
+/* GameDev resources */
 
 .gameDevResource,
 .gameDevResource .page-container {
