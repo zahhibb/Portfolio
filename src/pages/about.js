@@ -80,8 +80,6 @@ const About = () => {
                             <p>
                                 I consider my strengths to be my technical knowledge combined with my lateral design-thinking with focus on player agency. My workflows are inherently practical where I ideate, design, and prototype using tangible tools and methods such as card-sorting, paper-prototyping, and various other techniques that I've learned from my extensive experience with making games at <i>GameJams.</i>
                             </p>
-                            <h2>Process</h2>
-                            <p>asd</p>
                         </div>
                     </div>
 

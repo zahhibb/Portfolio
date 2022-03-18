@@ -13,8 +13,9 @@ import BattleriteGeneralImage01 from "../resources/images/payload_sketch.jpg";
 import BattleriteGeneralImage02 from "../resources/images/healthorb.png";
 import BattleriteGeneralImage03 from "../resources/images/energyorb.png";
 import BattleriteGeneralImage04 from "../resources/images/RuneOfBone.png";
-// import BattleriteGeneralImage05 from "../resources/images/";
+import BattleriteGeneralImage05 from "../resources/images/boneorbSpawnLocation.png";
 // import BattleriteGeneralImage06 from "../resources/images/";
+// import BattleriteGeneralImage07 from "../resources/images/";
 
 // import BattleriteTutorialimage from "../resources/images/";
 
@@ -60,7 +61,7 @@ const Battlerite = () => {
                         <div className="page-intro-wrapper">
                             <div className='status-panel'>
                                 <StatusItem title={"Team Size"} content={["4 interns"]} />
-                                <StatusItem title={"Role"} content={["Gameplay Programmer", "Technical Designer"]} />
+                                <StatusItem title={"Role(s)"} content={["Gameplay Programmer", "Technical Designer"]} />
                                 <StatusItem title={"Duration"} content={["8 months"]} />
                                 <StatusItem title={"Engine & Tools"} content={["Unity & proprietary engine"]} />
                             </div>
@@ -142,13 +143,16 @@ const Battlerite = () => {
                                     <span>Small unit with a basic ranged attack</span>
                                 </div> */}
                                 <br />
+                                <div className="image-container right">
+                                    <img className="content-image" src={BattleriteGeneralImage01} alt="Battlerite payload sketch" />
+                                    <span>Payload path sketch</span>
+                                </div>
                                 <p>
                                     My thought process on breaking down Battlerite's assets, systems and mechanics was first to set up a definition/idea list as to make it more readable and digestible, but also to define both the pros and cons of each respective design:
                                 </p>
                                 <ul>
                                     <li>
                                         <p><b>Maps/Arenas</b></p>
-                                        <img className="content-image first" src={BattleriteGeneralImage01} alt="Battlerite payload sketch" />
                                         <ul>
                                             <li>
                                                 <u>Pros:</u> They are mirrored, so possibility for CTF (Capture the flag) or Payload (Tug-of-war) modes.
@@ -169,6 +173,10 @@ const Battlerite = () => {
                                             </li>
                                         </ul>
                                     </li>
+                                    <div className="image-container right">
+                                        <img className="content-image small" src={BattleriteGeneralImage05} alt="Battlerite bone orb spawning circle" />
+                                        <span>Bone orb spawning circle</span>
+                                    </div>
                                     <li>
                                         <p><b>Bone/middle orb</b></p>
                                         <ul>
@@ -186,13 +194,13 @@ const Battlerite = () => {
                                     </p>
                                     <br />
                                     <p>
-                                        Later on, parts of my payload system would end up being the base for one of the released game modes; Rocket Balloon, which I'll go into a bit more detail down below.
+                                        Later on, parts of my payload system would end up being the base for one of the released game modes; <i>Rocket Balloon</i>, which I'll go into a bit more detail further down.
                                     </p>
                                 </ul>
-                                <br/>
-                                <h2>Odeum UI brainstorm</h2>
+                                <br />
+                                <h2>Main menu & Odeum UI concepting</h2>
                                 <p>asd</p>
-                                <br/>
+                                <br />
                                 <h2>Tutorial encounter design</h2>
                                 <p>asd</p>
                             </div>

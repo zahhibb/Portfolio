@@ -42,7 +42,7 @@ const Akined = () => {
                         <div className="page-intro-wrapper">
                             <div className='status-panel'>
                                 <StatusItem title={"Team Size"} content={["4"]} />
-                                <StatusItem title={"Role"} content={["Programmer", "Game Designer"]} />
+                                <StatusItem title={"Role"} content={["Programmer", "Game Designer", "Level Designer"]} />
                                 <StatusItem title={"Duration"} content={["4 weeks"]} />
                                 <StatusItem title={"Engine"} content={["Unity"]} />
                             </div>
@@ -65,7 +65,7 @@ const Akined = () => {
                                     </p>
                                     <br />
                                     <p>
-                                        The game was made in 4 weeks by 4 people, 2 UX designers and 2 Project managers.
+                                        The game was made in 4 weeks by 4 people; 2 UX designers and 2 Project managers.
                                     </p>
                                 </div>
                                 <div>
@@ -126,6 +126,16 @@ const Akined = () => {
                                 <p>
                                     The idea got defined a bit more and evolved into a dungeon-escape game where the player has to use both of the characters to interact with things in the environment and possess objects out of reach. When they finally reach the exit it ends with them being led by the Grim Reaper to the afterlife. The Grim Reaper is a recurring character in each level, though only in text form, where they act as a medium for tutorial and narrative.
                                 </p>
+                                <br />
+                                <h2>Process</h2>
+                                <p>asd</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section className="page-media">
+                        <div className="page-media-wrapper">
+                            <div className="video-wrapper">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/KU6Ra-P746k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </div>
                     </section>

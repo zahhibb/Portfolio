@@ -6,8 +6,6 @@ import "../App.css";
 
 import PioneerImage01 from "../resources/images/battlerite_01.jpeg";
 import PioneerImage02 from "../resources/images/battlerite_02.jpg";
-import PioneerImage03 from "../resources/images/battlerite_03.jpg";
-import PioneerImage04 from "../resources/images/battlerite_05.jpg";
 
 import { projectQuickLinks } from "./index";
 
@@ -43,14 +41,14 @@ const Pioneer = () => {
                             <div className='status-panel'>
                                 <StatusItem title={"Team Size"} content={["Personal"]} />
                                 <StatusItem title={"Duration"} content={["4 weeks"]} />
-                                <StatusItem title={"Engine & Tools"} content={["Unity + Figma, Photoshop"]} />
+                                <StatusItem title={"Engine & Tools"} content={["Unity, Figma, Photoshop"]} />
                             </div>
                             <div className="files">
                                 <div>
-                                    <a href="http://www.google.se" target="_blank" rel="noopener noreferrer" title=''>Watch video</a>
+                                    <a href="#" target="_blank" rel="noopener noreferrer" title=''>Watch video</a>
                                 </div>
                                 <div>
-                                    <a href="http://www.google.se" target="_blank" rel="noopener noreferrer" title=''>Try out prototype</a>
+                                    <a href="#" target="_blank" rel="noopener noreferrer" title=''>Try out prototype</a>
                                 </div>
                             </div>
                             <div className='definitions'>
@@ -75,18 +73,6 @@ const Pioneer = () => {
                             <div className="image-grid">
                                 <img src={PioneerImage01} alt="asd" />
                                 <img src={PioneerImage02} alt="asd" />
-                                <img src={PioneerImage03} alt="asd" />
-                                <img src={PioneerImage04} alt="asd" />
-                            </div>
-                        </div>
-                    </section>
-                    <section className="page-section">
-                        <div className="content-section-wrapper">
-                            <div className="content">
-                                <h2>Level / UI / Encounter design</h2>
-                                <p>
-                                    asd
-                                </p>
                             </div>
                         </div>
                     </section>
