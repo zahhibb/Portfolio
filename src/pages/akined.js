@@ -87,8 +87,8 @@ const Akined = () => {
                     <section className="page-media">
                         <div className="page-media-wrapper">
                             <div className="image-grid">
-                                <img src={AkinedImage01} alt="asd" />
-                                <img src={AkinedImage02} alt="asd" />
+                                <img src={AkinedImage01} alt="Spirit power introduction" />
+                                <img src={AkinedImage02} alt="Possessing mechanic" />
                             </div>
                         </div>
                     </section>
@@ -135,7 +135,7 @@ const Akined = () => {
                     <section className="page-media">
                         <div className="page-media-wrapper">
                             <div className="video-wrapper">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/KU6Ra-P746k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/mgAJ-adILGY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </div>
                     </section>

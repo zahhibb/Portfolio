@@ -465,6 +465,14 @@ hr {
   .project-item-container {
     width: 100%;
   }
+
+  .projects-container .akined {
+    background: #1d1223 url("resources/images/akined.png");
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: contain
+  }
+
   .other-projects-list {
     display: flex;
     flex-direction: row;
@@ -486,6 +494,14 @@ hr {
   .projects-container {
     width: 80%;
   }
+
+  .projects-container .akined {
+    background: #1d1223 url("resources/images/akined.png");
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: contain
+  }
+  
   .other-projects-list {
     display: flex;
     flex-direction: row;
@@ -527,7 +543,7 @@ hr {
     max-width: 50%;
   }
   .games-list div:nth-child(4) {
-    flex: 48%;
+    flex: 47%;
     max-width: 50%;
   }
   .other-projects-list div:not(:first-child) {
@@ -693,7 +709,6 @@ hr {
 
 @media only screen and (min-width: 1024px) {
   .about-container {
-    width: 71%;
     flex-direction: row;
   }
 
@@ -1197,6 +1212,15 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+  .page-intro-wrapper {
+    width: 70%;
+    margin: 5rem auto;
+  }
+  
+  .page-container .page-banner h1 {
+    font-size: 5rem;
+  }
+
   .status-panel {
     margin-bottom: 4rem;
   }
@@ -1254,10 +1278,14 @@ footer {
   color: #aaa;
 }
 
+.content-image {
+  margin: 0;
+}
+
 .general .content-image.first {
   float: right;
   min-height: 360px;
-  margin: 0rem 0rem 1rem 1rem;
+  /* margin: 0rem 0rem 1rem 1rem; */
 }
 
 .general ul li {
@@ -1301,7 +1329,6 @@ footer {
 .bakko-egg-brawl .content-image.first {
   float: right;
   min-height: 360px;
-  margin: 0rem 0rem 1rem 1rem;
 }
 
 .bakko-egg-brawl .content-image.second {
@@ -1370,6 +1397,18 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+  .content-section-wrapper {
+    width: 70%;
+  }
+
+  .content-image {
+    margin: 0rem 0rem 1rem 1rem;
+  }
+
+  .general .content-image.first {
+    margin: 0rem 0rem 1rem 1rem;
+  }
+
   .orb-references {
     display: flex;
     width: 75%;
@@ -1380,7 +1419,6 @@ footer {
   .battlerite .image-container {
     margin: 1rem 0rem 1rem 2rem;
     float: right;
-
   }
 
   .right {
@@ -1399,6 +1437,10 @@ footer {
     min-width: 420px;
     max-width: 560px;
     width: 100%;
+  }
+
+  .bakko-egg-brawl .content-image.header {
+    background-position: 50% 45%;
   }
 }
 
