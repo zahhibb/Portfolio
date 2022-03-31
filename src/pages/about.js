@@ -67,7 +67,7 @@ const About = () => {
                         <div className='who-am-i'>
                             <h3><u>Who am I?</u></h3>
                             <p>
-                                I see myself as an honest, jolly, and proactive guy with enormous curiosity in games and game development. A few of my passions is to help people out and sharing my knownledge with them. In general I simply love trying out new things in life, be it from devouring new kinds of food, experiencing different cultures, to taking on all manner of jobs that I can get my hands on!
+                                I see myself as an honest, jolly, and proactive guy with enormous curiosity in games and game development. A few of my passions is to help people out and sharing my knowledge with them. In general I simply love trying out new things in life, be it from devouring new kinds of food, experiencing different cultures, to taking on all manner of jobs that I can get my hands on!
                             </p>
                             <br />
                             <p>My interest in making and modifying games began in the late 90s where I got curious and began editing values in game files to modify stats of units inside <a href='https://en.wikipedia.org/wiki/Heroes_of_Might_and_Magic_III' target="_blank" rel="noopener noreferrer">Heroes of Might and Magic 3</a>, <i>one of my favourite games of all time</i>.</p>

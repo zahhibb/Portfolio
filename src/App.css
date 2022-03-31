@@ -20,7 +20,10 @@ h2 {
   font-family: Alegreya-regular;
 }
 
-a, a:link, a:active, a:visited {
+a,
+a:link,
+a:active,
+a:visited {
   color: #fff;
 }
 
@@ -78,12 +81,16 @@ a:hover {
   color: #ddd;
 }
 
+.intro-description .social-links {
+  margin: 1rem 0;
+}
+
 .intro-description p {
   padding-bottom: 0.75rem;
 }
 
 .social-links {
-  padding: 2rem 0;
+  padding: 2rem 0 1rem 0;
   text-align: center;
 }
 
@@ -111,28 +118,28 @@ a:hover {
 }
 
 .social-links .linkedin a {
-  background: url("resources/images/linkedin-logo.png");
+  background: url('resources/images/linkedin-logo.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 40% 40%;
 }
 
 .social-links .artstation a {
-  background: url("resources/images/artstation.png");
+  background: url('resources/images/artstation.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 40% 40%;
 }
 
 .social-links .twitter a {
-  background: url("resources/images/2021\ Twitter\ logo\ -\ white.png");
+  background: url('resources/images/2021\ Twitter\ logo\ -\ white.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 45% 40%;
 }
 
 .social-links .mail a {
-  background: url("resources/images/mail-logo.png");
+  background: url('resources/images/mail-logo.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 40% 40%;
@@ -162,6 +169,9 @@ a:hover {
     padding-top: 4rem;
     text-align: left;
     font-size: 1.25rem;
+  }
+  .social-links {
+    padding: 0;
   }
   .social-links div {
     margin-right: 1rem;
@@ -231,7 +241,7 @@ a:hover {
   outline: 1px solid #fff;
 }
 
-.project-item-container:focus-within .project-item a, 
+.project-item-container:focus-within .project-item a,
 .other-project-item-container:focus-within .other-project-item a {
   opacity: 1;
 }
@@ -336,98 +346,98 @@ hr {
 }
 
 .page-container.battlerite .page-banner .banner-overlay {
-  background: url("resources/images/Battlerite-Header.jpg");
+  background: url('resources/images/Battlerite-Header.jpg');
   background-repeat: no-repeat;
   background-position: 50% 25%;
   background-size: cover;
 }
 
 .projects-container .battlerite {
-  background: url("resources/images/Battlerite-Header.jpg");
+  background: url('resources/images/Battlerite-Header.jpg');
   background-repeat: no-repeat;
   background-position: 50% 25%;
   background-size: cover;
 }
 
 .page-container.akined .page-banner .banner-overlay {
-  background: #1d1223 url("resources/images/Akined2.png");
+  background: #1d1223 url('resources/images/Akined2.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .projects-container .akined {
-  background: #1d1223 url("resources/images/akined.png");
+  background: #1d1223 url('resources/images/akined.png');
   background-repeat: no-repeat;
   background-position: 50% 0%;
   background-size: cover;
 }
 
 .page-container.pioneer .page-banner .banner-overlay {
-  background: url("resources/images/portfolio_pioneer_item.png");
+  background: url('resources/images/portfolio_pioneer_item.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .projects-container .pioneer {
-  background: url("resources/images/portfolio_pioneer_item.png");
+  background: url('resources/images/portfolio_pioneer_item.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .page-container.battlefield6 .page-banner .banner-overlay {
-  background: url("resources/images/portfolio_bf6_item.png");
+  background: url('resources/images/portfolio_bf6_item.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .projects-container .battlefield6 {
-  background: url("resources/images/portfolio_bf6_item.png");
+  background: url('resources/images/portfolio_bf6_item.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .page-container.eldenring .page-banner .banner-overlay {
-  background: url("resources/images/portfolio_eldenring_item.png");
+  background: url('resources/images/portfolio_eldenring_item.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .projects-container .eldenring {
-  background: url("resources/images/portfolio_eldenring_item.png");
+  background: url('resources/images/portfolio_eldenring_item.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .page-container.outvaders .page-banner .banner-overlay {
-  background: url("resources/images/outvaders.png");
+  background: url('resources/images/outvaders.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .projects-container .outvaders {
-  background: url("resources/images/outvaders.png");
+  background: url('resources/images/outvaders.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .page-container.canvasclimber .page-banner .banner-overlay {
-  background: url("resources/images/canvasclimber.png");
+  background: url('resources/images/canvasclimber.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .projects-container .canvasclimber {
-  background: url("resources/images/canvasclimber.png");
+  background: url('resources/images/canvasclimber.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -467,10 +477,10 @@ hr {
   }
 
   .projects-container .akined {
-    background: #1d1223 url("resources/images/akined.png");
+    background: #1d1223 url('resources/images/akined.png');
     background-repeat: no-repeat;
     background-position: 50% 0%;
-    background-size: contain
+    background-size: contain;
   }
 
   .other-projects-list {
@@ -496,12 +506,12 @@ hr {
   }
 
   .projects-container .akined {
-    background: #1d1223 url("resources/images/akined.png");
+    background: #1d1223 url('resources/images/akined.png');
     background-repeat: no-repeat;
     background-position: 50% 0%;
-    background-size: contain
+    background-size: contain;
   }
-  
+
   .other-projects-list {
     display: flex;
     flex-direction: row;
@@ -612,7 +622,6 @@ hr {
 .about-image-wrapper {
   display: flex;
   flex-direction: column-reverse;
-  margin-bottom: 4rem;
 }
 
 .about-image-wrapper > div:first-of-type {
@@ -676,12 +685,7 @@ hr {
   text-align: left;
 }
 
-.who-am-i p {
-  font-size: 1.2rem;
-}
-
 @media only screen and (min-width: 425px) {
-  
 }
 
 @media only screen and (min-width: 768px) {
@@ -699,11 +703,6 @@ hr {
 
   .what-can-i-do .list-container {
     flex-direction: row;
-  }
-
-  .who-am-i p,
-  .as-a-developer p {
-    font-size: 1.5rem;
   }
 }
 
@@ -733,7 +732,8 @@ footer {
   flex-direction: column;
 }
 
-.footer-interests p, .footer-details p {
+.footer-interests p,
+.footer-details p {
   color: #ff8a37;
 }
 
@@ -797,12 +797,12 @@ footer {
   display: inline-block;
 }
 
-.copyright span:not(:first-child), .copyright a {
+.copyright span:not(:first-child),
+.copyright a {
   margin-left: 0.5rem;
 }
 
 @media only screen and (min-width: 425px) {
-  
 }
 
 @media only screen and (min-width: 768px) {
@@ -815,7 +815,6 @@ footer {
 }
 
 @media only screen and (min-width: 1024px) {
-  
 }
 
 /* CREDITS */
@@ -1014,6 +1013,10 @@ footer {
   margin: 0 auto;
 }
 
+.video {
+  width: 90%;
+}
+
 .video-wrapper {
   position: relative;
   height: 0;
@@ -1033,27 +1036,32 @@ footer {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   gap: 2rem;
 }
 
 .image-grid img {
-  flex: calc(50% - 1rem);
-  max-width: calc(50% - 1.14rem);
+  flex: 1;
+  max-width: 100%;
   border: 1px solid #414d96;
 }
 
+.akined-process-items {
+  display: block;
+  margin: 1rem 0;
+}
+
 .page-container.battlerite .image-grid div:first-child {
-  background: url("./resources/images/battlerite_01.jpeg");
+  background: url('./resources/images/battlerite_01.jpeg');
 }
 .page-container.battlerite .image-grid div:nth-child(2) {
-  background: url("./resources/images/battlerite_02.jpg");
+  background: url('./resources/images/battlerite_02.jpg');
 }
 .page-container.battlerite .image-grid div:nth-child(3) {
-  background: url("./resources/images/battlerite_03.jpg");
+  background: url('./resources/images/battlerite_03.jpg');
 }
 .page-container.battlerite .image-grid div:last-child {
-  background: url("./resources/images/battlerite_05.jpg");
+  background: url('./resources/images/battlerite_05.jpg');
 }
 
 .info {
@@ -1074,7 +1082,7 @@ footer {
   padding: 0 0.52rem;
   margin-right: 0.5rem;
   background: yellow;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
   cursor: default;
   user-select: none;
@@ -1205,18 +1213,70 @@ footer {
   .page-banner h1 {
     font-size: 5rem;
   }
-  
+
   .status-item h3 {
     margin: 0;
+  }
+
+  .akined-process-items .image-container {
+    float: none !important;
+    display: block;
+    max-width: 50%;
+    margin: 2rem auto;
+  }
+
+  .akined .image-container .content-image {
+    max-width: 75%;
+    max-height: 75%;
   }
 }
 
 @media only screen and (min-width: 768px) {
+  .akined .image-container .content-image {
+    max-width: 560px;
+    max-height: none;
+  }
+
   .page-intro-wrapper {
     width: 70%;
-    margin: 5rem auto;
+    margin: 4rem auto 3rem auto;
   }
-  
+
+  .image-grid {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .image-grid img {
+    flex: calc(50% - 1rem);
+    max-width: calc(50% - 1.14rem);
+    border: 1px solid #414d96;
+  }
+
+  .akined-process-items .image-container {
+    float: none !important;
+    display: inline-flex;
+  }
+
+  .akined-process-items .image-container img {
+    max-width: 100%;
+  }
+
+  .akined-process-items .image-container:first-child {
+    max-width: 21.5%;
+    margin: 0;
+  }
+
+  .akined-process-items .image-container:nth-child(2) {
+    max-width: 38.5%;
+    margin: 0 1rem;
+  }
+
+  .akined-process-items .image-container:last-child {
+    max-width: 33%;
+    margin: 0;
+  }
+
   .page-container .page-banner h1 {
     font-size: 5rem;
   }
@@ -1233,13 +1293,13 @@ footer {
     font-size: 1.17em;
   }
 
-  .files div {
-    margin: 1rem 4rem 1rem 4rem;
-    display: inline-block;
-  }
-
   .files {
     margin-bottom: 3rem;
+  }
+
+  .files div {
+    margin: 1rem 2rem;
+    display: inline-block;
   }
 
   .definitions {
@@ -1248,7 +1308,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
   }
-  
+
   .definitions div {
     width: 45%;
     padding: 0 1rem;
@@ -1256,6 +1316,37 @@ footer {
 
   .page-media {
     padding: 4rem 0;
+  }
+
+  .video {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .akined .image-container .content-image {
+    max-width: 420px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .akined .image-container .content-image {
+    max-width: 560px;
+  }
+
+  .akined-process-items .image-container:first-child {
+    max-width: 22.5%;
+    margin: 0;
+  }
+
+  .akined-process-items .image-container:nth-child(2) {
+    max-width: 40%;
+    margin: 0 1rem;
+  }
+
+  .akined-process-items .image-container:last-child {
+    max-width: 34.5%;
+    margin: 0;
   }
 }
 
@@ -1285,7 +1376,6 @@ footer {
 .general .content-image.first {
   float: right;
   min-height: 360px;
-  /* margin: 0rem 0rem 1rem 1rem; */
 }
 
 .general ul li {
@@ -1311,7 +1401,7 @@ footer {
 }
 
 .bakko-egg-brawl .content-image.header {
-  background: #222 url("./resources/images/battlerite-egg-brawl.jpg");
+  background: #222 url('./resources/images/battlerite-egg-brawl.jpg');
   background-repeat: no-repeat;
   background-position: 50% 45%;
   background-size: cover;
@@ -1342,6 +1432,10 @@ footer {
   margin: 0 auto;
 }
 
+.bakko-egg-brawl .content-section-wrapper .image-grid {
+  margin: 2rem 0;
+}
+
 .content-section-wrapper .content {
   text-align: left;
 }
@@ -1351,7 +1445,7 @@ footer {
 }
 
 .rocket-balloon .content-image.header {
-  background: #222 url("./resources/images/rocketballoon.png");
+  background: #222 url('./resources/images/rocketballoon.png');
   background-repeat: no-repeat;
   background-position: 50% 70%;
   background-size: cover;
@@ -1401,30 +1495,11 @@ footer {
     width: 70%;
   }
 
-  .content-image {
-    margin: 0rem 0rem 1rem 1rem;
-  }
-
-  .general .content-image.first {
-    margin: 0rem 0rem 1rem 1rem;
-  }
-
   .orb-references {
     display: flex;
     width: 75%;
     text-align: center;
     margin: 2rem auto;
-  }
-
-  .battlerite .image-container {
-    margin: 1rem 0rem 1rem 2rem;
-    float: right;
-  }
-
-  .right {
-    margin: 1rem 0rem 1rem 2rem;
-    width: auto;
-    align-items: initial;
   }
 
   .general .content-image,
@@ -1441,6 +1516,28 @@ footer {
 
   .bakko-egg-brawl .content-image.header {
     background-position: 50% 45%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .battlerite .image-container {
+    margin: 1rem 0rem 1rem 2rem;
+    float: right;
+  }
+
+  .akined .image-container {
+    margin: 1rem 0rem 1rem 2rem;
+    float: right;
+  }
+
+  .akined .image-container img {
+    max-height: none;
+  }
+
+  .right {
+    margin: 1rem 0rem 1rem 2rem;
+    width: auto;
+    align-items: initial;
   }
 }
 
@@ -1635,22 +1732,4 @@ footer {
   -webkit-user-select: none;
   user-select: none;
   pointer-events: none;
-}
-
-.outvaders {
-}
-
-.canvas {
-}
-
-.hofding {
-}
-
-.thief {
-}
-
-.transmission {
-}
-
-.konga {
 }
