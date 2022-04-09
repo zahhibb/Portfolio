@@ -54,7 +54,7 @@ function OtherProjectItem({ title, description, url, imgClass, tag }) {
     );
 }
 
-const index = () => {
+function Index() {
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -162,4 +162,4 @@ const index = () => {
     )
 }
 
-export default index;
+export default Index;

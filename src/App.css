@@ -699,10 +699,15 @@ hr {
 
   .what-can-i-do .list-container {
     margin-left: 6rem;
+    flex-direction: row;
   }
 
-  .what-can-i-do .list-container {
-    flex-direction: row;
+  .what-can-i-do .list-container ul:first-child {
+    margin-right: 2rem;
+  }
+
+  .what-can-i-do .list-container ul:last-child {
+    margin-left: 2rem;
   }
 }
 
@@ -747,15 +752,16 @@ footer {
   margin-bottom: 1rem;
 }
 
-.footer-interests a {
+/* .footer-interests a {
   display: inline-block;
 }
 
 .footer-interests a:not(:last-child) {
   margin-bottom: 1rem;
-}
+} */
 
 .footer-interests img {
+  display: inline-block;
   max-width: 320px;
   min-width: 270px;
   height: 150px;
@@ -768,6 +774,10 @@ footer {
 
 .footer-interests img:hover {
   border: 1px solid #444;
+}
+
+.footer-interests img:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 .footer-details {
@@ -802,19 +812,13 @@ footer {
   margin-left: 0.5rem;
 }
 
-@media only screen and (min-width: 425px) {
-}
-
 @media only screen and (min-width: 768px) {
   .footer-container {
     width: 100%;
   }
-  .footer-interests a:not(:last-child) {
-    margin-right: 1.8rem;
+  .footer-interests img:not(:last-child) {
+    margin: 0 1.8rem 0 0;
   }
-}
-
-@media only screen and (min-width: 1024px) {
 }
 
 /* CREDITS */
@@ -1461,7 +1465,7 @@ footer {
 }
 
 .battlegrounds .content-image.-first {
-  background: #222 url();
+  /* background: #222 url(); */
 }
 
 .bakko-egg-brawl p,
