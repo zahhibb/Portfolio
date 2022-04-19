@@ -102,10 +102,18 @@ const Eldenring = () => {
         </div>
         <div className="quick-links">
           <div className="quick-link-container prev">
-            <Link to={projectQuickLinks[2].link}></Link>
+            <Link to={projectQuickLinks[3].link}></Link>
             <span className="quick-link-text">Prev Project</span>
             <span className="quick-link-title">
-              {projectQuickLinks[2].name}
+              {projectQuickLinks[3].name}
+            </span>
+            <span className="quick-link-image"></span>
+          </div>
+          <div className="quick-link-container">
+            <Link to={projectQuickLinks[0].link}></Link>
+            <span className="quick-link-text">Next Project</span>
+            <span className="quick-link-title">
+              {projectQuickLinks[0].name}
             </span>
             <span className="quick-link-image"></span>
           </div>

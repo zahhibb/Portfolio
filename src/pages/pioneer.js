@@ -44,45 +44,45 @@ const Pioneer = () => {
                                 <StatusItem title={"Engine & Tools"} content={["Unity, Figma, Photoshop"]} />
                             </div>
                             <div className="files">
-                                <div>
-                                    <a href="www.google.se" target="_blank" rel="noopener noreferrer" title=''>Watch video</a>
+                                {/* <div>
+                                    <a href="http://www.google.se" target="_blank" rel="noopener noreferrer" title=''>Watch video</a>
                                 </div>
                                 <div>
-                                    <a href="www.google.se" target="_blank" rel="noopener noreferrer" title=''>Try out prototype</a>
-                                </div>
+                                    <a href="http://www.google.se" target="_blank" rel="noopener noreferrer" title=''>Try out prototype</a>
+                                </div> */}
                             </div>
                             <div className='definitions'>
                                 <div>
                                     <h2>Summary</h2>
                                     <p>
-                                        asd
+                                        content coming soon..
                                     </p>
                                 </div>
                                 <div>
                                     <h2>My contributions</h2>
                                     <p>
-                                        asd
+                                        content coming soon..
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </section>
 
-                    <section className="page-media">
+                    {/* <section className="page-media">
                         <div className="page-media-wrapper">
                             <div className="image-grid">
                                 <img src={PioneerImage01} alt="asd" />
                                 <img src={PioneerImage02} alt="asd" />
                             </div>
                         </div>
-                    </section>
-                    <section className="page-media">
+                    </section> */}
+                    {/* <section className="page-media">
                         <div className="page-media-wrapper">
                             <div className="video-wrapper">
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/KU6Ra-P746k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </div>
-                    </section>
+                    </section> */}
                 </div>
 
                 <div className="quick-links">

@@ -443,6 +443,14 @@ const Battlerite = () => {
         </div>
 
         <div className="quick-links">
+          <div className="quick-link-container prev">
+            <Link to={projectQuickLinks[4].link}></Link>
+            <span className="quick-link-text">Prev Project</span>
+            <span className="quick-link-title">
+              {projectQuickLinks[4].name}
+            </span>
+            <span className="quick-link-image"></span>
+          </div>
           <div className="quick-link-container">
             <Link to={projectQuickLinks[1].link}></Link>
             <span className="quick-link-text">Next Project</span>
