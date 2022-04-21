@@ -6,7 +6,10 @@
 ### - Image zoom (https://www.youtube.com/watch?v=WESQFCM9KgU / https://www.npmjs.com/package/react-image-lightbox)
 ### - Smooth scrolling on from header-section
 ### - Layout changes:
-    ### - Content addition/subtractions
+### - Content addition/subtractions
 ### - Backend code to fetch data from database (improve SEO)
+
+## Bugs/errors/need-to-be-fixed
+### - Dummy text instead of content at Flowchart-section of Akined GDD
 
 #### This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

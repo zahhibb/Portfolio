@@ -143,7 +143,7 @@ const Akined = () => {
                 </p>
                 <br />
                 <p>
-                  The concept we decided on was a combination of one of my and
+                  The concept we decided on was a combination of one of mine and
                   the other UX designer’s ideas, which were a horror-esque
                   puzzle game where you could switch between 2 characters; a
                   living human and a spirit/devil, trying to escape a house of
@@ -180,6 +180,15 @@ const Akined = () => {
                     <span>Greybox (with some highlight assets)</span>
                   </div>
                 </div>
+                <iframe
+                  src="https://docs.google.com/presentation/d/e/2PACX-1vTTmNepDF68tYE4-bP_0QVawNsWw4ziwmYmFrwEh2pFQq0E1hi080F-Cdri3u_hUWn1DdxEl0RAw3-z/embed?start=false&loop=true&delayms=3000"
+                  frameborder="0"
+                  width="480"
+                  height="299"
+                  allowfullscreen="true"
+                  mozallowfullscreen="true"
+                  webkitallowfullscreen="true"
+                ></iframe>
               </div>
             </div>
           </section>
