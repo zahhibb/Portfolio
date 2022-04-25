@@ -14,7 +14,8 @@
     "react-router-hash-link": "^2.4.0",
     "react-scripts": "^5.0.0",
     "react-scroll": "^1.8.1",
-    "styled-components": "^5.3.5"
+    "styled-components": "^5.3.5",
+    "react-is": "16.13.1"
   },
   "scripts": {
     "start": "react-scripts start",
