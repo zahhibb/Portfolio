@@ -118,28 +118,28 @@ a:hover {
 }
 
 .social-links .linkedin a {
-  background: url('resources/images/linkedin-logo.png');
+  background: url("resources/images/linkedin-logo.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 40% 40%;
 }
 
 .social-links .artstation a {
-  background: url('resources/images/artstation.png');
+  background: url("resources/images/artstation.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 40% 40%;
 }
 
 .social-links .twitter a {
-  background: url('resources/images/2021\ Twitter\ logo\ -\ white.png');
+  background: url("resources/images/2021\ Twitter\ logo\ -\ white.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 45% 40%;
 }
 
 .social-links .mail a {
-  background: url('resources/images/mail-logo.png');
+  background: url("resources/images/mail-logo.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 40% 40%;
@@ -346,76 +346,76 @@ hr {
 }
 
 .page-container.battlerite .page-banner .banner-overlay {
-  background: url('resources/images/Battlerite-Header.jpg');
+  background: url("resources/images/Battlerite-Header.jpg");
   background-repeat: no-repeat;
   background-position: 50% 25%;
   background-size: cover;
 }
 
 .projects-container .battlerite {
-  background: url('resources/images/Battlerite-Header.jpg');
+  background: url("resources/images/Battlerite-Header.jpg");
   background-repeat: no-repeat;
   background-position: 50% 25%;
   background-size: cover;
 }
 
 .page-container.akined .page-banner .banner-overlay {
-  background: #1d1223 url('resources/images/Akined2.png');
+  background: #1d1223 url("resources/images/Akined2.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .projects-container .akined {
-  background: #1d1223 url('resources/images/akined.png');
+  background: #1d1223 url("resources/images/akined.png");
   background-repeat: no-repeat;
   background-position: 50% 0%;
   background-size: cover;
 }
 
 .page-container.pioneer .page-banner .banner-overlay {
-  background: url('resources/images/portfolio_pioneer_item.png');
+  background: url("resources/images/portfolio_pioneer_item.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .projects-container .pioneer {
-  background: url('resources/images/portfolio_pioneer_item.png');
+  background: url("resources/images/portfolio_pioneer_item.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .page-container.battlefield6 .page-banner .banner-overlay {
-  background: url('resources/images/portfolio_bf6_item.png');
+  background: url("resources/images/portfolio_bf6_item.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .projects-container .battlefield6 {
-  background: url('resources/images/portfolio_bf6_item.png');
+  background: url("resources/images/portfolio_bf6_item.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .page-container.eldenring .page-banner .banner-overlay {
-  background: url('resources/images/portfolio_eldenring_item.png');
+  background: url("resources/images/portfolio_eldenring_item.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .projects-container .eldenring {
-  background: url('resources/images/portfolio_eldenring_item.png');
+  background: url("resources/images/portfolio_eldenring_item.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.page-container.outvaders .page-banner .banner-overlay {
+/* .page-container.outvaders .page-banner .banner-overlay {
   background: url('resources/images/outvaders.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -444,32 +444,32 @@ hr {
 }
 
 .skkf {
-  /* background: #12411a url("resources/images/skkf.png"); */
+  background: #12411a url("resources/images/skkf.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70%;
 }
 
 .page-banner.hellyhansen {
-  /* background: #da2127 url("resources/images/hellyhansen.jpg"); */
+  background: #da2127 url("resources/images/hellyhansen.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30%;
 }
 
 .projects-container .hellyhansen {
-  /* background: #da2127 url("resources/images/hellyhansen.jpg"); */
+  background: #da2127 url("resources/images/hellyhansen.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70%;
 }
 
 .leos {
-  /* background: #0175c0 url("resources/images/leos.jpg"); */
+  background: #0175c0 url("resources/images/leos.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 80%;
-}
+} */
 
 @media only screen and (min-width: 425px) {
   .project-item-container {
@@ -477,7 +477,7 @@ hr {
   }
 
   .projects-container .akined {
-    background: #1d1223 url('resources/images/akined.png');
+    background: #1d1223 url("resources/images/akined.png");
     background-repeat: no-repeat;
     background-position: 50% 0%;
     background-size: contain;
@@ -506,7 +506,7 @@ hr {
   }
 
   .projects-container .akined {
-    background: #1d1223 url('resources/images/akined.png');
+    background: #1d1223 url("resources/images/akined.png");
     background-repeat: no-repeat;
     background-position: 50% 0%;
     background-size: contain;
@@ -875,7 +875,7 @@ footer {
   text-shadow: 0px 0px 20px #000;
   width: 100%;
   position: absolute;
-  bottom: 9rem;
+  top: 33%;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -1057,16 +1057,16 @@ footer {
 }
 
 .page-container.battlerite .image-grid div:first-child {
-  background: url('./resources/images/battlerite_01.jpeg');
+  background: url("./resources/images/battlerite_01.jpeg");
 }
 .page-container.battlerite .image-grid div:nth-child(2) {
-  background: url('./resources/images/battlerite_02.jpg');
+  background: url("./resources/images/battlerite_02.jpg");
 }
 .page-container.battlerite .image-grid div:nth-child(3) {
-  background: url('./resources/images/battlerite_03.jpg');
+  background: url("./resources/images/battlerite_03.jpg");
 }
 .page-container.battlerite .image-grid div:last-child {
-  background: url('./resources/images/battlerite_05.jpg');
+  background: url("./resources/images/battlerite_05.jpg");
 }
 
 .info {
@@ -1087,7 +1087,7 @@ footer {
   padding: 0 0.52rem;
   margin-right: 0.5rem;
   background: yellow;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-weight: bold;
   cursor: default;
   user-select: none;
@@ -1122,7 +1122,7 @@ footer {
 .quick-link-text {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 12px;
   color: #888 !important;
   font-size: 1rem;
   text-align: right;
@@ -1138,18 +1138,18 @@ footer {
 
 .prev .quick-link-text {
   position: absolute;
-  left: 0;
+  left: 12px;
   text-align: left !important;
 }
 
 .quick-link-title {
   position: absolute;
-  top: 25%;
+  top: 32%;
   right: 30px;
   display: inline-block;
   color: rgba(203, 227, 255, 0.9) !important;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: capitalize !important;
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -1169,7 +1169,7 @@ footer {
 .quick-link-image {
   position: absolute;
   top: 40px;
-  right: 0;
+  right: 12px;
   width: 12px;
   height: 12px;
   border-bottom: 2px solid #888;
@@ -1185,7 +1185,7 @@ footer {
 
 .prev .quick-link-image {
   position: absolute;
-  left: 0;
+  left: 12px;
   transform: rotateZ(137deg);
 }
 
@@ -1194,7 +1194,7 @@ footer {
 }
 
 .quick-link-container:hover .quick-link-title {
-  top: 6px;
+  top: 11px;
   color: #fff !important;
 }
 
@@ -1326,6 +1326,39 @@ footer {
   .video {
     width: 70%;
   }
+
+  .quick-link-text {
+    right: 0;
+  }
+
+  .prev .quick-link-text {
+    left: 0;
+  }
+
+  .quick-link-title {
+    top: 25%;
+    font-size: 2rem;
+  }
+
+  .prev .quick-link-title {
+    left: 30px;
+  }
+
+  .quick-link-image {
+    right: 0;
+  }
+
+  .prev .quick-link-image {
+    left: 0;
+  }
+
+  .quick-link-container:hover .quick-link-title {
+    top: 6px;
+  }
+
+  .quick-link-container:hover .quick-link-image {
+    top: 26px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1406,7 +1439,7 @@ footer {
 }
 
 .bakko-egg-brawl .content-image.header {
-  background: #222 url('./resources/images/battlerite-egg-brawl.jpg');
+  background: #222 url("./resources/images/battlerite-egg-brawl.jpg");
   background-repeat: no-repeat;
   background-position: 50% 45%;
   background-size: cover;
@@ -1450,7 +1483,7 @@ footer {
 }
 
 .rocket-balloon .content-image.header {
-  background: #222 url('./resources/images/rocketballoon.png');
+  background: #222 url("./resources/images/rocketballoon.png");
   background-repeat: no-repeat;
   background-position: 50% 70%;
   background-size: cover;
@@ -1544,6 +1577,28 @@ footer {
     width: auto;
     align-items: initial;
   }
+}
+
+/* 404 page */
+.NotFoundPage {
+  cursor: default;
+}
+
+.NotFoundPage .page-container {
+  padding: 2rem;
+}
+
+.NotFoundPage h1 {
+  font-size: 12rem;
+}
+
+.NotFoundPage h2 {
+  position: relative;
+  bottom: 4rem;
+}
+
+.NotFoundPage ul {
+  list-style: none;
 }
 
 /* GameDev resources */

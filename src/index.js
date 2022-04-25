@@ -14,10 +14,9 @@ import Akined from "./pages/akined";
 import Pioneer from "./pages/pioneer";
 import Battlefield6 from "./pages/battlefield6";
 import EldenRing from "./pages/eldenring";
-// import CanvasClimber from "./pages/canvasclimber";
-// import Outvaders from "./pages/outvaders";
 import Credits from "./pages/credits";
 import GameDevResources from "./pages/gamedevresources";
+import NotFoundPage from "./pages/NotFoundPage";
 
 const root = document.getElementById("root");
 const routing = (
@@ -31,10 +30,9 @@ const routing = (
         <Route exact path="/pioneer" component={Pioneer}></Route>
         <Route exact path="/battlefield6" component={Battlefield6}></Route>
         <Route exact path="/eldenring" component={EldenRing}></Route>
-        {/* <Route exact path="/canvasclimber" component={CanvasClimber}></Route>
-        <Route exact path="/outvaders" component={Outvaders}></Route> */}
         <Route exact path="/credits" component={Credits}></Route>
         <Route exact path="/gamedevresources" component={GameDevResources}></Route>
+        <Route path="*" component={NotFoundPage}></Route>
       </Switch>
     </ThemeProvider>
   </Router>
