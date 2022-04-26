@@ -181,11 +181,10 @@ const Akined = () => {
                   </div>
                 </div>
                 <iframe
+                  className='akined-slideshow'
                   src="https://docs.google.com/presentation/d/e/2PACX-1vTTmNepDF68tYE4-bP_0QVawNsWw4ziwmYmFrwEh2pFQq0E1hi080F-Cdri3u_hUWn1DdxEl0RAw3-z/embed?start=false&loop=true&delayms=3000"
                   title="Paper prototype vs. end product"
                   frameborder="0"
-                  width="480"
-                  height="299"
                   allowfullscreen="true"
                   mozallowfullscreen="true"
                   webkitallowfullscreen="true"
