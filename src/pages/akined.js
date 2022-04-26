@@ -182,6 +182,7 @@ const Akined = () => {
                 </div>
                 <iframe
                   src="https://docs.google.com/presentation/d/e/2PACX-1vTTmNepDF68tYE4-bP_0QVawNsWw4ziwmYmFrwEh2pFQq0E1hi080F-Cdri3u_hUWn1DdxEl0RAw3-z/embed?start=false&loop=true&delayms=3000"
+                  title="Paper prototype vs. end product"
                   frameborder="0"
                   width="480"
                   height="299"
@@ -199,7 +200,7 @@ const Akined = () => {
                   width="560"
                   height="315"
                   src="https://www.youtube.com/embed/mgAJ-adILGY"
-                  title="YouTube video player"
+                  title="Gameplay trailer"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen

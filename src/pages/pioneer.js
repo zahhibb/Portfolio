@@ -4,8 +4,8 @@ import Footer from "../sections/footer";
 import { Link } from "react-router-dom";
 import "../App.css";
 
-import PioneerImage01 from "../resources/images/battlerite_01.jpeg";
-import PioneerImage02 from "../resources/images/battlerite_02.jpg";
+// import PioneerImage01 from "../resources/images/battlerite_01.jpeg";
+// import PioneerImage02 from "../resources/images/battlerite_02.jpg";
 
 import { projectQuickLinks } from "./index";
 
