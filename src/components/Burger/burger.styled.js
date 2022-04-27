@@ -5,7 +5,7 @@ export const StyledBurger = styled.button`
     width: 35px;
     height: 29px;
     position: relative;
-    right: 45px;
+    right: 52px;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
