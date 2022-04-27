@@ -74,7 +74,7 @@ export const StyledDesktopNav = styled.nav`
         text-align: left;
     }
     ul li a {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         font-weight: 600;
         letter-spacing: 2px;
         color: ${({ theme }) => theme.navText};

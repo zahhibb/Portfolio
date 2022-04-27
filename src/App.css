@@ -54,7 +54,7 @@ a:hover {
 .intro-heading div {
   display: flex;
   flex-direction: column;
-  font-size: 1.3rem;
+  /* font-size: 1.3rem; */
 }
 
 .intro-heading div h3 {
@@ -75,7 +75,7 @@ a:hover {
 
 .intro-description {
   text-align: left;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
   padding-top: 2rem;
   word-spacing: 2px;
   color: #ddd;
@@ -151,9 +151,9 @@ a:hover {
     max-width: 660px;
     padding: 6rem 0 1rem;
   }
-  .intro-heading h1 {
+  /* .intro-heading h1 {
     font-size: 4rem;
-  }
+  } */
   .intro-heading div {
     display: flex;
     flex-direction: row;
@@ -168,7 +168,7 @@ a:hover {
   .intro-description {
     padding-top: 4rem;
     text-align: left;
-    font-size: 1.25rem;
+    /* font-size: 1.25rem; */
   }
   .social-links {
     padding: 0;
@@ -273,9 +273,9 @@ a:hover {
 .project-item .item-title,
 .other-project-item .other-item-title {
   color: #fff;
-  font-size: 1.75rem;
+  font-size: 1.2rem;
   position: absolute;
-  top: 9rem;
+  top: 6rem;
   left: 0;
   width: 100%;
   margin: 0;
@@ -288,14 +288,14 @@ a:hover {
 }
 
 .other-project-item .other-item-title {
-  font-size: 1.6rem;
-  top: 4rem;
+  font-size: 1.2rem;
+  top: 3rem;
 }
 
 .project-item .item-desc,
 .other-project-item .other-item-desc {
   position: absolute;
-  top: 12rem;
+  top: 10rem;
   left: 0;
   letter-spacing: 0.75px;
   color: #fff;
@@ -310,7 +310,7 @@ a:hover {
 }
 
 .other-project-item .other-item-desc {
-  top: 6.5rem;
+  top: 5.5rem;
 }
 
 .project-item .tag,
@@ -512,6 +512,10 @@ hr {
     background-size: contain;
   }
 
+  .project-item .item-title {
+    font-size: 1.75rem;
+  }
+
   .other-projects-list {
     display: flex;
     flex-direction: row;
@@ -601,7 +605,7 @@ hr {
 .about-heading div {
   display: flex;
   flex-direction: column;
-  font-size: 1.3rem;
+  /* font-size: 1.3rem; */
 }
 
 .about-heading div h3 {
@@ -698,7 +702,8 @@ hr {
   }
 
   .what-can-i-do .list-container {
-    margin-left: 6rem;
+    position: relative;
+    left: 3rem;
     flex-direction: row;
   }
 
@@ -716,9 +721,9 @@ hr {
     flex-direction: row;
   }
 
-  .about-heading h1 {
+  /* .about-heading h1 {
     font-size: 4rem;
-  }
+  } */
 }
 
 /* FOOTER */
@@ -748,17 +753,9 @@ footer {
 }
 
 .footer-interests p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
 }
-
-/* .footer-interests a {
-  display: inline-block;
-}
-
-.footer-interests a:not(:last-child) {
-  margin-bottom: 1rem;
-} */
 
 .footer-interests img {
   display: inline-block;
@@ -790,7 +787,7 @@ footer {
 }
 
 .footer-details > p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .footer-details a:not(:first-child) {
@@ -871,7 +868,7 @@ footer {
 }
 
 .page-container .page-banner h1 {
-  font-size: 3rem;
+  /* font-size: 3rem; */
   text-shadow: 0px 0px 20px #000;
   width: 100%;
   position: absolute;
@@ -1048,7 +1045,8 @@ footer {
 .image-grid img {
   align-self: center;
   flex: 1;
-  max-width: 100%;
+  width: 100%;
+  max-height: 300px;
   border: 1px solid #414d96;
 }
 
@@ -1105,8 +1103,8 @@ footer {
   justify-content: center;
   padding: 1rem 0;
   background: #222;
-  border-top: 2px solid #333;
-  border-bottom: 2px solid #333;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
 }
 
 .quick-link-container {
@@ -1221,9 +1219,9 @@ footer {
 }
 
 @media only screen and (min-width: 425px) {
-  .page-banner h1 {
+  /* .page-banner h1 {
     font-size: 5rem;
-  }
+  } */
 
   .status-item h3 {
     margin: 0;
@@ -1261,6 +1259,7 @@ footer {
   .image-grid img {
     flex: calc(50% - 1rem);
     max-width: calc(50% - 1.14rem);
+    max-height: none;
     border: 1px solid #414d96;
   }
 
@@ -1270,7 +1269,7 @@ footer {
   }
 
   .akined-process-items .image-container img {
-    max-width: 100%;
+    max-width: none;
   }
 
   .akined-process-items .image-container:first-child {
@@ -1295,7 +1294,9 @@ footer {
   }
 
   .page-container .page-banner h1 {
-    font-size: 5rem;
+    font-size: 3rem;
+    position: absolute;
+    top: 45%;
   }
 
   .status-panel {
@@ -1339,6 +1340,10 @@ footer {
     width: 70%;
   }
 
+  .quick-link-container {
+    max-width: 35%;
+  }
+
   .quick-link-text {
     right: 0;
   }
@@ -1349,7 +1354,6 @@ footer {
 
   .quick-link-title {
     top: 25%;
-    font-size: 2rem;
   }
 
   .prev .quick-link-title {
@@ -1512,12 +1516,6 @@ footer {
 
 .battlegrounds .content-image.-first {
   /* background: #222 url(); */
-}
-
-.bakko-egg-brawl p,
-.rocket-balloon p,
-.battlegrounds p {
-  font-size: 1.3rem;
 }
 
 .general .content-image,
