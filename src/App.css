@@ -594,7 +594,7 @@ hr {
 .about-container {
   width: 70%;
   max-width: 660px;
-  padding: 6rem 0 3rem 0;
+  padding: 4rem 0 3rem 0;
   margin: 0 auto;
 }
 
@@ -693,6 +693,10 @@ hr {
 }
 
 @media only screen and (min-width: 768px) {
+  .about-container {
+    padding: 6rem 0 3rem 0;
+  }
+
   .about-image-wrapper {
     flex-direction: row;
   }
@@ -720,10 +724,6 @@ hr {
   .about-container {
     flex-direction: row;
   }
-
-  /* .about-heading h1 {
-    font-size: 4rem;
-  } */
 }
 
 /* FOOTER */
