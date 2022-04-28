@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import Navigation from "../components/Navigation/navigation";
 import Footer from "../sections/footer";
 
-import Resume from "../resources/documents/JoakimHedman_Resume.pdf";
 import personalImg from "../resources/images/UX_21_Joakim_Hedman.png";
 
 const About = () => {
