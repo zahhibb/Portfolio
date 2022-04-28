@@ -11,14 +11,14 @@ export default [
         category: "Design",
         title: "Skill ceiling",
         header: "",
-        paragraph: "The limit (or lack thereof) on how good you can get at the game given enough practice."
+        paragraph: "The limit (or lack thereof) on how good you can get at a game given enough practice."
     },
     {
         id: 2,
         category: "Design",
         title: "Skill floor",
         header: "",
-        paragraph: "The bare minimum amount of skill with that game to participate in the game effectively."
+        paragraph: "The bare minimum amount of skill within a game to participate in the game effectively."
     },
     // {
     //     id: 3,

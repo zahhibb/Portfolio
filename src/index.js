@@ -17,6 +17,7 @@ import EldenRing from "./pages/eldenring";
 import Credits from "./pages/credits";
 import GameDevResources from "./pages/gamedevresources";
 import NotFoundPage from "./pages/NotFoundPage";
+import { Redirect } from "react-router-dom";
 
 const root = document.getElementById("root");
 const routing = (
@@ -24,15 +25,16 @@ const routing = (
     <ThemeProvider theme={theme}>
       <Switch>
         <Route exact path="/" component={App}></Route>
-        <Route exact path="/about" component={About}></Route>
-        <Route exact path="/battlerite" component={Battlerite}></Route>
-        <Route exact path="/akined" component={Akined}></Route>
-        <Route exact path="/pioneer" component={Pioneer}></Route>
-        <Route exact path="/battlefield6" component={Battlefield6}></Route>
-        <Route exact path="/eldenring" component={EldenRing}></Route>
-        <Route exact path="/credits" component={Credits}></Route>
-        <Route exact path="/gamedevresources" component={GameDevResources}></Route>
-        <Route path="*" component={NotFoundPage}></Route>
+        <Route path="/about" component={About}></Route>
+        <Route path="/battlerite" component={Battlerite}></Route>
+        <Route path="/akined" component={Akined}></Route>
+        <Route path="/pioneer" component={Pioneer}></Route>
+        <Route path="/battlefield6" component={Battlefield6}></Route>
+        <Route path="/eldenring" component={EldenRing}></Route>
+        <Route path="/credits" component={Credits}></Route>
+        <Route path="/gamedevresources" component={GameDevResources}></Route>
+        <Route path="/404" component={NotFoundPage}></Route>
+        <Redirect from="*" to="/404" />
       </Switch>
     </ThemeProvider>
   </Router>

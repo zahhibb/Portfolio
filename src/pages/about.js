@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import Navigation from "../components/Navigation/navigation";
 import Footer from "../sections/footer";
 
+import Resume from "../resources/documents/JoakimHedman_Resume.pdf";
 import personalImg from "../resources/images/UX_21_Joakim_Hedman.png";
 
 const About = () => {
@@ -38,7 +39,7 @@ const About = () => {
                         </div>
                         <div className='files'>
                             <div>
-                                <a href='http://www.google.se' target="_blank" rel="noopener noreferrer" title='Resume link'>View my resume</a>
+                                <a href="https://drive.google.com/file/d/1MMiWiVQ7QtbNW4oi9zr1uR1vhJHopW06/view?usp=sharing" target="_blank" rel="noopener noreferrer" title='Resume link'>View my resume</a>
                             </div>
                         </div>
                     </div>
