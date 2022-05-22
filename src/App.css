@@ -586,7 +586,7 @@ hr {
 /* ABOUT */
 
 .about {
-  background: #1e1e1e;
+  background: linear-gradient(180deg, #222, #111);
   display: block;
   width: 100%;
 }
@@ -605,7 +605,6 @@ hr {
 .about-heading div {
   display: flex;
   flex-direction: column;
-  /* font-size: 1.3rem; */
 }
 
 .about-heading div h3 {

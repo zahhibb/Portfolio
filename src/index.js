@@ -4,7 +4,7 @@ import * as serviceWorker from "./serviceWorker";
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 
 import { ThemeProvider } from "styled-components";
-import { theme } from './theme';
+import { theme } from "./theme";
 import "./index.css";
 
 import App from "./App";
@@ -24,17 +24,17 @@ const routing = (
   <Router>
     <ThemeProvider theme={theme}>
       <Switch>
-        <Route exact path="/" component={App}></Route>
-        <Route path="/about" component={About}></Route>
-        <Route path="/battlerite" component={Battlerite}></Route>
-        <Route path="/akined" component={Akined}></Route>
-        <Route path="/pioneer" component={Pioneer}></Route>
-        <Route path="/battlefield6" component={Battlefield6}></Route>
-        <Route path="/eldenring" component={EldenRing}></Route>
-        <Route path="/credits" component={Credits}></Route>
-        <Route path="/gamedevresources" component={GameDevResources}></Route>
-        <Route path="/404" component={NotFoundPage}></Route>
-        <Redirect from="*" to="/404" />
+        <Route exact path="/" component={App} />
+        <Route path="/about" component={About} />
+        <Route path="/battlerite" component={Battlerite} />
+        <Route path="/akined" component={Akined} />
+        <Route path="/pioneer" component={Pioneer} />
+        <Route path="/battlefield6" component={Battlefield6} />
+        <Route path="/eldenring" component={EldenRing} />
+        <Route path="/credits" component={Credits} />
+        <Route path="/gamedevresources" component={GameDevResources} />
+        <Route path="/404" component={NotFoundPage} />
+        <Redirect to="/404" />
       </Switch>
     </ThemeProvider>
   </Router>
