@@ -94,7 +94,7 @@ export const StyledDesktopNav = styled.nav`
         color: ${({ theme }) => theme.lightText};
     }
     .active {
-        color: ${({ theme }) => theme.lightText};
+        color: ${({ theme }) => theme.orangeText};
         border-bottom: 2px solid #fff;
         text-decoration: none;
     }

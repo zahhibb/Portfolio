@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import React, { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import Burger from "../Burger/burger";
@@ -17,10 +18,10 @@ const Navigation = () => {
         </div>
         <ul>
           <li>
-            <Link to={"/#home"}>PORTFOLIO</Link>
+            <NavLink exact to={"/#home"}>PORTFOLIO</NavLink>
           </li>
           <li>
-            <Link to={"/about#about"}>ABOUT</Link>
+            <NavLink exact to={"/about"}>ABOUT</NavLink>
           </li>
         </ul>
         <div className="nav-socials"></div>

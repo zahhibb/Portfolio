@@ -3,6 +3,7 @@ export const theme = {
     navText: 'rgba(203, 227, 255, .9)',
     primaryText: '#ddd',
     lightText: '#fff',
+    orangeText: '#ff8a37',
     mobile: '425px',
     tablet: '768px',
     laptop: '1024px',
