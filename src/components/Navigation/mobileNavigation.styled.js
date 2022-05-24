@@ -36,7 +36,7 @@ export const StyledMobileNav = styled.nav`
     }
 
     .active {
-        color: ${({ theme }) => theme.lightText};
+        color: ${({ theme }) => theme.orangeText};
     }
 
 .mobile-nav-cover {

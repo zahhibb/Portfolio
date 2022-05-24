@@ -1,5 +1,5 @@
+import { NavLink } from "react-router-dom";
 import React from "react";
-import { HashLink as Link } from "react-router-hash-link";
 import { StyledMobileNav } from '../';
 
 const MobileNavigation = ({ open }) => {
@@ -8,10 +8,10 @@ const MobileNavigation = ({ open }) => {
             <div className="mobile-nav-cover">
                 <ul>
                     <li>
-                        <Link to={"/"}>PORTFOLIO</Link>
+                        <NavLink exact to={"/"}>PORTFOLIO</NavLink>
                     </li>
                     <li>
-                        <Link to={"/about"}>ABOUT</Link>
+                        <NavLink exact to={"/about"}>ABOUT</NavLink>
                     </li>
                 </ul>
             </div>

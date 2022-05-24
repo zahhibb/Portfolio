@@ -1,27 +1,37 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+
+import logoDefault from "../../resources/images/logo-default.png";
+import logoHover from "../../resources/images/logo-hover.png";
+
+import homeDefault from "../../resources/images/home-default.png";
+import homeActive from "../../resources/images/home-active.png";
+import homeHover from "../../resources/images/home-hover.png";
+import aboutDefault from "../../resources/images/about-default.png";
+import aboutActive from "../../resources/images/about-active.png";
+import aboutHover from "../../resources/images/about-hover.png";
 
 export const StyledDesktopNav = styled.nav`
-    display: flex;
-    background: ${({ theme }) => theme.transparentBackground};
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 3;
-    align-items: center;
-    justify-items: center;
-    justify-content: space-between;
-    padding: 0.5rem 2rem;
+  display: flex;
+  background: ${({ theme }) => theme.transparentBackground};
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
 
-    .nav-owner a {
-        color: ${({ theme }) => theme.lightText};
-        text-decoration: none;
-    }
+  .nav-owner a {
+    color: ${({ theme }) => theme.lightText};
+    text-decoration: none;
+  }
 
-    >ul {
-        display: none;
-    }
-  
-@media only screen and (min-width: ${({ theme }) => theme.tablet}) {
+  > ul {
+    display: none;
+  }
+
+  @media only screen and (min-width: ${({ theme }) => theme.tablet}) {
     display: flex;
     position: fixed;
     top: 0;
@@ -33,75 +43,112 @@ export const StyledDesktopNav = styled.nav`
     padding: 0;
 
     .nav-owner {
-        flex: 1;
-        text-align: left;
+      flex: 1;
+      text-align: left;
+      height: 70px;
     }
     .nav-owner a {
-        display: inline-block;
-        color: ${({ theme }) => theme.lightText};
-        margin-left: 2rem;
-        text-decoration: none;
-        transition: color 0.3s;
-        min-width: 135px;
+      color: rgba(255, 255, 255, 0);
+      height: 100%;
+      width: 70px;
+      display: inline-block;
+      background: url(${logoDefault});
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
     }
     .nav-owner a:hover {
-        color: ${({ theme }) => theme.primaryText};
-    }
-    .nav-owner a::after {
-        content: '';
-        width: 0px;
-        height: 1px;
-        display: block;
-        background: ${({ theme }) => theme.primaryText};
-        transition: 300ms;
-    }
-    .nav-owner a:hover::after {
-        width: 100%;
+      background: url(${logoHover});
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
     }
     ul {
-        flex: 4;
-        display: flex;
-        list-style: none;
+      flex: 4;
+      display: flex;
+      list-style: none;
     }
     ul li {
-        flex: 1;
-        display: inline-block;
+      flex: 1;
+      display: inline-block;
     }
-    ul li:first-child{
-        text-align: right;
+    ul li:first-child {
+      text-align: right;
     }
     ul li:last-child {
-        text-align: left;
+      text-align: left;
     }
     ul li a {
-        font-size: 0.7rem;
-        font-weight: 600;
-        letter-spacing: 2px;
-        color: ${({ theme }) => theme.navText};
-        text-decoration: none;
-        padding: 0.75rem 1.5rem 0.75rem 1.5rem;
-        display: inline-block;
-        transition: color 0.3s;
-        min-width: 50px;
+      font-size: 0.8rem;
+      font-weight: 400;
+      letter-spacing: 2px;
+      color: ${({ theme }) => theme.navText};
+      text-decoration: none;
+      padding: 1.75rem 1.4rem 0.2rem 1.4rem;
+      display: inline-block;
+      min-width: 50px;
+      position: relative;
     }
-    ul li:first-child a {
-        // margin-right: 1rem;
+    .home {
+      display: inline-block;
+      position: absolute;
+      bottom: 30px;
+      left: 45%;
+      width: 19px;
+      height: 21px;
+      background: url(${homeHover});
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
     }
-    ul li:last-child a {
-        // margin-left: 1rem;
+    .about {
+      display: inline-block;
+      position: absolute;
+      bottom: 30px;
+      left: 43%;
+      width: 20px;
+      height: 24px;
+      background: url(${aboutHover});
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+    ul li a:hover .home {
+      background: url(${homeDefault});
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+    ul li a:hover .about {
+      background: url(${aboutDefault});
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
     }
     ul li a:hover {
-        color: ${({ theme }) => theme.lightText};
+      color: ${({ theme }) => theme.lightText};
     }
     .active {
-        color: ${({ theme }) => theme.orangeText} !important;
-        border-bottom: 2px solid #fff;
-        text-decoration: none;
+      color: ${({ theme }) => theme.orangeText} !important;
+      border-bottom: 2px solid #fff;
+      text-decoration: none;
+    }
+    .active .home {
+      background: url(${homeActive}) !important;
+      background-repeat: no-repeat !important;
+      background-position: center !important;
+      background-size: contain !important;
+    }
+    .active .about {
+      background: url(${aboutActive}) !important;
+      background-repeat: no-repeat !important;
+      background-position: center !important;
+      background-size: contain !important;
     }
     .nav-socials {
-        flex: 1;
-        display: flex;
-        justify-content: flex-end;
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
     }
-}
-`
+  }
+`;
