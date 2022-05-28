@@ -1,145 +1,206 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export var projectQuickLinks = [
-    {
-        name: "battlerite",
-        link: "/battlerite"
-    },
-    {
-        name: "akined",
-        link: "/akined"
-    },
-    {
-        name: '"Pioneer" - FPS UI',
-        link: "/pioneer"
-    },
-    {
-        name: 'Battlefield "6" UI',
-        link: "/battlefield6"
-    },
-    {
-        name: 'Elden Ring UI',
-        link: "/eldenring"
-    }
-]
+  {
+    name: "battlerite",
+    link: "/battlerite",
+  },
+  {
+    name: "akined",
+    link: "/akined",
+  },
+  {
+    name: '"Pioneer" - FPS UI',
+    link: "/pioneer",
+  },
+  {
+    name: 'Battlefield "6" UI',
+    link: "/battlefield6",
+  },
+  {
+    name: "Elden Ring UI",
+    link: "/eldenring",
+  },
+];
 
 function ProjectItem({ title, description, url, imgClass, tag }) {
-    return (
-        <div className="project-item-container">
-            <div className={"project-item " + imgClass}>
-                <Link to={url}>
-                    <span className="overlay"></span>
-                    <p className="item-title">{title}</p>
-                    <span className="item-desc">{description}</span>
-                </Link>
-                <span className='tag'>{tag}</span>
-            </div>
+  return (
+    <div className="project-item-container">
+      <div className={"project-item " + imgClass}>
+        <Link to={url}>
+          <span className="overlay"></span>
+          <p className="item-title">{title}</p>
+          <span className="item-desc">{description}</span>
+        </Link>
+        <span className="tag">{tag}</span>
+        <div className="mobile-bar">
+          <span className="mobile-bar-title">{title}</span>
+          <span className="mobile-bar-desc">{description}</span>
         </div>
-    );
+      </div>
+    </div>
+  );
 }
 
 function OtherProjectItem({ title, description, url, imgClass, tag }) {
-    return (
-        <div className="other-project-item-container">
-            <div className={"other-project-item " + imgClass}>
-                <Link to={url}>
-                    <span className='overlay'></span>
-                    <p className="other-item-title">{title}</p>
-                    <span className='other-item-desc'>{description}</span>
-                </Link>
-                <span className='tag'>{tag}</span>
-            </div>
+  return (
+    <div className="other-project-item-container">
+      <div className={"other-project-item " + imgClass}>
+        <Link to={url}>
+          <span className="overlay"></span>
+          <p className="other-item-title">{title}</p>
+          <span className="other-item-desc">{description}</span>
+        </Link>
+        <span className="tag">{tag}</span>
+        <div className="mobile-bar">
+          <span className="mobile-bar-title">{title}</span>
+          <span className="mobile-bar-desc">{description}</span>
         </div>
-    );
+      </div>
+    </div>
+  );
 }
 
 function Index() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
-
-    return (
-        <div>
-            <section className="intro" id="home">
-                <div className="intro-container">
-                    <div className="intro-heading">
-                        <h1>Joakim Hedman</h1>
-                        <div>
-                            <h3 className='title-game'>Game & UX Designer</h3>
-                        </div>
-                    </div>
-                    <div className="intro-description">
-                        <p>Hi there!</p>
-                        <p>I'm Joakim, a <strong>Game and UX designer</strong> with about 3 years of experience developing games inside Unity.</p>
-                        <p>I am currently studying Game & UX design at <a href='https://futuregames.se/' target="_blank" rel="noopener noreferrer">FutureGames</a> in Skellefteå, Sweden, and will be available for <strong>internships from Jan-Jun 2023!</strong> <i style={{ fontSize: "16px" }}>hint hint ;)</i></p>
-                        <p>Below you will find some of my highlighted projects in Game development; including professional, formal, and personal.</p>
-                        <div className="social-links">
-                            <div className="linkedin">
-                                <a href="https://www.linkedin.com/in/joakim-hedman/" target="_blank" rel="noopener noreferrer" title='LinkedIn link'>LinkedIn</a>
-                            </div>
-                            <div className="artstation">
-                                <a href="https://www.artstation.com/zahhibb" target="_blank" rel="noopener noreferrer" title='ArtStation link'>ArtStation</a>
-                            </div>
-                            <div className="twitter">
-                                <a href="https://twitter.com/Zahhibb" target="_blank" rel="noopener noreferrer" title='Twitter link'>Twitter</a>
-                            </div>
-                            <div className="mail">
-                                <a href="mailto:jocke_hedman@hotmail.com" title='Direct mail link'>Mail</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section className="projects">
-                <div className="projects-container">
-                    <h2>Highlighted projects</h2>
-                    <div className="projects-list">
-                        <div className="projects-games">
-                            <div className="games-list">
-                                <ProjectItem
-                                    title={"Battlerite"}
-                                    description={"Professional/internship projects"}
-                                    url={"/battlerite"}
-                                    imgClass={"battlerite"}
-                                    tag={"Programming & Game design"}
-                                />
-                                <ProjectItem
-                                    title={"Akined"}
-                                    description={"School game project"}
-                                    url={"/akined"}
-                                    imgClass={"akined"}
-                                    tag={"Programming & Game design"}
-                                />
-                                <ProjectItem
-                                    title={'"Pioneer" - FPS UI'}
-                                    description={"School assignment"}
-                                    url={"/pioneer"}
-                                    imgClass={"pioneer"}
-                                    tag={"UX/UI design"}
-                                />
-                                <ProjectItem
-                                    title={'"Battlefield 6" UI concept'}
-                                    description={"Personal project"}
-                                    url={"/battlefield6"}
-                                    imgClass={"battlefield6"}
-                                    tag={"UI design"}
-                                />
-                            </div>
-                        </div>
-                        <hr />
-                        <div className='other-projects'>
-                            <h2>Other projects</h2>
-                            <div className='other-projects-list'>
-                                <OtherProjectItem
-                                    title={"Elden Ring UI concept"}
-                                    description={"Personal project"}
-                                    url={"/eldenring"}
-                                    imgClass={"eldenring"}
-                                    tag={"UX/UI"}
-                                />
-                                {/* <OtherProjectItem
+  return (
+    <div>
+      <section className="intro" id="home">
+        <div className="intro-container">
+          <div className="intro-heading">
+            <h1>Joakim Hedman</h1>
+            <div>
+              <h3 className="title-game">Game & UX Designer</h3>
+            </div>
+          </div>
+          <div className="intro-description">
+            <p>Hi there!</p>
+            <p>
+              I'm Joakim, a <strong>Game and UX designer</strong> with about 3
+              years of experience developing games inside Unity.
+            </p>
+            <p>
+              I am currently studying Game & UX design at{" "}
+              <a
+                href="https://futuregames.se/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                FutureGames
+              </a>{" "}
+              in Skellefteå, Sweden, and will be available for{" "}
+              <strong>internships from Jan-Jun 2023!</strong>{" "}
+              <i style={{ fontSize: "16px" }}>hint hint ;)</i>
+            </p>
+            <p>
+              Below you will find some of my highlighted projects in Game
+              development; including professional, formal, and personal.
+            </p>
+            <div className="social-links">
+              <div className="linkedin">
+                <a
+                  href="https://www.linkedin.com/in/joakim-hedman/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="LinkedIn link"
+                >
+                  LinkedIn
+                </a>
+              </div>
+              <div className="artstation">
+                <a
+                  href="https://www.artstation.com/zahhibb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="ArtStation link"
+                >
+                  ArtStation
+                </a>
+              </div>
+              <div className="itch">
+                <a
+                  href="https://zahhibb.itch.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Itch.io link"
+                >
+                  Itch.io
+                </a>
+              </div>
+              <div className="twitter">
+                <a
+                  href="https://twitter.com/Zahhibb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Twitter link"
+                >
+                  Twitter
+                </a>
+              </div>
+              <div className="mail">
+                <a
+                  href="mailto:jocke_hedman@hotmail.com"
+                  title="Direct mail link"
+                >
+                  Mail
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="projects">
+        <div className="projects-container">
+          <h2>Highlighted projects</h2>
+          <div className="projects-list">
+            <div className="projects-games">
+              <div className="games-list">
+                <ProjectItem
+                  title={"Battlerite"}
+                  description={"Professional/internship projects"}
+                  url={"/battlerite"}
+                  imgClass={"battlerite"}
+                  tag={"Programming & Game design"}
+                />
+                <ProjectItem
+                  title={"Akined"}
+                  description={"School game project"}
+                  url={"/akined"}
+                  imgClass={"akined"}
+                  tag={"Programming & Game design"}
+                />
+                <ProjectItem
+                  title={'"Pioneer" - FPS UI'}
+                  description={"School assignment"}
+                  url={"/pioneer"}
+                  imgClass={"pioneer"}
+                  tag={"UX/UI design"}
+                />
+                <ProjectItem
+                  title={'"Battlefield 6" UI concept'}
+                  description={"Personal project"}
+                  url={"/battlefield6"}
+                  imgClass={"battlefield6"}
+                  tag={"UI design"}
+                />
+              </div>
+            </div>
+            <hr />
+            <div className="other-projects">
+              <h2>Other projects</h2>
+              <div className="other-projects-list">
+                <OtherProjectItem
+                  title={"Elden Ring UI concept"}
+                  description={"Personal project"}
+                  url={"/eldenring"}
+                  imgClass={"eldenring"}
+                  tag={"UX/UI"}
+                />
+                {/* <OtherProjectItem
                                     title={"Outvaders Must Die"}
                                     description={"Nordic Game Jam 2016"}
                                     url={"/outvadersmustdie"}
@@ -153,13 +214,13 @@ function Index() {
                                     imgClass={"canvasclimber"}
                                     tag={"Scripting & UI pixel art"}
                                 /> */}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+              </div>
+            </div>
+          </div>
         </div>
-    )
+      </section>
+    </div>
+  );
 }
 
 export default Index;

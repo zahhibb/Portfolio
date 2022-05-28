@@ -80,7 +80,7 @@ export const StyledDesktopNav = styled.nav`
     }
     ul li a {
       font-size: 0.8rem;
-      font-weight: 400;
+      // font-weight: 400;
       letter-spacing: 2px;
       color: ${({ theme }) => theme.navText};
       text-decoration: none;

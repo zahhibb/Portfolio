@@ -131,8 +131,15 @@ a:hover {
   background-size: 40% 40%;
 }
 
+.social-links .itch a {
+  background: url("resources/images/itch-logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40% 40%;
+}
+
 .social-links .twitter a {
-  background: url("resources/images/2021\ Twitter\ logo\ -\ white.png");
+  background: url("resources/images/Twitter-logo-white.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 45% 40%;
@@ -329,6 +336,27 @@ a:hover {
   padding: 0 0.5rem;
 }
 
+.project-item .mobile-bar,
+.other-project-item .mobile-bar {
+  margin: 0 !important;
+  position: relative;
+  bottom: 4rem;
+  background: #000;
+  padding: 0.5rem 1rem;
+}
+
+.project-item .mobile-bar-title,
+.other-project-item .mobile-bar-title {
+  font-size: 1.2rem;
+}
+
+.project-item .mobile-bar-title,
+.project-item .mobile-bar-description,
+.other-project-item .mobile-bar-title,
+.other-project-item .mobile-bar-description {
+  display: block;
+}
+
 .other-projects-list {
   display: flex;
   flex-direction: column;
@@ -395,7 +423,7 @@ hr {
 }
 
 .projects-container .battlefield6 {
-  background: url("resources/images/portfolio_bf6_item.png");
+  background: url("resources/images/Portfolio-thumbnail-bf6.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -414,62 +442,6 @@ hr {
   background-position: center;
   background-size: cover;
 }
-
-/* .page-container.outvaders .page-banner .banner-overlay {
-  background: url('resources/images/outvaders.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.projects-container .outvaders {
-  background: url('resources/images/outvaders.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.page-container.canvasclimber .page-banner .banner-overlay {
-  background: url('resources/images/canvasclimber.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.projects-container .canvasclimber {
-  background: url('resources/images/canvasclimber.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.skkf {
-  background: #12411a url("resources/images/skkf.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 70%;
-}
-
-.page-banner.hellyhansen {
-  background: #da2127 url("resources/images/hellyhansen.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 30%;
-}
-
-.projects-container .hellyhansen {
-  background: #da2127 url("resources/images/hellyhansen.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 70%;
-}
-
-.leos {
-  background: #0175c0 url("resources/images/leos.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 80%;
-} */
 
 @media only screen and (min-width: 425px) {
   .project-item-container {
@@ -528,7 +500,7 @@ hr {
 
   .other-project-item-container {
     flex: 25%;
-    max-width: 25%;
+    max-width: 40%;
     height: 180px;
   }
 }
@@ -562,6 +534,11 @@ hr {
   }
   .other-projects-list div:not(:first-child) {
     margin-left: 2rem;
+  }
+
+  .project-item .mobile-bar,
+  .other-project-item .mobile-bar {
+    display: none;
   }
 }
 
@@ -1045,7 +1022,6 @@ footer {
   align-self: center;
   flex: 1;
   width: 100%;
-  max-height: 300px;
   border: 1px solid #414d96;
 }
 
@@ -1217,6 +1193,20 @@ footer {
   background: #333;
 }
 
+.work-pairs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.work-pairs p {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  align-self: center;
+}
+
 @media only screen and (min-width: 425px) {
   .status-item h3 {
     margin: 0;
@@ -1280,12 +1270,6 @@ footer {
   .akined-process-items .image-container:last-child {
     max-width: 33%;
     margin: 0;
-  }
-
-  .akined-slideshow {
-    max-width: 40%;
-    width: 100%;
-    height: 35vh;
   }
 
   .page-container .page-banner h1 {
@@ -1378,6 +1362,41 @@ footer {
   .akined .image-container .content-image {
     max-width: 420px;
   }
+
+  .akined .image-container {
+    margin: 1rem 0rem 1rem 2rem;
+    float: right;
+  }
+
+  .akined .image-container img {
+    max-height: none;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .akined-slideshow {
+    max-width: 40%;
+    width: 100%;
+    height: 35vh;
+  }
+
+  .work-pairs {
+    flex-direction: row;
+  }
+
+  .work-pairs:nth-child(2n) {
+    flex-direction: row-reverse;
+  }
+
+  .work-pairs iframe,
+  .work-pairs img {
+    margin: 0 1rem 1rem 0;
+  }
+
+  .work-pairs:nth-child(2n) iframe,
+  .work-pairs:nth-child(2n) img {
+    margin: 0 0 1rem 1rem;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -1403,16 +1422,23 @@ footer {
 
 /* Battlerite game modes */
 
+.right {
+  float: right;
+  margin: 1rem 0 1rem 1rem;
+  width: auto;
+  align-items: initial;
+}
+
+.left {
+  float: left;
+  margin: 1rem 1rem 1rem 0;
+  align-items: initial;
+}
+
 .image-container {
   display: inline-flex;
   flex-direction: column;
   text-align: center;
-}
-
-.right {
-  margin: 1rem 0;
-  width: 100%;
-  align-items: center;
 }
 
 .image-container span {
@@ -1451,31 +1477,10 @@ footer {
   margin-left: 1.5rem;
 }
 
-.bakko-egg-brawl .content-image.header {
-  background: #222 url("./resources/images/battlerite-egg-brawl.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 45%;
-  background-size: cover;
-  min-width: 100%;
-  min-height: 320px;
-  margin-bottom: 2rem;
-}
-
 .content-image.small {
   float: none;
   height: 100%;
   width: 100%;
-}
-
-.bakko-egg-brawl .content-image.first {
-  float: right;
-  min-height: 360px;
-}
-
-.bakko-egg-brawl .content-image.second {
-  float: left;
-  min-height: 360px;
-  margin: 1rem 1rem 1rem 0;
 }
 
 .content-section-wrapper {
@@ -1495,32 +1500,46 @@ footer {
   margin-bottom: 1rem;
 }
 
-.rocket-balloon .content-image.header {
-  background: #222 url("./resources/images/rocketballoon.png");
-  background-repeat: no-repeat;
-  background-position: 50% 70%;
-  background-size: cover;
-  min-width: 100%;
-  min-height: 320px;
-  margin-bottom: 2rem;
-}
-
-.rocket-balloon .content-image.first {
-  float: left;
-  min-height: 360px;
-  margin: 0rem 1rem 1rem 0rem;
-}
-
-.battlegrounds .content-image.-first {
-  /* background: #222 url(); */
-}
-
 .general .content-image,
 .bakko-egg-brawl .content-image,
 .rocket-balloon .content-image,
 .battlegrounds .content-image {
   height: 100%;
   width: 100%;
+}
+
+.bakko-egg-brawl .image-grid:last-of-type {
+  clear: both;
+}
+
+.payload-sketch {
+  float: none;
+  margin: auto;
+  display: block;
+}
+
+.payload-sketch .content-image {
+  max-height: none !important;
+  max-width: none !important;
+}
+
+.header {
+  margin: 0;
+}
+
+.header.right {
+  float: none;
+}
+
+.prototype-gameplay {
+  float: none;
+  margin: auto;
+  display: block;
+}
+
+.prototype-gameplay .content-image {
+  max-height: none !important;
+  max-width: none !important;
 }
 
 @media only screen and (min-width: 425px) {
@@ -1536,17 +1555,6 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
-  .content-section-wrapper {
-    width: 70%;
-  }
-
-  .orb-references {
-    display: flex;
-    width: 75%;
-    text-align: center;
-    margin: 2rem auto;
-  }
-
   .general .content-image,
   .bakko-egg-brawl .content-image,
   .rocket-balloon .content-image,
@@ -1559,34 +1567,55 @@ footer {
     width: 100%;
   }
 
-  .bakko-egg-brawl .content-image.header {
-    background-position: 50% 45%;
+  .content-section-wrapper {
+    width: 70%;
+  }
+
+  .orb-references {
+    display: flex;
+    width: 75%;
+    text-align: center;
+    margin: 2rem auto;
+  }
+
+  .prototype-gameplay span {
+    max-width: 64%;
+    min-width: 100%;
+    width: 0;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .battlerite .image-container {
-    margin: 1rem 0rem 1rem 2rem;
+  .payload-sketch {
+    float: right;
+    margin: 1rem 1rem 1rem 0;
+    display: inline-flex;
+  }
+
+  .payload-sketch .content-image {
+    max-height: 320px !important;
+    max-width: 560px !important;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .header {
+    margin: 1rem 0 1rem 1rem;
+  }
+
+  .header.right {
     float: right;
   }
 
-  .akined .image-container {
-    margin: 1rem 0rem 1rem 2rem;
-    float: right;
-  }
-
-  .akined .image-container img {
-    max-height: none;
-  }
-
-  .right {
-    margin: 1rem 0rem 1rem 2rem;
-    width: auto;
-    align-items: initial;
+  .prototype-gameplay {
+    float: left;
+    margin: 1rem 1rem 1rem 0;
+    display: inline-flex;
   }
 }
 
 /* 404 page */
+
 .NotFoundPage {
   cursor: default;
 }
@@ -1596,16 +1625,32 @@ footer {
 }
 
 .NotFoundPage h1 {
-  font-size: 12rem;
+  font-size: 8rem;
 }
 
 .NotFoundPage h2 {
   position: relative;
-  bottom: 4rem;
+  bottom: 2rem;
 }
 
 .NotFoundPage ul {
   list-style: none;
+}
+
+@media only screen and (min-width: 425px) {
+  .NotFoundPage h1 {
+    font-size: 10rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .NotFoundPage h1 {
+    font-size: 12rem;
+  }
+  .NotFoundPage h2 {
+    position: relative;
+    bottom: 4rem;
+  }
 }
 
 /* GameDev resources */

@@ -42,6 +42,16 @@ const About = () => {
                   ArtStation
                 </a>
               </div>
+              <div className="itch">
+                <a
+                  href="https://zahhibb.itch.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Itch.io link"
+                >
+                  Itch.io
+                </a>
+              </div>
               <div className="twitter">
                 <a
                   href="https://twitter.com/Zahhibb"
@@ -154,15 +164,14 @@ const About = () => {
                 I try my hardest to have laser focus on the task at hand and
                 enjoy delving down into the nitty-gritty details. I put a lot of
                 emphasis on defining ideas and my approach is to break them down
-                into bite-sized, easily malleable systems and mechanics, and
-                further using what I learned to plan out a thorough plan of
-                action.
+                into bite-sized systems and mechanics, and further using what I learned to
+                plan out a thorough plan of action.
               </p>
               <br />
               <p>
                 I consider my strengths to be my technical experience and the
-                overarching knowledge I have on the various disciplines inside
-                game development, combined with my design-thinking with focus on
+                general knowledge I have on the various disciplines inside game
+                development, combined with my design-thinking with focus on
                 player agency and intrinsic motivations. My workflows are
                 inherently practical where I ideate, design, and prototype using
                 tangible tools and methods such as card-sorting,

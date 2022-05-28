@@ -1,28 +1,28 @@
-import React, { useEffect } from 'react'
-import Navigation from '../components/Navigation/navigation'
-import Footer from '../sections/footer'
-import { Link } from 'react-router-dom'
-import '../App.css'
+import React, { useEffect } from "react";
+import Navigation from "../components/Navigation/navigation";
+import Footer from "../sections/footer";
+import { Link } from "react-router-dom";
+import "../App.css";
 
 // import BattlefieldImage01 from '../resources/images/battlerite_01.jpeg'
 // import BattlefieldImage02 from '../resources/images/battlerite_02.jpg'
 
-import { projectQuickLinks } from './index'
+import { projectQuickLinks } from "./index";
 
 function StatusItem({ title, content }) {
-  let contentList = content.map((item, key) => <h3 key={key}>{item}</h3>)
+  let contentList = content.map((item, key) => <h3 key={key}>{item}</h3>);
   return (
     <div className="status-item">
       <h3>{title}</h3>
       {contentList}
     </div>
-  )
+  );
 }
 
 const Battlefield6 = () => {
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="page">
@@ -36,14 +36,14 @@ const Battlefield6 = () => {
           <section className="page-intro">
             <div className="page-intro-wrapper">
               <div className="status-panel">
-                <StatusItem title={'Team Size'} content={['Personal']} />
+                <StatusItem title={"Team Size"} content={["Personal"]} />
                 <StatusItem
-                  title={'Duration'}
-                  content={['24 hours (across 2 weeks)']}
+                  title={"Duration"}
+                  content={["24 hours (across 2 weeks)"]}
                 />
                 <StatusItem
-                  title={'Tools'}
-                  content={['Adobe [XD, Photoshop, Illustrator]']}
+                  title={"Tools"}
+                  content={["Adobe [XD, Photoshop, Illustrator]"]}
                 />
               </div>
               <div className="files">
@@ -56,20 +56,22 @@ const Battlefield6 = () => {
                     View on ArtStation
                   </a>
                 </div>
-                {/* <div>
-                  <a
-                    href="http://www.google.se"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    asd
-                  </a>
-                </div> */}
               </div>
               <div className="definitions">
                 <div>
                   <h2>Summary</h2>
-                  <p>content coming soon..</p>
+                  <p>
+                    This is a personal project where I wanted to try my hand at
+                    replicating the style of recent Battlefield games while also
+                    at the same time attempting to make something structurally
+                    new. My goal was to create a concept of how the upcoming
+                    Battlefield game could look.
+                  </p>
+                  <br />
+                  <p>
+                    Prior to this I had no education or skill in UI design and
+                    this was heavily based on my own bias and preference.
+                  </p>
                 </div>
                 <div>
                   <h2>What I did</h2>
@@ -123,7 +125,7 @@ const Battlefield6 = () => {
       </div>
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Battlefield6
+export default Battlefield6;

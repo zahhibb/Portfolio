@@ -19,7 +19,7 @@ import BattleriteGeneralImage05 from "../resources/images/boneorbSpawnLocation.p
 
 // import BattleriteTutorialimage from "../resources/images/";
 
-import BattleriteEggBrawlImage01 from "../resources/images/easter_arena.png";
+import BattleriteEggBrawlImage01 from "../resources/images/battlerite-egg-brawl.jpg";
 import BattleriteEggBrawlImage02 from "../resources/images/Battlerite_Dodgeball.png";
 import BattleriteEggBrawlImage03 from "../resources/images/bakko_egg_brawl_01.jpg";
 import BattleriteEggBrawlImage04 from "../resources/images/bakkoeggbrawl.png";
@@ -207,13 +207,8 @@ const Battlerite = () => {
                     <span>Pick-up that grants energy</span>
                   </div>
                 </div>
-                {/* <div className="entity-references">
-                                    <img className="entity-reference-image" />
-                                    <h4>Turok</h4>
-                                    <span>Small unit with a basic ranged attack</span>
-                                </div> */}
                 <br />
-                <div className="image-container right">
+                <div className="image-container payload-sketch right">
                   <img
                     className="content-image"
                     src={BattleriteGeneralImage01}
@@ -313,8 +308,40 @@ const Battlerite = () => {
                   </p>
                 </ul>
                 <br />
-                <h2>Main menu & Odeum UI concepting</h2>
-                <p>content coming soon..</p>
+                <h2>UI concepting</h2>
+                <p>
+                  For a short duration of my time at Stunlock I helped on
+                  ideation, sketching, and UI wireframing of a redesign of the
+                  main menu and replay module; Odeum, for their upcoming “Mega
+                  patch”, that would overhaul almost the entirety of their UI
+                  and UX in the game.
+                </p>
+                <br />
+                <p>
+                  The goal was to rebrand the Battlerite aesthetics from the
+                  current busy and brown design into a modern take; going for a
+                  more minimalistic approach with less bevels and ornaments, and
+                  more towards sleek sharp edges and clear visibility.
+                </p>
+                <br />
+                <p>My work consisted of:</p>
+                <ul>
+                  <li>
+                    Ideation and brainstorming on symbolism and interaction
+                    design.
+                  </li>
+                  <li>
+                    Sketching and wireframing ideas for new layouts, visual
+                    design, etc.
+                  </li>
+                  <li>Navigation design using flowcharts.</li>
+                </ul>
+                <br />
+                <p>
+                  In the end it's hard to tell if parts of the work I did made
+                  it into the final design, but I had a great time nonetheless
+                  and learned a lot about UI design and user affordances.
+                </p>
                 <br />
                 <h2>Tutorial encounter design</h2>
                 <p>content coming soon..</p>
@@ -325,12 +352,13 @@ const Battlerite = () => {
           <section className="page-section bakko-egg-brawl">
             <div className="content-section-wrapper">
               <div className="content">
-                {/* <div className="content-image header"></div> */}
-                <img
-                  className="content-image first"
-                  src={BattleriteEggBrawlImage01}
-                  alt="Battlerite Bakko's Egg Brawl characters and assets"
-                />
+                <div className="image-container header right">
+                  <img
+                    className="content-image"
+                    src={BattleriteEggBrawlImage01}
+                    alt="Battlerite Bakko's Egg Brawl characters and assets"
+                  />
+                </div>
                 <h2>Bakko's Egg Brawl</h2>
                 <p>
                   The first significant project I worked on at Stunlock Studios
@@ -355,11 +383,17 @@ const Battlerite = () => {
                   <li>Game balancing & spell effects modifications.</li>
                 </ul>
                 <br />
-                <img
-                  className="content-image second"
-                  src={BattleriteEggBrawlImage02}
-                  alt="Battlerite Bakko's Egg Brawl dodgeball prototype"
-                />
+                <div className="prototype-gameplay image-container left">
+                  <img
+                    className="content-image"
+                    src={BattleriteEggBrawlImage02}
+                    alt="Battlerite Bakko's Egg Brawl dodgeball prototype"
+                  />
+                  <span>
+                    Early prototype gameplay where the playable character were
+                    different and the projectiles were still just pink spheres.
+                  </span>
+                </div>
                 <br />
                 <p>
                   Our mentor, a senior Technical Artist at the studio, took
@@ -368,13 +402,8 @@ const Battlerite = () => {
                   for the upcoming easter event.
                 </p>
                 <br />
+                {/* <p style={{ clear: "left" }}> */}
                 <p>
-                  [Image to the left] Screenshot of prototype gameplay, where
-                  the playable character were different and the projectiles were
-                  still just pink spheres.
-                </p>
-                <br />
-                <p style={{ clear: "left" }}>
                   Read more about it on the official{" "}
                   <a
                     href="https://blog.stunlock.com/dev-blog-010/"
