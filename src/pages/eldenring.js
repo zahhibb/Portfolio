@@ -1,28 +1,33 @@
-import React, { useEffect } from 'react'
-import Navigation from '../components/Navigation/navigation'
-import Footer from '../sections/footer'
-import { Link } from 'react-router-dom'
-import '../App.css'
+import React, { useEffect } from "react";
+import Navigation from "../components/Navigation/navigation";
+import Footer from "../sections/footer";
+import { Link } from "react-router-dom";
+import "../App.css";
 
-// import EldenRingImage01 from "../resources/images/";
-// import EldenRingImage02 from "../resources/images/";
+import EldenRingImage01 from "../resources/images/Intro_description.png";
+import EldenRingImage02 from "../resources/images/Icon-iteration.png";
+import EldenRingImage03 from "../resources/images/Main-menu.png";
+import EldenRingImage04 from "../resources/images/Iconography.png";
+import EldenRingImage05 from "../resources/images/Typography_and_Colours.png";
+import EldenRingImage06 from "../resources/images/Character-creation_Class.png";
+import EldenRingImage07 from "../resources/images/Character-creation_Stats.png";
 
-import { projectQuickLinks } from './index'
+import { projectQuickLinks } from "./index";
 
 function StatusItem({ title, content }) {
-  let contentList = content.map((item, key) => <h3 key={key}>{item}</h3>)
+  let contentList = content.map((item, key) => <h3 key={key}>{item}</h3>);
   return (
     <div className="status-item">
       <h3>{title}</h3>
       {contentList}
     </div>
-  )
+  );
 }
 
 const Eldenring = () => {
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="page">
@@ -36,14 +41,14 @@ const Eldenring = () => {
           <section className="page-intro">
             <div className="page-intro-wrapper">
               <div className="status-panel">
-                <StatusItem title={'Team Size'} content={['Personal']} />
+                <StatusItem title={"Team Size"} content={["Personal"]} />
                 <StatusItem
-                  title={'Duration'}
-                  content={['4 days (across 3 weeks)']}
+                  title={"Duration"}
+                  content={["4 days (across 3 weeks)"]}
                 />
                 <StatusItem
-                  title={'Tools'}
-                  content={['Adobe [XD, Photoshop, Illustrator]']}
+                  title={"Tools"}
+                  content={["Adobe [XD, Photoshop, Illustrator]"]}
                 />
               </div>
               <div className="files">
@@ -64,7 +69,7 @@ const Eldenring = () => {
                     This is a personal project where I wanted to develop my UX
                     and UI design skills further. Elden Ring was at the time an
                     upcoming game but almost nothing was yet revealed about it,
-                    so I wanted to try and imitate the <b>FROM SOFTWARE</b>{' '}
+                    so I wanted to try and imitate the <b>FROM SOFTWARE</b>{" "}
                     style.
                   </p>
                   <br />
@@ -76,11 +81,11 @@ const Eldenring = () => {
                 <div>
                   <h2>What I did</h2>
                   <p>
-                    I ended up making a <b>Main menu</b> and{' '}
+                    I ended up making a <b>Main menu</b> and{" "}
                     <b>Character Creation</b> page concept. My goal was to make
                     a gameplay HUD as well but unfortunately for me more footage
                     was shown for Elden Ring and they showed-off the HUD so I
-                    got uninspired and finished what I already had.
+                    lost a bit of inspiration and finished what I already had.
                   </p>
                   <br />
                   <p>
@@ -91,14 +96,34 @@ const Eldenring = () => {
               </div>
             </div>
           </section>
-          {/* <section className="page-media">
-                        <div className="page-media-wrapper">
-                            <div className="image-grid">
-                                <img src={EldenRingImage01} alt="Battlefield 1" />
-                                <img src={EldenRingImage02} alt="Battlefield 2" />
-                            </div>
-                        </div>
-                    </section> */}
+          <section className="page-media">
+            <div className="page-media-wrapper">
+              <div className="image-grid">
+                {/* <div className="image-container">
+                  <img
+                    className="content-image"
+                    src={EldenRingImage01}
+                    alt="Description of project"
+                  />
+                </div>
+                <div className="image-container">
+                  <img
+                    className="content-image"
+                    src={EldenRingImage02}
+                    alt="Iterative breakdown on icons"
+                  />
+                  <span>cool cool</span>
+                </div> */}
+                <img src={EldenRingImage01} alt="elden ring 1" />
+                <img src={EldenRingImage02} alt="elden ring 2" />
+                <img src={EldenRingImage03} alt="elden ring 3" />
+                <img src={EldenRingImage04} alt="elden ring 4" />
+                <img src={EldenRingImage05} alt="elden ring 5" />
+                <img src={EldenRingImage06} alt="elden ring 6" />
+                <img src={EldenRingImage07} alt="elden ring 7" />
+              </div>
+            </div>
+          </section>
         </div>
         <div className="quick-links">
           <div className="quick-link-container prev">
@@ -121,7 +146,7 @@ const Eldenring = () => {
       </div>
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Eldenring
+export default Eldenring;

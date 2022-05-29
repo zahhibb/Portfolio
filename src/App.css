@@ -437,7 +437,7 @@ hr {
 }
 
 .projects-container .eldenring {
-  background: url("resources/images/portfolio_eldenring_item.png");
+  background: url("resources/images/Elden-Ring_Thumbnail.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -529,7 +529,7 @@ hr {
     max-width: 50%;
   }
   .games-list div:nth-child(4) {
-    flex: 47%;
+    flex: 46%;
     max-width: 50%;
   }
   .other-projects-list div:not(:first-child) {
@@ -539,6 +539,10 @@ hr {
   .project-item .mobile-bar,
   .other-project-item .mobile-bar {
     display: none;
+  }
+
+  .other-project-item-container {
+    max-width: 25%;
   }
 }
 
