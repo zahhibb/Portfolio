@@ -6,15 +6,7 @@ import GameImg1 from '../resources/images/eldenring.png'
 import GameImg2 from '../resources/images/dyinglight2.jpg'
 import GameImg3 from '../resources/images/valheim.png'
 
-// function InterestGameItem({ title, url, image }) {
-//   return (
-//     <a href={url} target="_blank" rel="noopener noreferrer" title={title}>
-//       <img src={image} alt="Anno 1800 cover art" />
-//     </a>
-//   )
-// }
-
-function InterestGameItemWithoutLink({ title, image }) {
+function InterestGameItem({ title, image }) {
   return <img src={image} alt="Anno 1800 cover art" title={title} />
 }
 
@@ -26,39 +18,21 @@ class Footer extends Component {
           <div className="footer-interests">
             <p>The games I am currently playing:</p>
             <div>
-              <InterestGameItemWithoutLink
+              <InterestGameItem
                 title={'Elden Ring'}
                 image={GameImg1}
                 imageAlt={'Elden Ring cover art'}
               />
-              <InterestGameItemWithoutLink
+              <InterestGameItem
                 title={'Dying Light 2'}
                 image={GameImg2}
-                imageAlt={'Dying Light 2 cover art'}
-              />
-              <InterestGameItemWithoutLink
-                title={'Valheim'}
-                image={GameImg3}
-                imageAlt={'Valheim cover art'}
-              />
-              {/* <InterestGameItem
-                title={'Elden Ring'}
-                image={GameImg1}
-                url={'https://en.bandainamcoent.eu/elden-ring/elden-ring'}
-                imageAlt={'Elden Ring cover art'}
-              /> */}
-              {/* <InterestGameItem
-                title={'Dying Light 2'}
-                image={GameImg2}
-                url={'https://dl2.dyinglightgame.com/'}
                 imageAlt={'Dying Light 2 cover art'}
               />
               <InterestGameItem
                 title={'Valheim'}
                 image={GameImg3}
-                url={'https://www.valheimgame.com/'}
                 imageAlt={'Valheim cover art'}
-              /> */}
+              />
             </div>
           </div>
           <div className="footer-details">
@@ -94,6 +68,10 @@ class Footer extends Component {
             <span>Joakim Hedman</span>
             <span>|</span>
             <Link to={'/credits'}>Credits</Link>
+            <span>|</span>
+            <span>
+              Site made by<Link to={'/about'}>me</Link>!
+            </span>
           </div>
         </div>
       </footer>
