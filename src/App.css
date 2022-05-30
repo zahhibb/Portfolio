@@ -339,10 +339,11 @@ a:hover {
 .project-item .mobile-bar,
 .other-project-item .mobile-bar {
   margin: 0 !important;
-  position: relative;
-  bottom: 4rem;
+  position: absolute;
+  bottom: 0rem;
   background: #000;
   padding: 0.5rem 1rem;
+  width: -webkit-fill-available;
 }
 
 .project-item .mobile-bar-title,
@@ -398,7 +399,7 @@ hr {
   background: #1d1223 url("resources/images/akined.png");
   background-repeat: no-repeat;
   background-position: 50% 0%;
-  background-size: cover;
+  background-size: contain;
 }
 
 .page-container.pioneer .page-banner .banner-overlay {
@@ -448,13 +449,6 @@ hr {
     width: 100%;
   }
 
-  .projects-container .akined {
-    background: #1d1223 url("resources/images/akined.png");
-    background-repeat: no-repeat;
-    background-position: 50% 0%;
-    background-size: contain;
-  }
-
   .other-projects-list {
     display: flex;
     flex-direction: row;
@@ -475,13 +469,6 @@ hr {
 @media only screen and (min-width: 768px) {
   .projects-container {
     width: 80%;
-  }
-
-  .projects-container .akined {
-    background: #1d1223 url("resources/images/akined.png");
-    background-repeat: no-repeat;
-    background-position: 50% 0%;
-    background-size: contain;
   }
 
   .project-item .item-title {
@@ -543,6 +530,13 @@ hr {
 
   .other-project-item-container {
     max-width: 25%;
+  }
+
+  .projects-container .akined {
+    background: #1d1223 url("resources/images/akined.png");
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: cover;
   }
 }
 
@@ -1262,17 +1256,17 @@ footer {
   }
 
   .akined-process-items .image-container:first-child {
-    max-width: 21.5%;
+    max-width: 20.5%;
     margin: 0;
   }
 
   .akined-process-items .image-container:nth-child(2) {
-    max-width: 38.5%;
+    max-width: 37.5%;
     margin: 0 1rem;
   }
 
   .akined-process-items .image-container:last-child {
-    max-width: 33%;
+    max-width: 32%;
     margin: 0;
   }
 
@@ -1409,17 +1403,17 @@ footer {
   }
 
   .akined-process-items .image-container:first-child {
-    max-width: 22.5%;
+    max-width: 21.5%;
     margin: 0;
   }
 
   .akined-process-items .image-container:nth-child(2) {
-    max-width: 40%;
+    max-width: 39%;
     margin: 0 1rem;
   }
 
   .akined-process-items .image-container:last-child {
-    max-width: 34.5%;
+    max-width: 33.5%;
     margin: 0;
   }
 }
