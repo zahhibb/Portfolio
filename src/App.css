@@ -465,11 +465,11 @@ hr {
     margin-left: 1rem;
   }
 
-  .other-project-item-container {
+  /* .other-project-item-container {
     flex: 50%;
     max-width: 47%;
     height: 180px;
-  }
+  } */
 }
 
 @media only screen and (min-width: 768px) {
