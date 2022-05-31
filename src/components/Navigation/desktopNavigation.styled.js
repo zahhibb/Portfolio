@@ -93,7 +93,7 @@ export const StyledDesktopNav = styled.nav`
       display: inline-block;
       position: absolute;
       bottom: 30px;
-      left: 45%;
+      left: 44%;
       width: 19px;
       height: 21px;
       background: url(${homeHover});
