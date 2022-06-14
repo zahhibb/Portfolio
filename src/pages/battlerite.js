@@ -94,16 +94,16 @@ const Battlerite = () => {
                 <div>
                   <h2>Summary</h2>
                   <p>
-                    <b>Battlerite (Arena)</b> is an{" "}
-                    <i>Fantasy Top-down Team Arena Brawler</i> with focus on
+                    <b>Battlerite (Arena)</b> is a{" "}
+                    <i>Fantasy Top-down Team Arena Brawler</i> with a focus on
                     fast-paced action without any random elements. Two teams of
                     2 or 3 players fight against each other using their
                     specialized champions with varied abilities.
                   </p>
                   <br />
                   <p>
-                    Three game modes was developed for the game in 8 months
-                    during my internship (in addition with some contract work
+                    Three game modes were developed for the game in 8 months
+                    during my internship (in addition to some contract work
                     over the summer).
                   </p>
                 </div>
@@ -120,8 +120,8 @@ const Battlerite = () => {
                   </p>
                   <br />
                   <p>
-                    Additionally I got to help out on{" "}
-                    <b>UI wireframing and mockups</b> for the then upcoming UI
+                    Additionally, I got to help out on{" "}
+                    <b>UI wireframing and mockups</b> for the then-upcoming UI
                     overhaul (which you can read more about on Stunlock's at the
                     time UI/UX designer Katey Parr's{" "}
                     <a
@@ -310,7 +310,7 @@ const Battlerite = () => {
                 <br />
                 <h2>UI concepting</h2>
                 <p>
-                  For a short duration of my time at Stunlock I helped on
+                  For a short duration of my time at Stunlock I helped with
                   ideation, sketching, and UI wireframing of a redesign of the
                   main menu and replay module; Odeum, for their upcoming “Mega
                   patch”, that would overhaul almost the entirety of their UI
@@ -320,7 +320,7 @@ const Battlerite = () => {
                 <p>
                   The goal was to rebrand the Battlerite aesthetics from the
                   current busy and brown design into a modern take; going for a
-                  more minimalistic approach with less bevels and ornaments, and
+                  more minimalistic approach with fewer bevels and ornaments, and
                   more towards sleek sharp edges and clear visibility.
                 </p>
                 <br />
@@ -338,7 +338,7 @@ const Battlerite = () => {
                 </ul>
                 <br />
                 <p>
-                  In the end it's hard to tell if parts of the work I did made
+                  In the end, it's hard to tell if parts of the work I did made
                   it into the final design, but I had a great time nonetheless
                   and learned a lot about UI design and user affordances.
                 </p>
@@ -364,7 +364,7 @@ const Battlerite = () => {
                   The first significant project I worked on at Stunlock Studios
                   was <b>Bakko's Egg Brawl</b>, or just simply <i>Dodgeball</i>
                   as we called it internally. I worked on this from conception
-                  to release over the duration of ca. 2 months.
+                  to release for approx. 2 months.
                 </p>
                 <br />
                 <p>
@@ -374,10 +374,10 @@ const Battlerite = () => {
                   <li>
                     Designing and implementing a drop/pick-up mechanic, and also
                     a small system to visually change a Champion's current
-                    weapon slot into a picked up item.
+                    weapon slot into a picked-up item.
                   </li>
                   <li>
-                    Creating basic system for spawning randomized items of
+                    Creating a basic system for spawning randomized items of
                     different types at specific locations.
                   </li>
                   <li>Game balancing & spell effects modifications.</li>
@@ -390,7 +390,7 @@ const Battlerite = () => {
                     alt="Battlerite Bakko's Egg Brawl dodgeball prototype"
                   />
                   <span>
-                    Early prototype gameplay where the playable character were
+                    Early prototype gameplay where the playable characters were
                     different and the projectiles were still just pink spheres.
                   </span>
                 </div>

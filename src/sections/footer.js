@@ -45,19 +45,26 @@ class Footer extends Component {
               >
                 LinkedIn
               </a>
-              <a
+              {/* <a
                 href="https://twitter.com/Zahhibb"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Twitter
-              </a>
+              </a> */}
               <a
                 href="https://www.artstation.com/zahhibb"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 ArtStation
+              </a>
+              <a
+                href="https://zahhibb.itch.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Itch.io
               </a>
               <a href="mailto:jocke_hedman@hotmail.com">Email</a>
             </div>

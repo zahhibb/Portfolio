@@ -94,6 +94,14 @@ a:hover {
   text-align: center;
 }
 
+.color-block {
+  background: #ce6920;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 4px 8px;
+}
+
 .social-links div {
   display: inline-block;
   margin: 1rem;

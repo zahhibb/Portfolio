@@ -80,9 +80,10 @@ function Index() {
           <div className="intro-description">
             <p>Hi there!</p>
             <p>
-              I'm Joakim, a <strong>Game and UX designer</strong> with about 3
-              years of experience developing games inside Unity.
+              I'm a <strong>Game and UX design student</strong> with about 3
+              years of experience developing games inside of Unity.
             </p>
+            <p>My favorite topics are <span className="color-block">Intrinsic game design</span> and <span className="color-block">UI design</span>.</p>
             <p>
               I am currently studying Game & UX design at{" "}
               <a
@@ -131,7 +132,7 @@ function Index() {
                   Itch.io
                 </a>
               </div>
-              <div className="twitter">
+              {/* <div className="twitter">
                 <a
                   href="https://twitter.com/Zahhibb"
                   target="_blank"
@@ -140,7 +141,7 @@ function Index() {
                 >
                   Twitter
                 </a>
-              </div>
+              </div> */}
               <div className="mail">
                 <a
                   href="mailto:jocke_hedman@hotmail.com"

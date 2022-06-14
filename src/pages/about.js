@@ -52,7 +52,7 @@ const About = () => {
                   Itch.io
                 </a>
               </div>
-              <div className="twitter">
+              {/* <div className="twitter">
                 <a
                   href="https://twitter.com/Zahhibb"
                   target="_blank"
@@ -61,7 +61,7 @@ const About = () => {
                 >
                   Twitter
                 </a>
-              </div>
+              </div> */}
               <div className="mail">
                 <a
                   href="mailto:jocke_hedman@hotmail.com"
@@ -98,7 +98,7 @@ const About = () => {
                     <span>System design</span>
                   </li>
                   <li>Level design</li>
-                  <li>Scripting (C#, UE4 Blueprints)</li>
+                  <li>Scripting (C#, UE Blueprints)</li>
                   <li>Ideation & brainstorming</li>
                 </ul>
                 <ul>
@@ -114,18 +114,18 @@ const About = () => {
               </h3>
               <p>
                 I see myself as an honest, jolly, and proactive guy with
-                enormous curiosity in games and game development. Some of things
-                that I really enjoy is helping people out and solving problems.
-                In general I simply love trying out new things in life, be it
-                from devouring new kinds of food, experiencing different
+                enormous curiosity in games and game development. Some of the things
+                that I enjoy are helping people out and solving problems.
+                In general, I simply love trying out new things in life, be it
+                 devouring new kinds of food, experiencing different
                 cultures, to taking on all manner of jobs that I can get my
                 hands on!
               </p>
               <br />
               <p>
                 My interest in making and modifying games began in the late 90s
-                where I got curious and began editing values in game files to
-                modify stats of units inside{" "}
+                when I got curious and began editing values of game files to
+                modify the stats of units inside{" "}
                 <a
                   href="https://en.wikipedia.org/wiki/Heroes_of_Might_and_Magic_III"
                   target="_blank"
@@ -133,10 +133,10 @@ const About = () => {
                 >
                   Heroes of Might and Magic 3
                 </a>
-                , <i>one of my favourite games of all time</i>.
+                , <i>one of my favorite games of all time</i>.
               </p>
               <p>
-                Further down the line I began messing around with map-editors in{" "}
+                Further down the line, I began messing around with map editors in{" "}
                 <a
                   href="https://en.wikipedia.org/wiki/Warcraft_III:_The_Frozen_Throne"
                   target="_blank"

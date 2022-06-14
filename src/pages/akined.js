@@ -87,7 +87,7 @@ const Akined = () => {
                     where the player takes control of Adam and the Spirit
                     attached to him. The goal is to help Adam escape from the
                     dungeon that he suddenly woke up in through the help of the
-                    Spirit that has the ability to possess objects.
+                    Spirit which has the ability to possess objects.
                   </p>
                   <br />
                   <p>
@@ -99,19 +99,19 @@ const Akined = () => {
                   <h2>My contributions</h2>
                   <p>
                     While I initially was going to focus on UX and Level design
-                    as is the direction of my studies and my interest, but I had
+                    as is the direction of my studies and my interest, I had
                     to step up and be the programmer of this project because of
                     some unforeseen circumstances that both of the programmers
                     assigned to our team left the education.
                   </p>
                   <p>
-                    I fortunately had some experience in <b>C# programming</b>{" "}
+                    I, fortunately, had some experience in <b>C# programming</b>{" "}
                     and <b>Unity</b> so we could still create a game, though we
                     had to re-scope the project a lot.
                   </p>
                   <br />
                   <p>
-                    On this project I worked on <b>programming</b>,{" "}
+                    On this project, I worked on <b>programming</b>,{" "}
                     <b>level-</b> & <b>system design</b>.
                   </p>
                 </div>
@@ -142,13 +142,13 @@ const Akined = () => {
                   The project began with brainstorming, pitching our ideas to
                   each other, and setting up an early schedule on how long we
                   could spend on specific tasks. We decided right away to spend
-                  the entire first week on planning and concepting to be
+                  the entire first week on planning and conception to be
                   thorough and define what features we wanted in the final game.
                 </p>
                 <br />
                 <p>
                   The concept we decided on was a combination of one of mine and
-                  the other UX designer’s ideas, which were a horror-esque
+                  the other UX designer's ideas, which was a horror-Esque
                   puzzle game where you could switch between 2 characters; a
                   living human and a spirit/devil, trying to escape a house of
                   traps.
@@ -190,17 +190,17 @@ const Akined = () => {
                   <i>Unity project files</i>, <i>Version Control</i>, and{" "}
                   <i>code & file standards</i>. We worked steadily but
                   unfortunately our last and only programmer left the education
-                  and I was the one with most previous relevant technical
+                  and I was the one with the most previous relevant technical
                   knowledge regarding Unity and C# programming.
                 </p>
                 <br />
                 <p>
                   Now we had to be flexible, so we restructured the project and
                   I went to work on the main mechanics right away, and worked on
-                  programming related tasks for the rest of the project.
+                  programming-related tasks for the rest of the project.
                 </p>
                 <br />
-                <h2>Designs & system I worked on</h2>
+                <h2>Designs & systems I worked on</h2>
                 <div className="work-pairs">
                   <iframe
                     className="akined-slideshow"
@@ -219,7 +219,7 @@ const Akined = () => {
                     alt="Player possing box and bookshelf, and moving them around."
                   />
                   <p>
-                    Developed a generalised possess mechanic that could work on
+                    Developed a generalized possess mechanic that could work on
                     any entities in the game, provided they had relevant tags
                     and scripts attached to them.
                   </p>
@@ -261,24 +261,24 @@ const Akined = () => {
                       </p>
                       <p>
                         A swirling tether/link between Adam and the Spirit that
-                        would emphasise their connection to each other. The link
+                        would emphasize their connection to each other. The link
                         was intended to be one of the main threats of the game,
-                        in which it would break if the characters got too far
+                        which would break if the characters got too far
                         away from each other, resulting in death.
                       </p>
                       <p>
-                        We felt this mechanic could possibly be expanded on
+                        We felt this mechanic could be expanded on
                         later as a type of progression system to present more
                         intricate puzzles.
                       </p>
                     </li>
                     <li>
                       <p>
-                        <u>Object specific abilities of possessed entities</u>
+                        <u>Object-specific abilities of possessed entities</u>
                       </p>
                       <p>
-                        Initially our intention was to have all objects in the
-                        environment to have specific abilities when possessed,
+                        Initially, we intended to have all objects in the
+                        environment have specific abilities when possessed,
                         for example, turning on generators to power
                         magnets/conveyor belts or turning on/off lights to solve
                         light-related puzzles.
@@ -289,16 +289,16 @@ const Akined = () => {
                         <u>Larger encompassing levels</u>
                       </p>
                       <p>
-                        Our design at the start were to have a camera following
+                        Our design at the start was to have a camera following
                         the player character throughout several smaller rooms in
                         a bigger level, where each "completed" room would serve
                         as a point to progress to the next level. The Player
                         would be free to roam between most of the rooms in any
-                        way the want, as to choose which puzzle to tackle first.
+                        way they want, to choose which puzzle to tackle first.
                       </p>
                       <p>
-                        A lot of inspiration for this, both mechanicly and
-                        aestheticly, came from the game series <i>Luigi's Mansion</i>.
+                        A lot of inspiration for this, both mechanically and
+                        aesthetically, came from the game series <i>Luigi's Mansion</i>.
                       </p>
                     </li>
                   </ul>
