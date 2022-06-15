@@ -83,7 +83,8 @@ function Index() {
               I'm a <strong>Game and UX design student</strong> with about 3
               years of experience developing games inside of Unity.
             </p>
-            <p>My favorite topics are <span className="color-block">Intrinsic game design</span> and <span className="color-block">UI design</span>.</p>
+            {/* <p>My favorite topics are <span className="color-block">Intrinsic game design</span> and <span className="color-block">UI design</span>.</p> */}
+            <p>I consider myself a multidisciplinary game designer with a passion for <span className="color-block">Intrinsic game design</span>, <span className="color-block">Level design</span>, and <span className="color-block">UI design</span>.</p>
             <p>
               I am currently studying Game & UX design at{" "}
               <a

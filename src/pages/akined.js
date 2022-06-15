@@ -200,7 +200,7 @@ const Akined = () => {
                   programming-related tasks for the rest of the project.
                 </p>
                 <br />
-                <h2>Designs & systems I worked on</h2>
+                <h2>Designs & systems I personally worked on</h2>
                 <div className="work-pairs">
                   <iframe
                     className="akined-slideshow"
@@ -230,8 +230,8 @@ const Akined = () => {
                     alt="Player possessing valve and then using it to extend a bridge."
                   />
                   <p>
-                    Versatile valve/lever system to handle a kind of master{" "}
-                    {"<"}-{">"} slave hierarchy. Such as, a simple valve could
+                    Versatile valve/lever system to handle a kind of parent{" "}
+                    {"<"}-{">"} child hierarchy. Such as, a simple valve could
                     interact with various objects simultaneously and perform
                     different actions on each based on their states and what
                     exposed operations they had.
