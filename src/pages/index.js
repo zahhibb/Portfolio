@@ -190,7 +190,7 @@ function Index() {
                 />
               </div>
             </div>
-            <hr />
+            {/* <hr /> */}
             {/* <div className="other-projects">
               <h2>Other projects</h2>
               <div className="other-projects-list">
