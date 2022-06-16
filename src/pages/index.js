@@ -45,24 +45,24 @@ function ProjectItem({ title, description, url, imgClass, tag }) {
   );
 }
 
-function OtherProjectItem({ title, description, url, imgClass, tag }) {
-  return (
-    <div className="other-project-item-container">
-      <div className={"other-project-item " + imgClass}>
-        <Link to={url}>
-          <span className="overlay"></span>
-          <p className="other-item-title">{title}</p>
-          <span className="other-item-desc">{description}</span>
-        </Link>
-        <span className="tag">{tag}</span>
-        <div className="mobile-bar">
-          <span className="mobile-bar-title">{title}</span>
-          <span className="mobile-bar-desc">{description}</span>
-        </div>
-      </div>
-    </div>
-  );
-}
+// function OtherProjectItem({ title, description, url, imgClass, tag }) {
+//   return (
+//     <div className="other-project-item-container">
+//       <div className={"other-project-item " + imgClass}>
+//         <Link to={url}>
+//           <span className="overlay"></span>
+//           <p className="other-item-title">{title}</p>
+//           <span className="other-item-desc">{description}</span>
+//         </Link>
+//         <span className="tag">{tag}</span>
+//         <div className="mobile-bar">
+//           <span className="mobile-bar-title">{title}</span>
+//           <span className="mobile-bar-desc">{description}</span>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
 
 function Index() {
   useEffect(() => {

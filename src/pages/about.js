@@ -84,7 +84,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <img src={personalImg} alt="Joakim Hedman photo" />
+          <img src={personalImg} alt="Joakim Hedman" />
         </div>
         <div className="about-content">
           <div className="about-me">
