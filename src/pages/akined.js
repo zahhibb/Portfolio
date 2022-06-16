@@ -54,6 +54,17 @@ const Akined = () => {
                 <StatusItem title={"Duration"} content={["4 weeks"]} />
                 <StatusItem title={"Engine"} content={["Unity"]} />
               </div>
+              <div className="video-wrapper">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/mgAJ-adILGY"
+                  title="Gameplay trailer"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
               <div className="files">
                 <div>
                   <a
@@ -92,7 +103,13 @@ const Akined = () => {
                   <br />
                   <p>
                     The game was made in 4 weeks by 4 people; 2 UX designers and
-                    2 Project managers.
+                    2 Project managers, during my education at <a
+                      href="https://futuregames.se/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      FutureGames
+                    </a>.
                   </p>
                 </div>
                 <div>
@@ -197,7 +214,7 @@ const Akined = () => {
                 <p>
                   Now we had to be flexible, so we restructured the project and
                   I went to work on the main mechanics right away, and worked on
-                  programming-related tasks for the rest of the project.
+                  programming-related tasks for the rest of the project, while the other designer and the project managers work on everythng non-technical such as level-dressing, UI design, and music/sounds.
                 </p>
                 <br />
                 <h2>Designs & systems I personally worked on</h2>
@@ -306,7 +323,7 @@ const Akined = () => {
               </div>
             </div>
           </section>
-          <section className="page-media">
+          {/* <section className="page-media">
             <div className="page-media-wrapper video">
               <div className="video-wrapper">
                 <iframe
@@ -320,7 +337,7 @@ const Akined = () => {
                 ></iframe>
               </div>
             </div>
-          </section>
+          </section> */}
         </div>
         <div className="quick-links">
           <div className="quick-link-container prev">

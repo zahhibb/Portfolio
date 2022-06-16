@@ -68,6 +68,17 @@ const Battlerite = () => {
                   content={["Unity & proprietary engine"]}
                 />
               </div>
+              <div className="video-wrapper">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/KU6Ra-P746k"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
               <div className="files">
                 <div>
                   <a
@@ -150,8 +161,6 @@ const Battlerite = () => {
                   src={BattleriteImage02}
                   alt="Battlerite 1 versus 1 battle"
                 />
-                {/* <img src={BattleriteImage03} alt="Battlerite 2 versus 1 battle" />
-                                <img src={BattleriteImage04} alt="Battlerite match winning screen" /> */}
               </div>
             </div>
           </section>
@@ -402,7 +411,6 @@ const Battlerite = () => {
                   for the upcoming easter event.
                 </p>
                 <br />
-                {/* <p style={{ clear: "left" }}> */}
                 <p>
                   Read more about it on the official{" "}
                   <a
@@ -425,9 +433,6 @@ const Battlerite = () => {
                     alt="Battlerite Bakko's Egg Brawl 4 player standoff"
                   />
                 </div>
-                {/* <div className="video-wrapper">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lPjtXo3sNlI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div> */}
               </div>
             </div>
           </section>
@@ -435,12 +440,6 @@ const Battlerite = () => {
             <div className="content-section-wrapper">
               <div className="image"></div>
               <div className="content">
-                {/* <div className="content-image header"></div> */}
-                {/* <img
-                  className="content-image first"
-                  src={BattleriteEggBrawlImage01}
-                  alt="Battlerite Rocket Balloon"
-                /> */}
                 <h2>Rocket Balloon</h2>
                 <p>content coming soon..</p>
               </div>
@@ -455,7 +454,7 @@ const Battlerite = () => {
               <div className="image"></div>
             </div>
           </section>
-          <section className="page-media">
+          {/* <section className="page-media">
             <div className="page-media-wrapper">
               <div className="video-wrapper">
                 <iframe
@@ -469,7 +468,7 @@ const Battlerite = () => {
                 ></iframe>
               </div>
             </div>
-          </section>
+          </section> */}
         </div>
 
         <div className="quick-links">

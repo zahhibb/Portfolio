@@ -4,8 +4,10 @@ import Footer from '../sections/footer'
 import { Link } from 'react-router-dom'
 import '../App.css'
 
-// import PioneerImage01 from "../resources/images/battlerite_01.jpeg";
-// import PioneerImage02 from "../resources/images/battlerite_02.jpg";
+import PioneerSketchImage01 from "../resources/images/pioneer_sketches_00.png";
+import PioneerSketchImage02 from "../resources/images/pioneer_sketches_01.png";
+import PioneerLowFidImage from "../resources/images/pioneer_low-fidelity.jpg";
+import PioneerHighFidImage from "../resources/images/pioneer_sketches_01.png";
 
 import { projectQuickLinks } from './index'
 
@@ -30,7 +32,7 @@ const Pioneer = () => {
       <div className="page-container pioneer">
         <div className="page-banner">
           <div className="banner-overlay"></div>
-          <h1>"Pioneer" - FPS UI concept</h1>
+          <h1>"Pioneer" FPS UI</h1>
         </div>
         <div className="page-content" id="content">
           <section className="page-intro">
@@ -42,14 +44,6 @@ const Pioneer = () => {
                   title={'Engine & Tools'}
                   content={['Unity, Figma, Photoshop']}
                 />
-              </div>
-              <div className="files">
-                {/* <div>
-                                    <a href="http://www.google.se" target="_blank" rel="noopener noreferrer" title=''>Watch video</a>
-                                </div>
-                                <div>
-                                    <a href="http://www.google.se" target="_blank" rel="noopener noreferrer" title=''>Try out prototype</a>
-                                </div> */}
               </div>
               <div className="definitions">
                 <div>
@@ -65,7 +59,7 @@ const Pioneer = () => {
                   </p>
                   <br />
                   <p>
-                    I decided to use an announced but not yet revealed game from{' '}
+                    I decided to use an announced but not yet revealed game (apart from some concept images) from{' '}
                     <a
                       href="https://www.embark-studios.com/"
                       target="_blank"
@@ -78,28 +72,59 @@ const Pioneer = () => {
                   </p>
                 </div>
                 <div>
-                  <h2>My contributions</h2>
-                  <p>content coming soon..</p>
+                  <h2>What I did</h2>
+                  <p>During these 4 weeks I decided to try imagining what this new upcoming game's UI would look like, and as there was no information surrounding the game except for some concepts, the theme, and genre, I had to come up with design decisions myself on what the game would have.</p>
+                  <br />
+                  <p>
+                    The premise I decided to go for was a <strong>4-player Co-op Survival</strong> game, and so the UI and the menus would have to manage that data. What I ended up working on was the primary menus, from assembling a team, to deciding gear and starting location.
+                  </p>
                 </div>
               </div>
             </div>
           </section>
 
-          {/* <section className="page-media">
-                        <div className="page-media-wrapper">
-                            <div className="image-grid">
-                                <img src={PioneerImage01} alt="asd" />
-                                <img src={PioneerImage02} alt="asd" />
-                            </div>
-                        </div>
-                    </section> */}
-          {/* <section className="page-media">
-                        <div className="page-media-wrapper">
-                            <div className="video-wrapper">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/KU6Ra-P746k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </section> */}
+          <section className="page-media">
+            <div className="page-media-wrapper">
+              <h2>Concept & references</h2>
+              <p>The premise and biggest inspiration for this project was <a
+                href="https://www.embark-studios.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Embark Studios
+              </a> upcoming game, codenamed 'PIONEER'. Additionally, a major inspiration of the main menu UI was the recent release of <a
+                href="https://www.dice.se/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >DICE</a> 's new installation of the Battlefield-series, <strong>'Battlefield 2142'</strong>.</p>
+              <br />
+              <div className="image-duo">
+                <div>
+                  <h3>Sketch pass 1</h3>
+                  <p>I began by sketching various designs to find something that I feel could be considered modern and somewhat sci-fi.</p>
+                  <br/>
+                  <img src={PioneerSketchImage01} alt="Basic digital sketches on various menu designs and notes" />
+                </div>
+                <div>
+                  <h3>Sketch pass 2</h3>
+                  <p>After asking and receiving some feedback on what people felt looked the best, I decided on the design similar to <i>Battlefield 2142</i> because of its straight-forward approach.</p>
+                  <img src={PioneerSketchImage02} alt="Second iteration of digital sketches improved from the previous ones" />
+                </div>
+              </div>
+              <br />
+              <h2>Low-fidelity wireframes</h2>
+              <p>asd asd aasd</p>
+              <div className="image-grid">
+                <img className='grid-solo' src={PioneerLowFidImage} alt="asd" />
+              </div>
+              <br/>
+              <h2>High-fidelity wireframes</h2>
+              <p>asd asd aasd</p>
+              <div className="image-grid">
+                <img className='grid-solo' src={PioneerHighFidImage} alt="asd" />
+              </div>
+            </div>
+          </section>
         </div>
 
         <div className="quick-links">

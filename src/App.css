@@ -54,7 +54,6 @@ a:hover {
 .intro-heading div {
   display: flex;
   flex-direction: column;
-  /* font-size: 1.3rem; */
 }
 
 .intro-heading div h3 {
@@ -73,20 +72,37 @@ a:hover {
   cursor: default;
 }
 
-.intro-description {
-  text-align: left;
-  /* font-size: 1.2rem; */
+.intro-description p {
+  padding-bottom: 0.75rem;
+}
+
+.intro-content {
+  display: flex;
+  flex-direction: column-reverse;
   padding-top: 2rem;
+}
+
+.intro-content img {
+  flex: 1;
+  margin: 0 auto;
+  border-radius: 100%;
+  width: 100%;
+  min-width: 200px;
+  max-width: 300px;
+  height: 100%;
+  min-height: 200px;
+  max-height: 300px;
+}
+
+.intro-description {
+  text-align: center;
   word-spacing: 2px;
   color: #ddd;
+  margin-top: 2rem;
 }
 
 .intro-description .social-links {
-  margin: 1rem 0;
-}
-
-.intro-description p {
-  padding-bottom: 0.75rem;
+  margin: 0;
 }
 
 .social-links {
@@ -162,34 +178,57 @@ a:hover {
 
 @media only screen and (min-width: 768px) {
   .intro-container {
-    width: 70%;
-    max-width: 660px;
-    padding: 6rem 0 1rem;
+    width: 100%;
+    max-width: 670px;
+    padding: 6rem 0 0;
   }
-  /* .intro-heading h1 {
-    font-size: 4rem;
-  } */
+
+  .intro-content {
+    flex-direction: row;
+    padding: 2rem 0;
+  }
+
   .intro-heading div {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
+
   .intro-heading span {
     display: inline;
     padding: 0 0.5rem;
     position: relative;
     top: 2px;
   }
+
   .intro-description {
-    padding-top: 4rem;
+    flex: 1;
+    align-self: center;
     text-align: left;
-    /* font-size: 1.25rem; */
   }
+
   .social-links {
     padding: 0;
   }
+
   .social-links div {
     margin-right: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .intro-container {
+    max-width: 900px;
+  }
+
+  .intro-container .social-links {
+    margin: 1rem 0 0;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .intro-container {
+    max-width: 1000px;
   }
 }
 
@@ -219,7 +258,7 @@ a:hover {
   flex-direction: column;
 }
 
-.projects-list > div {
+.projects-list>div {
   flex: 1;
 }
 
@@ -235,7 +274,7 @@ a:hover {
   flex-direction: column;
 }
 
-.games-list > div {
+.games-list>div {
   flex: 1;
   margin-bottom: 2rem;
 }
@@ -504,29 +543,37 @@ hr {
   .project-item-container {
     max-width: 60%;
   }
+
   .games-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .games-list > div {
+
+  .games-list>div {
     margin-bottom: 2rem;
   }
+
   .games-list div:nth-child(2n + 1) {
     flex: 70% 1;
   }
+
   .games-list div:nth-child(2n + 2) {
     flex: 30% 1;
     margin-left: 2rem;
   }
-  .games-list div:nth-child(3) {
+
+  .games-list div:nth-child(2n+3) {
     flex: 48%;
-    max-width: 50%;
+    max-width: 49%;
   }
-  .games-list div:nth-child(4) {
+
+  .games-list div:nth-child(4n+4) {
     flex: 46%;
     max-width: 50%;
+    margin-left: 2rem;
   }
+
   .other-projects-list div:not(:first-child) {
     margin-left: 2rem;
   }
@@ -552,15 +599,19 @@ hr {
   .projects-container {
     width: 70%;
   }
+
   .skkf {
     background-size: 40%;
   }
+
   .projects-container .hellyhansen {
     background-size: 50%;
   }
+
   .leos {
     background-size: 50%;
   }
+
   .page-container.battlerite .page-banner {
     background-size: cover;
   }
@@ -610,7 +661,7 @@ hr {
   flex-direction: column-reverse;
 }
 
-.about-image-wrapper > div:first-of-type {
+.about-image-wrapper>div:first-of-type {
   flex: 1;
 }
 
@@ -671,8 +722,7 @@ hr {
   text-align: left;
 }
 
-@media only screen and (min-width: 425px) {
-}
+@media only screen and (min-width: 425px) {}
 
 @media only screen and (min-width: 768px) {
   .about-container {
@@ -768,7 +818,7 @@ footer {
   display: inline-block;
 }
 
-.footer-details > p {
+.footer-details>p {
   font-size: 1.2rem;
 }
 
@@ -795,6 +845,7 @@ footer {
   .footer-container {
     width: 100%;
   }
+
   .footer-interests img:not(:last-child) {
     margin: 0 1.8rem 0 0;
   }
@@ -996,6 +1047,12 @@ footer {
   margin: 0 auto;
 }
 
+.page-media p,
+.page-media h2,
+.page-media h3 {
+  text-align: left;
+}
+
 .video {
   width: 90%;
 }
@@ -1031,6 +1088,17 @@ footer {
   border: 1px solid #414d96;
 }
 
+.image-duo p {
+  margin-bottom: 1rem;
+}
+
+.image-duo img {
+  align-self: center;
+  flex: 1;
+  width: 100%;
+  border: 1px solid #414d96;
+}
+
 .akined-process-items {
   display: block;
   margin: 1rem 0;
@@ -1044,12 +1112,15 @@ footer {
 .page-container.battlerite .image-grid div:first-child {
   background: url("./resources/images/battlerite_01.jpeg");
 }
+
 .page-container.battlerite .image-grid div:nth-child(2) {
   background: url("./resources/images/battlerite_02.jpg");
 }
+
 .page-container.battlerite .image-grid div:nth-child(3) {
   background: url("./resources/images/battlerite_03.jpg");
 }
+
 .page-container.battlerite .image-grid div:last-child {
   background: url("./resources/images/battlerite_05.jpg");
 }
@@ -1195,6 +1266,7 @@ footer {
 .page-section:nth-child(odd) {
   background: #1e1e1e;
 }
+
 .page-section:nth-child(even) {
   background: #333;
 }
@@ -1242,7 +1314,9 @@ footer {
     margin: 4rem auto 3rem auto;
   }
 
-  .image-grid {
+  .image-grid,
+  .image-duo {
+    display: flex;
     flex-direction: row;
     gap: 2rem;
   }
@@ -1252,6 +1326,21 @@ footer {
     max-width: calc(50% - 1.14rem);
     max-height: none;
     border: 1px solid #414d96;
+  }
+
+  .image-duo div {
+    flex: calc(50% - 1rem);
+    max-width: calc(50% - 1.14rem);
+    max-height: none;
+  }
+
+  .grid-solo {
+    flex: 1 !important;
+    max-width: unset !important;
+  }
+
+  .akined-process-items {
+    gap: 0;
   }
 
   .akined-process-items .image-container {
@@ -1561,6 +1650,7 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+
   .general .content-image,
   .bakko-egg-brawl .content-image,
   .rocket-balloon .content-image,
@@ -1653,6 +1743,7 @@ footer {
   .NotFoundPage h1 {
     font-size: 12rem;
   }
+
   .NotFoundPage h2 {
     position: relative;
     bottom: 4rem;
@@ -1796,12 +1887,15 @@ footer {
   .gameDevResource .content-wrapper {
     grid-template-columns: 1fr 1fr;
   }
+
   .resource-item {
     width: auto;
   }
+
   .button-categories {
     width: 500px;
   }
+
   .page-content {
     /* width: 70%; */
   }
@@ -1811,6 +1905,7 @@ footer {
   .info {
     width: 700px;
   }
+
   .gameDevResource .content-wrapper {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -1820,6 +1915,7 @@ footer {
   .gameDevResource .page-content {
     width: 70%;
   }
+
   .gameDevResource .content-wrapper {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }

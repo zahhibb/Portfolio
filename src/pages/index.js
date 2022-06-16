@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
+import personalImg from "../resources/images/UX_21_Joakim_Hedman_400.png";
+
 export var projectQuickLinks = [
   {
     name: "battlerite",
@@ -11,7 +13,7 @@ export var projectQuickLinks = [
     link: "/akined",
   },
   {
-    name: '"Pioneer" - FPS UI',
+    name: '"Pioneer" UI',
     link: "/pioneer",
   },
   {
@@ -77,63 +79,50 @@ function Index() {
               <h3 className="title-game">Game & UX Designer</h3>
             </div>
           </div>
-          <div className="intro-description">
-            <p>Hi there!</p>
-            <p>
-              I'm a <strong>Game and UX design student</strong> with about 3
-              years of experience developing games inside of Unity.
-            </p>
-            {/* <p>My favorite topics are <span className="color-block">Intrinsic game design</span> and <span className="color-block">UI design</span>.</p> */}
-            <p>I consider myself a multidisciplinary game designer with a passion for <span className="color-block">Intrinsic game design</span>, <span className="color-block">Level design</span>, and <span className="color-block">UI design</span>.</p>
-            <p>
-              I am currently studying Game & UX design at{" "}
-              <a
-                href="https://futuregames.se/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                FutureGames
-              </a>{" "}
-              in Skellefteå, Sweden, and will be available for{" "}
-              <strong>internships from Jan-Jun 2023!</strong>{" "}
-              <i style={{ fontSize: "16px" }}>hint hint ;)</i>
-            </p>
-            <p>
-              Below you will find some of my highlighted projects in Game
-              development; including professional, formal, and personal.
-            </p>
-            <div className="social-links">
-              <div className="linkedin">
-                <a
-                  href="https://www.linkedin.com/in/joakim-hedman/"
+          <div className="intro-content">
+            <div className="intro-description">
+              <p>
+                I'm a <strong>Game and UX designer</strong> currently studying at <a
+                  href="https://futuregames.se/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  title="LinkedIn link"
                 >
-                  LinkedIn
-                </a>
-              </div>
-              <div className="artstation">
-                <a
-                  href="https://www.artstation.com/zahhibb"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="ArtStation link"
-                >
-                  ArtStation
-                </a>
-              </div>
-              <div className="itch">
-                <a
-                  href="https://zahhibb.itch.io"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Itch.io link"
-                >
-                  Itch.io
-                </a>
-              </div>
-              {/* <div className="twitter">
+                  FutureGames
+                </a> in Skellefteå, Sweden.
+              </p>
+              <p>I consider myself a multidisciplinary game designer that enjoy diving deep into <span className="color-block">Intrinsic game design</span>, <span className="color-block">Level design</span>, and <span className="color-block">UI design</span>.</p>
+              <div className="social-links">
+                <div className="linkedin">
+                  <a
+                    href="https://www.linkedin.com/in/joakim-hedman/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="LinkedIn link"
+                  >
+                    LinkedIn
+                  </a>
+                </div>
+                <div className="artstation">
+                  <a
+                    href="https://www.artstation.com/zahhibb"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="ArtStation link"
+                  >
+                    ArtStation
+                  </a>
+                </div>
+                <div className="itch">
+                  <a
+                    href="https://zahhibb.itch.io"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Itch.io link"
+                  >
+                    Itch.io
+                  </a>
+                </div>
+                {/* <div className="twitter">
                 <a
                   href="https://twitter.com/Zahhibb"
                   target="_blank"
@@ -143,16 +132,19 @@ function Index() {
                   Twitter
                 </a>
               </div> */}
-              <div className="mail">
-                <a
-                  href="mailto:jocke_hedman@hotmail.com"
-                  title="Direct mail link"
-                >
-                  Mail
-                </a>
+                <div className="mail">
+                  <a
+                    href="mailto:jocke_hedman@hotmail.com"
+                    title="Direct mail link"
+                  >
+                    Mail
+                  </a>
+                </div>
               </div>
             </div>
+            <img src={personalImg} alt="Joakim Hedman" />
           </div>
+
         </div>
       </section>
       <section className="projects">
@@ -170,29 +162,36 @@ function Index() {
                 />
                 <ProjectItem
                   title={"Akined"}
-                  description={"School game project"}
+                  description={"Isometric 3D Puzzle Platformer"}
                   url={"/akined"}
                   imgClass={"akined"}
                   tag={"Programming & Game design"}
                 />
                 <ProjectItem
-                  title={'"Pioneer" - FPS UI'}
-                  description={"School assignment"}
+                  title={'"Pioneer"'}
+                  description={"FPS UI"}
                   url={"/pioneer"}
                   imgClass={"pioneer"}
                   tag={"UX/UI design"}
                 />
                 <ProjectItem
-                  title={'"Battlefield 6" UI concept'}
-                  description={"Personal project"}
+                  title={'Battlefield "6"'}
+                  description={"UI concept"}
                   url={"/battlefield6"}
                   imgClass={"battlefield6"}
                   tag={"UI design"}
                 />
+                <ProjectItem
+                  title={"Elden Ring"}
+                  description={"UX/UI concept"}
+                  url={"/eldenring"}
+                  imgClass={"eldenring"}
+                  tag={"UX/UI"}
+                />
               </div>
             </div>
             <hr />
-            <div className="other-projects">
+            {/* <div className="other-projects">
               <h2>Other projects</h2>
               <div className="other-projects-list">
                 <OtherProjectItem
@@ -202,22 +201,22 @@ function Index() {
                   imgClass={"eldenring"}
                   tag={"UX/UI"}
                 />
-                {/* <OtherProjectItem
-                                    title={"Outvaders Must Die"}
-                                    description={"Nordic Game Jam 2016"}
-                                    url={"/outvadersmustdie"}
-                                    imgClass={"outvaders"}
-                                    tag={"Scripting & Game design"}
-                                />
-                                <OtherProjectItem
-                                    title={"Canvas Climber"}
-                                    description={"School game project"}
-                                    url={"/canvasclimber"}
-                                    imgClass={"canvasclimber"}
-                                    tag={"Scripting & UI pixel art"}
-                                /> */}
+                <OtherProjectItem
+                  title={"Outvaders Must Die"}
+                  description={"Nordic Game Jam 2016"}
+                  url={"/outvadersmustdie"}
+                  imgClass={"outvaders"}
+                  tag={"Scripting & Game design"}
+                />
+                <OtherProjectItem
+                  title={"Canvas Climber"}
+                  description={"School game project"}
+                  url={"/canvasclimber"}
+                  imgClass={"canvasclimber"}
+                  tag={"Scripting & UI pixel art"}
+                />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
