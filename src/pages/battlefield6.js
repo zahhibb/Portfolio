@@ -103,15 +103,15 @@ const Battlefield6 = () => {
               <h3>Design Pillars</h3>
               <div className='three-row'>
                 <div>
-                  <img src={BattlefieldPillarImage01} />
+                  <img src={BattlefieldPillarImage01} alt="Line-drawing of a chair to represent something being minimalist" />
                   <span>Minimalist</span>
                 </div>
                 <div>
-                  <img src={BattlefieldPillarImage02} />
+                  <img src={BattlefieldPillarImage02} alt="Intersecting ellipses to represent something being inspired" />
                   <span>Inspired</span>
                 </div>
                 <div>
-                  <img src={BattlefieldPillarImage03} />
+                  <img src={BattlefieldPillarImage03} alt="Gears to represent something functional" />
                   <span>Functional</span>
                 </div>
               </div>
