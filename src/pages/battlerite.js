@@ -371,7 +371,7 @@ const Battlerite = () => {
                 <h2>Bakko's Egg Brawl</h2>
                 <p>
                   The first significant project I worked on at Stunlock Studios
-                  was <b>Bakko's Egg Brawl</b>, or just simply <i>Dodgeball</i>
+                  was <b>Bakko's Egg Brawl</b>, or just simply <i>Dodgeball</i>{" "}
                   as we called it internally. I worked on this from conception
                   to release for approx. 2 months.
                 </p>

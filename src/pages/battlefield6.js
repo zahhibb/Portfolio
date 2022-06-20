@@ -4,8 +4,11 @@ import Footer from '../sections/footer'
 import { Link } from 'react-router-dom'
 import '../App.css'
 
-// import BattlefieldImage01 from '../resources/images/battlerite_01.jpeg'
-// import BattlefieldImage02 from '../resources/images/battlerite_02.jpg'
+import BattlefieldReferenceImage from '../resources/images/bf6_reference.jpg';
+import BattlefieldPillarImage01 from '../resources/images/Minimalist.png';
+import BattlefieldPillarImage02 from '../resources/images/Inspired.png';
+import BattlefieldPillarImage03 from '../resources/images/Functional.png';
+import BattlefieldWireframeImage from '../resources/images/bf6_Low-Fidelity_Wireframes.jpg';
 
 import { projectQuickLinks } from './index'
 
@@ -36,7 +39,7 @@ const Battlefield6 = () => {
           <section className="page-intro">
             <div className="page-intro-wrapper">
               <div className="status-panel">
-                <StatusItem title={'Team Size'} content={['Personal']} />
+                <StatusItem title={'Team Size'} content={['1 (Personal)']} />
                 <StatusItem
                   title={'Duration'}
                   content={['24 hours (across 2 weeks)']}
@@ -59,7 +62,7 @@ const Battlefield6 = () => {
               </div>
               <div className="definitions">
                 <div>
-                  <h2>Summary</h2>
+                  <h2>Project overview</h2>
                   <p>
                     This is a personal project where I wanted to try my hand at
                     replicating the style of recent Battlefield games while also
@@ -76,8 +79,8 @@ const Battlefield6 = () => {
                 <div>
                   <h2>What I did</h2>
                   <p>
-                    As I had no relevant understanding of how UI are designed,
-                    so I began with making various{' '}
+                    As I had no relevant understanding of how UI were designed at the time
+                    I began with making various{' '}
                     <i>low-fidelity wireframes</i> of <b>Main menus</b> to find
                     what would structurally look good and that could be extended
                     upon later on.
@@ -92,31 +95,46 @@ const Battlefield6 = () => {
               </div>
             </div>
           </section>
-          <p>Content coming soon..</p>
+          <section className="page-media">
+            <div className="page-media-wrapper">
+              <h2>Theme & references</h2>
+              <p>Taking into consideration the recent <i>Battlefield</i> games' UI and layout while simultaneously anticipating that the upcoming <i>Battlefield</i> game would be set in a modern time-period, I referenced and broke down those previous games' main menus to find something somewhat different layout-wise. My approach being to <strong>define key elements and a systematic structure.</strong></p>
+              <br />
+              <h3>Design Pillars</h3>
+              <div className='three-row'>
+                <div>
+                  <img src={BattlefieldPillarImage01} />
+                  <span>Minimalist</span>
+                </div>
+                <div>
+                  <img src={BattlefieldPillarImage02} />
+                  <span>Inspired</span>
+                </div>
+                <div>
+                  <img src={BattlefieldPillarImage03} />
+                  <span>Functional</span>
+                </div>
+              </div>
+              <br />
+              <div className="work-pairs">
+                <img
+                  className="content-image"
+                  src={BattlefieldReferenceImage}
+                  alt="Reference of main menus from Battlefield 1 and Battlefield 5"
+                />
+                <p>Primary references and inspiration came from the two most recent games (at the time); <i>Battlefield 1</i> and <i>Battlefield 5</i>, the reason being that UX principles and UI layouts/aesthetics follows seemingly migratory patterns that changes the design standards of the time. My premise were to consider those changes and hopefully improve upon them.</p>
+              </div>
+              <div className="work-pairs">
+                <img
+                  className="content-image"
+                  src={BattlefieldWireframeImage}
+                  alt="Low-fidelity wireframes of different layouts of main menus"
+                />
+                <p>asd</p>
+              </div>
+            </div>
+          </section>
           <br />
-          {/* <section className="page-media">
-            <div className="page-media-wrapper">
-              <div className="image-grid">
-                <img src={BattlefieldImage01} alt="Battlefield 1" />
-                <img src={BattlefieldImage02} alt="Battlefield 2" />
-              </div>
-            </div>
-          </section> */}
-          {/* <section className="page-media">
-            <div className="page-media-wrapper">
-              <div className="video-wrapper">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/KU6Ra-P746k"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
-          </section> */}
         </div>
         <div className="quick-links">
           <div className="quick-link-container prev">

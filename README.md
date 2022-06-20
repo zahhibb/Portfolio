@@ -2,12 +2,11 @@
 
 ### ToDo
 #### - Add Battlerite 'tutorial design' content
-#### - Add Rocket Balloon content
-#### - Add Battlegrounds content
-#### - Change PIONEER thumbnail image
-#### - Add PIONEER content
-#### - Add Battlefield6 content
-#### - Add Elden Ring content
+#### - Add Battlerite-Rocket Balloon content
+#### - Add Battlerite-Battlegrounds content
+#### - Finish PIONEER content
+#### - Finish Battlefield6 content
+#### - Finish Elden Ring content
 #### - Add more credits to external resources
 #### - Smooth scrolling on from header-section
 #### - Transitions & fade-in (https://github.com/framer/motion / https://dev.to/joserfelix/getting-started-with-react-animations-308a)

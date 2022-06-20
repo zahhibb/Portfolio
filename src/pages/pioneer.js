@@ -7,7 +7,11 @@ import '../App.css'
 import PioneerSketchImage01 from "../resources/images/pioneer_sketches_00.png";
 import PioneerSketchImage02 from "../resources/images/pioneer_sketches_01.png";
 import PioneerLowFidImage from "../resources/images/pioneer_low-fidelity.jpg";
-import PioneerHighFidImage from "../resources/images/pioneer_sketches_01.png";
+
+import PioneerHighFidImage1 from "../resources/images/pioneer_mainmenu_preferences.jpg";
+import PioneerHighFidImage2 from "../resources/images/pioneer_map_loadout.jpg";
+import PioneerHighFidImage3 from "../resources/images/pioneer_gear_arsenal.jpg";
+import PioneerHighFidImage4 from "../resources/images/pioneer_social_profile.jpg";
 
 import { projectQuickLinks } from './index'
 
@@ -38,7 +42,7 @@ const Pioneer = () => {
           <section className="page-intro">
             <div className="page-intro-wrapper">
               <div className="status-panel">
-                <StatusItem title={'Team Size'} content={['Personal']} />
+                <StatusItem title={'Team Size'} content={['1 (Personal)']} />
                 <StatusItem title={'Duration'} content={['4 weeks']} />
                 <StatusItem
                   title={'Engine & Tools'}
@@ -82,7 +86,6 @@ const Pioneer = () => {
               </div>
             </div>
           </section>
-
           <section className="page-media">
             <div className="page-media-wrapper">
               <h2>Concept & references</h2>
@@ -92,37 +95,61 @@ const Pioneer = () => {
                 rel="noopener noreferrer"
               >
                 Embark Studios
-              </a> upcoming game, codenamed 'PIONEER'. Additionally, a major inspiration of the main menu UI was the recent release of <a
+              </a> upcoming game, codenamed <strong>'PIONEER'</strong>. Additionally, a major inspiration of the main menu UI was the recent release of <a
                 href="https://www.dice.se/"
                 target="_blank"
                 rel="noopener noreferrer"
               >DICE</a> 's new installation of the Battlefield-series, <strong>'Battlefield 2142'</strong>.</p>
               <br />
+              {/* <h2>Process</h2> */}
               <div className="image-duo">
                 <div>
                   <h3>Sketch pass 1</h3>
                   <p>I began by sketching various designs to find something that I feel could be considered modern and somewhat sci-fi.</p>
-                  <br/>
                   <img src={PioneerSketchImage01} alt="Basic digital sketches on various menu designs and notes" />
                 </div>
                 <div>
                   <h3>Sketch pass 2</h3>
-                  <p>After asking and receiving some feedback on what people felt looked the best, I decided on the design similar to <i>Battlefield 2142</i> because of its straight-forward approach.</p>
+                  <p>After asking and receiving some feedback on what people felt looked the best, I decided on the design similar to <i>Battlefield 2142</i> because of its straight-forward approach. I also went on to design concepts of other menu screens as well.</p>
                   <img src={PioneerSketchImage02} alt="Second iteration of digital sketches improved from the previous ones" />
                 </div>
               </div>
               <br />
-              <h2>Low-fidelity wireframes</h2>
-              <p>asd asd aasd</p>
-              <div className="image-grid">
-                <img className='grid-solo' src={PioneerLowFidImage} alt="asd" />
+              <br />
+              <div className='image-solo'>
+                <h3>Low-fidelity wireframes</h3>
+                <p>Continuing on from the sketches I jumped straight into coverting them to <strong>low-fidelity wireframes</strong>, now taking the layout, padding, margins, and white spaces into a lot more consideration. Stylistic changes were still made at this stage, though the general blocking of elements would still remain.</p>
+                <div className="image-grid">
+                  <img src={PioneerLowFidImage} alt="Low-fidelity wireframes of the previous sketches" />
+                </div>
               </div>
-              <br/>
-              <h2>High-fidelity wireframes</h2>
-              <p>asd asd aasd</p>
-              <div className="image-grid">
-                <img className='grid-solo' src={PioneerHighFidImage} alt="asd" />
+              <br />
+              <br />
+              <h3>High-fidelity wireframes</h3>
+              <p>Now getting closer to the very end, the focus would be on aesthetics, ornaments, colors, and filling the UI with more relevant art to give it all a bit more <i>'Oomph!'</i>. However, I realised that some of my designs such as the staging screen (Venture) and Loadout screen felt too simplistic and didn't have a modern feel to it. </p>
+              <br />
+              <p>As a last resort, a re-design of these layouts were made, now presenting the chosen setup of your character on a initial page while also not filling up and cluttering the entire screen - allowing the design to breath a bit more! The new layout iteration now resembling the 'Windows'-formula of seperating content into blocks.</p>
+              <br />
+              <p>One additional thing that changed was the intended platform design, as initially the design were made to be for console with large elements to be easily distinguishable from distance. This changed a bit due to my own realisation that to implement this design later into Unity would be a larger task than I previously anticipated as I didn't have time until the deadline to learn gamepad implementation. The end result ended up being to change the visual input prompts from gamepad buttons into keyboard keys and mouse buttons.</p>
+              <div className="image-grid" style={{ "marginTop": "1rem" }}>
+                <img src={PioneerHighFidImage1} alt="asd" />
+                <img src={PioneerHighFidImage2} alt="asd" />
+                <img src={PioneerHighFidImage3} alt="asd" />
+                <img src={PioneerHighFidImage4} alt="asd" />
               </div>
+              <br />
+              <br />
+              <div className='image-solo'>
+                <h3>Unity implementation</h3>
+                <p>description coming soon..</p>
+                <div className="image-grid">
+                  <img src={PioneerLowFidImage} alt="Low-fidelity wireframes of the previous sketches" />
+                </div>
+              </div>
+              <br />
+              <br />
+              <h3>Ending statements</h3>
+              <p>Description coming soon..</p>
             </div>
           </section>
         </div>

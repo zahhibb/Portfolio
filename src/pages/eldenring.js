@@ -4,7 +4,6 @@ import Footer from "../sections/footer";
 import { Link } from "react-router-dom";
 import "../App.css";
 
-import EldenRingImage01 from "../resources/images/Intro_description.png";
 import EldenRingImage02 from "../resources/images/Icon-iteration.png";
 import EldenRingImage03 from "../resources/images/Main-menu.png";
 import EldenRingImage04 from "../resources/images/Iconography.png";
@@ -41,7 +40,7 @@ const Eldenring = () => {
           <section className="page-intro">
             <div className="page-intro-wrapper">
               <div className="status-panel">
-                <StatusItem title={"Team Size"} content={["Personal"]} />
+                <StatusItem title={"Team Size"} content={["1 (Personal)"]} />
                 <StatusItem
                   title={"Duration"}
                   content={["4 days (across 3 weeks)"]}
@@ -98,23 +97,13 @@ const Eldenring = () => {
           </section>
           <section className="page-media">
             <div className="page-media-wrapper">
+              <h2>Concept</h2>
+              <p>content coming soon..</p>
+              <br />
+              <h2>Process</h2>
+              <p>content coming soon..</p>
+              <br />
               <div className="image-grid">
-                {/* <div className="image-container">
-                  <img
-                    className="content-image"
-                    src={EldenRingImage01}
-                    alt="Description of project"
-                  />
-                </div>
-                <div className="image-container">
-                  <img
-                    className="content-image"
-                    src={EldenRingImage02}
-                    alt="Iterative breakdown on icons"
-                  />
-                  <span>cool cool</span>
-                </div> */}
-                <img src={EldenRingImage01} alt="elden ring 1" />
                 <img src={EldenRingImage02} alt="elden ring 2" />
                 <img src={EldenRingImage03} alt="elden ring 3" />
                 <img src={EldenRingImage04} alt="elden ring 4" />

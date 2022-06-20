@@ -323,21 +323,13 @@ const Akined = () => {
               </div>
             </div>
           </section>
-          {/* <section className="page-media">
+          <section className="page-media">
             <div className="page-media-wrapper video">
               <div className="video-wrapper">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/mgAJ-adILGY"
-                  title="Gameplay trailer"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DB10CP7ovSQ" title="Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
               </div>
             </div>
-          </section> */}
+          </section>
         </div>
         <div className="quick-links">
           <div className="quick-link-container prev">

@@ -17,6 +17,15 @@ strong {
 }
 
 h2 {
+  font-weight: 400;
+}
+
+h3,
+h4 {
+  font-weight: 600;
+}
+
+h2 {
   font-family: Alegreya-regular;
 }
 
@@ -457,7 +466,7 @@ hr {
 }
 
 .projects-container .pioneer {
-  background: url("resources/images/portfolio_pioneer_item.png");
+  background: url("resources/images/PIONEER-thumbnail.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -884,6 +893,7 @@ footer {
 .page-container h2,
 .page-container h3,
 .page-container h4 {
+  color: #ff8a37;
   font-family: Calibri light;
   line-height: 2.4rem;
 }
@@ -901,7 +911,6 @@ footer {
 }
 
 .page-container .page-banner h1 {
-  /* font-size: 3rem; */
   text-shadow: 0px 0px 20px #000;
   width: 100%;
   position: absolute;
@@ -932,7 +941,6 @@ footer {
 }
 
 .page-intro-wrapper h2 {
-  font-weight: 600;
   font-size: 1.3em;
 }
 
@@ -1027,7 +1035,6 @@ footer {
   font-size: 1.5em;
   font-weight: 200;
   padding-bottom: 1rem;
-  color: #fff;
 }
 
 .definitions p {
@@ -1043,7 +1050,7 @@ footer {
 }
 
 .page-media-wrapper {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -1097,6 +1104,10 @@ footer {
   flex: 1;
   width: 100%;
   border: 1px solid #414d96;
+}
+
+.image-solo p {
+  margin-bottom: 1rem;
 }
 
 .akined-process-items {
@@ -1314,6 +1325,11 @@ footer {
     margin: 4rem auto 3rem auto;
   }
 
+  .page-media-wrapper {
+    width: 70%;
+    margin: 0 auto;
+  }
+
   .image-grid,
   .image-duo {
     display: flex;
@@ -1332,9 +1348,10 @@ footer {
     flex: calc(50% - 1rem);
     max-width: calc(50% - 1.14rem);
     max-height: none;
+    align-self: flex-end;
   }
 
-  .grid-solo {
+  .image-solo img {
     flex: 1 !important;
     max-width: unset !important;
   }
@@ -1564,6 +1581,10 @@ footer {
   flex: 1;
 }
 
+.orb-references h4 {
+  color: #fff;
+}
+
 .orb-references span {
   color: #ffff00;
 }
@@ -1710,6 +1731,103 @@ footer {
   }
 }
 
+/* Battlefield 6 */
+
+.three-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.three-row div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.three-row div img {
+  display: block;
+  width: 100%;
+  min-height: 180px;
+  max-height: 180px;
+  min-width: 100px;
+  max-width: 200px;
+  object-fit: contain;
+}
+
+.three-row div span {
+  color: #fff;
+  margin-top: 0.5rem;
+}
+
+.battlefield6 .page-media-wrapper h2,
+.battlefield6 .page-media-wrapper h3,
+.battlefield6 .page-media-wrapper h4 {
+  color: #ff8a37;
+}
+
+.battlefield6 .page-media-wrapper h2,
+.battlefield6 .page-media-wrapper h3,
+.battlefield6 .page-media-wrapper>p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.battlefield6 .work-pairs {
+  flex-direction: column;
+}
+
+.battlefield6 .work-pairs p {
+  padding: 0;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.battlefield6 .work-pairs img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .three-row {
+    flex-direction: row;
+  }
+
+  .three-row div {
+    margin-bottom: 0;
+  }
+
+  .battlefield6 .work-pairs img {
+    width: 100%;
+    min-width: 400px;
+    max-width: 600px;
+    margin: 0 0 1rem 1rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .battlefield6 .work-pairs {
+    flex-direction: row-reverse;
+  }
+
+  .battlefield6 .work-pairs:nth-child(2n) {
+    flex-direction: row;
+  }
+
+  .battlefield6 .work-pairs:nth-child(2n) img {
+    margin: 0 1rem 1rem 0;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .battlefield6 .work-pairs img {
+    min-width: 600px;
+  }
+}
+
 /* 404 page */
 
 .NotFoundPage {
@@ -1777,7 +1895,6 @@ footer {
 
 .gameDevResource h2 {
   font-size: 1em;
-  font-weight: 400;
 }
 
 .gameDevResource h3 {
@@ -1880,7 +1997,6 @@ footer {
 
 @media only screen and (min-width: 768px) {
   .page-intro h2 {
-    font-weight: 400;
     font-size: 1.5em;
   }
 
@@ -1894,10 +2010,6 @@ footer {
 
   .button-categories {
     width: 500px;
-  }
-
-  .page-content {
-    /* width: 70%; */
   }
 }
 
