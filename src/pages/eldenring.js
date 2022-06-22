@@ -65,8 +65,8 @@ const Eldenring = () => {
                 <div>
                   <h2>Project overview</h2>
                   <p>
-                    This is a personal project where I wanted to develop my UX
-                    and UI design skills further. Elden Ring was at the time an
+                    This is a <strong>personal project</strong> where I wanted to <strong>develop my UX
+                      and UI design skills</strong> further. Elden Ring was at the time an
                     upcoming game but almost nothing was yet revealed about it,
                     so I wanted to try and imitate the <b>FROM SOFTWARE</b>{" "}
                     style.
