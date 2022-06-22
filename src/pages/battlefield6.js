@@ -8,7 +8,7 @@ import BattlefieldReferenceImage from '../resources/images/bf6_reference.jpg';
 import BattlefieldPillarImage01 from '../resources/images/Minimalist.png';
 import BattlefieldPillarImage02 from '../resources/images/Inspired.png';
 import BattlefieldPillarImage03 from '../resources/images/Functional.png';
-// import BattlefieldLowFidelityWireframeImage from '../resources/images/bf6_low-fidelity_wireframes.jpg';
+import BattlefieldLowFidelityWireframeImage from '../resources/images/bf6_low-fidelity_wireframes.jpg';
 import BattlefieldHighFidelityWireframeImage from '../resources/images/portfolio_bf6_item.png';
 import BattlefieldExtraImage from '../resources/images/bf6_gameplay-mockup.jpg';
 
@@ -137,10 +137,10 @@ const Battlefield6 = () => {
                 </div>
               </div>
               <div className="work-pairs">
-                {/* <img
+                <img
                   className="content-image"
                   src={BattlefieldLowFidelityWireframeImage}
-                  alt="Low-fidelity wireframes of different layouts of main menus" */}
+                  alt="Low-fidelity wireframes of different layouts of main menus"
                 />
                 <div>
                   <h3>Low-fidelity wireframes</h3>
