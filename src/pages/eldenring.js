@@ -63,7 +63,7 @@ const Eldenring = () => {
               </div>
               <div className="definitions">
                 <div>
-                  <h2>Summary</h2>
+                  <h2>Project overview</h2>
                   <p>
                     This is a personal project where I wanted to develop my UX
                     and UI design skills further. Elden Ring was at the time an

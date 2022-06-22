@@ -92,7 +92,7 @@ const Akined = () => {
               </div>
               <div className="definitions">
                 <div>
-                  <h2>Summary</h2>
+                  <h2>Project overview</h2>
                   <p>
                     <b>Akined</b> is an <i>Isometric Top-down Puzzle</i> game
                     where the player takes control of Adam and the Spirit

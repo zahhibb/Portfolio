@@ -8,7 +8,14 @@ import BattlefieldReferenceImage from '../resources/images/bf6_reference.jpg';
 import BattlefieldPillarImage01 from '../resources/images/Minimalist.png';
 import BattlefieldPillarImage02 from '../resources/images/Inspired.png';
 import BattlefieldPillarImage03 from '../resources/images/Functional.png';
-import BattlefieldWireframeImage from '../resources/images/bf6_Low-Fidelity_Wireframes.jpg';
+import BattlefieldLowFidelityWireframeImage from '../resources/images/bf6_low-fidelity_wireframes.jpg';
+import BattlefieldHighFidelityWireframeImage from '../resources/images/portfolio_bf6_item.png';
+import BattlefieldExtraImage from '../resources/images/bf6_gameplay-mockup.jpg';
+
+import RaidIcon from '../resources/images/bf6_raid-icon.jpg';
+import PracticeIcon from '../resources/images/bf6_practice-icon.jpg';
+import SocialIcon from '../resources/images/bf6_social-icon.jpg';
+import ButtonPrompts from '../resources/images/bf6_button-prompts.jpg';
 
 import { projectQuickLinks } from './index'
 
@@ -64,22 +71,22 @@ const Battlefield6 = () => {
                 <div>
                   <h2>Project overview</h2>
                   <p>
-                    This is a personal project where I wanted to try my hand at
-                    replicating the style of recent Battlefield games while also
+                    This is a <strong>personal project</strong> where I wanted to try my hand at
+                    replicating the style of recent <i>Battlefield</i> games while also
                     at the same time attempting to make something structurally
-                    new. My goal was to create a concept of how the upcoming
-                    Battlefield game could look.
+                    new. My goal was to create a concept of how the upcoming {" "}
+                    <i>Battlefield</i> game could look.
                   </p>
                   <br />
                   <p>
-                    Prior to this I had no education or skill in UI design and
-                    this was heavily based on my own bias and preference.
+                    Prior to thi, I had no education or skill in <strong>UI design</strong> and
+                    this was heavily based on my own <strong>bias and preference.</strong>
                   </p>
                 </div>
                 <div>
                   <h2>What I did</h2>
                   <p>
-                    As I had no relevant understanding of how UI were designed at the time
+                    As I had no relevant understanding of how UI was designed at the time
                     I began with making various{' '}
                     <i>low-fidelity wireframes</i> of <b>Main menus</b> to find
                     what would structurally look good and that could be extended
@@ -87,9 +94,9 @@ const Battlefield6 = () => {
                   </p>
                   <br />
                   <p>
-                    In the end I made 2 <b>main menu</b>{' '}
+                    In the end, I made 2 <b>main menu</b>{' '}
                     <i>high-fidelity wireframes</i> that I felt captured the
-                    aesthetics of how recent Battlefield games' menus looked.
+                    aesthetics of how recent <i>Battlefield</i> games' menus looked.
                   </p>
                 </div>
               </div>
@@ -97,8 +104,9 @@ const Battlefield6 = () => {
           </section>
           <section className="page-media">
             <div className="page-media-wrapper">
-              <h2>Theme & references</h2>
-              <p>Taking into consideration the recent <i>Battlefield</i> games' UI and layout while simultaneously anticipating that the upcoming <i>Battlefield</i> game would be set in a modern time-period, I referenced and broke down those previous games' main menus to find something somewhat different layout-wise. My approach being to <strong>define key elements and a systematic structure.</strong></p>
+              <h2>Theme</h2>
+              <p>Taking into consideration the recent <i>Battlefield</i> games' UI and layout while simultaneously anticipating that the upcoming game in the series would be set in a modern time-period, I referenced and broke down those previous games' main menus to find something somewhat different layout-wise. My approach being to <strong>define key elements</strong> and <strong>adhere to a systematic structure.</strong></p>
+              <br />
               <br />
               <h3>Design Pillars</h3>
               <div className='three-row'>
@@ -116,21 +124,72 @@ const Battlefield6 = () => {
                 </div>
               </div>
               <br />
+              <br />
               <div className="work-pairs">
                 <img
                   className="content-image"
                   src={BattlefieldReferenceImage}
                   alt="Reference of main menus from Battlefield 1 and Battlefield 5"
                 />
-                <p>Primary references and inspiration came from the two most recent games (at the time); <i>Battlefield 1</i> and <i>Battlefield 5</i>, the reason being that UX principles and UI layouts/aesthetics follows seemingly migratory patterns that changes the design standards of the time. My premise were to consider those changes and hopefully improve upon them.</p>
+                <div>
+                  <h3>References</h3>
+                  <p><strong>Primary references</strong> and <strong>inspiration</strong> came from the two most recent games (at the time); <i>Battlefield 1</i> and <i>Battlefield 5</i>, the reason being that UX principles and UI layouts/aesthetics follows seemingly migratory patterns that changes the design standards over time. My premise were to consider those changes and hopefully improve upon them.</p>
+                </div>
               </div>
               <div className="work-pairs">
                 <img
                   className="content-image"
-                  src={BattlefieldWireframeImage}
+                  src={BattlefieldLowFidelityWireframeImage}
                   alt="Low-fidelity wireframes of different layouts of main menus"
                 />
-                <p>asd</p>
+                <div>
+                  <h3>Low-fidelity wireframes</h3>
+                  <p>When designing the initial sketches/wireframes I wanted to translate some particular UI elements of the previous games into my own design &#8212; specifically the <strong>minimalist</strong> and sharp container-elements to sustain the <i>familiar design</i> between the games.</p>
+                  <br />
+                  <ul>
+                    <li><strong>First wireframe</strong> were basically a carbon-copy of <i>Battlefield 5's</i> main menu. I was mainly getting familiarized with the <strong>Adobe XD</strong> at this point as I hadn't used it before.</li>
+                    <li>The <strong>second wireframe</strong> was decent but I felt I steered off too much from the identity of the <i>Battlefield</i> design.</li>
+                    <li><strong>Third pass</strong> is where I felt I was getting close, however, the navigation didn't feel modern enough and the general layout didn't have an intention.</li>
+                    <li><strong>Fourth and last iteration</strong>. Here I removed the container element of the navigation bar to make it stand out more and modified the layout to present a sort of hierarchical design. The largest element being the Hero/CTA and the other stacked elements being staggered to virtually present a arrow pointing towards the CTA.</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="work-pairs">
+                <img
+                  className="content-image"
+                  src={BattlefieldHighFidelityWireframeImage}
+                  alt="High-fidelity wireframes of Splash, Main-menu, and Play-menu screens"
+                />
+                <div>
+                  <h3>High-fidelity wireframes</h3>
+                  <p>Going into the design of the high-fidelity was the thing I was looking forward to the most since this would be where the actual <strong>identity</strong> of the project would be incorporated. The majority of the rendered assets and images used came from previous <i>Battlefield</i> games' promotional material, and some content was from different artists on <i>ArtStation</i> or <i>Pinterest</i>.</p>
+                  <br />
+                  <p>The assets I made myself were the:</p>
+                  <ul>
+                    <li><strong>Raid</strong> icon <img src={RaidIcon} alt="Icon for Raid game mode" /></li>
+                    <li><strong>Practice range</strong> icon <img src={PracticeIcon} alt="Icon for Practice-range game mode" /></li>
+                    <li><strong>Social/Party</strong> icon <img src={SocialIcon} alt="Icon for Social/Party panel" /></li>
+                    <li><strong>Button prompts</strong> <img src={ButtonPrompts} alt="Icons for Xbox-gamepad button prompts" /></li>
+                  </ul>
+                </div>
+              </div>
+              <div className='extras'>
+                <h2>Extras</h2>
+                <p>At the end of the project I felt that I wanted something additional but different to break up the focus on menus, so tried to my hand at <strong>photobashing</strong> various images into one mockup, with the intention to present how UI would look in <strong>gameplay</strong> instead.</p>
+                <p>I ended up <u>not</u> finishing this, but the general idea and approach was fun and something I probably want to improve on in the future.</p>
+                <br />
+                <ol>
+                  <li><strong>Base image</strong> &#8212; in this case a real life image of soldiers in a field.</li>
+                  <li><strong>Image of a blue better looking sky</strong> to replace the boring gray sky in the original base image.</li>
+                </ol>
+                <div className='image-solo'>
+                  <div className='image-grid'>
+                    <img
+                      src={BattlefieldExtraImage}
+                      alt="Prototype mockup/photobash of gameplay"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </section>

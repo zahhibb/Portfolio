@@ -18,15 +18,12 @@ strong {
 
 h2 {
   font-weight: 400;
+  font-family: Alegreya-regular;
 }
 
 h3,
 h4 {
   font-weight: 600;
-}
-
-h2 {
-  font-family: Alegreya-regular;
 }
 
 a,
@@ -1731,6 +1728,12 @@ footer {
   }
 }
 
+/* PIONEER */
+
+.pioneer .image-grid {
+  margin-top: 1rem;
+}
+
 /* Battlefield 6 */
 
 .three-row {
@@ -1780,15 +1783,48 @@ footer {
 }
 
 .battlefield6 .work-pairs p {
+  font-size: unset;
+}
+
+.battlefield6 .work-pairs p,
+.battlefield6 .work-pairs ul {
   padding: 0;
   text-align: left;
   align-self: flex-start;
+  font-weight: unset;
 }
 
 .battlefield6 .work-pairs img {
   width: 100%;
   height: 100%;
   margin: 0;
+  margin-bottom: 1rem;
+  border: 1px solid #414d96;
+}
+
+.battlefield6 ul {
+  list-style-position: inside;
+}
+
+.battlefield6 ul li {
+  margin: 0.5rem 0;
+}
+
+.battlefield6 ul li img {
+  max-width: 60px !important;
+  min-width: 60px !important;
+  margin: 0 0 0 1rem !important;
+  vertical-align: middle;
+}
+
+.battlefield6 .extras p {
+  text-align: center;
+}
+
+.battlefield6 .extras ol {
+  text-align: left;
+  margin-bottom: 1rem;
+  list-style-position: inside;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1800,7 +1836,7 @@ footer {
     margin-bottom: 0;
   }
 
-  .battlefield6 .work-pairs img {
+  .battlefield6 .work-pairs>img {
     width: 100%;
     min-width: 400px;
     max-width: 600px;
@@ -1808,7 +1844,16 @@ footer {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {}
+
+@media only screen and (min-width: 1280px) {
+
+  .battlefield6 .page-media-wrapper h2,
+  .battlefield6 .page-media-wrapper h3,
+  .battlefield6 .page-media-wrapper>p {
+    margin-bottom: 0;
+  }
+
   .battlefield6 .work-pairs {
     flex-direction: row-reverse;
   }
@@ -1818,12 +1863,10 @@ footer {
   }
 
   .battlefield6 .work-pairs:nth-child(2n) img {
-    margin: 0 1rem 1rem 0;
+    margin: 0 2rem 1rem 0;
   }
-}
 
-@media only screen and (min-width: 1280px) {
-  .battlefield6 .work-pairs img {
+  .battlefield6 .work-pairs>img {
     min-width: 600px;
   }
 }
