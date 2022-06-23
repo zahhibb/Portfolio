@@ -57,8 +57,8 @@ const Pioneer = () => {
                   <p>
                     During my time studying at <b>FutureGames</b>, we got an
                     assignment to design a <b>UI/HUD</b> for an existing game
-                    or make up an original concept. Our assignment from start to
-                    finish was to go through every stage of the design process,
+                    or make up an original concept. Our assignment was to go through every stage of the design process from start to
+                    finish,
                     like <b>sketching</b>, <b>low-</b> &{' '}
                     <b>high-fidelity wireframing</b>, and implement it to be
                     functional inside of <b>Unity</b> or <b>Figma</b>.
@@ -103,7 +103,6 @@ const Pioneer = () => {
                 rel="noopener noreferrer"
               >DICE</a>'s new installation of the Battlefield series, <strong>'Battlefield 2142'</strong>.</p>
               <br />
-              {/* <h2>Process</h2> */}
               <div className="image-duo">
                 <div>
                   <h3>Sketch pass 1</h3>

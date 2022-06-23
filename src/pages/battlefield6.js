@@ -144,13 +144,13 @@ const Battlefield6 = () => {
                 />
                 <div>
                   <h3>Low-fidelity wireframes</h3>
-                  <p>When designing the initial sketches/wireframes I wanted to translate some particular UI elements of the previous games into my own design &#8212; specifically the <strong>minimalist</strong> and sharp container-elements to sustain the <i>familiar design</i> between the games.</p>
+                  <p>When designing the initial sketches/wireframes I wanted to translate some particular UI elements of the previous games into my design &#8212; specifically the <strong>minimalist</strong> and sharp container elements to sustain the <i>familiar design</i> between the games.</p>
                   <br />
                   <ul>
-                    <li><strong>First wireframe</strong> were basically a carbon-copy of <i>Battlefield 5's</i> main menu. I was mainly getting familiarized with the <strong>Adobe XD</strong> at this point as I hadn't used it before.</li>
+                    <li><strong>The first wireframe</strong> was basically a carbon copy of <i>Battlefield 5's</i> main menu. I was primarily getting familiarized with the <strong>Adobe XD</strong> at this point as I hadn't used it before.</li>
                     <li>The <strong>second wireframe</strong> was decent but I felt I steered off too much from the identity of the <i>Battlefield</i> design.</li>
-                    <li><strong>Third pass</strong> is where I felt I was getting close, however, the navigation didn't feel modern enough and the general layout didn't have an intention.</li>
-                    <li><strong>Fourth and last iteration</strong>. Here I removed the container element of the navigation bar to make it stand out more and modified the layout to present a sort of hierarchical design. The largest element being the Hero/CTA and the other stacked elements being staggered to virtually present a arrow pointing towards the CTA.</li>
+                    <li><strong>The third pass</strong> is where I felt I was getting close, however, the navigation didn't feel modern enough and the general layout didn't have an intention.</li>
+                    <li><strong>Fourth and last iteration</strong>. Here I removed the container element of the navigation bar to make it stand out more and modified the layout to present a sort of hierarchical design. The largest element being the Hero/CTA and the other stacked elements being staggered to virtually present an arrow pointing towards the CTA.</li>
                   </ul>
                 </div>
               </div>
@@ -173,14 +173,18 @@ const Battlefield6 = () => {
                   </ul>
                 </div>
               </div>
+              <hr />
               <div className='extras'>
                 <h2>Extras</h2>
-                <p>At the end of the project I felt that I wanted something additional but different to break up the focus on menus, so tried to my hand at <strong>photobashing</strong> various images into one mockup, with the intention to present how UI would look in <strong>gameplay</strong> instead.</p>
-                <p>I ended up <u>not</u> finishing this, but the general idea and approach was fun and something I probably want to improve on in the future.</p>
+                <p>At the end of the project, I felt that I wanted something additional but different to break up the focus on menus, so I tried my hand at <strong>photobashing</strong> various images into one mockup, to present how UI would look in a <strong>gameplay</strong> situation instead.</p>
+                <p>I ended up <u>not</u> finishing this, but the general idea and approach were fun and something I probably want to improve on in the future.</p>
                 <br />
                 <ol>
-                  <li><strong>Base image</strong> &#8212; in this case a real life image of soldiers in a field.</li>
-                  <li><strong>Image of a blue better looking sky</strong> to replace the boring gray sky in the original base image.</li>
+                  <li><strong>Base image</strong> &#8212; in this case, a real-life image of soldiers in a field.</li>
+                  <li><strong>Image of a blue, better looking, sky</strong> to replace the boring gray sky in the original base image.</li>
+                  <li><strong>The last of the primary images that make it all come together</strong> is the first-person view of a character holding a gun, borrowed from <i>Escape From Tarkov</i>. Not only does this bring the illusion to life, but it presents from a designer's point of view how important it is to think about the horizontal positioning of the asset and how much it occludes from the player.</li>
+                  <br />
+                  <p>The very last thing I did was some <strong>color grading</strong> by bumping up the <strong>saturation</strong> to make it a bit <i>less like real life</i>, partly blending them with the digital ones. Unfortunately, no UI or HUD graphics were made for this gameplay mockup as I felt I hadn't planned it out enough and I had spent more time than I wanted on this project already.</p>
                 </ol>
                 <div className='image-solo'>
                   <div className='image-grid'>

@@ -1827,6 +1827,10 @@ footer {
   list-style-position: inside;
 }
 
+.battlefield6 .extras p:last-child {
+  text-align: left;
+}
+
 @media only screen and (min-width: 768px) {
   .three-row {
     flex-direction: row;
