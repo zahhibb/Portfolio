@@ -1529,7 +1529,12 @@ footer {
   }
 }
 
-/* Battlerite game modes */
+/* Battlerite */
+
+.battlerite .content > div h2 ,
+.battlerite .content > div p {
+  text-align: center;
+}
 
 .right {
   float: right;
@@ -1728,6 +1733,74 @@ footer {
   }
 }
 
+/* Elden Ring */
+.eldenring .page-media-wrapper p,
+.eldenring .page-media-wrapper h2 {
+  text-align: center;
+}
+
+.eldenring .work-pairs {
+  flex-direction: column-reverse;
+}
+
+.eldenring .work-pairs p {
+  font-size: unset;
+}
+
+.eldenring .work-pairs p,
+.eldenring .work-pairs ul {
+  padding: 0;
+  text-align: left;
+  align-self: flex-start;
+  font-weight: unset;
+  margin-bottom: 1rem;
+}
+
+.eldenring .work-pairs img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 1px solid #414d96;
+}
+
+.eldenring .image-duo p {
+  text-align: left;
+}
+
+@media only screen and (min-width: 768px) {
+  .eldenring .work-pairs>img {
+    width: 100%;
+    min-width: 400px;
+    max-width: 600px;
+    margin: 0 0 1rem 1rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+
+  .eldenring .page-media-wrapper h2,
+  .eldenring .page-media-wrapper h3,
+  .eldenring .page-media-wrapper>p {
+    margin-bottom: 0;
+  }
+
+  .eldenring .work-pairs {
+    flex-direction: row-reverse;
+  }
+
+  .eldenring .work-pairs:nth-child(2n) {
+    flex-direction: row;
+  }
+
+  .eldenring .work-pairs:nth-child(2n) img {
+    margin: 0 2rem 1rem 0;
+  }
+
+  .eldenring .work-pairs>img {
+    min-width: 600px;
+  }
+}
+
 /* PIONEER */
 
 .pioneer .image-grid {
@@ -1763,12 +1836,6 @@ footer {
 .three-row div span {
   color: #fff;
   margin-top: 0.5rem;
-}
-
-.battlefield6 .page-media-wrapper h2,
-.battlefield6 .page-media-wrapper h3,
-.battlefield6 .page-media-wrapper h4 {
-  color: #ff8a37;
 }
 
 .battlefield6 .page-media-wrapper h2,
@@ -1847,8 +1914,6 @@ footer {
     margin: 0 0 1rem 1rem;
   }
 }
-
-@media only screen and (min-width: 1024px) {}
 
 @media only screen and (min-width: 1280px) {
 

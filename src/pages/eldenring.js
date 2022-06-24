@@ -4,12 +4,12 @@ import Footer from "../sections/footer";
 import { Link } from "react-router-dom";
 import "../App.css";
 
-import EldenRingImage02 from "../resources/images/Icon-iteration.png";
-import EldenRingImage03 from "../resources/images/Main-menu.png";
-import EldenRingImage04 from "../resources/images/Iconography.png";
-import EldenRingImage05 from "../resources/images/Typography_and_Colours.png";
-import EldenRingImage06 from "../resources/images/Character-creation_Class.png";
-import EldenRingImage07 from "../resources/images/Character-creation_Stats.png";
+// import EldenRingStylesheet from "../resources/images/Typography_and_Colours.png";
+// import EldenRingIconography from "../resources/images/Iconography.png";
+// import EldenRingIconIteration from "../resources/images/Icon-iteration.png";
+import EldenRingHighFidelityWireframe01 from "../resources/images/Main-menu.png";
+import EldenRingHighFidelityWireframe02 from "../resources/images/Character-creation_Class.png";
+import EldenRingHighFidelityWireframe03 from "../resources/images/Character-creation_Stats.png";
 
 import { projectQuickLinks } from "./index";
 
@@ -97,19 +97,55 @@ const Eldenring = () => {
           </section>
           <section className="page-media">
             <div className="page-media-wrapper">
-              <h2>Concept</h2>
-              <p>content coming soon..</p>
+              <h2>Theme</h2>
+              <p>With the identical goal as my other project, <Link to={"/battlefield6"}></Link>, I wanted to imagine and present a updated UI/HUD but this time for <strong>Elden Ring</strong>. My considerations for this particular project was also to try to match the aesthetics of previous <i>"Souls"</i> titles of <a
+                href="https://www.fromsoftware.jp/ww/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >FROM SOFTWARE</a>, but also trying to be a bit for <strong>imaginative</strong> and preferably make it a bit more <strong>modern</strong> as a common trope of the <i>"Souls"</i> games' UI is that they are functional, but not beautiful.</p>
               <br />
-              <h2>Process</h2>
-              <p>content coming soon..</p>
+              {/* <div className="work-pairs">
+                <img
+                  className="content-image"
+                  src={EldenRingStylesheet}
+                  alt="Stylesheet showing and describing what fonts, colors, and forms was used for the project"
+                />
+                <div>
+                  <h3>Stylesheet</h3>
+                  <p>asd</p>
+                </div>
+              </div>
+              <div className="work-pairs">
+                <img
+                  className="content-image"
+                  src={EldenRingStylesheet}
+                  alt="Sketches and low-fidelity wireframes of the menus"
+                />
+                <div>
+                  <h3>Sketching & wireframing</h3>
+                  <p>asd</p>
+                </div>
+              </div>
+              <div className="image-duo">
+                <div>
+                  <h3>Icon iteration</h3>
+                  <p>asd</p>
+                  <img src={EldenRingIconIteration} alt="asd" />
+                </div>
+                <div>
+                  <h3>Iconography</h3>
+                  <p>asd</p>
+                  <img src={EldenRingIconography} alt="asd" />
+                </div>
+              </div>
+              <br /> */}
+              <h2>High-fidelity wireframes</h2>
+              {/* <p>asd</p> */}
               <br />
               <div className="image-grid">
-                <img src={EldenRingImage02} alt="elden ring 2" />
-                <img src={EldenRingImage03} alt="elden ring 3" />
-                <img src={EldenRingImage04} alt="elden ring 4" />
-                <img src={EldenRingImage05} alt="elden ring 5" />
-                <img src={EldenRingImage06} alt="elden ring 6" />
-                <img src={EldenRingImage07} alt="elden ring 7" />
+                <img src={EldenRingHighFidelityWireframe01} alt="High-fidelity wireframe of the main menu" />
+                <img src={EldenRingHighFidelityWireframe02} alt="High-fidelity wireframe of character creation screen" />
+                <img src={EldenRingHighFidelityWireframe03} alt="High-fidelity wireframe of the class selection panel on the character creation screen" />
               </div>
             </div>
           </section>

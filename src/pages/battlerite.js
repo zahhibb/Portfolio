@@ -6,18 +6,12 @@ import "../App.css";
 
 import BattleriteImage01 from "../resources/images/battlerite_01.jpeg";
 import BattleriteImage02 from "../resources/images/battlerite_02.jpg";
-// import BattleriteImage03 from "../resources/images/battlerite_03.jpg";
-// import BattleriteImage04 from "../resources/images/battlerite_05.jpg";
 
 import BattleriteGeneralImage01 from "../resources/images/payload_sketch.jpg";
 import BattleriteGeneralImage02 from "../resources/images/healthorb.png";
 import BattleriteGeneralImage03 from "../resources/images/energyorb.png";
 import BattleriteGeneralImage04 from "../resources/images/RuneOfBone.png";
 import BattleriteGeneralImage05 from "../resources/images/boneorbSpawnLocation.png";
-// import BattleriteGeneralImage06 from "../resources/images/";
-// import BattleriteGeneralImage07 from "../resources/images/";
-
-// import BattleriteTutorialimage from "../resources/images/";
 
 import BattleriteEggBrawlImage01 from "../resources/images/battlerite-egg-brawl.jpg";
 import BattleriteEggBrawlImage02 from "../resources/images/Battlerite_Dodgeball.png";
@@ -27,6 +21,10 @@ import BattleriteEggBrawlImage04 from "../resources/images/bakkoeggbrawl.png";
 // import BattleriteRocketBalloonImage01 from "../resources/images/";
 // import BattleriteRocketBalloonImage02 from "../resources/images/";
 // import BattleriteRocketBalloonImage03 from "../resources/images/";
+
+// import BattleriteBattlegroundsImage01 from "../resources/images/";
+// import BattleriteBattlegroundsImage02 from "../resources/images/";
+// import BattleriteBattlegroundsImage03 from "../resources/images/";
 
 import { projectQuickLinks } from "./index";
 
@@ -115,7 +113,7 @@ const Battlerite = () => {
                   <p>
                     Three game modes were developed for the game in 8 months
                     during my internship (in addition to some contract work
-                    over the summer).
+                    over the summer), primarily by me and 3 other interns (we were 2 designers and 2 programmers in total, me being one of the programmers).
                   </p>
                 </div>
                 <div>
@@ -167,23 +165,25 @@ const Battlerite = () => {
           <section className="page-section general">
             <div className="content-section-wrapper">
               <div className="content">
-                <h2>Concept</h2>
-                <p>
-                  The premise of the internship was to work together with the
-                  studio to ideate, prototype, and iterate on discovering
-                  valuable data on what genre of game modes would work well with
-                  their tools, using mostly previously made assets.
-                </p>
-                <br />
-                <h2>Process</h2>
-                <p>
-                  The work began by disassembling already defined game modes
-                  that other games tend to use, to see if it could fit well into
-                  Battlerite's combat-filled and tumultuous gameplay.
-                  Additionally we had to take into account to primarily use
-                  assets and systems that the game had already defined such as
-                  health/energy orbs, maps, destructible objects, etc.
-                </p>
+                <div>
+                  <h2>Premise</h2>
+                  <p>
+                    The premise of the internship was to work together with the
+                    studio to ideate, prototype, and iterate on discovering
+                    valuable data on what genre of game modes would work well with
+                    their tools, using mostly previously made assets.
+                  </p>
+                  <br />
+                  <h2>Process</h2>
+                  <p>
+                    The work began by disassembling already defined game modes
+                    that other games tend to use, to see if it could fit well into
+                    Battlerite's combat-filled and tumultuous gameplay.
+                    Additionally we had to take into account to primarily use
+                    assets and systems that the game had already defined such as
+                    health/energy orbs, maps, destructible objects, etc.
+                  </p>
+                </div>
                 <br />
                 <div className="orb-references">
                   <div>
@@ -351,9 +351,9 @@ const Battlerite = () => {
                   it into the final design, but I had a great time nonetheless
                   and learned a lot about UI design and user affordances.
                 </p>
-                <br />
+                {/* <br />
                 <h2>Tutorial encounter design</h2>
-                <p>content coming soon..</p>
+                <p>content coming soon..</p> */}
               </div>
             </div>
           </section>
@@ -372,7 +372,7 @@ const Battlerite = () => {
                 <p>
                   The first significant project I worked on at Stunlock Studios
                   was <b>Bakko's Egg Brawl</b>, or just simply <i>Dodgeball</i>{" "}
-                  as we called it internally. I worked on this from conception
+                  as we called it internally. Us interns worked on this from conception
                   to release for approx. 2 months.
                 </p>
                 <br />
@@ -436,7 +436,7 @@ const Battlerite = () => {
               </div>
             </div>
           </section>
-          <section className="page-section rocket-balloon">
+          {/* <section className="page-section rocket-balloon">
             <div className="content-section-wrapper">
               <div className="image"></div>
               <div className="content">
@@ -453,7 +453,7 @@ const Battlerite = () => {
               </div>
               <div className="image"></div>
             </div>
-          </section>
+          </section> */}
           {/* <section className="page-media">
             <div className="page-media-wrapper">
               <div className="video-wrapper">

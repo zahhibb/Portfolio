@@ -4,8 +4,6 @@ import Footer from '../sections/footer'
 import { Link } from 'react-router-dom'
 import '../App.css'
 
-import DummyImage from '../resources/images/dummy-image.jpg';
-
 import PioneerSketchImage01 from "../resources/images/pioneer_sketches_00.png";
 import PioneerSketchImage02 from "../resources/images/pioneer_sketches_01.png";
 import PioneerLowFidImage from "../resources/images/pioneer_low-fidelity.jpg";
@@ -138,19 +136,19 @@ const Pioneer = () => {
                 <img src={PioneerHighFidImage3} alt="High-fidelity wireframes of singleplayer (Venture) gear loadout, and arsenal screens" />
                 <img src={PioneerHighFidImage4} alt="High-fidelity wireframes of Social and Profile menus" />
               </div>
-              <br />
+              {/* <br />
               <br />
               <div className='image-solo'>
                 <h3>Unity implementation</h3>
                 <p>description coming soon..</p>
                 <div className="image-grid">
-                  <img src={DummyImage} alt="Low-fidelity wireframes of the previous sketches" />
+                  <img src={PioneerLowFidImage} alt="asd" />
                 </div>
               </div>
               <br />
               <br />
               <h3>Ending statements</h3>
-              <p>Content text coming soon..</p>
+              <p>Content text coming soon..</p> */}
             </div>
           </section>
         </div>

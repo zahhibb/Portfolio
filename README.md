@@ -1,11 +1,12 @@
 ### Portfolio site to showcase whatever I feel needs to be shown, and mainly made to learn more about Netlify, ReactJS and other modules.
 
 ### ToDo
-#### - Add Battlerite 'tutorial design' content
+#### - Add Battlerite 'UI/tutorial design' content
 #### - Add Battlerite-Rocket Balloon content
 #### - Add Battlerite-Battlegrounds content
 #### - Finish PIONEER content
 #### - Finish Battlefield6 content
+#####   - Stylesheet description & thoughts
 #### - Finish Elden Ring content
 #### - Add more credits to external resources
 #### - Smooth scrolling on from header-section

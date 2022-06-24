@@ -15,7 +15,7 @@ import AkinedPossessMechanicGif from "../resources/images/possess_mechanic.gif";
 import AkinedLeverSystemGif from "../resources/images/lever_system.gif";
 import AkinedSoundCuesGif from "../resources/images/sound_cues.gif";
 
-import GDD from "../resources/documents/AKINED - GDD.pdf";
+import GDD from "../resources/documents/AKINED_GDD.pdf";
 import PostMortem from "../resources/documents/Post_Mortem_-_Game_Project_1_Akined_JoakimHedman.pdf";
 import { projectQuickLinks } from "./index";
 
