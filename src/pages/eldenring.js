@@ -102,7 +102,7 @@ const Eldenring = () => {
                 href="https://www.fromsoftware.jp/ww/"
                 target="_blank"
                 rel="noopener noreferrer"
-              >FROM SOFTWARE</a>, but also trying to be a bit for <strong>imaginative</strong> and preferably make it a bit more <strong>modern</strong> as a common trope of the <i>"Souls"</i> games' UI is that they are functional, but not beautiful.</p>
+              >FROM SOFTWARE</a>, but also trying to be a bit for <strong>imaginative</strong> and preferably make it a bit more <strong>modern</strong> as a common trope of the <i>"Souls"</i> games' UI is that they are functional, but not aesthetically pleasing.</p>
               <br />
               {/* <div className="work-pairs">
                 <img
