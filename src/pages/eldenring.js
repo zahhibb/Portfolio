@@ -98,7 +98,7 @@ const Eldenring = () => {
           <section className="page-media">
             <div className="page-media-wrapper">
               <h2>Theme</h2>
-              <p>With the identical goal as my other project, <Link to={"/battlefield6"}></Link>, I wanted to imagine and present a updated UI/HUD but this time for <strong>Elden Ring</strong>. My considerations for this particular project was also to try to match the aesthetics of previous <i>"Souls"</i> titles of <a
+              <p>With the identical goal as my other project, <Link to={"/battlefield6"}>Battlefield 6</Link>, I wanted to imagine and present a updated UI/HUD but this time for <strong>Elden Ring</strong>. My considerations for this particular project was also to try to match the aesthetics of previous <i>"Souls"</i> titles of <a
                 href="https://www.fromsoftware.jp/ww/"
                 target="_blank"
                 rel="noopener noreferrer"

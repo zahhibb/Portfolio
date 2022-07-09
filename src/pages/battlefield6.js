@@ -79,7 +79,7 @@ const Battlefield6 = () => {
                   </p>
                   <br />
                   <p>
-                    Prior to thi, I had no education or skill in <strong>UI design</strong> and
+                    Prior to this, I had no education or skill in <strong>UI design</strong> and
                     this was heavily based on my own <strong>bias and preference.</strong>
                   </p>
                 </div>
@@ -150,7 +150,7 @@ const Battlefield6 = () => {
                     <li><strong>The first wireframe</strong> was basically a carbon copy of <i>Battlefield 5's</i> main menu. I was primarily getting familiarized with the <strong>Adobe XD</strong> at this point as I hadn't used it before.</li>
                     <li>The <strong>second wireframe</strong> was decent but I felt I steered off too much from the identity of the <i>Battlefield</i> design.</li>
                     <li><strong>The third pass</strong> is where I felt I was getting close, however, the navigation didn't feel modern enough and the general layout didn't have an intention.</li>
-                    <li><strong>Fourth and last iteration</strong>. Here I removed the container element of the navigation bar to make it stand out more and modified the layout to present a sort of hierarchical design. The largest element being the Hero/CTA and the other stacked elements being staggered to virtually present an arrow pointing towards the CTA.</li>
+                    <li><strong>Fourth and last iteration</strong>. Here I removed the container element of the navigation bar to make the selected option stand out more and modified the layout to present a sort of hierarchical design. The largest element being the Hero/CTA and the other stacked elements being staggered to virtually present an arrow pointing towards the CTA.</li>
                   </ul>
                 </div>
               </div>

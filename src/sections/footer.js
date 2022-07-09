@@ -4,7 +4,7 @@ import '../App.css'
 
 import GameImg1 from '../resources/images/eldenring.png'
 import GameImg2 from '../resources/images/dyinglight2.jpg'
-import GameImg3 from '../resources/images/valheim.png'
+import GameImg3 from '../resources/images/vrising_thumbnail.jpg'
 
 function InterestGameItem({ title, image }) {
   return <img src={image} alt="Anno 1800 cover art" title={title} />
@@ -29,11 +29,12 @@ class Footer extends Component {
                 imageAlt={'Dying Light 2 cover art'}
               />
               <InterestGameItem
-                title={'Valheim'}
+                title={'V Rising'}
                 image={GameImg3}
-                imageAlt={'Valheim cover art'}
+                imageAlt={'V Rising cover art'}
               />
             </div>
+            {/* <Link to={'/gamelist'}>Check out my personal game lists</Link> */}
           </div>
           <div className="footer-details">
             <p>Reach out to me on any of these channels:</p>
@@ -77,7 +78,8 @@ class Footer extends Component {
             <Link to={'/credits'}>Credits</Link>
             <span>|</span>
             <span>
-              Site made by<Link to={'/about'}>me</Link>!
+              Site made by
+              <Link to={{ pathname: '/about', hash: '#about' }}>me</Link>!
             </span>
           </div>
         </div>

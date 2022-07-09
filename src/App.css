@@ -92,6 +92,7 @@ a:hover {
   flex: 1;
   margin: 0 auto;
   border-radius: 100%;
+  border: 1px solid #30367b;
   width: 100%;
   min-width: 200px;
   max-width: 300px;
@@ -1293,6 +1294,10 @@ footer {
   align-self: center;
 }
 
+.work-pairs img {
+  object-fit: contain;
+}
+
 @media only screen and (min-width: 425px) {
   .status-item h3 {
     margin: 0;
@@ -1591,8 +1596,10 @@ footer {
   color: #ffff00;
 }
 
-.bakko-egg-brawl ul li {
-  margin-left: 1.5rem;
+.bakko-egg-brawl ul li,
+.rocket-balloon-brawl ul li,
+.battlegrounds ul li {
+  list-style: inside;
 }
 
 .content-image.small {
@@ -1606,7 +1613,8 @@ footer {
   margin: 0 auto;
 }
 
-.bakko-egg-brawl .content-section-wrapper .image-grid {
+.bakko-egg-brawl .content-section-wrapper .image-grid,
+.rocket-balloon-brawl .content-section-wrapper .image-grid {
   margin: 2rem 0;
 }
 
@@ -1620,13 +1628,14 @@ footer {
 
 .general .content-image,
 .bakko-egg-brawl .content-image,
-.rocket-balloon .content-image,
+.rocket-balloon-brawl .content-image,
 .battlegrounds .content-image {
   height: 100%;
   width: 100%;
 }
 
-.bakko-egg-brawl .image-grid:last-of-type {
+.bakko-egg-brawl .image-grid:last-of-type,
+.rocket-balloon-brawl .image-grid:last-of-type {
   clear: both;
 }
 
@@ -1676,7 +1685,7 @@ footer {
 
   .general .content-image,
   .bakko-egg-brawl .content-image,
-  .rocket-balloon .content-image,
+  .rocket-balloon-brawl .content-image,
   .battlegrounds .content-image {
     min-height: 280px;
     max-height: 320px;
@@ -1978,6 +1987,103 @@ footer {
     position: relative;
     bottom: 4rem;
   }
+}
+
+/* Game List */
+.game-list {
+  padding-top: 3rem;
+  background: #1e1e1e;
+  height: 100%;
+  width: 100%;
+}
+
+.playing-list {
+  display: inline-block;
+  margin-top: 2rem;
+  width: 70%;
+}
+
+.playing-list-item-container {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.playing-list-item {
+  flex: 30%;
+  max-width: 30%;
+}
+
+.list-content-item {
+  width: 270px;
+  height: 320px;
+  border: 2px solid #333;
+  border-radius: 24px;
+  box-shadow: #111 0px 0px 12px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.list-item-image-container {
+  display: block;
+  width: 100%;
+  height: 65%;
+  background: #ddd;
+  overflow: hidden;
+}
+
+.list-item-image-container img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.WOW img {
+  position: relative;
+  bottom: 120px;
+}
+.RDR2 img {
+  position: relative;
+  bottom: 130px;
+}
+.ER img {
+  width: 140%;
+  position: relative;
+  right: 50px;
+}
+.HOMAM3 img {
+  position: relative;
+  bottom: 100px;
+}
+
+.list-item-details {
+  height: 100%;
+  border-top: 2px solid #934E27;
+  background: radial-gradient(circle at 50%, #333 50%, #1e1e1e);
+}
+
+.list-item-details h3 {
+  margin-top: 0.25rem;
+  font-family: Alegreya-sans-regular;
+  font-weight: 100;
+  text-shadow: rgba(0, 0, 0, 0.75) 0px 2px 3px;
+}
+
+.list-content-item ul {
+  margin-top: 0.7rem;
+  margin-left: .75rem;
+}
+
+.list-content-item ul li {
+  list-style: none;
+  font-size: 0.6rem;
+  float: left;
+  width: 60px;
+  padding: 0.5rem 0.5rem;
+  background: url('../src/resources/images/SquareEmblem.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* GameDev resources */
