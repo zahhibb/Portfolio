@@ -1,140 +1,207 @@
 export default [
   {
     id: 0,
-    image: '',
+    image: 'https://gepig.com/game_cover_460w/4579.jpg',
     title: 'Silver',
-    details: ['Fantasy', 'Action', 'RPG'],
+    details: [
+      { title: 'Action', url: '' },
+      { title: 'RPG', url: '' },
+    ],
   },
   {
     id: 1,
     image: '',
     title: 'Moonlighter',
-    details: ['Fantasy', 'Action', 'RPG'],
+    details: [
+      { title: 'Action', url: '' },
+      { title: 'RPG', url: '' },
+    ],
   },
   {
     id: 2,
     image: '',
     title: 'Legend of Zelda: Breath of the Wild',
-    details: ['Fantasy', 'Action', 'Adventure'],
+    details: [
+      { title: 'Action', url: '' },
+      { title: 'Adventure', url: '' },
+    ],
   },
   {
     id: 3,
     image: '',
     title: 'Commandos 2',
-    details: ['WW2', 'Action', 'RTT'],
+    details: [
+      { title: 'WW2', url: '' },
+      { title: 'Action', url: '' },
+      { title: 'RTT', url: '' },
+    ],
   },
   {
     id: 4,
     image: '',
     title: 'Apex Legends',
-    details: ['Multiplayer', 'FPS'],
+    details: [
+      { title: 'Multiplayer', url: '' },
+      { title: 'FPS', url: '' },
+    ],
   },
   {
     id: 5,
     image: '',
     title: "Dragon's Dogma",
-    details: ['Fantasy', 'Action', 'RPG'],
+    details: [
+      { title: 'Action', url: '' },
+      { title: 'RPG', url: '' },
+    ],
   },
   {
     id: 6,
     image: '',
     title: 'Valheim',
-    details: ['Fantasy', 'Survival', 'Sandbox'],
+    details: [
+      { title: 'Survival', url: '' },
+      { title: 'Sandbox', url: '' },
+    ],
   },
   {
     id: 7,
     image: '',
     title: 'The Elder Scrolls V: Skyrim',
-    details: ['Fantasy', 'Action', 'RPG'],
+    details: [
+      { title: 'Action', url: '' },
+      { title: 'RPG', url: '' },
+    ],
   },
   {
     id: 8,
     image: '',
     title: 'Divinity Original Sin 2',
-    details: ['Fantasy', 'RPG'],
+    details: [{ title: 'RPG', url: '' }],
   },
   {
     id: 9,
     image: '',
     title: 'Darkest Dungeon',
-    details: ['Fantasy', 'Roguelike', 'RPG'],
+    details: [
+      { title: 'Roguelike', url: '' },
+      { title: 'RPG', url: '' },
+    ],
   },
   {
     id: 10,
     image: '',
     title: 'The Witcher 3: Wild Hunt',
-    details: ['Fantasy', 'Action', 'RPG'],
+    details: [
+      { title: 'Action', url: '' },
+      { title: 'RPG', url: '' },
+    ],
   },
   {
     id: 11,
     image: '',
     title: 'Dark Messiah of Might and Magic',
-    details: ['Fantasy', 'Action', 'RPG'],
+    details: [
+      { title: 'Action', url: '' },
+      { title: 'RPG', url: '' },
+    ],
   },
   {
     id: 12,
     image: '',
     title: 'Counter-Strike',
-    details: ['Multiplayer', 'FPS'],
+    details: [
+      { title: 'Multiplayer', url: '' },
+      { title: 'FPS', url: '' },
+    ],
   },
   {
     id: 13,
     image: '',
     title: 'Fable',
-    details: ['Fantasy', 'Action', 'RPG'],
+    details: [
+      { title: 'Action', url: '' },
+      { title: 'RPG', url: '' },
+    ],
   },
   {
     id: 14,
     image: '',
     title: 'Far Cry 2',
-    details: ['Action', 'FPS'],
+    details: [
+      { title: 'Action', url: '' },
+      { title: 'FPS', url: '' },
+    ],
   },
   {
     id: 15,
     image: '',
     title: 'Black & White',
-    details: ['God'],
+    details: [{ title: 'God', url: '' }],
   },
   {
     id: 15,
     image: '',
     title: 'C&C: Red Alert 2',
-    details: ['Fantasy', 'RTS'],
+    details: [{ title: 'RTS', url: '' }],
   },
   {
     id: 16,
     image: '',
     title: 'Splinter Cell: Chaos Theory',
-    details: ['Stealth', 'Action', 'Adventure'],
+    details: [
+      { title: 'Stealth', url: '' },
+      { title: 'Action', url: '' },
+      { title: 'Adventure', url: '' },
+    ],
   },
   {
     id: 17,
     image: '',
     title: 'Hitman: Blood Money',
-    details: ['Stealth'],
+    details: [{ title: 'Stealth', url: '' }],
   },
   {
     id: 18,
     image: '',
     title: 'C&C: Generals',
-    details: ['Action', 'FPS'],
+    details: [
+      { title: 'Action', url: '' },
+      { title: 'FPS', url: '' },
+    ],
   },
   {
     id: 19,
     image: '',
     title: 'Max Payne',
-    details: ['Neo-noir', 'Third-person', 'Shooter'],
+    details: [
+      { title: 'Neo-noir', url: '' },
+      { title: 'Third-person', url: '' },
+      { title: 'Shooter', url: '' },
+    ],
   },
   {
     id: 20,
     image: '',
     title: 'Portal 2',
-    details: ['Puzzle', 'Platform'],
+    details: [
+      { title: 'Puzzle', url: '' },
+      { title: 'Platforn', url: '' },
+    ],
   },
   {
-    id: 0,
+    id: 21,
     image: '',
-    title: '',
-    details: ['', ''],
+    title: 'Subnautica',
+    details: [
+      { title: 'Survival', url: '' },
+      { title: 'Action', url: '' },
+      { title: 'Adventure', url: '' },
+    ],
+  },
+  {
+    id: 22,
+    image: '',
+    title: 'Valheim',
+    details: [{ title: 'Survival', url: '' }],
   },
 ]

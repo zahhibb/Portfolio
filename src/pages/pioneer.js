@@ -16,7 +16,7 @@ import PioneerHighFidImage4 from '../resources/images/pioneer_social_profile.jpg
 import { projectQuickLinks } from './index'
 
 function StatusItem({ title, content }) {
-  let contentList = content.map((item, key) => <h3 key={key}>{item}</h3>)
+  let contentList = content.map((item, key) => <h3 key={key}>{item.title}</h3>)
   return (
     <div className="status-item">
       <h3>{title}</h3>
@@ -42,11 +42,20 @@ const Pioneer = () => {
           <section className="page-intro">
             <div className="page-intro-wrapper">
               <div className="status-panel">
-                <StatusItem title={'Team Size'} content={['1 (solo)']} />
-                <StatusItem title={'Duration'} content={['4 weeks']} />
+                <StatusItem
+                  title={'Team Size'}
+                  content={[{ title: '1 (solo)' }]}
+                />
+                <StatusItem
+                  title={'Duration'}
+                  content={[
+                    { title: '[4 weeks]' },
+                    { title: '22 Nov 2021 — 17 Dec 2021' },
+                  ]}
+                />
                 <StatusItem
                   title={'Engine & Tools'}
-                  content={['Unity, Figma, Photoshop']}
+                  content={[{ title: 'Unity, Figma, Photoshop' }]}
                 />
               </div>
               <div className="definitions">

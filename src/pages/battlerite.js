@@ -28,11 +28,27 @@ import RocketBalloonBrawlHeader from '../resources/images/Rocket-Balloon-Brawl_h
 
 import { projectQuickLinks } from './index'
 
-function StatusItem({ title, content }) {
-  let contentList = content.map((item, key) => <h3 key={key}>{item}</h3>)
+function StatusItem({ title, contentHead, content }) {
+  let contentList = content.map((item, key) => (
+    <a key={key} href={item.url} target="_blank" rel="noopener noreferrer">
+      <h3>{item.title}</h3>
+    </a>
+  ))
   return (
     <div className="status-item">
       <h3>{title}</h3>
+      <h3>{contentHead}</h3>
+      {contentList}
+    </div>
+  )
+}
+
+function StatusItemWithoutLinks({ title, contentHead, content }) {
+  let contentList = content.map((item, key) => <h3 key={key}>{item.title}</h3>)
+  return (
+    <div className="status-item">
+      <h3>{title}</h3>
+      <h3>{contentHead}</h3>
       {contentList}
     </div>
   )
@@ -55,15 +71,47 @@ const Battlerite = () => {
           <section className="page-intro">
             <div className="page-intro-wrapper">
               <div className="status-panel">
-                <StatusItem title={'Team Size'} content={['4 interns']} />
                 <StatusItem
-                  title={'Role(s)'}
-                  content={['Gameplay Programmer', 'Technical Designer']}
+                  title={'Team Size'}
+                  contentHead={'[4 interns]'}
+                  content={[
+                    {
+                      title: 'Joakim Hedman',
+                      url: 'https://www.linkedin.com/in/joakim-hedman/',
+                    },
+                    {
+                      title: 'Erik Grönlund',
+                      url:
+                        'https://www.linkedin.com/in/erik-gr%C3%B6nlund-8b77a996/',
+                    },
+                    {
+                      title: 'Andreas Lidell',
+                      url:
+                        'https://www.linkedin.com/in/andreas-lidell-439b5589/',
+                    },
+                    {
+                      title: 'Gustaf Wall',
+                      url: 'https://www.linkedin.com/in/gustaf-wall-416070b9/',
+                    },
+                  ]}
                 />
-                <StatusItem title={'Duration'} content={['8 months']} />
-                <StatusItem
+                <StatusItemWithoutLinks
+                  title={'Role(s)'}
+                  content={[
+                    { title: 'Gameplay Programmer' },
+                    { title: 'Technical Designer' },
+                  ]}
+                />
+                <StatusItemWithoutLinks
+                  title={'Duration'}
+                  content={[
+                    { title: '[8 months]' },
+                    { title: `Jan 2017 — Aug 2017` },
+                  ]}
+                />
+                <StatusItemWithoutLinks
                   title={'Engine & Tools'}
-                  content={['Unity & proprietary engine']}
+                  content={[{ title: 'Unity & proprietary engine' }]}
                 />
               </div>
               <div className="video-wrapper">
@@ -479,10 +527,10 @@ const Battlerite = () => {
                 <br />
                 <p>
                   In addition to this primary{' '}
-                  <strong>king-of-the-hill/payload mechanic</strong>{' '}
-                  there are substantial changes in how the core
-                  game loop of a match functions &#8212; one of the more stand-out
-                  features being players now respawn after being killed.
+                  <strong>king-of-the-hill/payload mechanic</strong> there are
+                  substantial changes in how the core game loop of a match
+                  functions &#8212; one of the more stand-out features being
+                  players now respawn after being killed.
                 </p>
                 <p></p>
                 <h3>[More content coming soon!]</h3>

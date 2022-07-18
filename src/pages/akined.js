@@ -1,38 +1,53 @@
-import React, { useEffect } from "react";
-import Navigation from "../components/Navigation/navigation";
-import Footer from "../sections/footer";
-import { Link } from "react-router-dom";
-import "../App.css";
+import React, { useEffect } from 'react'
+import Navigation from '../components/Navigation/navigation'
+import Footer from '../sections/footer'
+import { Link } from 'react-router-dom'
+import '../App.css'
 
-import AkinedImage01 from "../resources/images/akined_gameplay1.png";
-import AkinedImage02 from "../resources/images/akined_gameplay2.png";
-import AkinedImage03 from "../resources/images/akined_miro_planning.png";
-import AkinedImage04 from "../resources/images/AKINED_LevelDesign_sketch.jpeg";
-import AkinedImage05 from "../resources/images/paper-prototype-2.jpg";
-import AkinedImage06 from "../resources/images/greybox-02.png";
+import AkinedImage01 from '../resources/images/akined_gameplay1.png'
+import AkinedImage02 from '../resources/images/akined_gameplay2.png'
+import AkinedImage03 from '../resources/images/akined_miro_planning.png'
+import AkinedImage04 from '../resources/images/AKINED_LevelDesign_sketch.jpeg'
+import AkinedImage05 from '../resources/images/paper-prototype-2.jpg'
+import AkinedImage06 from '../resources/images/greybox-02.png'
 
-import AkinedPossessMechanicGif from "../resources/images/possess_mechanic.gif";
-import AkinedLeverSystemGif from "../resources/images/lever_system.gif";
-import AkinedSoundCuesGif from "../resources/images/sound_cues.gif";
+import AkinedPossessMechanicGif from '../resources/images/possess_mechanic.gif'
+import AkinedLeverSystemGif from '../resources/images/lever_system.gif'
+import AkinedSoundCuesGif from '../resources/images/sound_cues.gif'
 
-import GDD from "../resources/documents/AKINED_GDD.pdf";
-import PostMortem from "../resources/documents/Post_Mortem_-_Game_Project_1_Akined_JoakimHedman.pdf";
-import { projectQuickLinks } from "./index";
+import GDD from '../resources/documents/AKINED_GDD.pdf'
+import PostMortem from '../resources/documents/Post_Mortem_-_Game_Project_1_Akined_JoakimHedman.pdf'
+import { projectQuickLinks } from './index'
 
 function StatusItem({ title, content }) {
-  let contentList = content.map((item, key) => <h3 key={key}>{item}</h3>);
+  let contentList = content.map((item, key) => (
+    <a key={key} href={item.url} target="_blank" rel="noopener noreferrer">
+      <h3>{item.title}</h3>
+    </a>
+  ))
   return (
     <div className="status-item">
       <h3>{title}</h3>
       {contentList}
     </div>
-  );
+  )
+}
+
+function StatusItemWithoutLinks({ title, contentHead, content }) {
+  let contentList = content.map((item, key) => <h3 key={key}>{item.title}</h3>)
+  return (
+    <div className="status-item">
+      <h3>{title}</h3>
+      <h3>{contentHead}</h3>
+      {contentList}
+    </div>
+  )
 }
 
 const Akined = () => {
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <div className="page">
@@ -46,13 +61,49 @@ const Akined = () => {
           <section className="page-intro">
             <div className="page-intro-wrapper">
               <div className="status-panel">
-                <StatusItem title={"Team Size"} content={["4"]} />
                 <StatusItem
-                  title={"Role"}
-                  content={["Programmer", "Game Designer", "Level Designer"]}
+                  title={'Team Size'}
+                  contentHead={'[4]'}
+                  content={[
+                    {
+                      title: 'Joakim Hedman',
+                      url: 'https://www.linkedin.com/in/joakim-hedman/',
+                    },
+                    {
+                      title: 'Wes Ekman',
+                      url: 'https://www.linkedin.com/in/wes-ekman-74648a220/',
+                    },
+                    {
+                      title: 'Vincent Nord',
+                      url:
+                        'https://www.linkedin.com/in/vincent-nord-425598147/?originalSubdomain=se',
+                    },
+                    {
+                      title: 'Oskar Nilsson',
+                      url:
+                        'https://www.linkedin.com/in/oskar-nilsson-361085224/',
+                    },
+                  ]}
                 />
-                <StatusItem title={"Duration"} content={["4 weeks"]} />
-                <StatusItem title={"Engine"} content={["Unity"]} />
+                <StatusItemWithoutLinks
+                  title={'Role'}
+                  content={[
+                    { title: 'Programmer' },
+                    { title: 'Game Designer' },
+                    { title: 'Level Designer' },
+                  ]}
+                />
+                <StatusItemWithoutLinks
+                  title={'Duration'}
+                  content={[
+                    { title: '[4 weeks]' },
+                    { title: '18 Oct 2021 — 12 Nov 2021' },
+                  ]}
+                />
+                <StatusItemWithoutLinks
+                  title={'Engine'}
+                  content={[{ title: 'Unity' }]}
+                />
               </div>
               <div className="video-wrapper">
                 <iframe
@@ -103,32 +154,34 @@ const Akined = () => {
                   <br />
                   <p>
                     The game was made in 4 weeks by 4 people; 2 UX designers and
-                    2 Project managers, during my education at <a
+                    2 Project managers, during my education at{' '}
+                    <a
                       href="https://futuregames.se/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       FutureGames
-                    </a>.
+                    </a>
+                    .
                   </p>
                 </div>
                 <div>
                   <h2>My contributions</h2>
                   <p>
                     While I initially was going to focus on UX and Level design
-                    as is the direction of my studies and my interest, I had
-                    to step up and be the programmer of this project because of
+                    as is the direction of my studies and my interest, I had to
+                    step up and be the programmer of this project because of
                     some unforeseen circumstances that both of the programmers
                     assigned to our team left the education.
                   </p>
                   <p>
-                    I, fortunately, had some experience in <b>C# programming</b>{" "}
+                    I, fortunately, had some experience in <b>C# programming</b>{' '}
                     and <b>Unity</b> so we could still create a game, though we
                     had to re-scope the project a lot.
                   </p>
                   <br />
                   <p>
-                    On this project, I worked on <b>programming</b>,{" "}
+                    On this project, I worked on <b>programming</b>,{' '}
                     <b>level-</b> & <b>system design</b>.
                   </p>
                 </div>
@@ -165,10 +218,9 @@ const Akined = () => {
                 <br />
                 <p>
                   The concept we decided on was a combination of one of mine and
-                  the other UX designer's ideas, which was a horror-Esque
-                  puzzle game where you could switch between 2 characters; a
-                  living human and a spirit/devil, trying to escape a house of
-                  traps.
+                  the other UX designer's ideas, which was a horror-Esque puzzle
+                  game where you could switch between 2 characters; a living
+                  human and a spirit/devil, trying to escape a house of traps.
                 </p>
                 <br />
                 <p>
@@ -182,9 +234,9 @@ const Akined = () => {
                 <br />
                 <h2>Process</h2>
                 <p>
-                  Our process came down to <b>sketching</b> and{" "}
+                  Our process came down to <b>sketching</b> and{' '}
                   <b>paper prototyping</b> at first, and when we felt we had
-                  established our initial design we began with <b>greyboxing</b>{" "}
+                  established our initial design we began with <b>greyboxing</b>{' '}
                   some basic levels/puzzles.
                 </p>
                 <div className="image-grid akined-process-items">
@@ -203,8 +255,8 @@ const Akined = () => {
                 </div>
                 <p>
                   Together with the, at the time, sole programmer of our group
-                  we set up the technical parts of the project -{" "}
-                  <i>Unity project files</i>, <i>Version Control</i>, and{" "}
+                  we set up the technical parts of the project -{' '}
+                  <i>Unity project files</i>, <i>Version Control</i>, and{' '}
                   <i>code & file standards</i>. We worked steadily but
                   unfortunately our last and only programmer left the education
                   and I was the one with the most previous relevant technical
@@ -214,7 +266,10 @@ const Akined = () => {
                 <p>
                   Now we had to be flexible, so we restructured the project and
                   I went to work on the main mechanics right away, and worked on
-                  programming-related tasks for the rest of the project, while the other designer and the project managers work on everythng non-technical such as level-dressing, UI design, and music/sounds.
+                  programming-related tasks for the rest of the project, while
+                  the other designer and the project managers work on everythng
+                  non-technical such as level-dressing, UI design, and
+                  music/sounds.
                 </p>
                 <br />
                 <h2>Designs & systems I personally worked on</h2>
@@ -247,8 +302,8 @@ const Akined = () => {
                     alt="Player possessing valve and then using it to extend a bridge."
                   />
                   <p>
-                    Versatile valve/lever system to handle a kind of parent{" "}
-                    {"<"}-{">"} child hierarchy. Such as, a simple valve could
+                    Versatile valve/lever system to handle a kind of parent{' '}
+                    {'<'}-{'>'} child hierarchy. Such as, a simple valve could
                     interact with various objects simultaneously and perform
                     different actions on each based on their states and what
                     exposed operations they had.
@@ -280,13 +335,13 @@ const Akined = () => {
                         A swirling tether/link between Adam and the Spirit that
                         would emphasize their connection to each other. The link
                         was intended to be one of the main threats of the game,
-                        which would break if the characters got too far
-                        away from each other, resulting in death.
+                        which would break if the characters got too far away
+                        from each other, resulting in death.
                       </p>
                       <p>
-                        We felt this mechanic could be expanded on
-                        later as a type of progression system to present more
-                        intricate puzzles.
+                        We felt this mechanic could be expanded on later as a
+                        type of progression system to present more intricate
+                        puzzles.
                       </p>
                     </li>
                     <li>
@@ -295,10 +350,10 @@ const Akined = () => {
                       </p>
                       <p>
                         Initially, we intended to have all objects in the
-                        environment have specific abilities when possessed,
-                        for example, turning on generators to power
-                        magnets/conveyor belts or turning on/off lights to solve
-                        light-related puzzles.
+                        environment have specific abilities when possessed, for
+                        example, turning on generators to power magnets/conveyor
+                        belts or turning on/off lights to solve light-related
+                        puzzles.
                       </p>
                     </li>
                     <li>
@@ -315,7 +370,8 @@ const Akined = () => {
                       </p>
                       <p>
                         A lot of inspiration for this, both mechanically and
-                        aesthetically, came from the game series <i>Luigi's Mansion</i>.
+                        aesthetically, came from the game series{' '}
+                        <i>Luigi's Mansion</i>.
                       </p>
                     </li>
                   </ul>
@@ -326,7 +382,15 @@ const Akined = () => {
           <section className="page-media">
             <div className="page-media-wrapper video">
               <div className="video-wrapper">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/DB10CP7ovSQ" title="Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/DB10CP7ovSQ"
+                  title="Gameplay"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
               </div>
             </div>
           </section>
@@ -352,7 +416,7 @@ const Akined = () => {
       </div>
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default Akined;
+export default Akined
