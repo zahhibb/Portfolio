@@ -1,49 +1,63 @@
-import React, { useEffect } from "react";
-import Navigation from "../components/Navigation/navigation";
-import Footer from "../sections/footer";
-import { Link } from "react-router-dom";
-import "../App.css";
+import React, { useEffect } from 'react'
+import Navigation from '../components/Navigation/navigation'
+import Footer from '../sections/footer'
+import { Link } from 'react-router-dom'
+import '../App.css'
 
-import BattleriteImage01 from "../resources/images/battlerite_01.jpeg";
-import BattleriteImage02 from "../resources/images/battlerite_02.jpg";
-// import BattleriteImage03 from "../resources/images/battlerite_03.jpg";
-// import BattleriteImage04 from "../resources/images/battlerite_05.jpg";
+import Gameplay1 from '../resources/images/battlerite_01.jpeg'
+import Gameplay2 from '../resources/images/battlerite_02.jpg'
 
-import BattleriteGeneralImage01 from "../resources/images/payload_sketch.jpg";
-import BattleriteGeneralImage02 from "../resources/images/healthorb.png";
-import BattleriteGeneralImage03 from "../resources/images/energyorb.png";
-import BattleriteGeneralImage04 from "../resources/images/RuneOfBone.png";
-import BattleriteGeneralImage05 from "../resources/images/boneorbSpawnLocation.png";
-// import BattleriteGeneralImage06 from "../resources/images/";
-// import BattleriteGeneralImage07 from "../resources/images/";
+import PayloadSketch from '../resources/images/payload_sketch.jpg'
+import HealthOrb from '../resources/images/healthorb.png'
+import EnergyOrb from '../resources/images/energyorb.png'
+import RuneOfBone from '../resources/images/RuneOfBone.png'
+import BoneOrbSpawnLocation from '../resources/images/boneorbSpawnLocation.png'
 
-// import BattleriteTutorialimage from "../resources/images/";
+import EggBrawlHeader from '../resources/images/battlerite-egg-brawl.jpg'
+import DodgeballPrototype from '../resources/images/Battlerite_Dodgeball.png'
+import EggBrawl1 from '../resources/images/bakko_egg_brawl_01.jpg'
+import EggBrawl2 from '../resources/images/bakkoeggbrawl.png'
 
-import BattleriteEggBrawlImage01 from "../resources/images/battlerite-egg-brawl.jpg";
-import BattleriteEggBrawlImage02 from "../resources/images/Battlerite_Dodgeball.png";
-import BattleriteEggBrawlImage03 from "../resources/images/bakko_egg_brawl_01.jpg";
-import BattleriteEggBrawlImage04 from "../resources/images/bakkoeggbrawl.png";
-
-// import BattleriteRocketBalloonImage01 from "../resources/images/";
+import RocketBalloonBrawlHeader from '../resources/images/Rocket-Balloon-Brawl_header.png'
 // import BattleriteRocketBalloonImage02 from "../resources/images/";
 // import BattleriteRocketBalloonImage03 from "../resources/images/";
 
-import { projectQuickLinks } from "./index";
+// import BattleriteBattlegroundsImage01 from "../resources/images/";
+// import BattleriteBattlegroundsImage02 from "../resources/images/";
+// import BattleriteBattlegroundsImage03 from "../resources/images/";
 
-function StatusItem({ title, content }) {
-  let contentList = content.map((item, key) => <h3 key={key}>{item}</h3>);
+import { projectQuickLinks } from './index'
+
+function StatusItem({ title, contentHead, content }) {
+  let contentList = content.map((item, key) => (
+    <a key={key} href={item.url} target="_blank" rel="noopener noreferrer">
+      <h3>{item.title}</h3>
+    </a>
+  ))
   return (
     <div className="status-item">
       <h3>{title}</h3>
+      <h3>{contentHead}</h3>
       {contentList}
     </div>
-  );
+  )
+}
+
+function StatusItemWithoutLinks({ title, contentHead, content }) {
+  let contentList = content.map((item, key) => <h3 key={key}>{item.title}</h3>)
+  return (
+    <div className="status-item">
+      <h3>{title}</h3>
+      <h3>{contentHead}</h3>
+      {contentList}
+    </div>
+  )
 }
 
 const Battlerite = () => {
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <div className="page">
@@ -57,16 +71,59 @@ const Battlerite = () => {
           <section className="page-intro">
             <div className="page-intro-wrapper">
               <div className="status-panel">
-                <StatusItem title={"Team Size"} content={["4 interns"]} />
                 <StatusItem
-                  title={"Role(s)"}
-                  content={["Gameplay Programmer", "Technical Designer"]}
+                  title={'Team Size'}
+                  contentHead={'[4 interns]'}
+                  content={[
+                    {
+                      title: 'Joakim Hedman',
+                      url: 'https://www.linkedin.com/in/joakim-hedman/',
+                    },
+                    {
+                      title: 'Erik Grönlund',
+                      url:
+                        'https://www.linkedin.com/in/erik-gr%C3%B6nlund-8b77a996/',
+                    },
+                    {
+                      title: 'Andreas Lidell',
+                      url:
+                        'https://www.linkedin.com/in/andreas-lidell-439b5589/',
+                    },
+                    {
+                      title: 'Gustaf Wall',
+                      url: 'https://www.linkedin.com/in/gustaf-wall-416070b9/',
+                    },
+                  ]}
                 />
-                <StatusItem title={"Duration"} content={["8 months"]} />
-                <StatusItem
-                  title={"Engine & Tools"}
-                  content={["Unity & proprietary engine"]}
+                <StatusItemWithoutLinks
+                  title={'Role(s)'}
+                  content={[
+                    { title: 'Gameplay Programmer' },
+                    { title: 'Technical Designer' },
+                  ]}
                 />
+                <StatusItemWithoutLinks
+                  title={'Duration'}
+                  content={[
+                    { title: '[8 months]' },
+                    { title: `Jan 2017 — Aug 2017` },
+                  ]}
+                />
+                <StatusItemWithoutLinks
+                  title={'Engine & Tools'}
+                  content={[{ title: 'Unity & proprietary engine' }]}
+                />
+              </div>
+              <div className="video-wrapper">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/KU6Ra-P746k"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
               </div>
               <div className="files">
                 <div>
@@ -94,36 +151,38 @@ const Battlerite = () => {
                 <div>
                   <h2>Summary</h2>
                   <p>
-                    <b>Battlerite (Arena)</b> is an{" "}
-                    <i>Fantasy Top-down Team Arena Brawler</i> with focus on
+                    <b>Battlerite (Arena)</b> is a{' '}
+                    <i>Fantasy Top-down Team Arena Brawler</i> with a focus on
                     fast-paced action without any random elements. Two teams of
                     2 or 3 players fight against each other using their
                     specialized champions with varied abilities.
                   </p>
                   <br />
                   <p>
-                    Three game modes was developed for the game in 8 months
-                    during my internship (in addition with some contract work
-                    over the summer).
+                    Three game modes were developed for the game in 8 months
+                    during my internship (in addition to some contract work over
+                    the summer), primarily by me and 3 other interns (we were 2
+                    designers and 2 programmers in total, me being one of the
+                    programmers).
                   </p>
                 </div>
                 <div>
                   <h2>My contributions</h2>
                   <p>
                     I joined the studio with my specialization being in
-                    programming. The majority of my time was spent{" "}
+                    programming. The majority of my time was spent{' '}
                     <b>prototyping and developing new game modes</b>, but I also
-                    had the pleasure to work on multiple things like{" "}
+                    had the pleasure to work on multiple things like{' '}
                     <b>Encounter design</b> to update the tutorial and campaign
-                    mode, as well some minor <b>Level-</b>, and{" "}
+                    mode, as well some minor <b>Level-</b>, and{' '}
                     <b>Character design</b>.
                   </p>
                   <br />
                   <p>
-                    Additionally I got to help out on{" "}
-                    <b>UI wireframing and mockups</b> for the then upcoming UI
+                    Additionally, I got to help out on{' '}
+                    <b>UI wireframing and mockups</b> for the then-upcoming UI
                     overhaul (which you can read more about on Stunlock's at the
-                    time UI/UX designer Katey Parr's{" "}
+                    time UI/UX designer Katey Parr's{' '}
                     <a
                       href="http://kateyparr.com/project/battlerite-menu"
                       target="_blank"
@@ -142,45 +201,39 @@ const Battlerite = () => {
           <section className="page-media">
             <div className="page-media-wrapper">
               <div className="image-grid">
-                <img
-                  src={BattleriteImage01}
-                  alt="Battlerite match pre-engagement"
-                />
-                <img
-                  src={BattleriteImage02}
-                  alt="Battlerite 1 versus 1 battle"
-                />
-                {/* <img src={BattleriteImage03} alt="Battlerite 2 versus 1 battle" />
-                                <img src={BattleriteImage04} alt="Battlerite match winning screen" /> */}
+                <img src={Gameplay1} alt="Battlerite match pre-engagement" />
+                <img src={Gameplay2} alt="Battlerite 1 versus 1 battle" />
               </div>
             </div>
           </section>
           <section className="page-section general">
             <div className="content-section-wrapper">
               <div className="content">
-                <h2>Concept</h2>
-                <p>
-                  The premise of the internship was to work together with the
-                  studio to ideate, prototype, and iterate on discovering
-                  valuable data on what genre of game modes would work well with
-                  their tools, using mostly previously made assets.
-                </p>
-                <br />
-                <h2>Process</h2>
-                <p>
-                  The work began by disassembling already defined game modes
-                  that other games tend to use, to see if it could fit well into
-                  Battlerite's combat-filled and tumultuous gameplay.
-                  Additionally we had to take into account to primarily use
-                  assets and systems that the game had already defined such as
-                  health/energy orbs, maps, destructible objects, etc.
-                </p>
+                <div>
+                  <h2>Premise</h2>
+                  <p>
+                    The premise of the internship was to work together with the
+                    studio to ideate, prototype, and iterate on discovering
+                    valuable data on what genre of game modes would work well
+                    with their tools, using mostly previously made assets.
+                  </p>
+                  <br />
+                  <h2>Process</h2>
+                  <p>
+                    The work began by disassembling already defined game modes
+                    that other games tend to use, to see if it could fit well
+                    into Battlerite's combat-filled and tumultuous gameplay.
+                    Additionally we had to take into account to primarily use
+                    assets and systems that the game had already defined such as
+                    health/energy orbs, maps, destructible objects, etc.
+                  </p>
+                </div>
                 <br />
                 <div className="orb-references">
                   <div>
                     <img
                       className="orb-reference-image"
-                      src={BattleriteGeneralImage02}
+                      src={HealthOrb}
                       alt="Battlerite health orb"
                     />
                     <h4>Health orb</h4>
@@ -189,7 +242,7 @@ const Battlerite = () => {
                   <div>
                     <img
                       className="orb-reference-image"
-                      src={BattleriteGeneralImage04}
+                      src={RuneOfBone}
                       alt="Battlerite bone orb"
                     />
                     <h4>Bone orb</h4>
@@ -200,7 +253,7 @@ const Battlerite = () => {
                   <div>
                     <img
                       className="orb-reference-image"
-                      src={BattleriteGeneralImage03}
+                      src={EnergyOrb}
                       alt="Battlerite energy orb"
                     />
                     <h4>Energy orb</h4>
@@ -211,7 +264,7 @@ const Battlerite = () => {
                 <div className="image-container payload-sketch right">
                   <img
                     className="content-image"
-                    src={BattleriteGeneralImage01}
+                    src={PayloadSketch}
                     alt="Battlerite payload sketch"
                   />
                   <span>Payload path sketch</span>
@@ -263,7 +316,7 @@ const Battlerite = () => {
                   <div className="image-container right">
                     <img
                       className="content-image small"
-                      src={BattleriteGeneralImage05}
+                      src={BoneOrbSpawnLocation}
                       alt="Battlerite bone orb spawning circle"
                     />
                     <span>Bone orb spawning circle</span>
@@ -302,7 +355,7 @@ const Battlerite = () => {
                   <br />
                   <p>
                     Later on, parts of my payload system would end up being the
-                    base for one of the released game modes;{" "}
+                    base for one of the released game modes;{' '}
                     <i>Rocket Balloon</i>, which I'll go into a bit more detail
                     further down.
                   </p>
@@ -310,7 +363,7 @@ const Battlerite = () => {
                 <br />
                 <h2>UI concepting</h2>
                 <p>
-                  For a short duration of my time at Stunlock I helped on
+                  For a short duration of my time at Stunlock I helped with
                   ideation, sketching, and UI wireframing of a redesign of the
                   main menu and replay module; Odeum, for their upcoming “Mega
                   patch”, that would overhaul almost the entirety of their UI
@@ -320,8 +373,8 @@ const Battlerite = () => {
                 <p>
                   The goal was to rebrand the Battlerite aesthetics from the
                   current busy and brown design into a modern take; going for a
-                  more minimalistic approach with less bevels and ornaments, and
-                  more towards sleek sharp edges and clear visibility.
+                  more minimalistic approach with fewer bevels and ornaments,
+                  and more towards sleek sharp edges and clear visibility.
                 </p>
                 <br />
                 <p>My work consisted of:</p>
@@ -338,13 +391,14 @@ const Battlerite = () => {
                 </ul>
                 <br />
                 <p>
-                  In the end it's hard to tell if parts of the work I did made
+                  In the end, it's hard to tell if parts of the work I did made
                   it into the final design, but I had a great time nonetheless
-                  and learned a lot about UI design and user affordances.
+                  and learned a bit about <strong>UI design</strong> and{' '}
+                  <strong>user affordances</strong>.
                 </p>
-                <br />
-                <h2>Tutorial encounter design</h2>
-                <p>content coming soon..</p>
+                {/* <br />
+                <h2>Tutorial & campaign encounter design</h2>
+                <p>content coming soon..</p> */}
               </div>
             </div>
           </section>
@@ -355,29 +409,45 @@ const Battlerite = () => {
                 <div className="image-container header right">
                   <img
                     className="content-image"
-                    src={BattleriteEggBrawlImage01}
-                    alt="Battlerite Bakko's Egg Brawl characters and assets"
+                    src={EggBrawlHeader}
+                    alt="Battlerite Bakko's Egg Brawl concept header"
                   />
                 </div>
                 <h2>Bakko's Egg Brawl</h2>
                 <p>
                   The first significant project I worked on at Stunlock Studios
-                  was <b>Bakko's Egg Brawl</b>, or just simply <i>Dodgeball</i>
-                  as we called it internally. I worked on this from conception
-                  to release over the duration of ca. 2 months.
+                  was <strong>Bakko's Egg Brawl</strong>, or just simply{' '}
+                  <i>Dodgeball</i> as we called it internally. Us interns worked
+                  on this from conception to release for approx. 2 months.
                 </p>
                 <br />
                 <p>
-                  <b>My personal work on this project consisted of:</b>
+                  How the game mode works is that all contestants play as the
+                  same Champion; <i>Bakko</i>, in a 3v3 match where the only
+                  abilities they have at their disposal is a shield that
+                  reflects projectiles and a basic attack that knocks the
+                  opponent back and makes them drop their held egg.
+                </p>
+                <p>
+                  The main premise is to gather <strong>easter eggs</strong> of
+                  varying powers scattered and spawning throughout the arena,
+                  and throw them at the opposing team until their health is
+                  depleted.
+                </p>
+                <br />
+                <p>
+                  <strong>
+                    My personal work on this project consisted of:
+                  </strong>
                 </p>
                 <ul>
                   <li>
                     Designing and implementing a drop/pick-up mechanic, and also
                     a small system to visually change a Champion's current
-                    weapon slot into a picked up item.
+                    weapon slot into a picked-up item.
                   </li>
                   <li>
-                    Creating basic system for spawning randomized items of
+                    Creating a basic system for spawning randomized items of
                     different types at specific locations.
                   </li>
                   <li>Game balancing & spell effects modifications.</li>
@@ -386,11 +456,11 @@ const Battlerite = () => {
                 <div className="prototype-gameplay image-container left">
                   <img
                     className="content-image"
-                    src={BattleriteEggBrawlImage02}
+                    src={DodgeballPrototype}
                     alt="Battlerite Bakko's Egg Brawl dodgeball prototype"
                   />
                   <span>
-                    Early prototype gameplay where the playable character were
+                    Early prototype gameplay where the playable characters were
                     different and the projectiles were still just pink spheres.
                   </span>
                 </div>
@@ -402,9 +472,8 @@ const Battlerite = () => {
                   for the upcoming easter event.
                 </p>
                 <br />
-                {/* <p style={{ clear: "left" }}> */}
                 <p>
-                  Read more about it on the official{" "}
+                  Read more about it on the official{' '}
                   <a
                     href="https://blog.stunlock.com/dev-blog-010/"
                     target="_blank"
@@ -417,35 +486,103 @@ const Battlerite = () => {
                 </p>
                 <div className="image-grid">
                   <img
-                    src={BattleriteEggBrawlImage03}
+                    src={EggBrawl1}
                     alt="Battlerite Bakko's Egg Brawl reflecting egg"
                   />
                   <img
-                    src={BattleriteEggBrawlImage04}
+                    src={EggBrawl2}
                     alt="Battlerite Bakko's Egg Brawl 4 player standoff"
                   />
                 </div>
-                {/* <div className="video-wrapper">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lPjtXo3sNlI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div> */}
               </div>
             </div>
           </section>
-          <section className="page-section rocket-balloon">
+
+          <section className="page-section rocket-balloon-brawl">
             <div className="content-section-wrapper">
               <div className="image"></div>
               <div className="content">
-                {/* <div className="content-image header"></div> */}
-                {/* <img
-                  className="content-image first"
-                  src={BattleriteEggBrawlImage01}
-                  alt="Battlerite Rocket Balloon"
-                /> */}
-                <h2>Rocket Balloon</h2>
-                <p>content coming soon..</p>
+                <div className="image-container header right">
+                  <img
+                    className="content-image"
+                    src={RocketBalloonBrawlHeader}
+                    alt="Battlerite Rocket Balloon Brawl concept header"
+                  />
+                </div>
+                <h2>Rocket Balloon Brawl</h2>
+                <p>
+                  The second large project I worked on and the one I had the
+                  most hands-on involvement with both design wise and
+                  implementation.
+                </p>
+                <br />
+                <p>
+                  The game mode involves 6 players distributed into 2 equal
+                  teams, as per usual in the <i>Battlerite</i> formula, however
+                  the goal of this mode is to{' '}
+                  <strong>take control of the Rocket Balloon</strong> that will
+                  fire at the controlling team's opponent's{' '}
+                  <strong>Guardian (base structure)</strong>.
+                </p>
+                <br />
+                <p>
+                  In addition to this primary{' '}
+                  <strong>king-of-the-hill/payload mechanic</strong> there are
+                  substantial changes in how the core game loop of a match
+                  functions &#8212; one of the more stand-out features being
+                  players now respawn after being killed.
+                </p>
+                <p></p>
+                <h3>[More content coming soon!]</h3>
+                {/* <br />
+                <p>
+                  <strong>
+                    My personal work on this project consisted of:
+                  </strong>
+                </p>
+                <ul>
+                  <li>bullet 1</li>
+                  <li>bullet 2</li>
+                  <li>bullet 3</li>
+                </ul>
+                <br />
+                <div className="prototype-gameplay image-container left">
+                  <img
+                    className="content-image"
+                    src={DodgeballPrototype}
+                    alt="asdasdasd"
+                  />
+                  <span>content content</span>
+                </div>
+                <br />
+                <p>content content</p>
+                <br />
+                <p>
+                  Read more about it on the official{' '}
+                  <a
+                    href="https://blog.stunlock.com/dev-blog-010/"
+                    target="_blank"
+                    title="Battlerite blog website link"
+                    rel="noopener noreferrer"
+                  >
+                    Battlerite DevBlog
+                  </a>
+                  .
+                </p>
+                <div className="image-grid">
+                  <img
+                    src={EggBrawl1}
+                    alt="Battlerite Bakko's Egg Brawl reflecting egg"
+                  />
+                  <img
+                    src={EggBrawl2}
+                    alt="Battlerite Bakko's Egg Brawl 4 player standoff"
+                  />
+                </div> */}
               </div>
             </div>
           </section>
+          {/*
           <section className="page-section battlegrounds">
             <div className="content-section-wrapper">
               <div className="content">
@@ -454,8 +591,8 @@ const Battlerite = () => {
               </div>
               <div className="image"></div>
             </div>
-          </section>
-          <section className="page-media">
+          </section> */}
+          {/* <section className="page-media">
             <div className="page-media-wrapper">
               <div className="video-wrapper">
                 <iframe
@@ -469,7 +606,7 @@ const Battlerite = () => {
                 ></iframe>
               </div>
             </div>
-          </section>
+          </section> */}
         </div>
 
         <div className="quick-links">
@@ -493,7 +630,7 @@ const Battlerite = () => {
       </div>
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default Battlerite;
+export default Battlerite

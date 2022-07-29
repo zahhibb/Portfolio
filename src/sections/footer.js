@@ -4,17 +4,9 @@ import '../App.css'
 
 import GameImg1 from '../resources/images/eldenring.png'
 import GameImg2 from '../resources/images/dyinglight2.jpg'
-import GameImg3 from '../resources/images/valheim.png'
+import GameImg3 from '../resources/images/vrising_thumbnail.jpg'
 
-// function InterestGameItem({ title, url, image }) {
-//   return (
-//     <a href={url} target="_blank" rel="noopener noreferrer" title={title}>
-//       <img src={image} alt="Anno 1800 cover art" />
-//     </a>
-//   )
-// }
-
-function InterestGameItemWithoutLink({ title, image }) {
+function InterestGameItem({ title, image }) {
   return <img src={image} alt="Anno 1800 cover art" title={title} />
 }
 
@@ -26,40 +18,23 @@ class Footer extends Component {
           <div className="footer-interests">
             <p>The games I am currently playing:</p>
             <div>
-              <InterestGameItemWithoutLink
+              <InterestGameItem
                 title={'Elden Ring'}
                 image={GameImg1}
                 imageAlt={'Elden Ring cover art'}
               />
-              <InterestGameItemWithoutLink
+              <InterestGameItem
                 title={'Dying Light 2'}
                 image={GameImg2}
-                imageAlt={'Dying Light 2 cover art'}
-              />
-              <InterestGameItemWithoutLink
-                title={'Valheim'}
-                image={GameImg3}
-                imageAlt={'Valheim cover art'}
-              />
-              {/* <InterestGameItem
-                title={'Elden Ring'}
-                image={GameImg1}
-                url={'https://en.bandainamcoent.eu/elden-ring/elden-ring'}
-                imageAlt={'Elden Ring cover art'}
-              /> */}
-              {/* <InterestGameItem
-                title={'Dying Light 2'}
-                image={GameImg2}
-                url={'https://dl2.dyinglightgame.com/'}
                 imageAlt={'Dying Light 2 cover art'}
               />
               <InterestGameItem
-                title={'Valheim'}
+                title={'V Rising'}
                 image={GameImg3}
-                url={'https://www.valheimgame.com/'}
-                imageAlt={'Valheim cover art'}
-              /> */}
+                imageAlt={'V Rising cover art'}
+              />
             </div>
+            {/* <Link to={'/gamelist'}>Check out my personal game lists</Link> */}
           </div>
           <div className="footer-details">
             <p>Reach out to me on any of these channels:</p>
@@ -71,19 +46,26 @@ class Footer extends Component {
               >
                 LinkedIn
               </a>
-              <a
+              {/* <a
                 href="https://twitter.com/Zahhibb"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Twitter
-              </a>
+              </a> */}
               <a
                 href="https://www.artstation.com/zahhibb"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 ArtStation
+              </a>
+              <a
+                href="https://zahhibb.itch.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Itch.io
               </a>
               <a href="mailto:jocke_hedman@hotmail.com">Email</a>
             </div>
@@ -94,6 +76,11 @@ class Footer extends Component {
             <span>Joakim Hedman</span>
             <span>|</span>
             <Link to={'/credits'}>Credits</Link>
+            <span>|</span>
+            <span>
+              Site made by
+              <Link to={{ pathname: '/about', hash: '#about' }}>me</Link>!
+            </span>
           </div>
         </div>
       </footer>

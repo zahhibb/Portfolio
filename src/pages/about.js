@@ -1,13 +1,13 @@
-import React, { useEffect } from "react";
-import Navigation from "../components/Navigation/navigation";
-import Footer from "../sections/footer";
+import React, { useEffect } from 'react'
+import Navigation from '../components/Navigation/navigation'
+import Footer from '../sections/footer'
 
-import personalImg from "../resources/images/UX_21_Joakim_Hedman_400.png";
+import personalImg from '../resources/images/JoakimHedmanProfile2.jpg'
 
 const About = () => {
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <section className="about" id="about">
@@ -52,7 +52,7 @@ const About = () => {
                   Itch.io
                 </a>
               </div>
-              <div className="twitter">
+              {/* <div className="twitter">
                 <a
                   href="https://twitter.com/Zahhibb"
                   target="_blank"
@@ -61,7 +61,7 @@ const About = () => {
                 >
                   Twitter
                 </a>
-              </div>
+              </div> */}
               <div className="mail">
                 <a
                   href="mailto:jocke_hedman@hotmail.com"
@@ -74,7 +74,7 @@ const About = () => {
             <div className="files">
               <div>
                 <a
-                  href="https://drive.google.com/file/d/1BvtJ-cyhcy0ENY_s60DxBICjE-Fld7FH/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1YLznL1Zzp20bmVcCgM7XAdc_bpm4ZudR/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   title="Resume link"
@@ -94,17 +94,16 @@ const About = () => {
               </h3>
               <div className="list-container">
                 <ul>
-                  <li>
-                    <span>System design</span>
-                  </li>
+                  <li>UI design & Wireframing</li>
+                  <li>System design</li>
                   <li>Level design</li>
-                  <li>Scripting (C#, UE4 Blueprints)</li>
-                  <li>Ideation & brainstorming</li>
+                  <li>Scripting (C#, UE Blueprints)</li>
                 </ul>
                 <ul>
                   <li>UX-research & testing</li>
-                  <li>Wireframing</li>
                   <li>Rapid prototyping</li>
+                  <li>Ideation & brainstorming</li>
+                  <li>Web development (HTML5, CSS3, JavaScript)</li>
                 </ul>
               </div>
             </div>
@@ -114,18 +113,26 @@ const About = () => {
               </h3>
               <p>
                 I see myself as an honest, jolly, and proactive guy with
-                enormous curiosity in games and game development. Some of things
-                that I really enjoy is helping people out and solving problems.
-                In general I simply love trying out new things in life, be it
-                from devouring new kinds of food, experiencing different
+                enormous curiosity in games and game development. Some of the
+                things that I enjoy are helping people out and solving problems.
+                In general, I simply love trying out new things in life, be it
+                devouring new kinds of food, experiencing different cultures,
+                and saying "Yes!" to all opportunities that come my way!
+              </p>
+              {/* <p>
+                I see myself as an honest, jolly, and proactive guy with
+                enormous curiosity in games and game development. Some of the things
+                that I enjoy are helping people out and solving problems.
+                In general, I simply love trying out new things in life, be it
+                 devouring new kinds of food, experiencing different
                 cultures, to taking on all manner of jobs that I can get my
                 hands on!
-              </p>
+              </p> */}
               <br />
               <p>
                 My interest in making and modifying games began in the late 90s
-                where I got curious and began editing values in game files to
-                modify stats of units inside{" "}
+                when I got curious and began editing the values of game files to
+                modify the stats of units inside of{' '}
                 <a
                   href="https://en.wikipedia.org/wiki/Heroes_of_Might_and_Magic_III"
                   target="_blank"
@@ -133,18 +140,19 @@ const About = () => {
                 >
                   Heroes of Might and Magic 3
                 </a>
-                , <i>one of my favourite games of all time</i>.
+                , <i>one of my favorite games of all time</i>.
               </p>
               <p>
-                Further down the line I began messing around with map-editors in{" "}
+                Further down the line, I began messing around with map editors
+                in{' '}
                 <a
                   href="https://en.wikipedia.org/wiki/Warcraft_III:_The_Frozen_Throne"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Warcraft 3
-                </a>{" "}
-                and{" "}
+                </a>{' '}
+                and{' '}
                 <a
                   href="https://en.wikipedia.org/wiki/Crysis"
                   target="_blank"
@@ -164,8 +172,8 @@ const About = () => {
                 I try my hardest to have laser focus on the task at hand and
                 enjoy delving down into the nitty-gritty details. I put a lot of
                 emphasis on defining ideas and my approach is to break them down
-                into bite-sized systems and mechanics, and further using what I learned to
-                plan out a thorough plan of action.
+                into bite-sized systems and mechanics, and further using what I
+                learned to plan out a thorough plan of action.
               </p>
               <br />
               <p>
@@ -176,7 +184,7 @@ const About = () => {
                 inherently practical where I ideate, design, and prototype using
                 tangible tools and methods such as card-sorting,
                 paper-prototyping, and various other techniques that I've
-                learned from my extensive experience with making games at{" "}
+                gathered from my extensive experience with making games at{' '}
                 <i>GameJams.</i>
               </p>
             </div>
@@ -185,7 +193,7 @@ const About = () => {
       </div>
       <Footer />
     </section>
-  );
-};
+  )
+}
 
-export default About;
+export default About
