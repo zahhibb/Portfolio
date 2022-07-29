@@ -1,4 +1,4 @@
-export default [
+const gamelist = [
   {
     id: 0,
     image: 'https://gepig.com/game_cover_460w/4579.jpg',
@@ -205,3 +205,4 @@ export default [
     details: [{ title: 'Survival', url: '' }],
   },
 ]
+export default gamelist;

@@ -176,14 +176,14 @@ function Index() {
                 />
                 <ProjectItem
                   title={'Battlefield "6"'}
-                  description={"UI concept"}
+                  description={"Personal | UI concept"}
                   url={"/battlefield6"}
                   imgClass={"battlefield6"}
                   tag={"UI design"}
                 />
                 <ProjectItem
                   title={"Elden Ring"}
-                  description={"UX/UI concept"}
+                  description={"Personal | UX/UI concept"}
                   url={"/eldenring"}
                   imgClass={"eldenring"}
                   tag={"UX/UI"}
