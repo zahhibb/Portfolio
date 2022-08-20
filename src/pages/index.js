@@ -196,7 +196,7 @@ function Index() {
                   url={"/battlefield6"}
                   imgClass={"battlefield6"}
                   tag={"UX/UI design"}
-                  tag2={"Personal project"}
+                  tag2={"Personal/fan project"}
                 />
                 <ProjectItem
                   title={"Elden Ring"}
@@ -204,7 +204,7 @@ function Index() {
                   url={"/eldenring"}
                   imgClass={"eldenring"}
                   tag={"UX/UI design"}
-                  tag2={"Personal project"}
+                  tag2={"Personal/fan project"}
                 />
               </div>
             </div>
