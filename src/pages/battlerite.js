@@ -7,15 +7,15 @@ import '../App.css'
 import Gameplay1 from '../resources/images/battlerite_01.jpeg'
 import Gameplay2 from '../resources/images/battlerite_02.jpg'
 
-import PayloadSketch from '../resources/images/battlerite-payload_sketch.jpg'
+import PayloadSketch from '../resources/images/battlerite_payload-sketch.jpg'
 // import HealthOrb from '../resources/images/healthorb.png'
 // import EnergyOrb from '../resources/images/energyorb.png'
 // import RuneOfBone from '../resources/images/RuneOfBone.png'
-import Orbs from '../resources/images/orbs.png'
-import BoneOrbSpawnLocation from '../resources/images/boneorbSpawnLocation.png'
+import Orbs from '../resources/images/battlerite_orbs.jpg'
+import BoneOrbSpawnLocation from '../resources/images/battlerite_boneOrbSpawnLocation.png'
 
 import EggBrawlHeader from '../resources/images/bakko-egg-brawl_header.jpg'
-import DodgeballPrototype from '../resources/images/bakko-egg-brawl_prototype.png'
+import EggBrawlPrototype from '../resources/images/bakko-egg-brawl_prototype.png'
 import EggBrawl1 from '../resources/images/bakko-egg-brawl_01.jpg'
 import EggBrawl2 from '../resources/images/bakko-egg-brawl_02.png'
 
@@ -304,7 +304,7 @@ const Battlerite = () => {
                       <span>Bone orb spawning circle</span>
                     </div>
                     <p>
-                      <b>Bone/middle orb</b>
+                      <b>Bone orb & spawning circle</b>
                     </p>
                     <ul>
                       <li>
@@ -439,7 +439,7 @@ const Battlerite = () => {
                 <div className="prototype-gameplay image-container left">
                   <img
                     className="content-image"
-                    src={DodgeballPrototype}
+                    src={EggBrawlPrototype}
                     alt="Battlerite Bakko's Egg Brawl dodgeball prototype"
                   />
                   <span>
@@ -502,6 +502,7 @@ const Battlerite = () => {
                   />
                 </div>
                 <h2>Rocket Balloon Brawl</h2>
+                <h3>~3 months</h3>
                 <p>
                   The second large project I worked on and the one I had the
                   most hands-on involvement with both design- and
@@ -532,85 +533,40 @@ const Battlerite = () => {
                 </p>
                 <ul>
                   <li>
-                    Designing and implementing the Rocket Balloon movement between checkpoints & active states (enabled firing, disabled firing, stop current shot).
+                    Designing and implementing the Rocket Balloon movement between checkpoints & firing logic (enable/disable shooting, stop current shot).
                   </li>
                   <li>
                     Working on and improving the capturing mechanic of the Rocket Balloon (capturing, contested, additive capturing speed).
                   </li>
                   <li>
-                    Implementing mechanics & active states of <u>Guardian</u> (health system, ).
+                    Implementing mechanics & active states of Guardian (health system, respawning players, Last stand buff)*.
                   </li>
-                  <p>* <i>Last stand:</i> Buff to team that lost their Guardian — possibility for </p>
+                  <p>*<i>Last stand:</i> Buff to team that lost their Guardian — designed for possibility of comeback.</p>
                 </ul>
                 <br />
-                <div className="prototype-gameplay image-container right">
+                {/* <div className="prototype-gameplay image-container right">
                   <img
                     className="content-image"
                     src={RocketBalloonBrawl3}
-                    alt="TODO"
+                    alt="3D model of the Rocket Balloon"
                   />
-                </div>
+                </div> */}
                 <br />
-                <p>
+                {/* <p>
                   asd asd asd asd asd asdasd asdas dasdasdasd asdasdasd asdas asfasfas dasd
-                </p>
+                </p> */}
                 <br />
                 <div className="image-grid">
                   <img
                     src={RocketBalloonBrawl1}
-                    alt="TODO"
+                    alt="Top-down view of the Rocket Balloon and the capture point"
                   />
                   <img
                     src={RocketBalloonBrawl2}
-                    alt="TODO"
+                    alt="Top-down view of one team's Guardian (base structure)"
                   />
                 </div>
                 <h3>[More content coming soon!]</h3>
-                {/* <br />
-                <p>
-                  <strong>
-                    My personal work on this project consisted of:
-                  </strong>
-                </p>
-                <ul>
-                  <li>bullet 1</li>
-                  <li>bullet 2</li>
-                  <li>bullet 3</li>
-                </ul>
-                <br />
-                <div className="prototype-gameplay image-container left">
-                  <img
-                    className="content-image"
-                    src={DodgeballPrototype}
-                    alt="asdasdasd"
-                  />
-                  <span>content content</span>
-                </div>
-                <br />
-                <p>content content</p>
-                <br />
-                <p>
-                  Read more about it on the official{' '}
-                  <a
-                    href="https://blog.stunlock.com/dev-blog-010/"
-                    target="_blank"
-                    title="Battlerite blog website link"
-                    rel="noopener noreferrer"
-                  >
-                    Battlerite DevBlog
-                  </a>
-                  .
-                </p>
-                <div className="image-grid">
-                  <img
-                    src={EggBrawl1}
-                    alt="Battlerite Bakko's Egg Brawl reflecting egg"
-                  />
-                  <img
-                    src={EggBrawl2}
-                    alt="Battlerite Bakko's Egg Brawl 4 player standoff"
-                  />
-                </div> */}
               </div>
             </div>
           </section>
