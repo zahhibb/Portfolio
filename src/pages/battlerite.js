@@ -502,7 +502,6 @@ const Battlerite = () => {
                   />
                 </div>
                 <h2>Rocket Balloon Brawl</h2>
-                <h3>~3 months</h3>
                 <p>
                   The second large project I worked on and the one I had the
                   most hands-on involvement with both design- and
