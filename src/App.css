@@ -139,13 +139,30 @@ a:hover {
 }
 
 .social-links div a {
+  position: relative;
   display: block;
   height: 30px;
   width: 30px;
   padding: 1rem;
+}
+
+.social-links .text {
   line-height: 0;
   font-size: 0;
-  color: transparent;
+  color: rgba(255, 255, 255, 0);
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  right: 0;
+  transition: 0.3s color ease-in-out, 0.2s top ease-in-out, 0.5s font-size ease-in-out;
+  pointer-events: none;
+}
+
+.social-links div:hover .text {
+  color: rgba(255, 255, 255, 1);
+  font-size: unset;
+  top: 4.5rem;
+  transition: 0.3s color ease-in-out, 0.2s top ease-in-out;
 }
 
 .social-links .linkedin a {
@@ -390,6 +407,11 @@ a:hover {
   padding: 0 0.5rem;
 }
 
+.project-item .tag2,
+.other-project-item .tag2 {
+  display: none;
+}
+
 .project-item .mobile-bar,
 .other-project-item .mobile-bar {
   margin: 0 !important;
@@ -456,6 +478,20 @@ hr {
   background-size: contain;
 }
 
+.page-container.eldritch .page-banner .banner-overlay {
+  background: #1d1223 url("resources/images/Eldritch_project-banner.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 90%;
+  background-size: cover;
+}
+
+.projects-container .eldritch {
+  background: #1d1223 url("resources/images/Eldritch_project-banner.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  background-size: contain;
+}
+
 .page-container.pioneer .page-banner .banner-overlay {
   background: url("resources/images/portfolio_pioneer_item.png");
   background-repeat: no-repeat;
@@ -512,12 +548,6 @@ hr {
   .other-projects-list div:not(:nth-child(2n + 1)) {
     margin-left: 1rem;
   }
-
-  /* .other-project-item-container {
-    flex: 50%;
-    max-width: 47%;
-    height: 180px;
-  } */
 }
 
 @media only screen and (min-width: 768px) {
@@ -599,6 +629,23 @@ hr {
     background-repeat: no-repeat;
     background-position: 50% 0%;
     background-size: cover;
+  }
+
+  .project-item .tag2,
+  .other-project-item .tag2 {
+    display: block;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    font-weight: 600;
+    letter-spacing: 0.75px;
+    color: #fff;
+    text-shadow: 0 0 20px #000, 0 0 5px #000;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    padding: 0 0.5rem;
   }
 }
 
@@ -975,15 +1022,14 @@ footer {
   font-weight: 300;
 }
 
-.status-item > h3:first-child {
+.status-item>h3:first-child {
   color: #ff8a37;
   margin-bottom: 0.5rem;
   font-weight: bold;
 }
 
-.status-item a:not(:first-child), .status-item h3:not(:first-child) {
-  
-}
+.status-item a:not(:first-child),
+.status-item h3:not(:first-child) {}
 
 .files {
   display: block;
@@ -1538,11 +1584,6 @@ footer {
 
 /* Battlerite */
 
-.battlerite .content > div h2 ,
-.battlerite .content > div p {
-  text-align: center;
-}
-
 .right {
   float: right;
   margin: 1rem 0 1rem 1rem;
@@ -1571,31 +1612,32 @@ footer {
   margin: 0;
 }
 
-.general .content-image.first {
-  float: right;
-  min-height: 360px;
-}
-
-.general ul li {
-  margin-left: 1.5rem;
-}
-
-.orb-references {
+.battlerite .general ul {
   display: flex;
-  text-align: center;
-  margin: 2rem auto;
+  flex-direction: column;
 }
 
-.orb-references div {
+.battlerite .general .process-list {
+  flex-direction: column;
+  list-style: none;
+}
+
+.battlerite .general .process-list>li {
   flex: 1;
+  margin: 0 1rem 1rem 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #666;
 }
 
-.orb-references h4 {
-  color: #fff;
+.battlerite .general .process-list .image-container {
+  width: 100%;
 }
 
-.orb-references span {
-  color: #ffff00;
+.battlerite .general .process-list img {
+  max-width: none !important;
+  max-height: 300px;
+  width: 100%;
+  object-fit: contain;
 }
 
 .bakko-egg-brawl ul li,
@@ -1613,11 +1655,6 @@ footer {
 .content-section-wrapper {
   width: 90%;
   margin: 0 auto;
-}
-
-.bakko-egg-brawl .content-section-wrapper .image-grid,
-.rocket-balloon-brawl .content-section-wrapper .image-grid {
-  margin: 2rem 0;
 }
 
 .content-section-wrapper .content {
@@ -1641,23 +1678,16 @@ footer {
   clear: both;
 }
 
-.payload-sketch {
-  float: none;
-  margin: auto;
-  display: block;
-}
-
-.payload-sketch .content-image {
-  max-height: none !important;
-  max-width: none !important;
-}
-
 .header {
   margin: 0;
 }
 
 .header.right {
   float: none;
+}
+
+.battlerite .ui-concepting ul {
+  list-style-position: inside;
 }
 
 .prototype-gameplay {
@@ -1701,13 +1731,6 @@ footer {
     width: 70%;
   }
 
-  .orb-references {
-    display: flex;
-    width: 75%;
-    text-align: center;
-    margin: 2rem auto;
-  }
-
   .prototype-gameplay span {
     max-width: 64%;
     min-width: 100%;
@@ -1716,15 +1739,20 @@ footer {
 }
 
 @media only screen and (min-width: 1024px) {
-  .payload-sketch {
-    float: right;
-    margin: 1rem 1rem 1rem 0;
-    display: inline-flex;
+  .battlerite .general .process-list {
+    flex-direction: row;
   }
 
-  .payload-sketch .content-image {
-    max-height: 320px !important;
-    max-width: 560px !important;
+  .battlerite .general .process-list>li {
+    padding-top: 0;
+    border: none;
+  }
+
+  .battlerite .general .process-list img {
+    max-width: none !important;
+    max-height: 300px;
+    width: 100%;
+    object-fit: contain;
   }
 }
 
@@ -2145,15 +2173,18 @@ footer {
   position: relative;
   bottom: 120px;
 }
+
 .RDR2 img {
   position: relative;
   bottom: 130px;
 }
+
 .ER img {
   width: 140%;
   position: relative;
   right: 50px;
 }
+
 .HOMAM3 img {
   position: relative;
   bottom: 100px;

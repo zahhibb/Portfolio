@@ -52,7 +52,7 @@ const Eldenring = () => {
                   ]}
                 />
                 <StatusItem
-                  title={'Tools'}
+                  title={'Software & Tools'}
                   content={[
                     { title: '[Adobe]' },
                     { title: 'XD, Photoshop, Illustrator' },
@@ -124,7 +124,7 @@ const Eldenring = () => {
                 , but also trying to be a bit for <strong>imaginative</strong>{' '}
                 and preferably make it a bit more <strong>modern</strong> as a
                 common trope of the <i>"Souls"</i> games' UI is that they are
-                functional, but not aesthetically pleasing.
+                functional, but not necessarily aesthetically pleasing.
               </p>
               <br />
               {/* <div className="work-pairs">
@@ -200,6 +200,24 @@ const Eldenring = () => {
             <span className="quick-link-image"></span>
           </div>
         </div>
+        {/* <div className="quick-links">
+          <div className="quick-link-container prev">
+            <Link to={projectQuickLinks[4].link}></Link>
+            <span className="quick-link-text">Prev Project</span>
+            <span className="quick-link-title">
+              {projectQuickLinks[4].name}
+            </span>
+            <span className="quick-link-image"></span>
+          </div>
+          <div className="quick-link-container">
+            <Link to={projectQuickLinks[0].link}></Link>
+            <span className="quick-link-text">Next Project</span>
+            <span className="quick-link-title">
+              {projectQuickLinks[0].name}
+            </span>
+            <span className="quick-link-image"></span>
+          </div>
+        </div> */}
       </div>
       <Footer />
     </div>

@@ -86,7 +86,7 @@ const Akined = () => {
                   ]}
                 />
                 <StatusItemWithoutLinks
-                  title={'Role'}
+                  title={'Role(s)'}
                   content={[
                     { title: 'Programmer' },
                     { title: 'Game Designer' },
@@ -101,8 +101,11 @@ const Akined = () => {
                   ]}
                 />
                 <StatusItemWithoutLinks
-                  title={'Engine'}
-                  content={[{ title: 'Unity' }]}
+                  title={'Software & Engines'}
+                  content={[
+                    { title: 'Unity' },
+                    { title: 'Photoshop' }
+                  ]}
                 />
               </div>
               <div className="video-wrapper">
@@ -367,8 +370,6 @@ const Akined = () => {
                         as a point to progress to the next level. The Player
                         would be free to roam between most of the rooms in any
                         way they want, to choose which puzzle to tackle first.
-                      </p>
-                      <p>
                         A lot of inspiration for this, both mechanically and
                         aesthetically, came from the game series{' '}
                         <i>Luigi's Mansion</i>.

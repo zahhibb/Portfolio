@@ -29,7 +29,7 @@ const About = () => {
                   rel="noopener noreferrer"
                   title="LinkedIn link"
                 >
-                  LinkedIn
+                  <span className='text'>LinkedIn</span>
                 </a>
               </div>
               <div className="artstation">
@@ -39,7 +39,7 @@ const About = () => {
                   rel="noopener noreferrer"
                   title="ArtStation link"
                 >
-                  ArtStation
+                  <span className='text'>ArtStation</span>
                 </a>
               </div>
               <div className="itch">
@@ -49,7 +49,7 @@ const About = () => {
                   rel="noopener noreferrer"
                   title="Itch.io link"
                 >
-                  Itch.io
+                  <span className='text'>Itch.io</span>
                 </a>
               </div>
               {/* <div className="twitter">
@@ -67,7 +67,7 @@ const About = () => {
                   href="mailto:jocke_hedman@hotmail.com"
                   title="Direct mail link"
                 >
-                  Mail
+                  <span className='text'>Mail</span>
                 </a>
               </div>
             </div>

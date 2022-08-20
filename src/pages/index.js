@@ -12,6 +12,10 @@ export var projectQuickLinks = [
     name: "akined",
     link: "/akined",
   },
+  // {
+  //   name: "eldritch",
+  //   link: "/eldritch",
+  // },
   {
     name: '"Pioneer" UI',
     link: "/pioneer",
@@ -26,7 +30,7 @@ export var projectQuickLinks = [
   },
 ];
 
-function ProjectItem({ title, description, url, imgClass, tag }) {
+function ProjectItem({ title, description, tag2, url, imgClass, tag }) {
   return (
     <div className="project-item-container">
       <div className={"project-item " + imgClass}>
@@ -36,6 +40,7 @@ function ProjectItem({ title, description, url, imgClass, tag }) {
           <span className="item-desc">{description}</span>
         </Link>
         <span className="tag">{tag}</span>
+        <span className="tag2">{tag2}</span>
         <div className="mobile-bar">
           <span className="mobile-bar-title">{title}</span>
           <span className="mobile-bar-desc">{description}</span>
@@ -90,7 +95,7 @@ function Index() {
                   FutureGames
                 </a> in Skellefteå, Sweden.
               </p>
-              <p>I consider myself a multidisciplinary game designer that enjoy diving deep into <span className="color-block">Intrinsic game design</span>, <span className="color-block">Level design</span>, and <span className="color-block">UI design</span>.</p>
+              <p>I consider myself a multidisciplinary designer that enjoy diving deep into <span className="color-block">Intrinsic gameplay design</span>, <span className="color-block">UI design</span>, and more.</p>
               <div className="social-links">
                 <div className="linkedin">
                   <a
@@ -99,7 +104,7 @@ function Index() {
                     rel="noopener noreferrer"
                     title="LinkedIn link"
                   >
-                    LinkedIn
+                    <span className="text">LinkedIn</span>
                   </a>
                 </div>
                 <div className="artstation">
@@ -109,7 +114,7 @@ function Index() {
                     rel="noopener noreferrer"
                     title="ArtStation link"
                   >
-                    ArtStation
+                    <span className="text">ArtStation</span>
                   </a>
                 </div>
                 <div className="itch">
@@ -119,7 +124,7 @@ function Index() {
                     rel="noopener noreferrer"
                     title="Itch.io link"
                   >
-                    Itch.io
+                    <span className="text">Itch.io</span>
                   </a>
                 </div>
                 {/* <div className="twitter">
@@ -137,7 +142,7 @@ function Index() {
                     href="mailto:jocke_hedman@hotmail.com"
                     title="Direct mail link"
                   >
-                    Mail
+                    <span className="text">Mail</span>
                   </a>
                 </div>
               </div>
@@ -159,6 +164,7 @@ function Index() {
                   url={"/battlerite"}
                   imgClass={"battlerite"}
                   tag={"Programming & Game design"}
+                  tag2={"Professional project"}
                 />
                 <ProjectItem
                   title={"Akined"}
@@ -166,57 +172,42 @@ function Index() {
                   url={"/akined"}
                   imgClass={"akined"}
                   tag={"Programming & Game design"}
+                  tag2={"Student project"}
                 />
+                {/* <ProjectItem
+                  title={'Eldritch'}
+                  description={"Rogue-like Card game"}
+                  url={"/eldritch"}
+                  imgClass={"eldritch"}
+                  tag={"UX/UI design"}
+                  tag2={"Student project"}
+                /> */}
                 <ProjectItem
                   title={'"Pioneer"'}
-                  description={"FPS UI"}
+                  description={"FPS UI concept"}
                   url={"/pioneer"}
                   imgClass={"pioneer"}
                   tag={"UX/UI design"}
+                  tag2={"Student project"}
                 />
                 <ProjectItem
                   title={'Battlefield "6"'}
                   description={"Personal | UI concept"}
                   url={"/battlefield6"}
                   imgClass={"battlefield6"}
-                  tag={"UI design"}
+                  tag={"UX/UI design"}
+                  tag2={"Personal project"}
                 />
                 <ProjectItem
                   title={"Elden Ring"}
                   description={"Personal | UX/UI concept"}
                   url={"/eldenring"}
                   imgClass={"eldenring"}
-                  tag={"UX/UI"}
+                  tag={"UX/UI design"}
+                  tag2={"Personal project"}
                 />
               </div>
             </div>
-            {/* <hr /> */}
-            {/* <div className="other-projects">
-              <h2>Other projects</h2>
-              <div className="other-projects-list">
-                <OtherProjectItem
-                  title={"Elden Ring UI concept"}
-                  description={"Personal project"}
-                  url={"/eldenring"}
-                  imgClass={"eldenring"}
-                  tag={"UX/UI"}
-                />
-                <OtherProjectItem
-                  title={"Outvaders Must Die"}
-                  description={"Nordic Game Jam 2016"}
-                  url={"/outvadersmustdie"}
-                  imgClass={"outvaders"}
-                  tag={"Scripting & Game design"}
-                />
-                <OtherProjectItem
-                  title={"Canvas Climber"}
-                  description={"School game project"}
-                  url={"/canvasclimber"}
-                  imgClass={"canvasclimber"}
-                  tag={"Scripting & UI pixel art"}
-                />
-              </div>
-            </div> */}
           </div>
         </div>
       </section>

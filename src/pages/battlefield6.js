@@ -58,7 +58,7 @@ const Battlefield6 = () => {
                   ]}
                 />
                 <StatusItem
-                  title={'Tools'}
+                  title={'Software & Tools'}
                   content={[
                     { title: '[Adobe]' },
                     { title: 'XD, Photoshop, Illustrator' },
@@ -345,6 +345,24 @@ const Battlefield6 = () => {
             <span className="quick-link-image"></span>
           </div>
         </div>
+        {/* <div className="quick-links">
+          <div className="quick-link-container prev">
+            <Link to={projectQuickLinks[3].link}></Link>
+            <span className="quick-link-text">Prev Project</span>
+            <span className="quick-link-title">
+              {projectQuickLinks[3].name}
+            </span>
+            <span className="quick-link-image"></span>
+          </div>
+          <div className="quick-link-container">
+            <Link to={projectQuickLinks[5].link}></Link>
+            <span className="quick-link-text">Next Project</span>
+            <span className="quick-link-title">
+              {projectQuickLinks[5].name}
+            </span>
+            <span className="quick-link-image"></span>
+          </div>
+        </div> */}
       </div>
       <Footer />
     </div>

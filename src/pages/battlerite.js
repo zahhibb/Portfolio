@@ -7,20 +7,22 @@ import '../App.css'
 import Gameplay1 from '../resources/images/battlerite_01.jpeg'
 import Gameplay2 from '../resources/images/battlerite_02.jpg'
 
-import PayloadSketch from '../resources/images/payload_sketch.jpg'
-import HealthOrb from '../resources/images/healthorb.png'
-import EnergyOrb from '../resources/images/energyorb.png'
-import RuneOfBone from '../resources/images/RuneOfBone.png'
+import PayloadSketch from '../resources/images/battlerite-payload_sketch.jpg'
+// import HealthOrb from '../resources/images/healthorb.png'
+// import EnergyOrb from '../resources/images/energyorb.png'
+// import RuneOfBone from '../resources/images/RuneOfBone.png'
+import Orbs from '../resources/images/orbs.png'
 import BoneOrbSpawnLocation from '../resources/images/boneorbSpawnLocation.png'
 
-import EggBrawlHeader from '../resources/images/battlerite-egg-brawl.jpg'
-import DodgeballPrototype from '../resources/images/Battlerite_Dodgeball.png'
-import EggBrawl1 from '../resources/images/bakko_egg_brawl_01.jpg'
-import EggBrawl2 from '../resources/images/bakkoeggbrawl.png'
+import EggBrawlHeader from '../resources/images/bakko-egg-brawl_header.jpg'
+import DodgeballPrototype from '../resources/images/bakko-egg-brawl_prototype.png'
+import EggBrawl1 from '../resources/images/bakko-egg-brawl_01.jpg'
+import EggBrawl2 from '../resources/images/bakko-egg-brawl_02.png'
 
 import RocketBalloonBrawlHeader from '../resources/images/Rocket-Balloon-Brawl_header.png'
-// import BattleriteRocketBalloonImage02 from "../resources/images/";
-// import BattleriteRocketBalloonImage03 from "../resources/images/";
+import RocketBalloonBrawl1 from "../resources/images/rocket-balloon-brawl_01.png";
+import RocketBalloonBrawl2 from "../resources/images/rocket-balloon-brawl_02.png";
+import RocketBalloonBrawl3 from "../resources/images/rocket-balloon-brawl_03.png";
 
 // import BattleriteBattlegroundsImage01 from "../resources/images/";
 // import BattleriteBattlegroundsImage02 from "../resources/images/";
@@ -110,8 +112,8 @@ const Battlerite = () => {
                   ]}
                 />
                 <StatusItemWithoutLinks
-                  title={'Engine & Tools'}
-                  content={[{ title: 'Unity & proprietary engine' }]}
+                  title={'Software & Engines'}
+                  content={[{ title: 'Unity & in-house engine' }]}
                 />
               </div>
               <div className="video-wrapper">
@@ -209,7 +211,7 @@ const Battlerite = () => {
           <section className="page-section general">
             <div className="content-section-wrapper">
               <div className="content">
-                <div>
+                <div className='premise'>
                   <h2>Premise</h2>
                   <p>
                     The premise of the internship was to work together with the
@@ -217,7 +219,9 @@ const Battlerite = () => {
                     valuable data on what genre of game modes would work well
                     with their tools, using mostly previously made assets.
                   </p>
-                  <br />
+                </div>
+                <br />
+                <div className='process'>
                   <h2>Process</h2>
                   <p>
                     The work began by disassembling already defined game modes
@@ -229,54 +233,23 @@ const Battlerite = () => {
                   </p>
                 </div>
                 <br />
-                <div className="orb-references">
-                  <div>
-                    <img
-                      className="orb-reference-image"
-                      src={HealthOrb}
-                      alt="Battlerite health orb"
-                    />
-                    <h4>Health orb</h4>
-                    <span>Pick-up that restores health</span>
-                  </div>
-                  <div>
-                    <img
-                      className="orb-reference-image"
-                      src={RuneOfBone}
-                      alt="Battlerite bone orb"
-                    />
-                    <h4>Bone orb</h4>
-                    <span>
-                      Destructible orb that grants large amount of energy
-                    </span>
-                  </div>
-                  <div>
-                    <img
-                      className="orb-reference-image"
-                      src={EnergyOrb}
-                      alt="Battlerite energy orb"
-                    />
-                    <h4>Energy orb</h4>
-                    <span>Pick-up that grants energy</span>
-                  </div>
-                </div>
-                <br />
-                <div className="image-container payload-sketch right">
-                  <img
-                    className="content-image"
-                    src={PayloadSketch}
-                    alt="Battlerite payload sketch"
-                  />
-                  <span>Payload path sketch</span>
-                </div>
                 <p>
                   My thought process on breaking down Battlerite's assets,
                   systems and mechanics was first to set up a definition/idea
                   list as to make it more readable and digestible, but also to
-                  define both the pros and cons of each respective design:
+                  define both the pros and cons of each respective design.
                 </p>
-                <ul>
+                <br />
+                <ul className='process-list'>
                   <li>
+                    <div className="image-container">
+                      <img
+                        className=""
+                        src={PayloadSketch}
+                        alt="Battlerite payload sketch"
+                      />
+                      <span>Payload path sketch</span>
+                    </div>
                     <p>
                       <b>Maps/Arenas</b>
                     </p>
@@ -296,6 +269,14 @@ const Battlerite = () => {
                     </ul>
                   </li>
                   <li>
+                    <div className="image-container">
+                      <img
+                        className=""
+                        src={Orbs}
+                        alt=""
+                      />
+                      <span>Bone Orb & pick-ups</span>
+                    </div>
                     <p>
                       <b>Health/energy orbs</b>
                     </p>
@@ -313,15 +294,15 @@ const Battlerite = () => {
                       </li>
                     </ul>
                   </li>
-                  <div className="image-container right">
-                    <img
-                      className="content-image small"
-                      src={BoneOrbSpawnLocation}
-                      alt="Battlerite bone orb spawning circle"
-                    />
-                    <span>Bone orb spawning circle</span>
-                  </div>
                   <li>
+                    <div className="image-container">
+                      <img
+                        className=""
+                        src={BoneOrbSpawnLocation}
+                        alt="Battlerite bone orb spawning circle"
+                      />
+                      <span>Bone orb spawning circle</span>
+                    </div>
                     <p>
                       <b>Bone/middle orb</b>
                     </p>
@@ -342,60 +323,62 @@ const Battlerite = () => {
                       </li>
                     </ul>
                   </li>
-                  <br />
-                  <p>
-                    Taking into account what I learned from my breakdown, I
-                    decided to begin working on the Payload system. I felt it
-                    could be extended further into other modes, it was a good
-                    starting point for learning the studio's tools and workflow,
-                    and that I needed to work fast and iteratively on this to
-                    find what is actually fun to do outside of Battlerite's
-                    tight and calculated combat.
-                  </p>
-                  <br />
-                  <p>
-                    Later on, parts of my payload system would end up being the
-                    base for one of the released game modes;{' '}
-                    <i>Rocket Balloon</i>, which I'll go into a bit more detail
-                    further down.
-                  </p>
-                </ul>
-                <br />
-                <h2>UI concepting</h2>
-                <p>
-                  For a short duration of my time at Stunlock I helped with
-                  ideation, sketching, and UI wireframing of a redesign of the
-                  main menu and replay module; Odeum, for their upcoming “Mega
-                  patch”, that would overhaul almost the entirety of their UI
-                  and UX in the game.
-                </p>
-                <br />
-                <p>
-                  The goal was to rebrand the Battlerite aesthetics from the
-                  current busy and brown design into a modern take; going for a
-                  more minimalistic approach with fewer bevels and ornaments,
-                  and more towards sleek sharp edges and clear visibility.
-                </p>
-                <br />
-                <p>My work consisted of:</p>
-                <ul>
-                  <li>
-                    Ideation and brainstorming on symbolism and interaction
-                    design.
-                  </li>
-                  <li>
-                    Sketching and wireframing ideas for new layouts, visual
-                    design, etc.
-                  </li>
-                  <li>Navigation design using flowcharts.</li>
                 </ul>
                 <br />
                 <p>
-                  In the end, it's hard to tell if parts of the work I did made
-                  it into the final design, but I had a great time nonetheless
-                  and learned a bit about <strong>UI design</strong> and{' '}
-                  <strong>user affordances</strong>.
+                  Taking into account what I learned from my breakdown, I
+                  decided to begin working on the Payload system. I felt it
+                  could be extended further into other modes, it was a good
+                  starting point for learning the studio's tools and workflow,
+                  and that I needed to work fast and iteratively on this to
+                  find what is actually fun to do outside of Battlerite's
+                  tight and calculated combat.
                 </p>
+                <br />
+                <p>
+                  Later on, parts of my payload system would end up being the
+                  base for one of the released game modes;{' '}
+                  <i>Rocket Balloon</i>, which I'll go into a bit more detail
+                  further down.
+                </p>
+                <br />
+                <div className='ui-concepting'>
+                  <h2>UI concepting</h2>
+                  <p>
+                    For a short duration of my time at Stunlock I helped with
+                    ideation, sketching, and UI wireframing of a redesign of the
+                    main menu and replay module; Odeum, for their upcoming “Mega
+                    patch”, that would overhaul almost the entirety of their UI
+                    and UX in the game.
+                  </p>
+                  <br />
+                  <p>
+                    The goal was to rebrand the Battlerite aesthetics from the
+                    current busy and brown design into a modern take; going for a
+                    more minimalistic approach with fewer bevels and ornaments,
+                    and more towards sleek sharp edges and clear visibility.
+                  </p>
+                  <br />
+                  <p><strong>What I personally worked on:</strong></p>
+                  <ul>
+                    <li>
+                      Ideation and brainstorming on symbolism and interaction
+                      design.
+                    </li>
+                    <li>
+                      Sketching and wireframing ideas for new layouts, visual
+                      design, etc.
+                    </li>
+                    <li>Navigation design using flowcharts.</li>
+                  </ul>
+                  <br />
+                  <p>
+                    In the end, it's hard to tell if parts of the work I did made
+                    it into the final design, but I had a great time nonetheless
+                    and learned a bit about <strong>UI design</strong> and{' '}
+                    <strong>user affordances</strong>.
+                  </p>
+                </div>
                 {/* <br />
                 <h2>Tutorial & campaign encounter design</h2>
                 <p>content coming soon..</p> */}
@@ -437,7 +420,7 @@ const Battlerite = () => {
                 <br />
                 <p>
                   <strong>
-                    My personal work on this project consisted of:
+                    My work on this project consisted of:
                   </strong>
                 </p>
                 <ul>
@@ -484,6 +467,15 @@ const Battlerite = () => {
                   </a>
                   .
                 </p>
+                <br />
+                <a
+                  href="https://youtu.be/_KmLpPCsjyM?t=19"
+                  target="_blank"
+                  title="Battlerite blog website link"
+                  rel="noopener noreferrer"
+                >
+                  Unofficial Gameplay video (Youtube)
+                </a>
                 <div className="image-grid">
                   <img
                     src={EggBrawl1}
@@ -512,8 +504,8 @@ const Battlerite = () => {
                 <h2>Rocket Balloon Brawl</h2>
                 <p>
                   The second large project I worked on and the one I had the
-                  most hands-on involvement with both design wise and
-                  implementation.
+                  most hands-on involvement with both design- and
+                  implementation wise.
                 </p>
                 <br />
                 <p>
@@ -521,18 +513,58 @@ const Battlerite = () => {
                   teams, as per usual in the <i>Battlerite</i> formula, however
                   the goal of this mode is to{' '}
                   <strong>take control of the Rocket Balloon</strong> that will
-                  fire at the controlling team's opponent's{' '}
+                  fire at the opponent's{' '}
                   <strong>Guardian (base structure)</strong>.
                 </p>
                 <br />
                 <p>
                   In addition to this primary{' '}
                   <strong>king-of-the-hill/payload mechanic</strong> there are
-                  substantial changes in how the core game loop of a match
+                  substantial changes in how the core game loop of how a match
                   functions &#8212; one of the more stand-out features being
                   players now respawn after being killed.
                 </p>
-                <p></p>
+                <br />
+                <p>
+                  <strong>
+                    My work on this project consisted of:
+                  </strong>
+                </p>
+                <ul>
+                  <li>
+                    Designing and implementing the Rocket Balloon movement between checkpoints & active states (enabled firing, disabled firing, stop current shot).
+                  </li>
+                  <li>
+                    Working on and improving the capturing mechanic of the Rocket Balloon (capturing, contested, additive capturing speed).
+                  </li>
+                  <li>
+                    Implementing mechanics & active states of <u>Guardian</u> (health system, ).
+                  </li>
+                  <p>* <i>Last stand:</i> Buff to team that lost their Guardian — possibility for </p>
+                </ul>
+                <br />
+                <div className="prototype-gameplay image-container right">
+                  <img
+                    className="content-image"
+                    src={RocketBalloonBrawl3}
+                    alt="TODO"
+                  />
+                </div>
+                <br />
+                <p>
+                  asd asd asd asd asd asdasd asdas dasdasdasd asdasdasd asdas asfasfas dasd
+                </p>
+                <br />
+                <div className="image-grid">
+                  <img
+                    src={RocketBalloonBrawl1}
+                    alt="TODO"
+                  />
+                  <img
+                    src={RocketBalloonBrawl2}
+                    alt="TODO"
+                  />
+                </div>
                 <h3>[More content coming soon!]</h3>
                 {/* <br />
                 <p>

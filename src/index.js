@@ -11,12 +11,13 @@ import App from "./App";
 import About from "./pages/about";
 import Battlerite from "./pages/battlerite";
 import Akined from "./pages/akined";
+import Eldritch from "./pages/eldritch";
 import Pioneer from "./pages/pioneer";
 import Battlefield6 from "./pages/battlefield6";
 import EldenRing from "./pages/eldenring";
 import Credits from "./pages/credits";
-import GameList from "./pages/gamelist";
-import GameDevResources from "./pages/gamedevresources";
+// import GameList from "./pages/gamelist";
+// import GameDevResources from "./pages/gamedevresources";
 import NotFoundPage from "./pages/NotFoundPage";
 import { Redirect } from "react-router-dom";
 
@@ -29,12 +30,13 @@ const routing = (
         <Route path="/about" component={About} />
         <Route path="/battlerite" component={Battlerite} />
         <Route path="/akined" component={Akined} />
+        <Route path="/eldritch" component={Eldritch} />
         <Route path="/pioneer" component={Pioneer} />
         <Route path="/battlefield6" component={Battlefield6} />
         <Route path="/eldenring" component={EldenRing} />
         <Route path="/credits" component={Credits} />
-        <Route path="/gamelist" component={GameList} />
-        <Route path="/gamedevresources" component={GameDevResources} />
+        {/* <Route path="/gamelist" component={GameList} />
+        <Route path="/gamedevresources" component={GameDevResources} /> */}
         <Route path="/404" component={NotFoundPage} />
         <Redirect to="/404" />
       </Switch>
