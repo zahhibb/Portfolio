@@ -460,10 +460,10 @@ const Battlerite = () => {
                   <a
                     href="https://blog.stunlock.com/dev-blog-010/"
                     target="_blank"
-                    title="Battlerite blog website link"
+                    title="Battlerite development blog #10 website link"
                     rel="noopener noreferrer"
                   >
-                    Battlerite DevBlog
+                    Battlerite DevBlog #10
                   </a>
                   .
                 </p>
@@ -471,10 +471,10 @@ const Battlerite = () => {
                 <a
                   href="https://youtu.be/_KmLpPCsjyM?t=19"
                   target="_blank"
-                  title="Battlerite blog website link"
+                  title="Unofficial youtube gameplay video of the Bakko Egg Brawl"
                   rel="noopener noreferrer"
                 >
-                  Unofficial Gameplay video (Youtube)
+                  Unofficial Bakko Egg Brawl gameplay video (Youtube)
                 </a>
                 <div className="image-grid">
                   <img
@@ -538,11 +538,32 @@ const Battlerite = () => {
                     Working on and improving the capturing mechanic of the Rocket Balloon (capturing, contested, additive capturing speed).
                   </li>
                   <li>
-                    Implementing mechanics & active states of Guardian (health system, respawning players, Last stand buff)*.
+                    Implementing mechanics & active states of Guardian (health system, respawning players, Last stand buff*).
                   </li>
                   <p>*<i>Last stand:</i> Buff to team that lost their Guardian — designed for possibility of comeback.</p>
                 </ul>
                 <br />
+                <p>
+                  Read more about it on the official{' '}
+                  <a
+                    href="https://blog.stunlock.com/dev-blog-020/"
+                    target="_blank"
+                    title="Battlerite development blog #20 website link"
+                    rel="noopener noreferrer"
+                  >
+                    Battlerite DevBlog #10
+                  </a>
+                  .
+                </p>
+                <br />
+                <a
+                  href="https://www.youtube.com/watch?v=_4H0n014R5U&ab_channel=ChyillGaming"
+                  target="_blank"
+                  title="Unofficial youtube gameplay video of the Rocket Balloon Brawl"
+                  rel="noopener noreferrer"
+                >
+                  Unofficial Rocket Balloon Brawl gameplay video (Youtube)
+                </a>
                 {/* <div className="prototype-gameplay image-container right">
                   <img
                     className="content-image"
