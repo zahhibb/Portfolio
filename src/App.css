@@ -1615,6 +1615,7 @@ footer {
 .battlerite .general ul {
   display: flex;
   flex-direction: column;
+  list-style-position: inside;
 }
 
 .battlerite .general .process-list {
@@ -1741,6 +1742,14 @@ footer {
 @media only screen and (min-width: 1024px) {
   .battlerite .general .process-list {
     flex-direction: row;
+  }
+
+  .battlerite .general .process-list>li:first-child {
+    margin: 0 1rem 1rem 0;
+  }
+
+  .battlerite .general .process-list>li:last-child {
+    margin: 0 0 1rem 1rem;
   }
 
   .battlerite .general .process-list>li {
