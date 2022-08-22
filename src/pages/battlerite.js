@@ -551,7 +551,7 @@ const Battlerite = () => {
                     title="Battlerite development blog #20 website link"
                     rel="noopener noreferrer"
                   >
-                    Battlerite DevBlog #10
+                    Battlerite DevBlog #20
                   </a>
                   .
                 </p>
