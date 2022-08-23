@@ -3,6 +3,8 @@ import Navigation from '../components/Navigation/navigation'
 import Footer from '../sections/footer'
 import { Link } from 'react-router-dom'
 import '../App.css'
+import Zoom from 'react-medium-image-zoom'
+import '../styles.css'
 
 import Gameplay1 from '../resources/images/battlerite_01.jpeg'
 import Gameplay2 from '../resources/images/battlerite_02.jpg'
@@ -203,8 +205,12 @@ const Battlerite = () => {
           <section className="page-media">
             <div className="page-media-wrapper">
               <div className="image-grid">
-                <img src={Gameplay1} alt="Battlerite match pre-engagement" />
-                <img src={Gameplay2} alt="Battlerite 1 versus 1 battle" />
+                <Zoom>
+                  <img src={Gameplay1} alt="Battlerite match pre-engagement" />
+                </Zoom>
+                <Zoom>
+                  <img src={Gameplay2} alt="Battlerite 1 versus 1 battle" />
+                </Zoom>
               </div>
             </div>
           </section>
@@ -436,17 +442,19 @@ const Battlerite = () => {
                   <li>Game balancing & spell effects modifications.</li>
                 </ul>
                 <br />
-                <div className="prototype-gameplay image-container left">
-                  <img
-                    className="content-image"
-                    src={DodgeballPrototype}
-                    alt="Battlerite Bakko's Egg Brawl dodgeball prototype"
-                  />
-                  <span>
-                    Early prototype gameplay where the playable characters were
-                    different and the projectiles were still just pink spheres.
-                  </span>
-                </div>
+                <Zoom>
+                  <div className="prototype-gameplay image-container left">
+                    <img
+                      className="content-image"
+                      src={DodgeballPrototype}
+                      alt="Battlerite Bakko's Egg Brawl dodgeball prototype"
+                    />
+                    <span>
+                      Early prototype gameplay where the playable characters were
+                      different and the projectiles were still just pink spheres.
+                    </span>
+                  </div>
+                </Zoom>
                 <br />
                 <p>
                   Our mentor, a senior Technical Artist at the studio, took
@@ -477,14 +485,18 @@ const Battlerite = () => {
                   Unofficial Gameplay video (Youtube)
                 </a>
                 <div className="image-grid">
-                  <img
-                    src={EggBrawl1}
-                    alt="Battlerite Bakko's Egg Brawl reflecting egg"
-                  />
-                  <img
-                    src={EggBrawl2}
-                    alt="Battlerite Bakko's Egg Brawl 4 player standoff"
-                  />
+                  <Zoom>
+                    <img
+                      src={EggBrawl1}
+                      alt="Battlerite Bakko's Egg Brawl reflecting egg"
+                    />
+                  </Zoom>
+                  <Zoom>
+                    <img
+                      src={EggBrawl2}
+                      alt="Battlerite Bakko's Egg Brawl 4 player standoff"
+                    />
+                  </Zoom>
                 </div>
               </div>
             </div>

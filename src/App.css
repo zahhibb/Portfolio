@@ -1166,21 +1166,21 @@ footer {
   height: 56.25vw;
 }
 
-.page-container.battlerite .image-grid div:first-child {
+/* .page-container.battlerite .image-grid div:first-child {
   background: url("./resources/images/battlerite_01.jpeg");
 }
 
 .page-container.battlerite .image-grid div:nth-child(2) {
   background: url("./resources/images/battlerite_02.jpg");
-}
+} */
 
-.page-container.battlerite .image-grid div:nth-child(3) {
+/* .page-container.battlerite .image-grid div:nth-child(3) {
   background: url("./resources/images/battlerite_03.jpg");
 }
 
 .page-container.battlerite .image-grid div:last-child {
   background: url("./resources/images/battlerite_05.jpg");
-}
+} */
 
 .info {
   background: rgb(214, 187, 156);
@@ -1606,6 +1606,13 @@ footer {
 .image-container span {
   font-size: 0.9em;
   color: #aaa;
+}
+
+.image-grid img {
+  flex: none;
+  max-width: none;
+  max-height: none;
+  border: 1px solid #414d96;
 }
 
 .content-image {
