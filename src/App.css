@@ -414,6 +414,7 @@ a:hover {
 
 .project-item .mobile-bar,
 .other-project-item .mobile-bar {
+  pointer-events: none;
   margin: 0 !important;
   position: absolute;
   bottom: 0rem;
