@@ -3,6 +3,8 @@ import Navigation from '../components/Navigation/navigation'
 import Footer from '../sections/footer'
 import { Link } from 'react-router-dom'
 import '../App.css'
+import Zoom from 'react-medium-image-zoom'
+import '../styles.css'
 
 import AkinedImage01 from '../resources/images/akined_gameplay1.png'
 import AkinedImage02 from '../resources/images/akined_gameplay2.png'
@@ -194,8 +196,12 @@ const Akined = () => {
           <section className="page-media">
             <div className="page-media-wrapper">
               <div className="image-grid">
-                <img src={AkinedImage01} alt="Spirit power introduction" />
-                <img src={AkinedImage02} alt="Possessing mechanic" />
+                <Zoom>
+                  <img src={AkinedImage01} alt="Spirit power introduction" />
+                </Zoom>
+                <Zoom>
+                  <img src={AkinedImage02} alt="Possessing mechanic" />
+                </Zoom>
               </div>
             </div>
           </section>
@@ -203,11 +209,13 @@ const Akined = () => {
             <div className="content-section-wrapper">
               <div className="content">
                 <div className="image-container right">
-                  <img
-                    className="content-image"
-                    src={AkinedImage03}
-                    alt="Miro brainstorm board"
-                  />
+                  <Zoom>
+                    <img
+                      className="content-image"
+                      src={AkinedImage03}
+                      alt="Miro brainstorm board"
+                    />
+                  </Zoom>
                   <span>Miro brainstorm board</span>
                 </div>
                 <h2>Concept</h2>
@@ -244,15 +252,21 @@ const Akined = () => {
                 </p>
                 <div className="image-grid akined-process-items">
                   <div className="image-container">
-                    <img src={AkinedImage04} alt="Paper sketch" />
+                    <Zoom>
+                      <img src={AkinedImage04} alt="Paper sketch" />
+                    </Zoom>
                     <span>Paper sketch</span>
                   </div>
                   <div className="image-container">
-                    <img src={AkinedImage05} alt="Paper protytype" />
+                    <Zoom>
+                      <img src={AkinedImage05} alt="Paper protytype" />
+                    </Zoom>
                     <span>Paper prototype</span>
                   </div>
                   <div className="image-container">
-                    <img src={AkinedImage06} alt="Greybox of level design" />
+                    <Zoom>
+                      <img src={AkinedImage06} alt="Greybox of level design" />
+                    </Zoom>
                     <span>Greybox (with some highlight assets)</span>
                   </div>
                 </div>
@@ -289,10 +303,12 @@ const Akined = () => {
                   <p>Designed and implemented large parts of levels 1 & 3.</p>
                 </div>
                 <div className="work-pairs">
-                  <img
-                    src={AkinedPossessMechanicGif}
-                    alt="Player possing box and bookshelf, and moving them around."
-                  />
+                  <Zoom>
+                    <img
+                      src={AkinedPossessMechanicGif}
+                      alt="Player possing box and bookshelf, and moving them around."
+                    />
+                  </Zoom>
                   <p>
                     Developed a generalized possess mechanic that could work on
                     any entities in the game, provided they had relevant tags
@@ -300,10 +316,12 @@ const Akined = () => {
                   </p>
                 </div>
                 <div className="work-pairs">
-                  <img
-                    src={AkinedLeverSystemGif}
-                    alt="Player possessing valve and then using it to extend a bridge."
-                  />
+                  <Zoom>
+                    <img
+                      src={AkinedLeverSystemGif}
+                      alt="Player possessing valve and then using it to extend a bridge."
+                    />
+                  </Zoom>
                   <p>
                     Versatile valve/lever system to handle a kind of parent{' '}
                     {'<'}-{'>'} child hierarchy. Such as, a simple valve could
@@ -313,10 +331,12 @@ const Akined = () => {
                   </p>
                 </div>
                 <div className="work-pairs">
-                  <img
-                    src={AkinedSoundCuesGif}
-                    alt="Player clicking on 'Continue' button to see the next narration text, which is being printed out inside a small textbox."
-                  />
+                  <Zoom>
+                    <img
+                      src={AkinedSoundCuesGif}
+                      alt="Player clicking on 'Continue' button to see the next narration text, which is being printed out inside a small textbox."
+                    />
+                  </Zoom>
                   <p>Narration & tutorial messaging with timed sound cues.</p>
                 </div>
                 <div>

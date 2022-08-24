@@ -3,6 +3,9 @@ import Navigation from '../components/Navigation/navigation'
 import Footer from '../sections/footer'
 import { Link } from 'react-router-dom'
 import '../App.css'
+import Zoom from 'react-medium-image-zoom'
+import '../styles.css'
+
 
 import Gameplay1 from '../resources/images/battlerite_01.jpeg'
 import Gameplay2 from '../resources/images/battlerite_02.jpg'
@@ -203,8 +206,12 @@ const Battlerite = () => {
           <section className="page-media">
             <div className="page-media-wrapper">
               <div className="image-grid">
-                <img src={Gameplay1} alt="Battlerite match pre-engagement" />
-                <img src={Gameplay2} alt="Battlerite 1 versus 1 battle" />
+                <Zoom>
+                  <img src={Gameplay1} alt="Battlerite match pre-engagement" />
+                </Zoom>
+                <Zoom>
+                  <img src={Gameplay2} alt="Battlerite 1 versus 1 battle" />
+                </Zoom>
               </div>
             </div>
           </section>
@@ -244,7 +251,6 @@ const Battlerite = () => {
                   <li>
                     <div className="image-container">
                       <img
-                        className=""
                         src={PayloadSketch}
                         alt="Battlerite payload sketch"
                       />
@@ -271,7 +277,6 @@ const Battlerite = () => {
                   <li>
                     <div className="image-container">
                       <img
-                        className=""
                         src={Orbs}
                         alt=""
                       />
@@ -297,7 +302,6 @@ const Battlerite = () => {
                   <li>
                     <div className="image-container">
                       <img
-                        className=""
                         src={BoneOrbSpawnLocation}
                         alt="Battlerite bone orb spawning circle"
                       />
@@ -390,11 +394,13 @@ const Battlerite = () => {
             <div className="content-section-wrapper">
               <div className="content">
                 <div className="image-container header right">
-                  <img
-                    className="content-image"
-                    src={EggBrawlHeader}
-                    alt="Battlerite Bakko's Egg Brawl concept header"
-                  />
+                  <Zoom>
+                    <img
+                      className="content-image"
+                      src={EggBrawlHeader}
+                      alt="Battlerite Bakko's Egg Brawl concept header"
+                    />
+                  </Zoom>
                 </div>
                 <h2>Bakko's Egg Brawl</h2>
                 <p>
@@ -437,11 +443,13 @@ const Battlerite = () => {
                 </ul>
                 <br />
                 <div className="prototype-gameplay image-container left">
-                  <img
-                    className="content-image"
-                    src={EggBrawlPrototype}
-                    alt="Battlerite Bakko's Egg Brawl dodgeball prototype"
-                  />
+                  <Zoom>
+                    <img
+                      className="content-image"
+                      src={EggBrawlPrototype}
+                      alt="Battlerite Bakko's Egg Brawl dodgeball prototype"
+                    />
+                  </Zoom>
                   <span>
                     Early prototype gameplay where the playable characters were
                     different and the projectiles were still just pink spheres.
@@ -477,14 +485,18 @@ const Battlerite = () => {
                   Unofficial Bakko Egg Brawl gameplay video (Youtube)
                 </a>
                 <div className="image-grid">
-                  <img
-                    src={EggBrawl1}
-                    alt="Battlerite Bakko's Egg Brawl reflecting egg"
-                  />
-                  <img
-                    src={EggBrawl2}
-                    alt="Battlerite Bakko's Egg Brawl 4 player standoff"
-                  />
+                  <Zoom>
+                    <img
+                      src={EggBrawl1}
+                      alt="Battlerite Bakko's Egg Brawl reflecting egg"
+                    />
+                  </Zoom>
+                  <Zoom>
+                    <img
+                      src={EggBrawl2}
+                      alt="Battlerite Bakko's Egg Brawl 4 player standoff"
+                    />
+                  </Zoom>
                 </div>
               </div>
             </div>
@@ -495,11 +507,13 @@ const Battlerite = () => {
               <div className="image"></div>
               <div className="content">
                 <div className="image-container header right">
-                  <img
-                    className="content-image"
-                    src={RocketBalloonBrawlHeader}
-                    alt="Battlerite Rocket Balloon Brawl concept header"
-                  />
+                  <Zoom>
+                    <img
+                      className="content-image"
+                      src={RocketBalloonBrawlHeader}
+                      alt="Battlerite Rocket Balloon Brawl concept header"
+                    />
+                  </Zoom>
                 </div>
                 <h2>Rocket Balloon Brawl</h2>
                 <p>
@@ -577,14 +591,18 @@ const Battlerite = () => {
                 </p> */}
                 <br />
                 <div className="image-grid">
-                  <img
-                    src={RocketBalloonBrawl1}
-                    alt="Top-down view of the Rocket Balloon and the capture point"
-                  />
-                  <img
-                    src={RocketBalloonBrawl2}
-                    alt="Top-down view of one team's Guardian (base structure)"
-                  />
+                  <Zoom>
+                    <img
+                      src={RocketBalloonBrawl1}
+                      alt="Top-down view of the Rocket Balloon and the capture point"
+                    />
+                  </Zoom>
+                  <Zoom>
+                    <img
+                      src={RocketBalloonBrawl2}
+                      alt="Top-down view of one team's Guardian (base structure)"
+                    />
+                  </Zoom>
                 </div>
                 <h3>[More content coming soon!]</h3>
               </div>

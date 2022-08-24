@@ -3,6 +3,8 @@ import Navigation from '../components/Navigation/navigation'
 import Footer from '../sections/footer'
 import { Link } from 'react-router-dom'
 import '../App.css'
+import Zoom from 'react-medium-image-zoom'
+import '../styles.css'
 
 import BattlefieldReferenceImage from '../resources/images/bf6_reference.jpg'
 import BattlefieldPillarImage01 from '../resources/images/Minimalist.png'
@@ -154,117 +156,123 @@ const Battlefield6 = () => {
               </div>
               <br />
               <br />
-              <div className="work-pairs">
-                <img
-                  className="content-image"
-                  src={BattlefieldReferenceImage}
-                  alt="Reference of main menus from Battlefield 1 and Battlefield 5"
-                />
-                <div>
-                  <h3>References</h3>
-                  <p>
-                    <strong>Primary references</strong> and{' '}
-                    <strong>inspiration</strong> came from the two most recent
-                    games (at the time); <i>Battlefield 1</i> and{' '}
-                    <i>Battlefield 5</i>, the reason being that UX principles
-                    and UI layouts/aesthetics follows seemingly migratory
-                    patterns that changes the design standards over time. My
-                    premise were to consider those changes and hopefully improve
-                    upon them.
-                  </p>
+              <Zoom>
+                <div className="work-pairs">
+                  <img
+                    className="content-image"
+                    src={BattlefieldReferenceImage}
+                    alt="Reference of main menus from Battlefield 1 and Battlefield 5"
+                  />
+                  <div>
+                    <h3>References</h3>
+                    <p>
+                      <strong>Primary references</strong> and{' '}
+                      <strong>inspiration</strong> came from the two most recent
+                      games (at the time); <i>Battlefield 1</i> and{' '}
+                      <i>Battlefield 5</i>, the reason being that UX principles
+                      and UI layouts/aesthetics follows seemingly migratory
+                      patterns that changes the design standards over time. My
+                      premise were to consider those changes and hopefully improve
+                      upon them.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="work-pairs">
-                <img
-                  className="content-image"
-                  src={BattlefieldLowFidelityWireframeImage}
-                  alt="Low-fidelity wireframes of different layouts of main menus"
-                />
-                <div>
-                  <h3>Low-fidelity wireframes</h3>
-                  <p>
-                    When designing the initial sketches/wireframes I wanted to
-                    translate some particular UI elements of the previous games
-                    into my design &#8212; specifically the{' '}
-                    <strong>minimalist</strong> and sharp container elements to
-                    sustain the <i>familiar design</i> between the games.
-                  </p>
-                  <br />
-                  <ul>
-                    <li>
-                      <strong>The first wireframe</strong> was basically a
-                      carbon copy of <i>Battlefield 5's</i> main menu. I was
-                      primarily getting familiarized with the{' '}
-                      <strong>Adobe XD</strong> at this point as I hadn't used
-                      it before.
-                    </li>
-                    <li>
-                      The <strong>second wireframe</strong> was decent but I
-                      felt I steered off too much from the identity of the{' '}
-                      <i>Battlefield</i> design.
-                    </li>
-                    <li>
-                      <strong>The third pass</strong> is where I felt I was
-                      getting close, however, the navigation didn't feel modern
-                      enough and the general layout didn't have an intention.
-                    </li>
-                    <li>
-                      <strong>Fourth and last iteration</strong>. Here I removed
-                      the container element of the navigation bar to make the
-                      selected option stand out more and modified the layout to
-                      present a sort of hierarchical design. The largest element
-                      being the Hero/CTA and the other stacked elements being
-                      staggered to virtually present an arrow pointing towards
-                      the CTA.
-                    </li>
-                  </ul>
+              </Zoom>
+              <Zoom>
+                <div className="work-pairs">
+                  <img
+                    className="content-image"
+                    src={BattlefieldLowFidelityWireframeImage}
+                    alt="Low-fidelity wireframes of different layouts of main menus"
+                  />
+                  <div>
+                    <h3>Low-fidelity wireframes</h3>
+                    <p>
+                      When designing the initial sketches/wireframes I wanted to
+                      translate some particular UI elements of the previous games
+                      into my design &#8212; specifically the{' '}
+                      <strong>minimalist</strong> and sharp container elements to
+                      sustain the <i>familiar design</i> between the games.
+                    </p>
+                    <br />
+                    <ul>
+                      <li>
+                        <strong>The first wireframe</strong> was basically a
+                        carbon copy of <i>Battlefield 5's</i> main menu. I was
+                        primarily getting familiarized with the{' '}
+                        <strong>Adobe XD</strong> at this point as I hadn't used
+                        it before.
+                      </li>
+                      <li>
+                        The <strong>second wireframe</strong> was decent but I
+                        felt I steered off too much from the identity of the{' '}
+                        <i>Battlefield</i> design.
+                      </li>
+                      <li>
+                        <strong>The third pass</strong> is where I felt I was
+                        getting close, however, the navigation didn't feel modern
+                        enough and the general layout didn't have an intention.
+                      </li>
+                      <li>
+                        <strong>Fourth and last iteration</strong>. Here I removed
+                        the container element of the navigation bar to make the
+                        selected option stand out more and modified the layout to
+                        present a sort of hierarchical design. The largest element
+                        being the Hero/CTA and the other stacked elements being
+                        staggered to virtually present an arrow pointing towards
+                        the CTA.
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <div className="work-pairs">
-                <img
-                  className="content-image"
-                  src={BattlefieldHighFidelityWireframeImage}
-                  alt="High-fidelity wireframes of Splash, Main-menu, and Play-menu screens"
-                />
-                <div>
-                  <h3>High-fidelity wireframes</h3>
-                  <p>
-                    Going into the design of the high-fidelity was the thing I
-                    was looking forward to the most since this would be where
-                    the actual <strong>identity</strong> of the project would be
-                    incorporated. The majority of the rendered assets and images
-                    used came from previous <i>Battlefield</i> games'
-                    promotional material, and some content was from different
-                    artists on <i>ArtStation</i> or <i>Pinterest</i>.
-                  </p>
-                  <br />
-                  <p>The assets I made myself were the:</p>
-                  <ul>
-                    <li>
-                      <strong>Raid</strong> icon{' '}
-                      <img src={RaidIcon} alt="Icon for Raid game mode" />
-                    </li>
-                    <li>
-                      <strong>Practice range</strong> icon{' '}
-                      <img
-                        src={PracticeIcon}
-                        alt="Icon for Practice-range game mode"
-                      />
-                    </li>
-                    <li>
-                      <strong>Social/Party</strong> icon{' '}
-                      <img src={SocialIcon} alt="Icon for Social/Party panel" />
-                    </li>
-                    <li>
-                      <strong>Button prompts</strong>{' '}
-                      <img
-                        src={ButtonPrompts}
-                        alt="Icons for Xbox-gamepad button prompts"
-                      />
-                    </li>
-                  </ul>
+              </Zoom>
+              <Zoom>
+                <div className="work-pairs">
+                  <img
+                    className="content-image"
+                    src={BattlefieldHighFidelityWireframeImage}
+                    alt="High-fidelity wireframes of Splash, Main-menu, and Play-menu screens"
+                  />
+                  <div>
+                    <h3>High-fidelity wireframes</h3>
+                    <p>
+                      Going into the design of the high-fidelity was the thing I
+                      was looking forward to the most since this would be where
+                      the actual <strong>identity</strong> of the project would be
+                      incorporated. The majority of the rendered assets and images
+                      used came from previous <i>Battlefield</i> games'
+                      promotional material, and some content was from different
+                      artists on <i>ArtStation</i> or <i>Pinterest</i>.
+                    </p>
+                    <br />
+                    <p>The assets I made myself were the:</p>
+                    <ul>
+                      <li>
+                        <strong>Raid</strong> icon{' '}
+                        <img src={RaidIcon} alt="Icon for Raid game mode" />
+                      </li>
+                      <li>
+                        <strong>Practice range</strong> icon{' '}
+                        <img
+                          src={PracticeIcon}
+                          alt="Icon for Practice-range game mode"
+                        />
+                      </li>
+                      <li>
+                        <strong>Social/Party</strong> icon{' '}
+                        <img src={SocialIcon} alt="Icon for Social/Party panel" />
+                      </li>
+                      <li>
+                        <strong>Button prompts</strong>{' '}
+                        <img
+                          src={ButtonPrompts}
+                          alt="Icons for Xbox-gamepad button prompts"
+                        />
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
+              </Zoom>
               <hr />
               <div className="extras">
                 <h2>Extras</h2>
@@ -315,12 +323,14 @@ const Battlefield6 = () => {
                   </p>
                 </ol>
                 <div className="image-solo">
-                  <div className="image-grid">
+                  {/* <div className="image-grid"> */}
+                  <Zoom>
                     <img
                       src={BattlefieldExtraImage}
                       alt="Prototype mockup/photobash of gameplay"
                     />
-                  </div>
+                  </Zoom>
+                  {/* </div> */}
                 </div>
               </div>
             </div>

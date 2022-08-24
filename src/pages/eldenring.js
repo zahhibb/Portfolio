@@ -3,6 +3,8 @@ import Navigation from '../components/Navigation/navigation'
 import Footer from '../sections/footer'
 import { Link } from 'react-router-dom'
 import '../App.css'
+import Zoom from 'react-medium-image-zoom'
+import '../styles.css'
 
 // import EldenRingStylesheet from "../resources/images/Typography_and_Colours.png";
 // import EldenRingIconography from "../resources/images/Iconography.png";
@@ -113,7 +115,7 @@ const Eldenring = () => {
                 imagine and present a updated UI/HUD but this time for{' '}
                 <strong>Elden Ring</strong>. My considerations for this
                 particular project was also to try to match the aesthetics of
-                previous <i>"Souls"</i> titles of{' '}
+                previous <i>Souls</i> titles of{' '}
                 <a
                   href="https://www.fromsoftware.jp/ww/"
                   target="_blank"
@@ -123,7 +125,7 @@ const Eldenring = () => {
                 </a>
                 , but also trying to be a bit for <strong>imaginative</strong>{' '}
                 and preferably make it a bit more <strong>modern</strong> as a
-                common trope of the <i>"Souls"</i> games' UI is that they are
+                common trope of the <i>Souls</i> games' UI is that they are
                 functional, but not necessarily aesthetically pleasing.
               </p>
               <br />
@@ -166,18 +168,24 @@ const Eldenring = () => {
               {/* <p>asd</p> */}
               <br />
               <div className="image-grid">
-                <img
-                  src={EldenRingHighFidelityWireframe01}
-                  alt="High-fidelity wireframe of the main menu"
-                />
-                <img
-                  src={EldenRingHighFidelityWireframe02}
-                  alt="High-fidelity wireframe of character creation screen"
-                />
-                <img
-                  src={EldenRingHighFidelityWireframe03}
-                  alt="High-fidelity wireframe of the class selection panel on the character creation screen"
-                />
+                <Zoom>
+                  <img
+                    src={EldenRingHighFidelityWireframe01}
+                    alt="High-fidelity wireframe of the main menu"
+                  />
+                </Zoom>
+                <Zoom>
+                  <img
+                    src={EldenRingHighFidelityWireframe02}
+                    alt="High-fidelity wireframe of character creation screen"
+                  />
+                </Zoom>
+                <Zoom>
+                  <img
+                    src={EldenRingHighFidelityWireframe03}
+                    alt="High-fidelity wireframe of the class selection panel on the character creation screen"
+                  />
+                </Zoom>
               </div>
             </div>
           </section>

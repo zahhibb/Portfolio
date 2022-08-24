@@ -3,6 +3,8 @@ import Navigation from '../components/Navigation/navigation'
 import Footer from '../sections/footer'
 import { Link } from 'react-router-dom'
 import '../App.css'
+import Zoom from 'react-medium-image-zoom'
+import '../styles.css'
 
 import PioneerSketchImage01 from '../resources/images/pioneer_sketches_00.png'
 import PioneerSketchImage02 from '../resources/images/pioneer_sketches_01.png'
@@ -139,10 +141,12 @@ const Pioneer = () => {
                     I began by sketching various designs to find something that
                     I feel could be considered modern and somewhat sci-fi.
                   </p>
-                  <img
-                    src={PioneerSketchImage01}
-                    alt="Basic digital sketches on various menu designs and notes"
-                  />
+                  <Zoom>
+                    <img
+                      src={PioneerSketchImage01}
+                      alt="Basic digital sketches on various menu designs and notes"
+                    />
+                  </Zoom>
                 </div>
                 <div>
                   <h3>Sketch pass 2</h3>
@@ -153,10 +157,12 @@ const Pioneer = () => {
                     approach. I went on to design concepts for other menu
                     screens as well.
                   </p>
-                  <img
-                    src={PioneerSketchImage02}
-                    alt="Second iteration of digital sketches improved from the previous ones"
-                  />
+                  <Zoom>
+                    <img
+                      src={PioneerSketchImage02}
+                      alt="Second iteration of digital sketches improved from the previous ones"
+                    />
+                  </Zoom>
                 </div>
               </div>
               <br />
@@ -170,12 +176,12 @@ const Pioneer = () => {
                   consideration. Stylistic changes were still made at this
                   stage, though the general blocking of elements would remain.
                 </p>
-                <div className="image-grid">
+                <Zoom>
                   <img
                     src={PioneerLowFidImage}
                     alt="Low-fidelity wireframes of the previous sketches"
                   />
-                </div>
+                </Zoom>
               </div>
               <br />
               <br />
@@ -212,22 +218,30 @@ const Pioneer = () => {
                 buttons into keyboard keys and mouse buttons.
               </p>
               <div className="image-grid">
-                <img
-                  src={PioneerHighFidImage1}
-                  alt="High-fidelity wireframes of menu and preferences"
-                />
-                <img
-                  src={PioneerHighFidImage2}
-                  alt="High-fidelity wireframes of singleplayer (Venture) weapon loadout, and map screens"
-                />
-                <img
-                  src={PioneerHighFidImage3}
-                  alt="High-fidelity wireframes of singleplayer (Venture) gear loadout, and arsenal screens"
-                />
-                <img
-                  src={PioneerHighFidImage4}
-                  alt="High-fidelity wireframes of Social and Profile menus"
-                />
+                <Zoom>
+                  <img
+                    src={PioneerHighFidImage1}
+                    alt="High-fidelity wireframes of menu and preferences"
+                  />
+                </Zoom>
+                <Zoom>
+                  <img
+                    src={PioneerHighFidImage2}
+                    alt="High-fidelity wireframes of singleplayer (Venture) weapon loadout, and map screens"
+                  />
+                </Zoom>
+                <Zoom>
+                  <img
+                    src={PioneerHighFidImage3}
+                    alt="High-fidelity wireframes of singleplayer (Venture) gear loadout, and arsenal screens"
+                  />
+                </Zoom>
+                <Zoom>
+                  <img
+                    src={PioneerHighFidImage4}
+                    alt="High-fidelity wireframes of Social and Profile menus"
+                  />
+                </Zoom>
               </div>
               {/* <br />
               <br />

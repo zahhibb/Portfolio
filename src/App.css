@@ -1028,9 +1028,6 @@ footer {
   font-weight: bold;
 }
 
-.status-item a:not(:first-child),
-.status-item h3:not(:first-child) {}
-
 .files {
   display: block;
   padding: 1rem 0;
@@ -1166,7 +1163,7 @@ footer {
   height: 56.25vw;
 }
 
-.page-container.battlerite .image-grid div:first-child {
+/* .page-container.battlerite .image-grid div:first-child {
   background: url("./resources/images/battlerite_01.jpeg");
 }
 
@@ -1180,7 +1177,7 @@ footer {
 
 .page-container.battlerite .image-grid div:last-child {
   background: url("./resources/images/battlerite_05.jpg");
-}
+} */
 
 .info {
   background: rgb(214, 187, 156);
@@ -1387,19 +1384,28 @@ footer {
     gap: 2rem;
   }
 
-  .image-grid img {
+  /* .image-grid img {
     flex: calc(50% - 1rem);
     max-width: calc(50% - 1.14rem);
     max-height: none;
     border: 1px solid #414d96;
+  } */
+  .image-grid>div {
+    flex: calc(50% - 1rem);
+    max-width: calc(50% - 1.14rem);
+    max-height: none;
   }
 
-  .image-duo div {
+  .image-grid>div img {
+    border: 1px solid #414d96;
+  }
+
+  /* .image-duo div {
     flex: calc(50% - 1rem);
     max-width: calc(50% - 1.14rem);
     max-height: none;
     align-self: flex-end;
-  }
+  } */
 
   .image-solo img {
     flex: 1 !important;
@@ -1955,7 +1961,7 @@ footer {
     margin-bottom: 0;
   }
 
-  .battlefield6 .work-pairs>img {
+  .battlefield6 .work-pairs img {
     width: 100%;
     min-width: 400px;
     max-width: 600px;
@@ -1971,19 +1977,7 @@ footer {
     margin-bottom: 0;
   }
 
-  .battlefield6 .work-pairs {
-    flex-direction: row-reverse;
-  }
-
-  .battlefield6 .work-pairs:nth-child(2n) {
-    flex-direction: row;
-  }
-
-  .battlefield6 .work-pairs:nth-child(2n) img {
-    margin: 0 2rem 1rem 0;
-  }
-
-  .battlefield6 .work-pairs>img {
+  .battlefield6 .work-pairs img {
     min-width: 600px;
   }
 }
