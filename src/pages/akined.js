@@ -5,17 +5,18 @@ import { Link } from 'react-router-dom'
 import '../App.css'
 import Zoom from 'react-medium-image-zoom'
 import '../styles.css'
+import { motion } from "framer-motion"
 
-import AkinedImage01 from '../resources/images/akined_gameplay1.png'
-import AkinedImage02 from '../resources/images/akined_gameplay2.png'
+import AkinedImage01 from '../resources/images/akined_gameplay_01.png'
+import AkinedImage02 from '../resources/images/akined_gameplay_02.png'
 import AkinedImage03 from '../resources/images/akined_miro_planning.png'
-import AkinedImage04 from '../resources/images/AKINED_LevelDesign_sketch.jpeg'
-import AkinedImage05 from '../resources/images/paper-prototype-2.jpg'
-import AkinedImage06 from '../resources/images/greybox-02.png'
+import AkinedImage04 from '../resources/images/akined_level-design-sketch.jpeg'
+import AkinedImage05 from '../resources/images/akined_paper-prototype.jpg'
+import AkinedImage06 from '../resources/images/akined_greybox.png'
 
-import AkinedPossessMechanicGif from '../resources/images/possess_mechanic.gif'
-import AkinedLeverSystemGif from '../resources/images/lever_system.gif'
-import AkinedSoundCuesGif from '../resources/images/sound_cues.gif'
+import AkinedPossessMechanicGif from '../resources/images/akined_possess-mechanic.gif'
+import AkinedLeverSystemGif from '../resources/images/akined_lever-system.gif'
+import AkinedSoundCuesGif from '../resources/images/akined_sound-cues.gif'
 
 import GDD from '../resources/documents/AKINED_GDD.pdf'
 import PostMortem from '../resources/documents/Post_Mortem_-_Game_Project_1_Akined_JoakimHedman.pdf'
@@ -62,7 +63,7 @@ const Akined = () => {
         <div className="page-content" id="content">
           <section className="page-intro">
             <div className="page-intro-wrapper">
-              <div className="status-panel">
+              <motion.div className="status-panel" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5 }}>
                 <StatusItem
                   title={'Team Size'}
                   contentHead={'[4]'}
@@ -109,8 +110,8 @@ const Akined = () => {
                     { title: 'Photoshop' }
                   ]}
                 />
-              </div>
-              <div className="video-wrapper">
+              </motion.div>
+              <motion.div className="video-wrapper" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.3 }}>
                 <iframe
                   width="560"
                   height="315"
@@ -120,8 +121,8 @@ const Akined = () => {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>
-              </div>
-              <div className="files">
+              </motion.div>
+              <motion.div className="files" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.6 }}>
                 <div>
                   <a
                     href="https://zahhibb.itch.io/akined"
@@ -145,8 +146,9 @@ const Akined = () => {
                     Read the Post-Mortem
                   </a>
                 </div>
-              </div>
-              <div className="definitions">
+              </motion.div>
+
+              <motion.div className="definitions" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.9 }}>
                 <div>
                   <h2>Project overview</h2>
                   <p>
@@ -173,7 +175,7 @@ const Akined = () => {
                 <div>
                   <h2>My contributions</h2>
                   <p>
-                    While I initially was going to focus on UX and Level design
+                    While I initially was going to focus on UX and Game design
                     as is the direction of my studies and my interest, I had to
                     step up and be the programmer of this project because of
                     some unforeseen circumstances that both of the programmers
@@ -190,10 +192,10 @@ const Akined = () => {
                     <b>level-</b> & <b>system design</b>.
                   </p>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </section>
-          <section className="page-media">
+          <motion.div className="page-media" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 1 }}>
             <div className="page-media-wrapper">
               <div className="image-grid">
                 <Zoom>
@@ -204,8 +206,9 @@ const Akined = () => {
                 </Zoom>
               </div>
             </div>
-          </section>
-          <section className="page-section general">
+          </motion.div>
+
+          <motion.div className="page-section general" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 1 }}>
             <div className="content-section-wrapper">
               <div className="content">
                 <div className="image-container right">
@@ -275,7 +278,7 @@ const Akined = () => {
                   we set up the technical parts of the project -{' '}
                   <i>Unity project files</i>, <i>Version Control</i>, and{' '}
                   <i>code & file standards</i>. We worked steadily but
-                  unfortunately our last and only programmer left the education
+                  unfortunately our last and only programmer also left the education
                   and I was the one with the most previous relevant technical
                   knowledge regarding Unity and C# programming.
                 </p>
@@ -288,6 +291,8 @@ const Akined = () => {
                   non-technical such as level-dressing, UI design, and
                   music/sounds.
                 </p>
+                <br />
+                <p>All in all I coded about 90% of the game and implemented all major systems used, and <a href="https://www.linkedin.com/in/wes-ekman-74648a220/" target="_blank" rel="noopener noreferrer">Wes</a>, our second designer, helped out generally with everything else and implemented & coded the last epilogue/credits scene.</p>
                 <br />
                 <h2>Designs & systems I personally worked on</h2>
                 <div className="work-pairs">
@@ -399,8 +404,9 @@ const Akined = () => {
                 </div>
               </div>
             </div>
-          </section>
-          <section className="page-media">
+          </motion.div>
+
+          <motion.div className="page-media" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 1 }}>
             <div className="page-media-wrapper video">
               <div className="video-wrapper">
                 <iframe
@@ -414,7 +420,8 @@ const Akined = () => {
                 ></iframe>
               </div>
             </div>
-          </section>
+          </motion.div>
+
         </div>
         <div className="quick-links">
           <div className="quick-link-container prev">

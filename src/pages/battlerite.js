@@ -5,27 +5,23 @@ import { Link } from 'react-router-dom'
 import '../App.css'
 import Zoom from 'react-medium-image-zoom'
 import '../styles.css'
-
+import { motion } from "framer-motion"
 
 import Gameplay1 from '../resources/images/battlerite_01.jpeg'
 import Gameplay2 from '../resources/images/battlerite_02.jpg'
 
 import PayloadSketch from '../resources/images/battlerite_payload-sketch.jpg'
-// import HealthOrb from '../resources/images/healthorb.png'
-// import EnergyOrb from '../resources/images/energyorb.png'
-// import RuneOfBone from '../resources/images/RuneOfBone.png'
 import Orbs from '../resources/images/battlerite_orbs.jpg'
 import BoneOrbSpawnLocation from '../resources/images/battlerite_boneOrbSpawnLocation.png'
 
-import EggBrawlHeader from '../resources/images/bakko-egg-brawl_header.jpg'
-import EggBrawlPrototype from '../resources/images/bakko-egg-brawl_prototype.png'
-import EggBrawl1 from '../resources/images/bakko-egg-brawl_01.jpg'
-import EggBrawl2 from '../resources/images/bakko-egg-brawl_02.png'
+import EggBrawlHeader from '../resources/images/battlerite_bakko-egg-brawl_header.jpg'
+import EggBrawlPrototype from '../resources/images/battlerite_bakko-egg-brawl_prototype.png'
+import EggBrawl1 from '../resources/images/battlerite_bakko-egg-brawl_01.jpg'
+import EggBrawl2 from '../resources/images/battlerite_bakko-egg-brawl_02.png'
 
-import RocketBalloonBrawlHeader from '../resources/images/Rocket-Balloon-Brawl_header.png'
-import RocketBalloonBrawl1 from "../resources/images/rocket-balloon-brawl_01.png";
-import RocketBalloonBrawl2 from "../resources/images/rocket-balloon-brawl_02.png";
-// import RocketBalloonBrawl3 from "../resources/images/rocket-balloon-brawl_03.png";
+import RocketBalloonBrawlHeader from '../resources/images/battlerite_rocket-balloon-brawl_header.png'
+import RocketBalloonBrawl1 from "../resources/images/battlerite_rocket-balloon-brawl_01.png";
+import RocketBalloonBrawl2 from "../resources/images/battlerite_rocket-balloon-brawl_02.png";
 
 // import BattleriteBattlegroundsImage01 from "../resources/images/";
 // import BattleriteBattlegroundsImage02 from "../resources/images/";
@@ -75,7 +71,7 @@ const Battlerite = () => {
         <div className="page-content" id="content">
           <section className="page-intro">
             <div className="page-intro-wrapper">
-              <div className="status-panel">
+              <motion.div className="status-panel" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5 }}>
                 <StatusItem
                   title={'Team Size'}
                   contentHead={'[4 interns]'}
@@ -118,8 +114,8 @@ const Battlerite = () => {
                   title={'Software & Engines'}
                   content={[{ title: 'Unity & in-house engine' }]}
                 />
-              </div>
-              <div className="video-wrapper">
+              </motion.div>
+              <motion.div className="video-wrapper" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.3 }}>
                 <iframe
                   width="560"
                   height="315"
@@ -129,8 +125,8 @@ const Battlerite = () => {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>
-              </div>
-              <div className="files">
+              </motion.div>
+              <motion.div className="files" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.6 }}>
                 <div>
                   <a
                     href="https://store.steampowered.com/app/504370/Battlerite/"
@@ -151,8 +147,8 @@ const Battlerite = () => {
                     Visit the website
                   </a>
                 </div>
-              </div>
-              <div className="definitions">
+              </motion.div>
+              <motion.div className="definitions" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.9 }}>
                 <div>
                   <h2>Summary</h2>
                   <p>
@@ -199,11 +195,11 @@ const Battlerite = () => {
                     ).
                   </p>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </section>
 
-          <section className="page-media">
+          <motion.div className="page-media" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 1 }}>
             <div className="page-media-wrapper">
               <div className="image-grid">
                 <Zoom>
@@ -214,8 +210,9 @@ const Battlerite = () => {
                 </Zoom>
               </div>
             </div>
-          </section>
-          <section className="page-section general">
+          </motion.div>
+
+          <motion.div className="page-section general" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 1 }}>
             <div className="content-section-wrapper">
               <div className="content">
                 <div className='premise'>
@@ -388,9 +385,9 @@ const Battlerite = () => {
                 <p>content coming soon..</p> */}
               </div>
             </div>
-          </section>
+          </motion.div>
 
-          <section className="page-section bakko-egg-brawl">
+          <motion.div className="page-section bakko-egg-brawl" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 1 }}>
             <div className="content-section-wrapper">
               <div className="content">
                 <div className="image-container header right">
@@ -500,11 +497,10 @@ const Battlerite = () => {
                 </div>
               </div>
             </div>
-          </section>
+          </motion.div>
 
-          <section className="page-section rocket-balloon-brawl">
+          <motion.div className="page-section rocket-balloon-brawl" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 1 }}>
             <div className="content-section-wrapper">
-              <div className="image"></div>
               <div className="content">
                 <div className="image-container header right">
                   <Zoom>
@@ -552,9 +548,9 @@ const Battlerite = () => {
                     Working on and improving the capturing mechanic of the Rocket Balloon (capturing, contested, additive capturing speed).
                   </li>
                   <li>
-                    Implementing mechanics & active states of Guardian (health system, respawning players, Last stand buff*).
+                    Implementing mechanics & active states of Guardian (health system, respawning players, Last stand*).
                   </li>
-                  <p>*<i>Last stand:</i> Buff to team that lost their Guardian — designed for possibility of comeback.</p>
+                  <p>*<i>Last stand:</i> Buff to team if they lose their Guardian — designed for possibility of comeback.</p>
                 </ul>
                 <br />
                 <p>
@@ -578,17 +574,7 @@ const Battlerite = () => {
                 >
                   Unofficial Rocket Balloon Brawl gameplay video (Youtube)
                 </a>
-                {/* <div className="prototype-gameplay image-container right">
-                  <img
-                    className="content-image"
-                    src={RocketBalloonBrawl3}
-                    alt="3D model of the Rocket Balloon"
-                  />
-                </div> */}
                 <br />
-                {/* <p>
-                  asd asd asd asd asd asdasd asdas dasdasdasd asdasdasd asdas asfasfas dasd
-                </p> */}
                 <br />
                 <div className="image-grid">
                   <Zoom>
@@ -604,35 +590,83 @@ const Battlerite = () => {
                     />
                   </Zoom>
                 </div>
-                <h3>[More content coming soon!]</h3>
               </div>
             </div>
-          </section>
-          {/*
-          <section className="page-section battlegrounds">
+          </motion.div>
+
+          <motion.div className="page-section battlegrounds" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 1 }}>
             <div className="content-section-wrapper">
               <div className="content">
+                <div className="image-container header right">
+                  <Zoom>
+                    <img
+                      className="content-image"
+                      src={RocketBalloonBrawlHeader}
+                      alt=""
+                    />
+                  </Zoom>
+                </div>
                 <h2>Battlegrounds</h2>
-                <p>content coming soon..</p>
+                <p>
+                  asd
+                </p>
+                <br />
+                <p>
+                  <strong>
+                    My work on this project consisted of:
+                  </strong>
+                </p>
+                <ul>
+                  <li>
+                    asd
+                  </li>
+                  <li>
+                    asd
+                  </li>
+                  <li>
+                    asd
+                  </li>
+                </ul>
+                <br />
+                <p>
+                  Read more about it on the official{' '}
+                  <a
+                    href="https://blog.stunlock.com/dev-blog-020/"
+                    target="_blank"
+                    title="Battlerite development blog #20 website link"
+                    rel="noopener noreferrer"
+                  >
+                    Battlerite DevBlog #20
+                  </a>
+                  .
+                </p>
+                <br />
+                <a
+                  href="https://www.youtube.com/watch?v=_4H0n014R5U&ab_channel=ChyillGaming"
+                  target="_blank"
+                  title="Unofficial youtube gameplay video of the Rocket Balloon Brawl"
+                  rel="noopener noreferrer"
+                >
+                  Unofficial Rocket Balloon Brawl gameplay video (Youtube)
+                </a>
+                <br />
+                <div className="image-grid">
+                  <Zoom>
+                    <img
+                      src={RocketBalloonBrawl1}
+                      alt="Top-down view of the Rocket Balloon and the capture point"
+                    />
+                  </Zoom>
+                  <Zoom>
+                    <img
+                      src={RocketBalloonBrawl2}
+                      alt="Top-down view of one team's Guardian (base structure)"
+                    />
+                  </Zoom>
+                </div>
               </div>
-              <div className="image"></div>
             </div>
-          </section> */}
-          {/* <section className="page-media">
-            <div className="page-media-wrapper">
-              <div className="video-wrapper">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/KU6Ra-P746k"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            </div>
-          </section> */}
+          </motion.div>
         </div>
 
         <div className="quick-links">
@@ -655,7 +689,7 @@ const Battlerite = () => {
         </div>
       </div>
       <Footer />
-    </div>
+    </div >
   )
 }
 

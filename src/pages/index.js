@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-
-import personalImg from "../resources/images/UX_21_Joakim_Hedman_400.png";
+import personalImg from "../resources/images/profile_joakim-hedman.png";
+import { motion } from "framer-motion"
 
 export var projectQuickLinks = [
   {
@@ -78,13 +78,13 @@ function Index() {
     <div>
       <section className="intro" id="home">
         <div className="intro-container">
-          <div className="intro-heading">
+          <motion.div className="intro-heading" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5 }}>
             <h1>Joakim Hedman</h1>
             <div>
               <h3 className="title-game">Game & UX Designer</h3>
             </div>
-          </div>
-          <div className="intro-content">
+          </motion.div>
+          <motion.div className="intro-content" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.3 }}>
             <div className="intro-description">
               <p>
                 I'm a <strong>Game and UX designer</strong> currently studying at <a
@@ -148,12 +148,12 @@ function Index() {
               </div>
             </div>
             <img src={personalImg} alt="Joakim Hedman" />
-          </div>
+          </motion.div>
 
         </div>
       </section>
       <section className="projects">
-        <div className="projects-container">
+        <motion.div className="projects-container" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.8 }}>
           <h2>Highlighted projects</h2>
           <div className="projects-list">
             <div className="projects-games">
@@ -209,7 +209,7 @@ function Index() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
     </div>
   );

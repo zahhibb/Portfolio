@@ -166,35 +166,35 @@ a:hover {
 }
 
 .social-links .linkedin a {
-  background: url("resources/images/linkedin-logo.png");
+  background: url("resources/images/icon_linkedin.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 40% 40%;
 }
 
 .social-links .artstation a {
-  background: url("resources/images/artstation.png");
+  background: url("resources/images/icon_artstation.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 40% 40%;
 }
 
 .social-links .itch a {
-  background: url("resources/images/itch-logo.png");
+  background: url("resources/images/icon_itch.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 40% 40%;
 }
 
 .social-links .twitter a {
-  background: url("resources/images/Twitter-logo-white.png");
+  background: url("resources/images/icon_twitter.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 45% 40%;
 }
 
 .social-links .mail a {
-  background: url("resources/images/mail-logo.png");
+  background: url("resources/images/icon_mail.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 40% 40%;
@@ -452,84 +452,84 @@ hr {
 }
 
 .page-container.battlerite .page-banner .banner-overlay {
-  background: url("resources/images/Battlerite-Header.jpg");
+  background: url("resources/images/battlerite_header.jpg");
   background-repeat: no-repeat;
   background-position: 50% 25%;
   background-size: cover;
 }
 
 .projects-container .battlerite {
-  background: url("resources/images/Battlerite-Header.jpg");
+  background: url("resources/images/battlerite_header.jpg");
   background-repeat: no-repeat;
   background-position: 50% 25%;
   background-size: cover;
 }
 
 .page-container.akined .page-banner .banner-overlay {
-  background: #1d1223 url("resources/images/Akined2.png");
+  background: #1d1223 url("resources/images/akined_banner.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .projects-container .akined {
-  background: #1d1223 url("resources/images/akined.png");
+  background: #1d1223 url("resources/images/akined_thumbnail.png");
   background-repeat: no-repeat;
   background-position: 50% 0%;
   background-size: contain;
 }
 
 .page-container.eldritch .page-banner .banner-overlay {
-  background: #1d1223 url("resources/images/Eldritch_project-banner.jpg");
+  background: #1d1223 url("resources/images/eldritch_banner.jpg");
   background-repeat: no-repeat;
   background-position: 50% 90%;
   background-size: cover;
 }
 
 .projects-container .eldritch {
-  background: #1d1223 url("resources/images/Eldritch_project-banner.jpg");
+  background: #1d1223 url("resources/images/eldritch_banner.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0%;
   background-size: contain;
 }
 
 .page-container.pioneer .page-banner .banner-overlay {
-  background: url("resources/images/portfolio_pioneer_item.png");
+  background: url("resources/images/pioneer_high-fidelity_01.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .projects-container .pioneer {
-  background: url("resources/images/PIONEER-thumbnail.jpg");
+  background: url("resources/images/pioneer_thumbnail.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .page-container.battlefield6 .page-banner .banner-overlay {
-  background: url("resources/images/portfolio_bf6_item.png");
+  background: url("resources/images/bf6_high-fidelity_wireframes.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .projects-container .battlefield6 {
-  background: url("resources/images/Portfolio-thumbnail-bf6.png");
+  background: url("resources/images/bf6_thumbnail.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .page-container.eldenring .page-banner .banner-overlay {
-  background: url("resources/images/portfolio_eldenring_item.png");
+  background: url("resources/images/eldenring_high-fidelity_wireframes_collage.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .projects-container .eldenring {
-  background: url("resources/images/Elden-Ring_Thumbnail.png");
+  background: url("resources/images/eldenring_thumbnail.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -626,7 +626,7 @@ hr {
   }
 
   .projects-container .akined {
-    background: #1d1223 url("resources/images/akined.png");
+    background: #1d1223 url("resources/images/akined_thumbnail.png");
     background-repeat: no-repeat;
     background-position: 50% 0%;
     background-size: cover;
@@ -2225,7 +2225,7 @@ footer {
   max-width: 100px;
   margin: 0 0.1rem;
   padding: 0.5rem 0.5rem;
-  border-image: url('../src/resources/images/SquareEmblem.png');
+  border-image: url('../src/resources/images/gamelist_square-emblem.png');
   border-image-slice: 6% fill;
 }
 

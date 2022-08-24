@@ -5,13 +5,14 @@ import { Link } from 'react-router-dom'
 import '../App.css'
 import Zoom from 'react-medium-image-zoom'
 import '../styles.css'
+import { motion } from "framer-motion"
 
 // import EldenRingStylesheet from "../resources/images/Typography_and_Colours.png";
 // import EldenRingIconography from "../resources/images/Iconography.png";
 // import EldenRingIconIteration from "../resources/images/Icon-iteration.png";
-import EldenRingHighFidelityWireframe01 from '../resources/images/Main-menu.png'
-import EldenRingHighFidelityWireframe02 from '../resources/images/Character-creation_Class.png'
-import EldenRingHighFidelityWireframe03 from '../resources/images/Character-creation_Stats.png'
+import EldenRingHighFidelityWireframe01 from '../resources/images/eldenring_high-fidelity_wireframes_collage.png'
+import EldenRingHighFidelityWireframe02 from '../resources/images/eldenring_high-fidelity_wireframes_character-creation-class.png'
+import EldenRingHighFidelityWireframe03 from '../resources/images/eldenring_high-fidelity_wireframes_character-creation-stats.png'
 
 import { projectQuickLinks } from './index'
 
@@ -41,7 +42,8 @@ const Eldenring = () => {
         <div className="page-content" id="content">
           <section className="page-intro">
             <div className="page-intro-wrapper">
-              <div className="status-panel">
+
+              <motion.div className="status-panel" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5 }}>
                 <StatusItem
                   title={'Team Size'}
                   content={[{ title: '1 (solo)' }]}
@@ -60,8 +62,9 @@ const Eldenring = () => {
                     { title: 'XD, Photoshop, Illustrator' },
                   ]}
                 />
-              </div>
-              <div className="files">
+              </motion.div>
+
+              <motion.div className="files" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.3 }}>
                 <div>
                   <a
                     href="https://www.artstation.com/artwork/mzZQ41"
@@ -71,8 +74,9 @@ const Eldenring = () => {
                     View on ArtStation
                   </a>
                 </div>
-              </div>
-              <div className="definitions">
+              </motion.div>
+
+              <motion.div className="definitions" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.6 }}>
                 <div>
                   <h2>Project overview</h2>
                   <p>
@@ -103,10 +107,12 @@ const Eldenring = () => {
                     colours.
                   </p>
                 </div>
-              </div>
+              </motion.div>
+
             </div>
           </section>
-          <section className="page-media">
+
+          <motion.div className="page-media" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 1 }}>
             <div className="page-media-wrapper">
               <h2>Theme</h2>
               <p>
@@ -188,7 +194,8 @@ const Eldenring = () => {
                 </Zoom>
               </div>
             </div>
-          </section>
+          </motion.div>
+
         </div>
         <div className="quick-links">
           <div className="quick-link-container prev">

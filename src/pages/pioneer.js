@@ -5,12 +5,13 @@ import { Link } from 'react-router-dom'
 import '../App.css'
 import Zoom from 'react-medium-image-zoom'
 import '../styles.css'
+import { motion } from "framer-motion"
 
 import PioneerSketchImage01 from '../resources/images/pioneer_sketches_00.png'
 import PioneerSketchImage02 from '../resources/images/pioneer_sketches_01.png'
 import PioneerLowFidImage from '../resources/images/pioneer_low-fidelity.jpg'
 
-import PioneerHighFidImage1 from '../resources/images/pioneer_mainmenu_preferences.jpg'
+import PioneerHighFidImage1 from '../resources/images/pioneer_main-menu_preferences.jpg'
 import PioneerHighFidImage2 from '../resources/images/pioneer_map_loadout.jpg'
 import PioneerHighFidImage3 from '../resources/images/pioneer_gear_arsenal.jpg'
 import PioneerHighFidImage4 from '../resources/images/pioneer_social_profile.jpg'
@@ -43,7 +44,8 @@ const Pioneer = () => {
         <div className="page-content" id="content">
           <section className="page-intro">
             <div className="page-intro-wrapper">
-              <div className="status-panel">
+
+              <motion.div className="status-panel" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5 }}>
                 <StatusItem
                   title={'Team Size'}
                   content={[{ title: '1 (solo)' }]}
@@ -59,8 +61,9 @@ const Pioneer = () => {
                   title={'Software & Engines'}
                   content={[{ title: 'Unity' }, { title: 'Figma' }, { title: 'Photoshop' }]}
                 />
-              </div>
-              <div className="definitions">
+              </motion.div>
+
+              <motion.div className="definitions" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.3 }}>
                 <div>
                   <h2>Project overview</h2>
                   <p>
@@ -105,10 +108,11 @@ const Pioneer = () => {
                     deciding gear and starting location.
                   </p>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </section>
-          <section className="page-media">
+
+          <motion.div className="page-media" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.6 }}>
             <div className="page-media-wrapper">
               <h2>Concept & references</h2>
               <p>
@@ -257,7 +261,7 @@ const Pioneer = () => {
               <h3>Ending statements</h3>
               <p>Content text coming soon..</p> */}
             </div>
-          </section>
+          </motion.div>
         </div>
 
         <div className="quick-links">

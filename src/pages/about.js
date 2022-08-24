@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import Navigation from '../components/Navigation/navigation'
 import Footer from '../sections/footer'
-
-import personalImg from '../resources/images/JoakimHedmanProfile2.jpg'
+import { motion } from "framer-motion"
+import personalImg from '../resources/images/profile_joakim-hedman_02.jpg'
 
 const About = () => {
   useEffect(() => {
@@ -13,13 +13,14 @@ const About = () => {
     <section className="about" id="about">
       <Navigation />
       <div className="about-container">
-        <div className="about-heading">
+        <motion.div className="about-heading" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5 }}>
           <h1>Joakim Hedman</h1>
           <div>
             <h3 className="title-game">Game & UX Designer</h3>
           </div>
-        </div>
-        <div className="about-image-wrapper">
+        </motion.div>
+
+        <motion.div className="about-image-wrapper" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.3 }}>
           <div>
             <div className="social-links">
               <div className="linkedin">
@@ -85,10 +86,12 @@ const About = () => {
             </div>
           </div>
           <img src={personalImg} alt="Joakim Hedman" />
-        </div>
+        </motion.div>
+        
         <div className="about-content">
           <div className="about-me">
-            <div className="what-can-i-do">
+
+            <motion.div className="what-can-i-do" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.6 }}>
               <h3>
                 <u>What can I do?</u>
               </h3>
@@ -106,8 +109,9 @@ const About = () => {
                   <li>Web development (HTML5, CSS3, JavaScript)</li>
                 </ul>
               </div>
-            </div>
-            <div className="who-am-i">
+            </motion.div>
+
+            <motion.div className="who-am-i" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.9 }}>
               <h3>
                 <u>Who am I?</u>
               </h3>
@@ -163,8 +167,9 @@ const About = () => {
                 , where I at the time interacted with and grew a small community
                 of users and creators.
               </p>
-            </div>
-            <div className="as-a-developer">
+            </motion.div>
+
+            <motion.div className="as-a-developer" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 1 }}>
               <h3>
                 <u>As a developer</u>
               </h3>
@@ -187,7 +192,7 @@ const About = () => {
                 gathered from my extensive experience with making games at{' '}
                 <i>GameJams.</i>
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import '../App.css'
 
-import GameImg1 from '../resources/images/eldenring.png'
-import GameImg2 from '../resources/images/dyinglight2.jpg'
-import GameImg3 from '../resources/images/vrising_thumbnail.jpg'
+import GameImg1 from '../resources/images/about_eldenring.png'
+import GameImg2 from '../resources/images/about_dyinglight2.jpg'
+import GameImg3 from '../resources/images/about_vrising.jpg'
 
 function InterestGameItem({ title, image }) {
   return <img src={image} alt="Anno 1800 cover art" title={title} />

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-import logoDefault from "../../resources/images/logo-default.png";
-import logoHover from "../../resources/images/logo-hover.png";
+import logoDefault from "../../resources/images/portfolio_logo_default.png";
+import logoHover from "../../resources/images/portfolio_logo_hover.png";
 
 import homeDefault from "../../resources/images/home-default.png";
 import homeActive from "../../resources/images/home-active.png";

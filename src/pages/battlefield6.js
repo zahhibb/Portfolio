@@ -5,13 +5,14 @@ import { Link } from 'react-router-dom'
 import '../App.css'
 import Zoom from 'react-medium-image-zoom'
 import '../styles.css'
+import { motion } from "framer-motion"
 
 import BattlefieldReferenceImage from '../resources/images/bf6_reference.jpg'
-import BattlefieldPillarImage01 from '../resources/images/Minimalist.png'
-import BattlefieldPillarImage02 from '../resources/images/Inspired.png'
-import BattlefieldPillarImage03 from '../resources/images/Functional.png'
+import BattlefieldPillarImage01 from '../resources/images/bf6_design-pillar_minimalist-icon.png'
+import BattlefieldPillarImage02 from '../resources/images/bf6_design-pillar_inspired-icon.png'
+import BattlefieldPillarImage03 from '../resources/images/bf6_design-pillar_functional-icon.png'
 import BattlefieldLowFidelityWireframeImage from '../resources/images/bf6_low-fidelity_wireframes.jpg'
-import BattlefieldHighFidelityWireframeImage from '../resources/images/portfolio_bf6_item.png'
+import BattlefieldHighFidelityWireframeImage from '../resources/images/bf6_high-fidelity_wireframes.png'
 import BattlefieldExtraImage from '../resources/images/bf6_gameplay-mockup.jpg'
 
 import RaidIcon from '../resources/images/bf6_raid-icon.jpg'
@@ -47,7 +48,8 @@ const Battlefield6 = () => {
         <div className="page-content" id="content">
           <section className="page-intro">
             <div className="page-intro-wrapper">
-              <div className="status-panel">
+
+              <motion.div className="status-panel" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5 }}>
                 <StatusItem
                   title={'Team Size'}
                   content={[{ title: '1 (solo)' }]}
@@ -66,8 +68,9 @@ const Battlefield6 = () => {
                     { title: 'XD, Photoshop, Illustrator' },
                   ]}
                 />
-              </div>
-              <div className="files">
+              </motion.div>
+
+              <motion.div className="files" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.3 }}>
                 <div>
                   <a
                     href="https://www.artstation.com/artwork/L3QbNR"
@@ -77,8 +80,9 @@ const Battlefield6 = () => {
                     View on ArtStation
                   </a>
                 </div>
-              </div>
-              <div className="definitions">
+              </motion.div>
+
+              <motion.div className="definitions" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.6 }}>
                 <div>
                   <h2>Project overview</h2>
                   <p>
@@ -113,10 +117,12 @@ const Battlefield6 = () => {
                     looked.
                   </p>
                 </div>
-              </div>
+              </motion.div>
+
             </div>
           </section>
-          <section className="page-media">
+
+          <motion.div className="page-media" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.9 }}>
             <div className="page-media-wrapper">
               <h2>Theme</h2>
               <p>
@@ -334,7 +340,8 @@ const Battlefield6 = () => {
                 </div>
               </div>
             </div>
-          </section>
+          </motion.div>
+
           <br />
         </div>
         <div className="quick-links">
