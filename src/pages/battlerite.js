@@ -12,7 +12,7 @@ import Gameplay2 from '../resources/images/battlerite_02.jpg'
 
 import PayloadSketch from '../resources/images/battlerite_payload-sketch.jpg'
 import Orbs from '../resources/images/battlerite_orbs.jpg'
-import BoneOrbSpawnLocation from '../resources/images/battlerite_boneOrbSpawnLocation.png'
+import BoneOrbSpawnLocation from '../resources/images/battlerite_orb-spawn-location.png'
 
 import EggBrawlHeader from '../resources/images/battlerite_bakko-egg-brawl_header.jpg'
 import EggBrawlPrototype from '../resources/images/battlerite_bakko-egg-brawl_prototype.png'
@@ -23,9 +23,11 @@ import RocketBalloonBrawlHeader from '../resources/images/battlerite_rocket-ball
 import RocketBalloonBrawl1 from "../resources/images/battlerite_rocket-balloon-brawl_01.png";
 import RocketBalloonBrawl2 from "../resources/images/battlerite_rocket-balloon-brawl_02.png";
 
-// import BattleriteBattlegroundsImage01 from "../resources/images/";
-// import BattleriteBattlegroundsImage02 from "../resources/images/";
-// import BattleriteBattlegroundsImage03 from "../resources/images/";
+import BattlegroundsHeader from "../resources/images/battlerite_battlegrounds_header.png";
+import Battlegrounds1 from "../resources/images/battlerite_battlegrounds-gameplay_01.jpg";
+import Battlegrounds2 from "../resources/images/battlerite_battlegrounds-gameplay_02.jpg";
+import Battlegrounds3 from "../resources/images/battlerite_battlegrounds-gameplay_03.png";
+import Battlegrounds4 from "../resources/images/battlerite_battlegrounds-gameplay_04.png";
 
 import { projectQuickLinks } from './index'
 
@@ -395,10 +397,11 @@ const Battlerite = () => {
                     <img
                       className="content-image"
                       src={EggBrawlHeader}
-                      alt="Battlerite Bakko's Egg Brawl concept header"
+                      alt="Battlerite Bakko's Egg Brawl game mode concept"
                     />
                   </Zoom>
                 </div>
+                <p style={{ fontWeight: 'bold', color: '#aaa' }}>January — March</p>
                 <h2>Bakko's Egg Brawl</h2>
                 <p>
                   The first significant project I worked on at Stunlock Studios
@@ -476,7 +479,7 @@ const Battlerite = () => {
                 <a
                   href="https://youtu.be/_KmLpPCsjyM?t=19"
                   target="_blank"
-                  title="Unofficial youtube gameplay video of the Bakko Egg Brawl"
+                  title="Unofficial youtube gameplay video of the Bakko Egg Brawl game mode"
                   rel="noopener noreferrer"
                 >
                   Unofficial Bakko Egg Brawl gameplay video (Youtube)
@@ -507,10 +510,11 @@ const Battlerite = () => {
                     <img
                       className="content-image"
                       src={RocketBalloonBrawlHeader}
-                      alt="Battlerite Rocket Balloon Brawl concept header"
+                      alt="Battlerite Rocket Balloon Brawl game mode concept"
                     />
                   </Zoom>
                 </div>
+                <p style={{ fontWeight: 'bold', color: '#aaa' }}>April — June</p>
                 <h2>Rocket Balloon Brawl</h2>
                 <p>
                   The second large project I worked on and the one I had the
@@ -569,7 +573,7 @@ const Battlerite = () => {
                 <a
                   href="https://www.youtube.com/watch?v=_4H0n014R5U&ab_channel=ChyillGaming"
                   target="_blank"
-                  title="Unofficial youtube gameplay video of the Rocket Balloon Brawl"
+                  title="Unofficial youtube gameplay video of the Rocket Balloon Brawl game mode"
                   rel="noopener noreferrer"
                 >
                   Unofficial Rocket Balloon Brawl gameplay video (Youtube)
@@ -601,15 +605,20 @@ const Battlerite = () => {
                   <Zoom>
                     <img
                       className="content-image"
-                      src={RocketBalloonBrawlHeader}
-                      alt=""
+                      src={BattlegroundsHeader}
+                      alt="Battlerite Battlegrounds game mode concept"
                     />
                   </Zoom>
                 </div>
+                <p style={{ fontWeight: 'bold', color: '#aaa' }}>July — Aug</p>
                 <h2>Battlegrounds</h2>
                 <p>
-                  asd
+                  The third and final project I worked on during my time at the studio and the one project I weren't present for the entire duration of because of my contract over the summer ended.
                 </p>
+                <br />
+                <p>This particular game mode is a both a amalgamation of various systems already implemented in Battlerite — like <i>Turok</i> (tutorial/practive boss), and the <i>Rocket Balloon</i>, while also containing new features such as a <b>leveling system</b>, <b>stealth-brush</b>, and more!</p>
+                <br />
+                <p>It's an <b>objective-oriented</b> game mode with <b>2 phases</b> continuosly changing throughout the game, interspersed with random <b>events</b> that yield points needed to disable the shield of the opposing team's Guardian. The victory condition is to defeat the enemy <b>Guardian</b>.</p>
                 <br />
                 <p>
                   <strong>
@@ -618,49 +627,62 @@ const Battlerite = () => {
                 </p>
                 <ul>
                   <li>
-                    asd
+                    guardian attack states & patterns
                   </li>
                   <li>
-                    asd
+                    'Turok the Champion's states, attack patterns & stats
                   </li>
                   <li>
-                    asd
+                    npc minions spawn & attack
                   </li>
                 </ul>
                 <br />
                 <p>
                   Read more about it on the official{' '}
                   <a
-                    href="https://blog.stunlock.com/dev-blog-020/"
+                    href="https://blog.stunlock.com/dev-blog-33/"
                     target="_blank"
-                    title="Battlerite development blog #20 website link"
+                    title="Battlerite development blog #33 website link"
                     rel="noopener noreferrer"
                   >
-                    Battlerite DevBlog #20
+                    Battlerite DevBlog #33
                   </a>
                   .
                 </p>
                 <br />
                 <a
-                  href="https://www.youtube.com/watch?v=_4H0n014R5U&ab_channel=ChyillGaming"
+                  href="https://youtu.be/qXiT5sj3eX4"
                   target="_blank"
-                  title="Unofficial youtube gameplay video of the Rocket Balloon Brawl"
+                  title="Official youtube preview video of the Battlegrounds game mode"
                   rel="noopener noreferrer"
                 >
-                  Unofficial Rocket Balloon Brawl gameplay video (Youtube)
+                  Official Battlegrounds preview video (Youtube)
                 </a>
+                <br />
                 <br />
                 <div className="image-grid">
                   <Zoom>
                     <img
-                      src={RocketBalloonBrawl1}
-                      alt="Top-down view of the Rocket Balloon and the capture point"
+                      src={Battlegrounds1}
+                      alt="Top-down view of the non-player-character 'Champion Turok'"
                     />
                   </Zoom>
                   <Zoom>
                     <img
-                      src={RocketBalloonBrawl2}
-                      alt="Top-down view of one team's Guardian (base structure)"
+                      src={Battlegrounds2}
+                      alt="Top-down view of one team's Guardian (base structure), protected by a shield"
+                    />
+                  </Zoom>
+                  <Zoom>
+                    <img
+                      src={Battlegrounds3}
+                      alt="Top-down view of "
+                    />
+                  </Zoom>
+                  <Zoom>
+                    <img
+                      src={Battlegrounds4}
+                      alt="Top-down view of "
                     />
                   </Zoom>
                 </div>
