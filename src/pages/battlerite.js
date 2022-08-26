@@ -7,6 +7,8 @@ import Zoom from 'react-medium-image-zoom'
 import '../styles.css'
 import { motion } from "framer-motion"
 
+import BattleriteIcon from '../resources/images/battlerite-icon.png'
+
 import Gameplay1 from '../resources/images/battlerite_01.jpeg'
 import Gameplay2 from '../resources/images/battlerite_02.jpg'
 
@@ -162,7 +164,7 @@ const Battlerite = () => {
                   </p>
                   <br />
                   <p>
-                    Three game modes were developed for the game in 8 months
+                    <b>Three game modes</b> were developed for the game in 8 months
                     during my internship (in addition to some contract work over
                     the summer), primarily by me and 3 other interns (we were 2
                     designers and 2 programmers in total, me being one of the
@@ -339,12 +341,12 @@ const Battlerite = () => {
                 </p>
                 <br />
                 <p>
-                  Later on, parts of my payload system would end up being the
+                  Later on, parts of my <b>payload system</b> would end up being the
                   base for one of the released game modes;{' '}
                   <i>Rocket Balloon</i>, which I'll go into a bit more detail
                   further down.
                 </p>
-                <br />
+                <hr />
                 <div className='ui-concepting'>
                   <h2>UI concepting</h2>
                   <p>
@@ -401,8 +403,10 @@ const Battlerite = () => {
                     />
                   </Zoom>
                 </div>
-                <p style={{ fontWeight: 'bold', color: '#aaa' }}>January — March</p>
+                <img src={BattleriteIcon} className="header-icon" />
                 <h2>Bakko's Egg Brawl</h2>
+                <p className='battlerite-project-date'>January — March</p>
+                <hr />
                 <p>
                   The first significant project I worked on at Stunlock Studios
                   was <strong>Bakko's Egg Brawl</strong>, or just simply{' '}
@@ -447,7 +451,7 @@ const Battlerite = () => {
                     <img
                       className="content-image"
                       src={EggBrawlPrototype}
-                      alt="Battlerite Bakko's Egg Brawl dodgeball prototype"
+                      alt="Prototype gameplay of the Egg Brawl"
                     />
                   </Zoom>
                   <span>
@@ -488,13 +492,13 @@ const Battlerite = () => {
                   <Zoom>
                     <img
                       src={EggBrawl1}
-                      alt="Battlerite Bakko's Egg Brawl reflecting egg"
+                      alt="Bakko reflecting an egg"
                     />
                   </Zoom>
                   <Zoom>
                     <img
                       src={EggBrawl2}
-                      alt="Battlerite Bakko's Egg Brawl 4 player standoff"
+                      alt="Four player standoff"
                     />
                   </Zoom>
                 </div>
@@ -510,12 +514,14 @@ const Battlerite = () => {
                     <img
                       className="content-image"
                       src={RocketBalloonBrawlHeader}
-                      alt="Battlerite Rocket Balloon Brawl game mode concept"
+                      alt="Rocket Balloon Brawl game mode concept"
                     />
                   </Zoom>
                 </div>
-                <p style={{ fontWeight: 'bold', color: '#aaa' }}>April — June</p>
+                <img src={BattleriteIcon} className="header-icon" />
                 <h2>Rocket Balloon Brawl</h2>
+                <p className='battlerite-project-date'>April — June</p>
+                <hr />
                 <p>
                   The second large project I worked on and the one I had the
                   most hands-on involvement with both design- and
@@ -584,13 +590,13 @@ const Battlerite = () => {
                   <Zoom>
                     <img
                       src={RocketBalloonBrawl1}
-                      alt="Top-down view of the Rocket Balloon and the capture point"
+                      alt="The Rocket Balloon and the capture point below it"
                     />
                   </Zoom>
                   <Zoom>
                     <img
                       src={RocketBalloonBrawl2}
-                      alt="Top-down view of one team's Guardian (base structure)"
+                      alt="One team's Guardian (base structure)"
                     />
                   </Zoom>
                 </div>
@@ -610,15 +616,17 @@ const Battlerite = () => {
                     />
                   </Zoom>
                 </div>
-                <p style={{ fontWeight: 'bold', color: '#aaa' }}>July — Aug</p>
+                <img src={BattleriteIcon} className="header-icon" />
                 <h2>Battlegrounds</h2>
+                <p className='battlerite-project-date'>July — August</p>
+                <hr />
                 <p>
                   The third and final project I worked on during my time at the studio and the one project I weren't present for the entire duration of because of my contract over the summer ended.
                 </p>
                 <br />
                 <p>This particular game mode is a both a amalgamation of various systems already implemented in Battlerite — like <i>Turok</i> (tutorial/practive boss), and the <i>Rocket Balloon</i>, while also containing new features such as a <b>leveling system</b>, <b>stealth-brush</b>, and more!</p>
                 <br />
-                <p>It's an <b>objective-oriented</b> game mode with <b>2 phases</b> continuosly changing throughout the game, interspersed with random <b>events</b> that yield points needed to disable the shield of the opposing team's Guardian. The victory condition is to defeat the enemy <b>Guardian</b>.</p>
+                <p>It's an <b>objective-oriented</b> game mode with <b>2 phases</b> continuosly changing throughout the game, interspersed with random <b>events</b> that yield points needed to disable the shield of the opposing team's <b>Guardian</b>. The victory condition is to defeat the enemy Guardian.</p>
                 <br />
                 <p>
                   <strong>
@@ -630,7 +638,7 @@ const Battlerite = () => {
                     guardian attack states & patterns
                   </li>
                   <li>
-                    'Turok the Champion's states, attack patterns & stats
+                    Turok (boss enemy) states, attack patterns & stats
                   </li>
                   <li>
                     npc minions spawn & attack
@@ -664,25 +672,25 @@ const Battlerite = () => {
                   <Zoom>
                     <img
                       src={Battlegrounds1}
-                      alt="Top-down view of the non-player-character 'Champion Turok'"
+                      alt="Non-player-character boss enemy Turok"
                     />
                   </Zoom>
                   <Zoom>
                     <img
                       src={Battlegrounds2}
-                      alt="Top-down view of one team's Guardian (base structure), protected by a shield"
+                      alt="One team's Guardian, protected by a shield"
                     />
                   </Zoom>
                   <Zoom>
                     <img
                       src={Battlegrounds3}
-                      alt="Top-down view of "
+                      alt="Battle between players trying to capture the Rocket Balloon"
                     />
                   </Zoom>
                   <Zoom>
                     <img
                       src={Battlegrounds4}
-                      alt="Top-down view of "
+                      alt="One player hiding in stealth-brush from another player"
                     />
                   </Zoom>
                 </div>
