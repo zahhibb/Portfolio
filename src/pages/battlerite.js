@@ -624,7 +624,7 @@ const Battlerite = () => {
                   The third and final project I worked on during my time at the studio and the one project I weren't present for the entire duration of because of my contract over the summer ended.
                 </p>
                 <br />
-                <p>This particular game mode is a both a amalgamation of various systems already implemented in Battlerite — like <i>Turok</i> (tutorial/practive boss), and the <i>Rocket Balloon</i>, while also containing new features such as a <b>leveling system</b>, <b>stealth-brush</b>, and more!</p>
+                <p>This particular game mode is a both a amalgamation of various systems already implemented in Battlerite — like <i>Turok</i> (tutorial/practice boss), and the <i>Rocket Balloon</i>, while also containing new features such as a <b>leveling system</b>, <b>stealth-brush</b>, and more!</p>
                 <br />
                 <p>It's an <b>objective-oriented</b> game mode with <b>2 phases</b> continuosly changing throughout the game, interspersed with random <b>events</b> that yield points needed to disable the shield of the opposing team's <b>Guardian</b>. The victory condition is to defeat the enemy Guardian.</p>
                 <br />
