@@ -403,7 +403,7 @@ const Battlerite = () => {
                     />
                   </Zoom>
                 </div>
-                <img src={BattleriteIcon} className="header-icon" />
+                <img src={BattleriteIcon} className="header-icon" alt="Icon of Battlerite" />
                 <h2>Bakko's Egg Brawl</h2>
                 <p className='battlerite-project-date'>January — March</p>
                 <hr />
@@ -518,7 +518,7 @@ const Battlerite = () => {
                     />
                   </Zoom>
                 </div>
-                <img src={BattleriteIcon} className="header-icon" />
+                <img src={BattleriteIcon} className="header-icon" alt="Icon of Battlerite" />
                 <h2>Rocket Balloon Brawl</h2>
                 <p className='battlerite-project-date'>April — June</p>
                 <hr />
@@ -616,7 +616,7 @@ const Battlerite = () => {
                     />
                   </Zoom>
                 </div>
-                <img src={BattleriteIcon} className="header-icon" />
+                <img src={BattleriteIcon} className="header-icon" alt="Icon of Battlerite" />
                 <h2>Battlegrounds</h2>
                 <p className='battlerite-project-date'>July — August</p>
                 <hr />
