@@ -171,7 +171,7 @@ const About = () => {
 
             <motion.div className="as-a-developer" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 1 }}>
               <h3>
-                <u>As a developer</u>
+                <u>As a designer</u>
               </h3>
               <p>
                 I try my hardest to have laser focus on the task at hand and

@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import '../App.css'
 
-import GameImg1 from '../resources/images/about_eldenring.png'
-import GameImg2 from '../resources/images/about_dyinglight2.jpg'
-import GameImg3 from '../resources/images/about_vrising.jpg'
+import GameImg1 from '../resources/images/about_tunic.jpg'
+import GameImg2 from '../resources/images/about_cultofthelamb.jpg'
+import GameImg3 from '../resources/images/about_wow-classic-wotlk.jpg'
 
 function InterestGameItem({ title, image }) {
   return <img src={image} alt="Anno 1800 cover art" title={title} />
@@ -19,17 +19,17 @@ class Footer extends Component {
             <p>The games I am currently playing:</p>
             <div>
               <InterestGameItem
-                title={'Elden Ring'}
+                title={'Tunic'}
                 image={GameImg1}
-                imageAlt={'Elden Ring cover art'}
+                imageAlt={'Tunic cover art'}
               />
               <InterestGameItem
-                title={'Dying Light 2'}
+                title={'Cult of the Lamb'}
                 image={GameImg2}
-                imageAlt={'Dying Light 2 cover art'}
+                imageAlt={'Cult of the Lamb cover art'}
               />
               <InterestGameItem
-                title={'V Rising'}
+                title={'World of Warcraft - Wrath of the Lich King Classic'}
                 image={GameImg3}
                 imageAlt={'V Rising cover art'}
               />

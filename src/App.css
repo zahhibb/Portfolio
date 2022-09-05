@@ -1344,6 +1344,10 @@ footer {
   object-fit: contain;
 }
 
+.akined .right {
+  margin: 0;
+}
+
 @media only screen and (min-width: 425px) {
   .status-item h3 {
     margin: 0;
@@ -1385,12 +1389,6 @@ footer {
     gap: 2rem;
   }
 
-  /* .image-grid img {
-    flex: calc(50% - 1rem);
-    max-width: calc(50% - 1.14rem);
-    max-height: none;
-    border: 1px solid #414d96;
-  } */
   .image-grid>div {
     flex: calc(50% - 1rem);
     max-width: calc(50% - 1.14rem);
@@ -1400,13 +1398,6 @@ footer {
   .image-grid>div img {
     border: 1px solid #414d96;
   }
-
-  /* .image-duo div {
-    flex: calc(50% - 1rem);
-    max-width: calc(50% - 1.14rem);
-    max-height: none;
-    align-self: flex-end;
-  } */
 
   .image-solo img {
     flex: 1 !important;
@@ -1539,6 +1530,10 @@ footer {
 
   .akined .image-container img {
     max-height: none;
+  }
+
+  .akined .image-container .right {
+    margin: 1rem 0 1rem 1rem;
   }
 }
 
@@ -1870,18 +1865,6 @@ footer {
     margin-bottom: 0;
   }
 
-  .eldenring .work-pairs {
-    flex-direction: row-reverse;
-  }
-
-  .eldenring .work-pairs:nth-child(2n) {
-    flex-direction: row;
-  }
-
-  .eldenring .work-pairs:nth-child(2n) img {
-    margin: 0 2rem 1rem 0;
-  }
-
   .eldenring .work-pairs>img {
     min-width: 600px;
   }
@@ -1932,11 +1915,16 @@ footer {
 }
 
 .battlefield6 .work-pairs {
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 
 .battlefield6 .work-pairs p {
   font-size: unset;
+  margin-bottom: 1rem;
+}
+
+.battlefield6 .work-pairs h3 {
+  margin-bottom: 0;
 }
 
 .battlefield6 .work-pairs p,
@@ -2006,6 +1994,10 @@ footer {
   .battlefield6 .page-media-wrapper h2,
   .battlefield6 .page-media-wrapper h3,
   .battlefield6 .page-media-wrapper>p {
+    margin-bottom: 0;
+  }
+
+  .battlefield6 .work-pairs p {
     margin-bottom: 0;
   }
 
@@ -2238,11 +2230,6 @@ footer {
   text-shadow: rgba(0, 0, 0, 0.75) 0px 2px 3px;
 }
 
-.list-content-item a:hover li {
-  /* border-image: url('../src/resources/images/SquareEmblem.png');
-  border-image-slice: 6% fill; */
-}
-
 .list-content-item ul {
   margin-top: 0.5rem;
   margin-left: 0.5rem;
@@ -2259,19 +2246,6 @@ footer {
   border-image: url('../src/resources/images/gamelist_square-emblem.png');
   border-image-slice: 6% fill;
 }
-
-/* .list-content-item .item-small ul {
-  margin: 0.5rem;
-}
-
-.list-content-item .item-small ul li {
-  list-style: none;
-  font-size: 0.6rem;
-  min-width: 60px;
-  max-width: 100px;
-  margin: 0 0.1rem;
-  padding: 0.5rem 0.5rem;
-} */
 
 @media only screen and (min-width: 768px) {
   .top-list {

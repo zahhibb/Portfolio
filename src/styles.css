@@ -129,8 +129,24 @@
     .battlefield6 [data-rmiz]:nth-child(2n) .work-pairs {
         flex-direction: row;
     }
-    
+
     .battlefield6 [data-rmiz]:nth-child(2n) .work-pairs img {
         margin: 0 2rem 1rem 0;
-      }
+    }
+
+    .eldenring [data-rmiz] .work-pairs {
+        flex-direction: row;
+    }
+
+    .eldenring [data-rmiz] .work-pairs img {
+        margin: 0 2rem 1rem 0;
+    }
+
+    .eldenring [data-rmiz]:nth-child(2n) .work-pairs {
+        flex-direction: row-reverse;
+    }
+
+    .eldenring [data-rmiz]:nth-child(2n) .work-pairs img {
+        margin: 0 0 1rem 2rem;
+    }
 }

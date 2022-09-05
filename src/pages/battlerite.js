@@ -626,22 +626,22 @@ const Battlerite = () => {
                 <br />
                 <p>This particular game mode is a both a amalgamation of various systems already implemented in Battlerite — like <i>Turok</i> (tutorial/practice boss), and the <i>Rocket Balloon</i>, while also containing new features such as a <b>leveling system</b>, <b>stealth-brush</b>, and more!</p>
                 <br />
-                <p>It's an <b>objective-oriented</b> game mode with <b>2 phases</b> continuosly changing throughout the game, interspersed with random <b>events</b> that yield points needed to disable the shield of the opposing team's <b>Guardian</b>. The victory condition is to defeat the enemy Guardian.</p>
+                <p>It's an <b>objective-oriented</b> game mode with <b>2 phases</b> continuously changing throughout the game, interspersed with random <b>events</b> that yield points needed to disable the shield of the opposing team's <b>Guardian</b>. The victory condition is to defeat the enemy Guardian.</p>
                 <br />
                 <p>
                   <strong>
-                    My work on this project consisted of:
+                    On this particular project I worked on:
                   </strong>
                 </p>
                 <ul>
                   <li>
-                    guardian attack states & patterns
+                    Designing & implementingBase Guardian attack states & -patterns (acquiring target, prioritizing targets based on distance/health/combat activity).
                   </li>
                   <li>
-                    Turok (boss enemy) states, attack patterns & stats
+                    Designed, implemented, and balanced attacks states, -patterns, and stats (target priorities, combat behaviour based on various variables) for <b>Turok</b> (NPC boss enemy).
                   </li>
                   <li>
-                    npc minions spawn & attack
+                    Balanced attack-/movement speed and implemented spawn logic for <b>Minions</b> (tiny enemy NPCs).
                   </li>
                 </ul>
                 <br />

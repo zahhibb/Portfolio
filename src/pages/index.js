@@ -95,7 +95,7 @@ function Index() {
                   FutureGames
                 </a> in Skellefteå, Sweden.
               </p>
-              <p>I consider myself a multidisciplinary designer that enjoy diving deep into <span className="color-block">Intrinsic gameplay design</span>, <span className="color-block">UI design</span>, and more.</p>
+              <p>My favorite topics to delve into are <span className="color-block">Systemic gameplay design</span> and <span className="color-block">UI design</span></p>
               <div className="social-links">
                 <div className="linkedin">
                   <a
