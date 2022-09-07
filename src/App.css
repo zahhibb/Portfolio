@@ -1904,7 +1904,16 @@ footer {
 
 .three-row div span {
   color: #fff;
-  margin-top: 0.5rem;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+.three-row div p {
+  text-align: center;
+  padding: 0 2rem;
+  font-size: 0.9rem;
+  color: rgb(255, 210, 62);
 }
 
 .battlefield6 .page-media-wrapper h2,

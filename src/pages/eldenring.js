@@ -181,10 +181,10 @@ const Eldenring = () => {
                   />
                   <div>
                     <h2>Stylesheet</h2>
-                    <p>When I felt comfortable with the layout and had a direction, I jumped on the task of designing a stylesheet, defining <strong>colours</strong>, <strong>typography</strong>, and <strong>silhouettes/aesthetics</strong>.</p>
+                    <p>When I felt comfortable with the layout and had a direction, I jumped on the task of designing a stylesheet, and defining <strong>colours</strong>, <strong>typography</strong>, and <strong>silhouettes/aesthetics</strong>.</p>
                     <p>In hindsight, I should have formulated some additional data, such as <strong>flowcharts</strong>, <strong>rules/guidelines</strong> <i>(paddings, margins, depth, layering, etc)</i>, <strong>shape language</strong>, <strong>animation</strong> <i>(easing, flow)</i>, and a more prevalent <strong>core thematic</strong>.
                     </p>
-                    <p>Regarding the <i>typography</i>, only the fonts were taken into account, but after the project I researched and deepened my understanding about <i>kerning</i>, <i>leading</i>, and <i>tracking</i>.</p>
+                    <p>Regarding the <i>typography</i>, only the fonts were taken into account, but after the project I researched and deepened my understanding of <i>kerning</i>, <i>leading</i>, and <i>tracking</i>.</p>
                   </div>
                 </div>
               </Zoom>
@@ -193,7 +193,7 @@ const Eldenring = () => {
                 <div>
                   <h2>Icon iteration</h2>
                   <p>
-                    In between designs, I did try my hand once again at creating some icons mainly using the <i>pen tool</i> inside <strong>Figma</strong>, making "art" for  all of the character stats. <p>I didn't spend a lot of time on this but I always look forward to doing these simple drawings and improving my art skills.</p>
+                    In between designs, I did try my hand once again at creating some icons mainly using the <i>pen tool</i> inside <strong>Adobe XD</strong>, making "art" for  all of the character stats. <p>I didn't spend a lot of time on this but I always look forward to doing these simple drawings and improving my art skills.</p>
                   </p>
                   <Zoom>
                     <img
@@ -219,14 +219,14 @@ const Eldenring = () => {
 
               <h2>High-fidelity wireframes</h2>
               <p>
-                Finally, I went on to the <i>high-fidelity wireframes</i> that which concludes and brings everything to life. This is my favorite part, but also the part I was worried about because it's meant to present a <i>'what if'</i> situation of the screens if they were to be production ready, and I feel it's hard as a learner to make something look professional.
+                Finally, I went on to the <i>high-fidelity wireframes</i> that conclude and bring everything to life. This is my favorite part, but also the part I was worried about because it's meant to present a <i>'what if'</i> situation of the screens if they were to be production ready, and I feel it's hard as a learner to make something look professional.
               </p>
               <br />
               <p>
                 How it went was that I decided on making 3 frames, the <strong>main menu</strong>, the <strong>character creation screen</strong>, and a <strong>class panel overlay — also on the character creation page</strong>. The main menu being quite easy to make and basically a warm-up for the other pages, only displaying text and the game title card. However, I found out here that I had missed one step during the earlier wireframing stage; defining <strong>interaction states</strong> on text and buttons <i>(hover, active)</i>. I decided quickly on a gold gradient background combined with a light contrasting color indicating the current selection.
               </p>
               <br />
-              <p>The 2 <i>character creation</i> wireframes were identical other than that one of them displayed what if the user had opened the class selection panel that showed a list of classes to choose from, while also moving around a few items to make them visible if they became occluded by the panel. <p>The setup of the character creation page were to have the main priority items on top left and having the stats mirrored on the right of them, and then at the bottom filling it out with a slight assymetrical layout with a <i>'Finalize Creation'</i> button and <i>vocational items</i> (my personal touch).</p></p>
+              <p>The 2 <i>character creation</i> wireframes were identical other than that one of them displayed what if the user had opened the class selection panel that showed a list of classes to choose from, while also moving around a few items to make them visible if they became occluded by the panel. <p>The setup of the character creation page was to have the main priority items on the top left and the stats mirrored on the right of them and then at the bottom filling it out with a slight asymmetrical  layout with a <i>'Finalize Creation'</i> button and <i>vocational items</i> (my personal touch).</p></p>
               <br />
               <div className="image-grid">
                 <Zoom>

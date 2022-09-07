@@ -87,7 +87,7 @@ const About = () => {
           </div>
           <img src={personalImg} alt="Joakim Hedman" />
         </motion.div>
-        
+
         <div className="about-content">
           <div className="about-me">
 
@@ -123,15 +123,6 @@ const About = () => {
                 devouring new kinds of food, experiencing different cultures,
                 and saying "Yes!" to all opportunities that come my way!
               </p>
-              {/* <p>
-                I see myself as an honest, jolly, and proactive guy with
-                enormous curiosity in games and game development. Some of the things
-                that I enjoy are helping people out and solving problems.
-                In general, I simply love trying out new things in life, be it
-                 devouring new kinds of food, experiencing different
-                cultures, to taking on all manner of jobs that I can get my
-                hands on!
-              </p> */}
               <br />
               <p>
                 My interest in making and modifying games began in the late 90s
@@ -173,23 +164,27 @@ const About = () => {
               <h3>
                 <u>As a designer</u>
               </h3>
-              <p>
+              {/* <p>
                 I try my hardest to have laser focus on the task at hand and
                 enjoy delving down into the nitty-gritty details. I put a lot of
                 emphasis on defining ideas and my approach is to break them down
                 into bite-sized systems and mechanics, and further using what I
                 learned to plan out a thorough plan of action.
-              </p>
+              </p> */}
+              <p>Multitasking is what I enjoy and is also what I excel at by always keeping myself busy with various tasks and concentrating on being efficient. I put a lot of
+                emphasis on defining ideas and my approach is to break them down
+                into bite-sized systems and mechanics, and further using what I
+                learned to plan out a thorough plan of action.</p>
               <br />
               <p>
-                I consider my strengths to be my technical experience and the
+                I consider my strengths to be my technical understanding and the
                 general knowledge I have on the various disciplines inside game
                 development, combined with my design-thinking with focus on
                 player agency and intrinsic motivations. My workflows are
                 inherently practical where I ideate, design, and prototype using
-                tangible tools and methods such as card-sorting,
-                paper-prototyping, and various other techniques that I've
-                gathered from my extensive experience with making games at{' '}
+                tangible tools and methods such as <i>card-sorting</i>, {" "}
+                <i>paper-prototyping</i>, and various other techniques that I've
+                gathered from my experience with making games at{' '}
                 <i>GameJams.</i>
               </p>
             </motion.div>

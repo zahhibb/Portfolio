@@ -144,6 +144,7 @@ const Battlefield6 = () => {
                     alt="Line-drawing of a chair to represent something being minimalist"
                   />
                   <span>Minimalist</span>
+                  <p>Keeping layout and style visually clear and without clutter</p>
                 </div>
                 <div>
                   <img
@@ -151,13 +152,15 @@ const Battlefield6 = () => {
                     alt="Intersecting ellipses to represent something being inspired"
                   />
                   <span>Inspired</span>
+                  <p>Taking influence and characteristic from the previous titles</p>
                 </div>
                 <div>
                   <img
                     src={BattlefieldPillarImage03}
-                    alt="Gears to represent something functional"
+                    alt="Cogs to represent something functional"
                   />
                   <span>Functional</span>
+                  <p>Containing intentional design and structure — consider as real product</p>
                 </div>
               </div>
               <br />
@@ -175,10 +178,8 @@ const Battlefield6 = () => {
                       <strong>Primary references</strong> and{' '}
                       <strong>inspiration</strong> came from the two most recent
                       games (at the time); <i>Battlefield 1</i> and{' '}
-                      <i>Battlefield 5</i>, the reason being that UX principles
-                      and UI layouts/aesthetics follows seemingly migratory
-                      patterns that changes the design standards over time. My
-                      premise were to consider those changes and hopefully improve
+                      <i>Battlefield 5</i>, the reason being that I anticipated the upcoming game to be in the same vein, structurally speaking, but going for a more modern approach. My
+                      premise was to consider those changes and hopefully improve
                       upon them.
                     </p>
                   </div>
