@@ -75,7 +75,7 @@ const About = () => {
             <div className="files">
               <div>
                 <a
-                  href="https://drive.google.com/file/d/1YLznL1Zzp20bmVcCgM7XAdc_bpm4ZudR/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1Tnha84yGYDX90_Tg4Fdca2EaJiqP5JZw/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   title="Resume link"
