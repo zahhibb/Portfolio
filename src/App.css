@@ -1154,6 +1154,34 @@ footer {
   margin-bottom: 1rem;
 }
 
+.akined-awards {
+  text-align: center;
+}
+
+.akined-awards h3 {
+  margin-bottom: 1rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.akined-awards strong {
+  color: #ff8a37;
+}
+
+.akined-awards-container {
+  display: flex;
+  text-align: center;
+}
+
+.akined-awards-container > div {
+  flex: 1;
+  gap: 1rem;
+}
+
+.akined-awards-container img {
+  width: 100%;
+}
+
 .akined-process-items {
   display: block;
   margin: 1rem 0;
@@ -1163,22 +1191,6 @@ footer {
   width: 100%;
   height: 56.25vw;
 }
-
-/* .page-container.battlerite .image-grid div:first-child {
-  background: url("./resources/images/battlerite_01.jpeg");
-}
-
-.page-container.battlerite .image-grid div:nth-child(2) {
-  background: url("./resources/images/battlerite_02.jpg");
-}
-
-.page-container.battlerite .image-grid div:nth-child(3) {
-  background: url("./resources/images/battlerite_03.jpg");
-}
-
-.page-container.battlerite .image-grid div:last-child {
-  background: url("./resources/images/battlerite_05.jpg");
-} */
 
 .info {
   background: rgb(214, 187, 156);
@@ -1367,6 +1379,10 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+  .akined-awards img {
+    width: 50%;
+  }
+
   .akined .image-container .content-image {
     max-width: 560px;
     max-height: none;

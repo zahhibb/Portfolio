@@ -7,6 +7,9 @@ import Zoom from 'react-medium-image-zoom'
 import '../styles.css'
 import { motion } from "framer-motion"
 
+import AkinedAward1 from '../resources/images/akined_award_communitys-choice.png'
+import AkinedAward2 from '../resources/images/akined_award_best-in-show.png'
+
 import AkinedImage01 from '../resources/images/akined_gameplay_01.png'
 import AkinedImage02 from '../resources/images/akined_gameplay_02.png'
 import AkinedImage03 from '../resources/images/akined_miro_planning.png'
@@ -110,6 +113,17 @@ const Akined = () => {
                     { title: 'Photoshop' }
                   ]}
                 />
+              </motion.div>
+              <motion.div className='akined-awards' initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.4 }}>
+                <h3>Our team won <strong>2 out of 4 awards</strong> at our local school award show; the <strong>Community's Choice</strong> and <strong>Best in Show</strong> awards!</h3>
+                <div className='akined-awards-container'>
+                  <div>
+                    <img src={AkinedAward1} alt="Logotype for Community's Choice award" />
+                  </div>
+                  <div>
+                    <img src={AkinedAward2} alt="Logotype for Best in Show award" />
+                  </div>
+                </div>
               </motion.div>
               <motion.div className="video-wrapper" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.3 }}>
                 <iframe
