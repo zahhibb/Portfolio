@@ -81,13 +81,13 @@ function Index() {
           <motion.div className="intro-heading" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5 }}>
             <h1>Joakim Hedman</h1>
             <div>
-              <h3 className="title-game">Game & UX Designer</h3>
+              <h3 className="title-game">Technical UI Designer</h3>
             </div>
           </motion.div>
           <motion.div className="intro-content" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.3 }}>
             <div className="intro-description">
               <p>
-                I'm a <strong>Game and UX designer</strong> currently studying at <a
+                I'm a <strong>Technical UI Designer</strong> currently studying at <a
                   href="https://futuregames.se/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -95,7 +95,7 @@ function Index() {
                   FutureGames
                 </a> in Skellefteå, Sweden.
               </p>
-              <p>My favorite topics to delve into are <span className="color-block">Systemic gameplay design</span> and <span className="color-block">UI design</span></p>
+              <p>My favorite topics to delve into are <span className="color-block">UI design</span> and <span className="color-block">Systemic gameplay design</span>.</p>
               <div className="social-links">
                 <div className="linkedin">
                   <a

@@ -3,6 +3,7 @@ import Navigation from '../components/Navigation/navigation'
 import Footer from '../sections/footer'
 import { motion } from "framer-motion"
 import personalImg from '../resources/images/profile_joakim-hedman_02.jpg'
+import resume from '../resources/documents/JoakimHedman_Resume.pdf'
 
 const About = () => {
   useEffect(() => {
@@ -16,7 +17,7 @@ const About = () => {
         <motion.div className="about-heading" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5 }}>
           <h1>Joakim Hedman</h1>
           <div>
-            <h3 className="title-game">Game & UX Designer</h3>
+            <h3 className="title-game">Technical UI Designer</h3>
           </div>
         </motion.div>
 
@@ -75,7 +76,7 @@ const About = () => {
             <div className="files">
               <div>
                 <a
-                  href="https://drive.google.com/file/d/1Tnha84yGYDX90_Tg4Fdca2EaJiqP5JZw/view?usp=sharing"
+                  href={resume}
                   target="_blank"
                   rel="noopener noreferrer"
                   title="Resume link"
