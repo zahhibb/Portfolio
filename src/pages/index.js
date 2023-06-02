@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import personalImg from "../resources/images/profile_joakim-hedman.png";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
 export var projectQuickLinks = [
   {
@@ -78,24 +78,50 @@ function Index() {
     <div>
       <section className="intro" id="home">
         <div className="intro-container">
-          <motion.div className="intro-heading" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5 }}>
+          <motion.div
+            className="intro-heading"
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
             <h1>Joakim Hedman</h1>
             <div>
-              <h3 className="title-game">Technical UI Designer</h3>
+              <h3 className="title-game">UX Designer</h3>
             </div>
           </motion.div>
-          <motion.div className="intro-content" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.3 }}>
+          <motion.div
+            className="intro-content"
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          >
             <div className="intro-description">
               <p>
-                I'm a <strong>Technical UI Designer</strong> currently studying at <a
-                  href="https://futuregames.se/"
+                I'm a <strong>UX Designer</strong> currently employed at{" "}
+                <a
+                  href="https://www.5fortress.com/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  title="5 Fortress website link"
                 >
-                  FutureGames
-                </a> in Skellefteå, Sweden.
+                  5 Fortress
+                </a>
+                , working on their debut multiplayer <i>looter-shooter</i> title{" "}
+                <a
+                  href="https://store.steampowered.com/app/2052970/STRIDEN_Fogbound/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Striden steam website link"
+                >
+                  Striden.
+                </a>
               </p>
-              <p>My favorite topics to delve into are <span className="color-block">UI design</span> and <span className="color-block">Systemic gameplay design</span>.</p>
+              <p>
+                My favorite topics to delve into are{" "}
+                <span className="color-block">UI design</span>,{" "}
+                <span className="color-block">Player Agency</span>, and{" "}
+                <span className="color-block">Emergent gameplay design</span>.
+              </p>
               <div className="social-links">
                 <div className="linkedin">
                   <a
@@ -149,11 +175,15 @@ function Index() {
             </div>
             <img src={personalImg} alt="Joakim Hedman" />
           </motion.div>
-
         </div>
       </section>
       <section className="projects">
-        <motion.div className="projects-container" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.8 }}>
+        <motion.div
+          className="projects-container"
+          initial={{ y: -50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.8 }}
+        >
           <h2>Highlighted projects</h2>
           <div className="projects-list">
             <div className="projects-games">

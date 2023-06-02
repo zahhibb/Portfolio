@@ -17,7 +17,7 @@ const About = () => {
         <motion.div className="about-heading" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5 }}>
           <h1>Joakim Hedman</h1>
           <div>
-            <h3 className="title-game">Technical UI Designer</h3>
+            <h3 className="title-game">UX Designer</h3>
           </div>
         </motion.div>
 

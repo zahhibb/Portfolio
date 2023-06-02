@@ -68,9 +68,9 @@ a:hover {
   transition: color 0.3s;
 }
 
-.intro-heading .title-game:hover {
+/* .intro-heading .title-game:hover {
   color: #7ac4fd;
-}
+} */
 
 .intro-heading h1:hover,
 .intro-heading h3:hover,
