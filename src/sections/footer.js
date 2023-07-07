@@ -1,13 +1,13 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-import '../App.css'
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import "../App.css";
 
-import GameImg1 from '../resources/images/about_tunic.jpg'
-import GameImg2 from '../resources/images/about_cultofthelamb.jpg'
-import GameImg3 from '../resources/images/about_wow-classic-wotlk.jpg'
+import GameImg1 from "../resources/images/about_bf2042.jpg";
+import GameImg2 from "../resources/images/about_davethediver.jpg";
+import GameImg3 from "../resources/images/about_got.jpg";
 
 function InterestGameItem({ title, image }) {
-  return <img src={image} alt="Anno 1800 cover art" title={title} />
+  return <img src={image} alt="Anno 1800 cover art" title={title} />;
 }
 
 class Footer extends Component {
@@ -19,19 +19,19 @@ class Footer extends Component {
             <p>The games I am currently playing:</p>
             <div>
               <InterestGameItem
-                title={'Tunic'}
+                title={"Battlefield 2042"}
                 image={GameImg1}
-                imageAlt={'Tunic cover art'}
+                imageAlt={"Battlefield 2042 cover art"}
               />
               <InterestGameItem
-                title={'Cult of the Lamb'}
+                title={"Dave the Diver"}
                 image={GameImg2}
-                imageAlt={'Cult of the Lamb cover art'}
+                imageAlt={"Dave the Diver cover art"}
               />
               <InterestGameItem
-                title={'World of Warcraft - Wrath of the Lich King Classic'}
+                title={"Ghost of Tsushima - Director's Cut"}
                 image={GameImg3}
-                imageAlt={'V Rising cover art'}
+                imageAlt={"Ghost of Tsushima - Director's Cut cover art"}
               />
             </div>
             {/* <Link to={'/gamelist'}>Check out my personal game lists</Link> */}
@@ -75,17 +75,17 @@ class Footer extends Component {
             <span>{new Date().getFullYear()}</span>
             <span>Joakim Hedman</span>
             <span>|</span>
-            <Link to={'/credits'}>Credits</Link>
+            <Link to={"/credits"}>Credits</Link>
             <span>|</span>
             <span>
               Site made by
-              <Link to={{ pathname: '/about', hash: '#about' }}>me</Link>!
+              <Link to={{ pathname: "/about", hash: "#about" }}>me</Link>!
             </span>
           </div>
         </div>
       </footer>
-    )
+    );
   }
 }
 
-export default Footer
+export default Footer;
